@@ -6,22 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
+      "server": "194.87.196.13",
+      "server_port": 60111,
+      "method": "aes-256-gcm",
+      "password": "4938e975724d0ed1"
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
-        "insecure": false
-      }
+      "server": "195.133.5.102",
+      "server_port": 60111,
+      "method": "aes-256-gcm",
+      "password": "895b4b796a357570"
     },
     {
       "type": "hysteria2",
@@ -38,30 +34,41 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-      "server": "147.78.182.3",
-      "server_port": 8443,
-      "uuid": "8bf3e040-8ac9-5d0e-304f-9b735e145de8",
+      "server": "46.8.200.91",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
-        "server_name": "www.epson.com",
+        "server_name": "cf3.rumedia-cdn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8",
-          "short_id": ""
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "ws",
+        "path": "/casc",
+        "headers": {
+          "Host": "cf3.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "gta.internet-card.sbs",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "gta.internet-card.sbs",
+        "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
       "server": "185.39.204.3",
       "server_port": 8098,
       "method": "chacha20-ietf-poly1305",
@@ -76,7 +83,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
         "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
       ]
     },
     {
@@ -87,7 +95,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
         "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

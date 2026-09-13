@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 130.49.189.158
-  port: 43558
+  server: 194.87.196.13
+  port: 60111
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 91.240.86.70
-  port: 22443
+  server: 195.133.5.102
+  port: 60111
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: msk.frkn.org
   port: 443
@@ -28,20 +27,29 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 147.78.182.3
-  port: 8443
+  server: 46.8.200.91
+  port: 443
   udp: true
   type: vless
-  uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   tls: true
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  servername: www.epson.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: gta.internet-card.sbs
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
   server: 185.39.204.3
   port: 8098
   udp: true
@@ -58,6 +66,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +77,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 rules:
 - MATCH,PROXIES
