@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
+      "server": "65.109.215.118",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
       "server": "188.132.237.20",
       "server_port": 2095,
       "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de"
@@ -15,14 +23,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo",
+        "🇫🇮 芬兰 (Finland) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo",
+        "🇫🇮 芬兰 (Finland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

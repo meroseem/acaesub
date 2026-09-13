@@ -19,14 +19,6 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
-  server: 138.124.0.168
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  sni: hopp-legend-se.roxa.org
-  skip-cert-verify: false
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - aceo
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -46,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
   - 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
   - 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 194.87.196.13
-  port: 60111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 195.133.5.102
-  port: 60111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -26,7 +12,19 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -41,21 +39,6 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: gta.internet-card.sbs
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 185.39.204.3
-  port: 8098
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PluSKSrbtxTvlVv7BOUwn4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,9 +47,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,8 +55,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 rules:
 - MATCH,PROXIES

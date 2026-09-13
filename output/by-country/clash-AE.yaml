@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
-  server: srv-21bac9.vless.monster
+  server: 31.56.189.27
   port: 2087
   udp: true
   type: vless
@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
@@ -27,7 +28,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 85.204.107.171
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
@@ -35,7 +36,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -45,18 +46,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +55,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +64,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 rules:
 - MATCH,PROXIES

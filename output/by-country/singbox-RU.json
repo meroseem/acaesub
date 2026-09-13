@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "194.87.196.13",
-      "server_port": 60111,
-      "method": "aes-256-gcm",
-      "password": "4938e975724d0ed1"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-      "server": "195.133.5.102",
-      "server_port": 60111,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -33,7 +17,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -55,36 +59,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-      "server": "gta.internet-card.sbs",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "gta.internet-card.sbs",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
-      "server": "185.39.204.3",
-      "server_port": 8098,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PluSKSrbtxTvlVv7BOUwn4"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
       ]
     },
     {
@@ -93,10 +74,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

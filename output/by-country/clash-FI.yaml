@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
+  server: 65.109.215.118
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 188.132.237.20
   port: 2095
   udp: true
@@ -16,11 +23,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
+  - 🇫🇮 芬兰 (Finland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
+  - 🇫🇮 芬兰 (Finland) 02 - aceo
 rules:
 - MATCH,PROXIES
