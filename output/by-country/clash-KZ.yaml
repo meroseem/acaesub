@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo
-  server: 104.18.34.14
-  port: 2095
+  server: 162.159.48.32
+  port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,32 +16,16 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo
-  server: 62.233.39.9
-  port: 8443
+  server: 104.18.46.46
+  port: 2086
   udp: true
   type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  tls: true
-  reality-opts:
-    public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
-  servername: dl.dell.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,56 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "185.87.24.2",
-      "server_port": 2085,
-      "uuid": "a1d1b142-17c5-4472-99de-df220df4d4fb",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "server": "188.132.174.236",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
-      "server": "185.87.24.167",
-      "server_port": 2085,
-      "uuid": "c9373ff0-c263-4949-885f-366671f3c6a1",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
-      "server": "104.17.169.13",
-      "server_port": 2053,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "tls": {
-        "enabled": true,
-        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - aceo",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -73,92 +33,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - aceo",
-      "server": "45.74.159.233",
-      "server_port": 56659,
-      "uuid": "12af43c3-84b4-4248-878b-b75f35835487",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0",
-          "short_id": "9aa3a3f599f3d5d0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - aceo",
-      "server": "104.21.238.93",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-44890b90d17e",
-      "tls": {
-        "enabled": true,
-        "server_name": "afzoybehu2ws.vtzv4xe1un6s.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/44890b90d17e/loc-0",
-        "headers": {
-          "Host": "afzoybehu2ws.vtzv4xe1un6s.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - aceo",
-      "server": "172.67.151.109",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - aceo",
-      "server": "shop.neexbyte.ir",
-      "server_port": 8443,
-      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
-      "tls": {
-        "enabled": true,
-        "server_name": "shop.neexbyte.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo",
-        "🇹🇷 土耳其 (Turkey) 03 - aceo",
-        "🇹🇷 土耳其 (Turkey) 04 - aceo",
-        "🇹🇷 土耳其 (Turkey) 05 - aceo",
-        "🇹🇷 土耳其 (Turkey) 06 - aceo",
-        "🇹🇷 土耳其 (Turkey) 07 - aceo",
-        "🇹🇷 土耳其 (Turkey) 08 - aceo"
+        "🇹🇷 土耳其 (Turkey) 02 - aceo"
       ]
     },
     {
@@ -166,13 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo",
-        "🇹🇷 土耳其 (Turkey) 03 - aceo",
-        "🇹🇷 土耳其 (Turkey) 04 - aceo",
-        "🇹🇷 土耳其 (Turkey) 05 - aceo",
-        "🇹🇷 土耳其 (Turkey) 06 - aceo",
-        "🇹🇷 土耳其 (Turkey) 07 - aceo",
-        "🇹🇷 土耳其 (Turkey) 08 - aceo"
+        "🇹🇷 土耳其 (Turkey) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

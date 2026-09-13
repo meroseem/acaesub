@@ -13,12 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 49.254.204.133
-  port: 1774
+  server: 3.36.93.74
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - aceo
   server: 3.39.4.109
   port: 18967
@@ -31,16 +32,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 04 - aceo
-  server: 3.36.93.74
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.36.93.74
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -53,15 +46,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -73,6 +58,22 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 08 - aceo
   server: 152.70.237.123
   port: 2053
@@ -80,14 +81,6 @@ proxies:
   type: hysteria2
   password: maintell
   sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - aceo
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: google.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -102,7 +95,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - aceo
   - 🇰🇷 韩国 (South Korea) 07 - aceo
   - 🇰🇷 韩国 (South Korea) 08 - aceo
-  - 🇰🇷 韩国 (South Korea) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +108,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - aceo
   - 🇰🇷 韩国 (South Korea) 07 - aceo
   - 🇰🇷 韩国 (South Korea) 08 - aceo
-  - 🇰🇷 韩国 (South Korea) 09 - aceo
 rules:
 - MATCH,PROXIES
