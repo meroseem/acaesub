@@ -1,8 +1,8 @@
-# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
+# 🚀 免费节点自动测活订阅池，含真实家宽和住宅IP甄选
 
-> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - aceo`
+> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - aceo`。
 > ⚡ **真实可用保障**: 所有节点由 `sing-box vv1.14.0` 内核建立实际代理隧道, 完成真实 HTTPS 双向传输握手 + 出口 IP 穿透验证 + Cloudflare 限速下载断流检测 + TLS 证书校验 (MITM 劫持识别), 拒绝虚假通畅、断流节点与高危劫持节点。
-> 🛡️ **全协议支持**: VLESS (Reality/Vision) · VMESS · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS
+> 🛡️ **全协议支持**: VLESS (Reality/Vision) · VMESS · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS。
 
 ---
 
@@ -16,9 +16,7 @@
 
 ---
 
-## 🏠 按照家宽分类节点订阅 (住宅 IP 专区)
-
-> 家宽判定六重信号: ① ip-api.com `hosting` 字段 ② `mobile` 移动网络字段 ③ Cloudflare/主流 CDN Anycast 网段比对 ④ MaxMind GeoLite2 ASN 白/黑名单 (覆盖 60+ 国家主流民用运营商) ⑤ rDNS/ISP 名称特征 ⑥ Scamalytics 风控评分复核 (fraud ≥75 降级、≥90 剔除)。排除所有云主机/数据中心/CDN 任播, 保留真实民用宽带与移动网络。
+## 🏠 按照家宽分类节点订阅 
 
 | 家宽地区 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
 | :--- | :---: | :---: | :---: | :---: |
@@ -27,7 +25,7 @@
 
 ---
 
-## 🗺️ 按照国家分类节点订阅 (非家宽/数据中心节点)
+## 🗺️ 按照国家分类节点订阅 
 
 | 地区/国家 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
 | :--- | :---: | :---: | :---: | :---: |
