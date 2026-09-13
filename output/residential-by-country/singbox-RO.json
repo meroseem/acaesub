@@ -1,0 +1,44 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - aceo",
+      "server": "roma2.moritech.net",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "roma2.moritech.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

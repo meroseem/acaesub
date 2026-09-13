@@ -1,0 +1,122 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
+      "server": "172.64.32.108",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
+      "server": "185.207.197.123",
+      "server_port": 443,
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
+      "tls": {
+        "enabled": true,
+        "server_name": "notls.lukongtou.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo",
+      "server": "162.159.39.218",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - aceo",
+      "server": "62.233.39.9",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.dell.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - aceo",
+      "server": "94.198.220.183",
+      "server_port": 64674,
+      "method": "chacha20-ietf-poly1305",
+      "password": "s8LbJCgUiGXeCKVc63tHJP"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - aceo",
+      "server": "198.71.189.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime04.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

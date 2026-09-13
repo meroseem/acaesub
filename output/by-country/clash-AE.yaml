@@ -1,0 +1,111 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇪 阿联酋 (UAE) 01 - aceo
+  server: 31.56.189.27
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
+- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
+  server: 89.47.55.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  reality-opts:
+    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 85.204.107.183
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
+  server: upload.tbotapi.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
+  servername: upload.tbotapi.ru
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - aceo
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: edge
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇪 阿联酋 (UAE) 01 - aceo
+  - 🇦🇪 阿联酋 (UAE) 02 - aceo
+  - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
+  - 🇦🇪 阿联酋 (UAE) 05 - aceo
+  - 🇦🇪 阿联酋 (UAE) 06 - aceo
+  - 🇦🇪 阿联酋 (UAE) 07 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇪 阿联酋 (UAE) 01 - aceo
+  - 🇦🇪 阿联酋 (UAE) 02 - aceo
+  - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
+  - 🇦🇪 阿联酋 (UAE) 05 - aceo
+  - 🇦🇪 阿联酋 (UAE) 06 - aceo
+  - 🇦🇪 阿联酋 (UAE) 07 - aceo
+rules:
+- MATCH,PROXIES

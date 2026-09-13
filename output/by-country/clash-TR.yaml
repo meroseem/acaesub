@@ -1,0 +1,119 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - aceo
+  server: 104.17.169.13
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 156.67.63.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+  servername: sync-bridge.org
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  server: 188.132.237.20
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
+  server: shop.neexbyte.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  tls: true
+  servername: shop.neexbyte.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 05 - aceo
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 06 - aceo
+  server: 162.159.91.222
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  tls: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - aceo
+  server: 45.74.159.233
+  port: 56659
+  udp: true
+  type: vless
+  uuid: 12af43c3-84b4-4248-878b-b75f35835487
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0
+    short-id: 9aa3a3f599f3d5d0
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
+  - 🇹🇷 土耳其 (Turkey) 05 - aceo
+  - 🇹🇷 土耳其 (Turkey) 06 - aceo
+  - 🇹🇷 土耳其 (Turkey) 07 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
+  - 🇹🇷 土耳其 (Turkey) 05 - aceo
+  - 🇹🇷 土耳其 (Turkey) 06 - aceo
+  - 🇹🇷 土耳其 (Turkey) 07 - aceo
+rules:
+- MATCH,PROXIES
