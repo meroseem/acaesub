@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 188.132.174.236
-  port: 1080
+  server: 170.168.97.8
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 156.67.63.231
   port: 443
@@ -24,6 +31,13 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  server: 188.132.174.236
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -12,40 +12,8 @@
       "password": "shadowsocks"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 02 - aceo",
-      "server": "168.110.60.104",
-      "server_port": 18112,
-      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 03 - aceo",
-      "server": "149.22.87.240",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - aceo",
-      "server": "176.97.73.215",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ma6zc4JoLRJA"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 05 - aceo",
-      "server": "45.32.57.118",
-      "server_port": 4433,
-      "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - aceo",
       "server": "149.22.87.204",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -53,18 +21,34 @@
     },
     {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 07 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 03 - aceo",
+      "server": "45.32.57.118",
+      "server_port": 4433,
+      "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 04 - aceo",
       "server": "155.248.176.44",
       "server_port": 55216,
       "uuid": "154dbc39-0921-cf11-29bd-156c5000d763",
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - aceo",
-      "server": "156.231.113.153",
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 05 - aceo",
+      "server": "149.22.87.240",
       "server_port": 443,
-      "uuid": "3340c44a-042e-4dfd-b82c-33192d56ba98",
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - aceo",
+      "server": "154.31.114.248",
+      "server_port": 50159,
+      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -75,10 +59,39 @@
         },
         "reality": {
           "enabled": true,
+          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
+          "short_id": "091e1c5db8451757"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - aceo",
+      "server": "156.231.113.153",
+      "server_port": 443,
+      "uuid": "3340c44a-042e-4dfd-b82c-33192d56ba98",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
           "public_key": "h2GGazCHLBtmIUxiCxGUvsaEF8mGi8xFeCcI14sAJTI",
           "short_id": "4bbe62498d4cc3c9"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 08 - aceo",
+      "server": "176.97.73.215",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ma6zc4JoLRJA"
     },
     {
       "type": "vless",
@@ -102,239 +115,8 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 10 - aceo",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - aceo",
-      "server": "13.231.7.104",
-      "server_port": 24620,
-      "uuid": "b969ef8f-7bdb-474f-9481-d8f3c5686fb8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI",
-          "short_id": "db2cb3b3c2dbb711"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 12 - aceo",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - aceo",
-      "server": "154.31.114.248",
-      "server_port": 50159,
-      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
-          "short_id": "091e1c5db8451757"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - aceo",
-      "server": "3.114.220.22",
-      "server_port": 18007,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15 - aceo",
-      "server": "ntt.ddnnss.me",
-      "server_port": 443,
-      "uuid": "363d3f39-bed2-3b6a-b692-c7c3236c2b1c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "slack.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-xifNSQULgG36to_xCmk0u61ncHEJqNHklsiaRIxO1A",
-          "short_id": "f6c05c88"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - aceo",
-      "server": "jprbhhzalybqwjok.jiedddym.com",
-      "server_port": 49921,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1ejQLdV5c4EDRnsR56OJzNBRNE1SR59vF9ZR2FYTonI",
-          "short_id": "5a80eca0ce05a6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 17 - aceo",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "091ea5fd-4e8d-4459-90af-e4d10179efff",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - aceo",
-      "server": "3.114.220.22",
-      "server_port": 10583,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 19 - aceo",
-      "server": "104.21.61.154",
-      "server_port": 443,
-      "password": "624209bb-8216-45fe-bbe0-50132ec63162",
-      "tls": {
-        "enabled": true,
-        "server_name": "ot2.hyas.space",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/x7f9k2m4p8",
-        "headers": {
-          "Host": "ot2.hyas.space"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 20 - aceo",
-      "server": "104.21.33.59",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 21 - aceo",
-      "server": "137.220.221.179",
-      "server_port": 443,
-      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 22 - aceo",
-      "server": "3.114.220.22",
-      "server_port": 19645,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 23 - aceo",
       "server": "31.76.91.72",
       "server_port": 2087,
       "uuid": "524e00ce-ed89-481d-b4a4-6d7017f884e3",
@@ -357,8 +139,242 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 11 - aceo",
+      "server": "8.211.152.47",
+      "server_port": 443,
+      "password": "6219d77fdd9d4570d1c473de7f051c44",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.211.152.47",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "5c8f1a3e7b2d9046c1f8a5e3b7d04f2a"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 12 - aceo",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 13 - aceo",
+      "server": "8.209.217.129",
+      "server_port": 443,
+      "password": "20b7100438be713dc89876906214c5b1",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.209.217.129",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "5c8f1a3e7b2d9046c1f8a5e3b7d04f2a"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 14 - aceo",
+      "server": "103.115.18.43",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "DpCoJB6R8tYNe1LI"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 15 - aceo",
+      "server": "hyfnjp03.459292.xyz",
+      "server_port": 8443,
+      "password": "9b5ebb1c-5221-4381-850e-0b5eaac603e2",
+      "tls": {
+        "enabled": true,
+        "server_name": "localhost",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16 - aceo",
+      "server": "3.114.220.22",
+      "server_port": 10583,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 17 - aceo",
+      "server": "13.231.7.104",
+      "server_port": 24620,
+      "uuid": "b969ef8f-7bdb-474f-9481-d8f3c5686fb8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI",
+          "short_id": "db2cb3b3c2dbb711"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 18 - aceo",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 19 - aceo",
+      "server": "3.114.220.22",
+      "server_port": 18007,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
       "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 20 - aceo",
+      "server": "172.67.211.136",
+      "server_port": 443,
+      "password": "624209bb-8216-45fe-bbe0-50132ec63162",
+      "tls": {
+        "enabled": true,
+        "server_name": "ot2.hyas.space",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/x7f9k2m4p8",
+        "headers": {
+          "Host": "ot2.hyas.space"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 21 - aceo",
+      "server": "162.159.254.3",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 22 - aceo",
+      "server": "137.220.221.179",
+      "server_port": 443,
+      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 23 - aceo",
+      "server": "jprbhhzalybqwjok.jiedddym.com",
+      "server_port": 49921,
+      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1ejQLdV5c4EDRnsR56OJzNBRNE1SR59vF9ZR2FYTonI",
+          "short_id": "5a80eca0ce05a6"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 24 - aceo",
+      "server": "3.114.220.22",
+      "server_port": 19645,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 25 - aceo",
+      "server": "161.34.39.108",
+      "server_port": 443,
+      "password": "tsuchiya",
+      "tls": {
+        "enabled": true,
+        "server_name": "161.34.39.108",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 26 - aceo",
       "server": "161.34.39.108",
       "server_port": 443,
       "password": "tsuchiya",
@@ -370,8 +386,40 @@
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 25 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 27 - aceo",
       "server": "161.34.39.108",
+      "server_port": 443,
+      "password": "tsuchiya",
+      "tls": {
+        "enabled": true,
+        "server_name": "aa.ccmusic.jp",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 28 - aceo",
+      "server": "161.34.39.108",
+      "server_port": 443,
+      "password": "tsuchiya",
+      "tls": {
+        "enabled": true,
+        "server_name": "aa.ccmusic.jp",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 29 - aceo",
+      "server": "168.110.60.104",
+      "server_port": 18112,
+      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 30 - aceo",
+      "server": "aa.ccmusic.jp",
       "server_port": 443,
       "password": "tsuchiya",
       "tls": {
@@ -409,7 +457,12 @@
         "🇯🇵 日本 (Japan) 22 - aceo",
         "🇯🇵 日本 (Japan) 23 - aceo",
         "🇯🇵 日本 (Japan) 24 - aceo",
-        "🇯🇵 日本 (Japan) 25 - aceo"
+        "🇯🇵 日本 (Japan) 25 - aceo",
+        "🇯🇵 日本 (Japan) 26 - aceo",
+        "🇯🇵 日本 (Japan) 27 - aceo",
+        "🇯🇵 日本 (Japan) 28 - aceo",
+        "🇯🇵 日本 (Japan) 29 - aceo",
+        "🇯🇵 日本 (Japan) 30 - aceo"
       ]
     },
     {
@@ -440,7 +493,12 @@
         "🇯🇵 日本 (Japan) 22 - aceo",
         "🇯🇵 日本 (Japan) 23 - aceo",
         "🇯🇵 日本 (Japan) 24 - aceo",
-        "🇯🇵 日本 (Japan) 25 - aceo"
+        "🇯🇵 日本 (Japan) 25 - aceo",
+        "🇯🇵 日本 (Japan) 26 - aceo",
+        "🇯🇵 日本 (Japan) 27 - aceo",
+        "🇯🇵 日本 (Japan) 28 - aceo",
+        "🇯🇵 日本 (Japan) 29 - aceo",
+        "🇯🇵 日本 (Japan) 30 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

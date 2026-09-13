@@ -4,23 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇿 阿塞拜疆 (Azerbaijan) 01 - aceo
-  server: basalam.horqen.ir
-  port: 21289
+- name: 🇹🇭 泰国 (Thailand) 01 - aceo
+  server: 103.86.49.57
+  port: 80
   udp: true
   type: vless
-  uuid: c12db015-a63c-43e5-a744-6398a90373b5
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇿 阿塞拜疆 (Azerbaijan) 01 - aceo
+  - 🇹🇭 泰国 (Thailand) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇿 阿塞拜疆 (Azerbaijan) 01 - aceo
+  - 🇹🇭 泰国 (Thailand) 01 - aceo
 rules:
 - MATCH,PROXIES

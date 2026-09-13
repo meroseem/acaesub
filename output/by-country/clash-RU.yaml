@@ -5,17 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 104.18.46.234
-  port: 8080
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: msk.frkn.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 147.78.182.3
   port: 8443
   udp: true
@@ -29,48 +41,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 130.49.189.158
-  port: 43558
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 185.39.204.3
+  port: 8098
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  password: PluSKSrbtxTvlVv7BOUwn4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +58,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,6 +68,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 rules:
 - MATCH,PROXIES

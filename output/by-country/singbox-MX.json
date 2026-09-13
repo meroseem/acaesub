@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - aceo",
-      "server": "basalam.horqen.ir",
-      "server_port": 21289,
-      "uuid": "c12db015-a63c-43e5-a744-6398a90373b5"
+      "type": "shadowsocks",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - aceo",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - aceo"
+        "🇲🇽 墨西哥 (Mexico) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - aceo"
+        "🇲🇽 墨西哥 (Mexico) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
