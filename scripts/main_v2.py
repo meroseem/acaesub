@@ -61,8 +61,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://ips.gaoji.uk/best_ips.txt",
-    "https://raw.githubusercontent.com/svip-s/cloudflare_ip/refs/heads/main/best_ips.txt",
+    "https://raw.githubusercontent.com/wt20230521/wtw20230521/main/ips-v4.txt",
+    "https://gh-proxy.org/https://raw.githubusercontent.com/wt20230521/wtw20230521/main/ips-v4.txt",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
 ]
