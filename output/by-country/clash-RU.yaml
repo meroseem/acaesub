@@ -5,23 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 172.67.218.38
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: daf485ba-60fc-4166-a72c-8d2a5407cbc5
+  network: ws
+  ws-opts:
+    path: /vl/zM8ELyqEIYeZ3ijacV9kuK?ed
+    headers:
+      Host: kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 104.21.29.250
   port: 443
   udp: true
   type: trojan
-  password: Telegram_healer_config
-  sni: 1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev
-  skip-cert-verify: true
+  password: LcICDcp!jD9TFV$NbH
+  sni: dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tr/dxyX388XOtyAjF3A?ed=2560
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 195.133.23.200
-  port: 50111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
+    path: /tr/pg4wM48V9O859nmqsJg22EOFKN4S570y?ed=2560
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 195.58.48.137
   port: 50111
@@ -30,12 +34,13 @@ proxies:
   cipher: aes-256-gcm
   password: 8ad9d72a5571df86
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 195.133.5.102
-  port: 50111
+  server: msk.frkn.org
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: 130.49.189.158
   port: 43558
@@ -44,45 +49,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
 - name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: msk.frkn.org
+  server: 46.8.200.91
   port: 443
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  server: 31.76.71.252
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  server: 78.159.247.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  tls: true
-  servername: sb2.hat.onl
-  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,9 +74,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,8 +85,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 rules:
 - MATCH,PROXIES

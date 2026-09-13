@@ -10,19 +10,9 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - aceo
-  server: roma2.moritech.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: roma2.moritech.net
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
-  server: hinet1.2yly.com
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  server: 118.167.209.5
   port: 24215
   udp: true
   type: vless
@@ -31,22 +21,20 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES
