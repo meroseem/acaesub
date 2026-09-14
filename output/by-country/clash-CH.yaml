@@ -12,33 +12,17 @@ proxies:
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  server: 151.242.2.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf9.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf9.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 02 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - aceo
-  server: 104.16.71.213
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 02 - aceo
+  server: 188.114.96.3
   port: 443
   udp: true
   type: trojan
@@ -21,11 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
 rules:
 - MATCH,PROXIES
