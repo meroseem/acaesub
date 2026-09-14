@@ -6,27 +6,24 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "185.87.24.4",
-      "server_port": 2085,
-      "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
-      "server": "shop.neexbyte.ir",
-      "server_port": 8443,
-      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
       "tls": {
         "enabled": true,
-        "server_name": "shop.neexbyte.ir",
-        "insecure": false
+        "server_name": "global.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "BechBad.global.ssl.fastly.net"
+        }
       }
     },
     {
@@ -34,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 65.109.215.118
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 144.31.7.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1251856f-1e0a-4c5f-99d3-c2d123edc755
-  tls: true
-  servername: cdn-582.spliceflowtech.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 144.31.90.65
   port: 443
   udp: true
@@ -37,6 +17,19 @@ proxies:
     short-id: 00a61d55a07de885
   servername: fl.convert-flow.net
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 188.132.237.20
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: 65.109.215.118
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select
