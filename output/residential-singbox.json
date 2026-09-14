@@ -4,35 +4,36 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - aceo",
+      "server": "170.168.99.8",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.steamstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
       "server": "r3mrcg001287h3p.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - aceo",
-      "server": "116.204.164.60",
-      "server_port": 7443,
-      "uuid": "fc85cf23-75e6-4b91-b468-8adc9407047b",
-      "tls": {
-        "enabled": true,
-        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
-        }
-      }
     },
     {
       "type": "hysteria2",
@@ -43,7 +44,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hk01.kfc-520.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -51,8 +52,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇯🇵 日本 (Japan) 02 (家宽) - aceo",
+        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo"
       ]
     },
@@ -60,8 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇯🇵 日本 (Japan) 02 (家宽) - aceo",
+        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"

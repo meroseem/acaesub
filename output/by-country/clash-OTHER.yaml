@@ -1,0 +1,69 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: 104.21.67.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 7-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 7-m20.be434a1f-0c04-40c9-a43a-87cc7d7da502.kdns.fr
+- name: 🌐 其他地区 (Other) 02 - aceo
+  server: 172.67.139.129
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 7-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
+- name: 🌐 其他地区 (Other) 03 - aceo
+  server: 104.25.99.169
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-60c86b8747e5
+  tls: true
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
+  - 🌐 其他地区 (Other) 03 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
+  - 🌐 其他地区 (Other) 03 - aceo
+rules:
+- MATCH,PROXIES

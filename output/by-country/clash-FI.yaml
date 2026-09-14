@@ -5,25 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 5.61.91.221
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03446511-2806-0021-b02f-f10d2d3a33c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 4a7b1c8d
-  servername: cdn-up.perecbass.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 65.109.215.118
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 188.132.237.20
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 185.79.138.71
   port: 448
@@ -36,12 +29,6 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 188.132.237.20
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +45,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 rules:
 - MATCH,PROXIES

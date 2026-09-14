@@ -4,8 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
+      "server": "185.87.24.4",
+      "server_port": 2085,
+      "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
       "server": "188.132.174.236",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -13,28 +24,60 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
-      "server": "158.94.216.50",
-      "server_port": 32306,
-      "uuid": "f1505323-ecb6-4152-9a5b-d37b3ae1cacf",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "156.67.63.231",
+      "server_port": 443,
+      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
+        "server_name": "sync-bridge.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA",
-          "short_id": "61614f026070554f"
+          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
+          "short_id": "5606d4a25c99e7af"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
-      "server": "172.67.134.170",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - aceo",
+      "server": "add.life-pro.ir",
+      "server_port": 8082,
+      "uuid": "79f98593-6a21-4783-a425-3d5609a79df1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - aceo",
+      "server": "170.168.97.8",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - aceo",
+      "server": "172.67.151.109",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
       "tls": {
@@ -51,13 +94,25 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - aceo",
+      "server": "188.132.174.236",
+      "server_port": 2086,
+      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
         "🇹🇷 土耳其 (Turkey) 02 - aceo",
-        "🇹🇷 土耳其 (Turkey) 03 - aceo"
+        "🇹🇷 土耳其 (Turkey) 03 - aceo",
+        "🇹🇷 土耳其 (Turkey) 04 - aceo",
+        "🇹🇷 土耳其 (Turkey) 05 - aceo",
+        "🇹🇷 土耳其 (Turkey) 06 - aceo",
+        "🇹🇷 土耳其 (Turkey) 07 - aceo"
       ]
     },
     {
@@ -66,7 +121,11 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
         "🇹🇷 土耳其 (Turkey) 02 - aceo",
-        "🇹🇷 土耳其 (Turkey) 03 - aceo"
+        "🇹🇷 土耳其 (Turkey) 03 - aceo",
+        "🇹🇷 土耳其 (Turkey) 04 - aceo",
+        "🇹🇷 土耳其 (Turkey) 05 - aceo",
+        "🇹🇷 土耳其 (Turkey) 06 - aceo",
+        "🇹🇷 土耳其 (Turkey) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
