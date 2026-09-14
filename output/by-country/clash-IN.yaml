@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: vpn-in-001.fastervpn.world
+  server: 65.2.178.161
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 02 - aceo
   server: 65.2.191.73
@@ -21,13 +21,17 @@ proxies:
   sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - aceo
-  server: 65.2.178.161
-  port: 443
+  server: 194.61.31.126
+  port: 2053
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

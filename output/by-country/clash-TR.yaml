@@ -5,31 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 199.232.78.159
+  server: 156.67.63.231
   port: 443
   udp: true
   type: vless
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  flow: xtls-rprx-vision
   tls: true
-  servername: global.fastly.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BechBad.global.ssl.fastly.net
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+  servername: sync-bridge.org
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 188.132.174.236
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
 rules:
 - MATCH,PROXIES

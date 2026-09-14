@@ -15,16 +15,8 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
-  client-fingerprint: randomized
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -45,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
 rules:
 - MATCH,PROXIES

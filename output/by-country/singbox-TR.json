@@ -6,39 +6,47 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "199.232.78.159",
+      "server": "156.67.63.231",
       "server_port": 443,
-      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
+      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true,
+        "server_name": "sync-bridge.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "BechBad.global.ssl.fastly.net"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
+          "short_id": "5606d4a25c99e7af"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "188.132.174.236",
+      "server_port": 2086,
+      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
