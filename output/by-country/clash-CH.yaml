@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn2950.bbxff.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
   server: 104.165.205.40
   port: 8443
   udp: true
@@ -31,7 +12,15 @@ proxies:
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  server: 104.165.205.42
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: 104.165.205.42
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
   server: 104.21.200.243
   port: 2053
   udp: true
@@ -46,7 +35,7 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2584.vjvdgbc.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 151.242.2.81
   port: 443
   udp: true
@@ -69,7 +58,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +67,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 05 - aceo
 rules:
 - MATCH,PROXIES

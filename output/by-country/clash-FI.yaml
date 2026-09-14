@@ -12,23 +12,31 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 188.132.237.20
-  port: 2095
+  server: 144.31.7.182
+  port: 443
   udp: true
   type: vless
-  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+  uuid: 1251856f-1e0a-4c5f-99d3-c2d123edc755
+  tls: true
+  servername: cdn-582.spliceflowtech.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 185.79.138.71
-  port: 448
+  server: 144.31.90.65
+  port: 443
   udp: true
   type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  uuid: 3a22ca95-bd99-4c6b-a799-f8f73930ea05
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: fl.convert-flow.net
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
