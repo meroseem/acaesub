@@ -5,6 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
+  server: 104.17.147.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  tls: true
+  servername: ez-5faafb.esmaoi.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 172.64.153.235
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  tls: true
+  servername: socks5.revil-time3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /socks5://128.140.46.169:13482
+    headers:
+      Host: socks5.revil-time3.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 185.39.204.3
+  port: 8098
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PluSKSrbtxTvlVv7BOUwn4
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -12,7 +55,7 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -24,21 +67,20 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 46.8.200.91
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 147.78.182.3
+  port: 8443
   udp: true
   type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
   tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
+  reality-opts:
+    public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
+  servername: dl.kaspersky.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +89,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +101,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
 rules:
 - MATCH,PROXIES

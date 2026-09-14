@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "172.64.150.28",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+      "server": "hk01.kfc-520.com",
+      "server_port": 60001,
+      "password": "49f7ff21-a176-30cc-ab60-a5988fd85ce0",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
+        "server_name": "hk01.kfc-520.com",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

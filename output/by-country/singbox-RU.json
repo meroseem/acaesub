@@ -4,8 +4,69 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
+      "server": "104.17.147.22",
+      "server_port": 443,
+      "uuid": "518de0d4-6ce8-4404-80db-23c4a8806128",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-5faafb.esmaoi.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ez-5faafb.esmaoi.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "server": "172.64.153.235",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tls": {
+        "enabled": true,
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5://128.140.46.169:13482",
+        "headers": {
+          "Host": "socks5.revil-time3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "server": "185.39.204.3",
+      "server_port": 8098,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PluSKSrbtxTvlVv7BOUwn4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -17,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -37,25 +98,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
+      "server": "147.78.182.3",
+      "server_port": 8443,
+      "uuid": "8bf3e040-8ac9-5d0e-304f-9b735e145de8",
       "tls": {
         "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false,
+        "server_name": "dl.kaspersky.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/casc",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -65,7 +127,11 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ]
     },
     {
@@ -74,7 +140,11 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
