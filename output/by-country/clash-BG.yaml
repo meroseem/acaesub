@@ -13,9 +13,22 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  server: prep.wwwinternetvideo.click
+  server: 193.148.59.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
@@ -26,7 +39,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
 rules:
 - MATCH,PROXIES
