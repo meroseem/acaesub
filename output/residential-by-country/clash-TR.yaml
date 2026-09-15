@@ -4,14 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  server: 36.224.152.189
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - aceo
+- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) R62 - aceo
   server: 172.67.151.109
   port: 443
   udp: true
@@ -30,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - aceo
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) R62 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - aceo
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) R62 - aceo
 rules:
 - MATCH,PROXIES

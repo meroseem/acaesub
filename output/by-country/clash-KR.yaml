@@ -13,6 +13,30 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
+  server: 146.56.112.110
+  port: 8888
+  udp: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 03 - aceo
+  server: 3.36.93.74
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - aceo
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -24,23 +48,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 03 - aceo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - aceo
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -53,28 +62,20 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 141.164.45.187
-  port: 6679
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  server: 211.178.105.134
+  port: 6123
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
-  server: 146.56.112.110
-  port: 8888
-  udp: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 08 - aceo
-  server: 3.36.93.74
-  port: 443
+  server: 152.70.237.123
+  port: 2053
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - aceo
   server: 151.245.106.49
@@ -89,20 +90,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 10 - aceo
+  server: vpn-kr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 - aceo
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: css.rbxcdn.com
+  sni: 152.67.200.82
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - aceo
-  server: 141.164.45.187
-  port: 5498
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
 proxy-groups:
 - name: PROXIES
   type: select
