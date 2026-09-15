@@ -10,34 +10,18 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - aceo
-  server: 172.67.151.109
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
-  tls: true
-  servername: jdzit4e4urks.xwzohsebujps.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
-    headers:
-      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (家宽) R62 - aceo
 rules:
 - MATCH,PROXIES

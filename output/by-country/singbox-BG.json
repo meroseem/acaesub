@@ -13,9 +13,13 @@
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       }
     },
@@ -31,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -41,12 +45,58 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+      "server": "108.165.233.223",
+      "server_port": 443,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - aceo",
+      "server": "prep.wwwinternetvideo.click",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - aceo"
       ]
     },
     {
@@ -54,7 +104,9 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

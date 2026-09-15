@@ -24,18 +24,18 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 144.31.90.72
+  server: fl.windconnect.pro
   port: 443
   udp: true
   type: vless
-  uuid: 4360f941-b541-43d4-8507-2de3763e0cfd
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: fl.convert-flow.net
-  client-fingerprint: qq
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  servername: fl.windconnect.pro
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
   server: 31.77.199.182
   port: 443
@@ -49,6 +49,21 @@ proxies:
     short-id: abcd1234
   servername: fi2.yservice.help
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+  server: 151.101.56.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  tls: true
+  servername: global.fastly.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +73,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +83,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES

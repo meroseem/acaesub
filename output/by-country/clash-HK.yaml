@@ -5,13 +5,69 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 172.64.158.146
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 172.64.52.6
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 162.159.48.32
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  server: 103.136.150.95
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XTy3WkCf95LVBY7x
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   server: 46.17.42.166
   port: 50111
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   server: 162.128.157.164
   port: 443
   udp: true
@@ -23,47 +79,63 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 202.146.222.89
-  port: 443
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  server: hk-1.gsafevpnapi.com
+  port: 20270
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  type: vless
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
+  sni: https://t.me/wangcai2рҹү
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 202.146.222.174
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  server: 119.246.1.143
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  type: trojan
+  password: BxceQaOe
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: nomino.11hi8itbaf.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  server: www.wto.org
   port: 443
   udp: true
-  type: vmess
-  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   tls: true
-  servername: nomino.11hi8itbaf.workers.dev
+  servername: hk.152568.xyz
   skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /yoga-suggesting-recording-calls.trycloudflare.com/3aa71202-a099-49c1-99fc-6662f3335369-vm
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: nomino.11hi8itbaf.workers.dev
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +147,13 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +165,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
 rules:
 - MATCH,PROXIES

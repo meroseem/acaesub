@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+      "server": "194.87.196.13",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "4938e975724d0ed1"
     },
     {
       "type": "hysteria2",
@@ -24,8 +24,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -44,13 +52,23 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "81.163.27.63",
+      "server_port": 30269,
+      "method": "aes-256-gcm",
+      "password": "Istocnik-@V2SPEED_VPNS"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
       ]
     },
     {
@@ -59,7 +77,9 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

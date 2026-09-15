@@ -5,40 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  server: 131.123.25.4
+  server: 45.90.59.15
   port: 443
   udp: true
   type: vless
-  uuid: 4360f941-b541-02f4-8507-2de3763e0cfd
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: fr.convert-flow.net
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  server: 89.105.206.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4360f941-b541-02f0-8507-2de3763e0cfd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
   server: 104.165.205.42
   port: 8443
   udp: true
   type: hysteria2
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
   server: 151.242.2.81
   port: 443
   udp: true
@@ -47,7 +34,7 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live
@@ -61,7 +48,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +56,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 rules:
 - MATCH,PROXIES

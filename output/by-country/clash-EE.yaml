@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 104.24.31.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 94.183.170.135
   port: 443
   udp: true
@@ -28,15 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -45,6 +22,21 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+  server: ee.shamanapp.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +45,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +53,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
 rules:
 - MATCH,PROXIES
