@@ -12,8 +12,16 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -32,46 +40,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
-      "server": "130.49.77.4",
-      "server_port": 8443,
-      "uuid": "0ab925b6-35f7-6e27-e713-925bea65455e",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - aceo",
         "🇪🇸 西班牙 (Spain) 02 - aceo",
-        "🇪🇸 西班牙 (Spain) 03 - aceo",
-        "🇪🇸 西班牙 (Spain) 04 - aceo"
+        "🇪🇸 西班牙 (Spain) 03 - aceo"
       ]
     },
     {
@@ -80,8 +55,7 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - aceo",
         "🇪🇸 西班牙 (Spain) 02 - aceo",
-        "🇪🇸 西班牙 (Spain) 03 - aceo",
-        "🇪🇸 西班牙 (Spain) 04 - aceo"
+        "🇪🇸 西班牙 (Spain) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

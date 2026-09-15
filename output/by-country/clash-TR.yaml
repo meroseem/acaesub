@@ -5,18 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 151.241.226.201
-  port: 2053
+  server: 144.225.65.173
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 144.225.65.173
+  port: 29199
+  udp: true
+  type: vmess
+  uuid: de2afab2-344b-413f-93a9-5e62c8e219d5
+  alterId: 0
+  cipher: auto
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  server: 107.161.174.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
+  servername: books.blackbigdog.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
   server: 156.67.63.231
   port: 443
   udp: true
@@ -36,6 +53,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +62,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
 rules:
 - MATCH,PROXIES

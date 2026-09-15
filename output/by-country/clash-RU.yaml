@@ -5,42 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 195.133.23.200
-  port: 7018
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 194.87.196.13
-  port: 7018
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 195.133.5.102
   port: 7018
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 195.58.48.137
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 195.133.23.200
   port: 7018
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: srv-17e124.21freedom.net
-  port: 11592
+  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -48,18 +33,27 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 195.58.48.137
+  port: 7018
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 46.8.200.91
+  port: 443
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,7 +65,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +76,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
 rules:
 - MATCH,PROXIES
