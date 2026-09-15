@@ -12,18 +12,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 31.77.199.182
-  port: 443
+  server: 65.109.205.148
+  port: 9097
   udp: true
   type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: chrome
+  uuid: Channel:telegram:TurboConfigs
+  network: h2
+  h2-opts:
+    host: []
+    path: /
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 185.79.138.71
   port: 448
@@ -37,6 +34,19 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: 31.77.199.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: fl.windconnect.pro
   port: 443
   udp: true
@@ -58,6 +68,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +78,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES

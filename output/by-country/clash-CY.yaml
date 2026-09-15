@@ -17,6 +17,21 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  server: 194.76.155.80
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 826f4c26-5e01-472d-a1f1-1bd8e2cb25fb
+  tls: true
+  reality-opts:
+    public-key: 3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic
+    short-id: e496c7fe1cefc9ff
+  servername: deepl.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rex-grpc
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
   server: 45.9.2.171
   port: 8443
   udp: true
@@ -29,7 +44,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
   server: 131.123.25.4
   port: 443
   udp: true
@@ -42,19 +57,6 @@ proxies:
     short-id: 00a61d55a07de885
   servername: fr.convert-flow.net
   client-fingerprint: qq
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
-  server: 5.253.42.164
-  port: 40443
-  udp: true
-  type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 05 - aceo
   server: 5.253.42.163
   port: 40443
@@ -67,20 +69,20 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 06 - aceo
-  server: 5.253.30.99
+  server: 5.253.28.242
   port: 40443
   udp: true
   type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

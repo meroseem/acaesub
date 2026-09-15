@@ -17,32 +17,17 @@ proxies:
     short-id: 00a61d55a07de885
   servername: fr.convert-flow.net
   client-fingerprint: qq
-- name: 🇲🇩 摩尔多瓦 (Moldova) 02 - aceo
-  server: 31.59.150.174
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-    short-id: a1b2c3d4
-  servername: hotcoals.aeternavpn.space
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
-  - 🇲🇩 摩尔多瓦 (Moldova) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
-  - 🇲🇩 摩尔多瓦 (Moldova) 02 - aceo
 rules:
 - MATCH,PROXIES

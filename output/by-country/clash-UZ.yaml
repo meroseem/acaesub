@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - aceo
-  server: 104.24.31.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - aceo
   server: 189.74.97.47
   port: 2087
   udp: true
@@ -28,8 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /755276b33b6f
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 03 - aceo
-  server: 172.67.210.146
+- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - aceo
+  server: 104.25.155.45
   port: 443
   udp: true
   type: vless
@@ -50,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - aceo
   - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - aceo
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - aceo
   - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - aceo
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 03 - aceo
 rules:
 - MATCH,PROXIES

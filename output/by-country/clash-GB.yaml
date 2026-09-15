@@ -5,48 +5,51 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - aceo
-  server: 149.102.132.184
-  port: 80
+  server: 162.159.152.4
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 - name: 🇬🇧 英国 (United Kingdom) 02 - aceo
-  server: 94.156.250.148
-  port: 7001
+  server: 66.81.247.155
+  port: 2083
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: vless
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  tls: true
+  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /OAZko425kNFF0PpQ
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 03 - aceo
-  server: 158.173.24.73
-  port: 443
+  server: 172.67.208.235
+  port: 2096
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  tls: true
+  servername: courses.mftplus.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: courses.mftplus.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 04 - aceo
-  server: 149.102.149.207
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
   server: 66.90.105.210
   port: 2083
   udp: true
@@ -55,14 +58,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
-  server: 129.151.69.214
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5Mugk0D+By809yuKRT7iJbLeu37gwDKouQWai+3oCYk=
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
   server: 66.90.104.42
   port: 2083
   udp: true
@@ -71,7 +67,49 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
+  server: 149.102.132.184
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+  server: 149.102.149.207
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+  server: 149.102.132.184
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 10 - aceo
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+  server: 129.151.69.214
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5Mugk0D+By809yuKRT7iJbLeu37gwDKouQWai+3oCYk=
+- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -83,7 +121,28 @@ proxies:
     short-id: b3f7e7bbf581f6fc
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
+  server: 13.40.130.216
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-uk-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
+  server: 138.124.125.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: 72cceb78
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
   server: 78.129.208.44
   port: 421
   udp: true
@@ -96,67 +155,7 @@ proxies:
     short-id: a1facbc8575701ae
   servername: chistomat.dry.care
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
-  server: 46.33.8.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6806dc9a-8f5c-4981-b64d-3527b9522b62
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
-    short-id: a61d99e920140145
-  servername: filesconvert.org
-  client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
-  server: 13.40.130.216
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
-  server: 51.38.70.192
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  tls: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-    short-id: 98fa0b00d09419f7
-  servername: play.google.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
-  server: 138.124.125.211
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: 72cceb78
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 16 - aceo
-  server: 144.31.243.2
-  port: 16015
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: J1InuU6QRT5JOh1mQfkjU2
-- name: 🇬🇧 英国 (United Kingdom) 17 - aceo
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 18 - aceo
   server: 95.154.196.61
   port: 443
   udp: true
@@ -168,21 +167,16 @@ proxies:
     public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
     short-id: e4a1b53b03eff60d
   servername: strapi.io
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 19 - aceo
-  server: 5.152.223.97
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 17 - aceo
+  server: vpn-uk-002.fastervpn.world
   port: 443
   udp: true
-  type: vless
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 20 - aceo
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-uk-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 18 - aceo
   server: 129.121.95.159
   port: 443
   udp: true
@@ -197,31 +191,15 @@ proxies:
     path: /connect
     headers:
       Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 21 - aceo
-  server: 2.27.205.59
+- name: 🇬🇧 英国 (United Kingdom) 19 - aceo
+  server: labs.frkn.org
   port: 443
   udp: true
-  type: vless
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth8.lunariai.ru
-- name: 🇬🇧 英国 (United Kingdom) 22 - aceo
-  server: 31.76.7.154
-  port: 7443
-  udp: true
-  type: vless
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: ya.ru
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 23 - aceo
+  type: hysteria2
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+  sni: labs.frkn.org
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - aceo
   server: 31.76.88.10
   port: 443
   udp: true
@@ -236,19 +214,29 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf5.rumedia-cdn.com
-- name: 🇬🇧 英国 (United Kingdom) 24 - aceo
-  server: 46.250.250.149
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 21 - aceo
+  server: 144.31.243.2
+  port: 16015
   udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 25 - aceo
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: J1InuU6QRT5JOh1mQfkjU2
+- name: 🇬🇧 英国 (United Kingdom) 22 - aceo
+  server: 158.173.221.214
+  port: 11001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 23 - aceo
+  server: 66.163.117.58
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 24 - aceo
   server: 193.163.203.170
   port: 443
   udp: true
@@ -261,22 +249,60 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 26 - aceo
-  server: 66.163.117.58
-  port: 22324
+- name: 🇬🇧 英国 (United Kingdom) 25 - aceo
+  server: 46.250.250.149
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 27 - aceo
-  server: 158.173.221.214
-  port: 11001
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 26 - aceo
+  server: 149.102.149.207
+  port: 80
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 27 - aceo
+  server: 51.38.70.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  tls: true
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: 98fa0b00d09419f7
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 28 - aceo
+  server: 2.27.205.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇬🇧 英国 (United Kingdom) 29 - aceo
+  server: 46.33.8.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6806dc9a-8f5c-4981-b64d-3527b9522b62
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+    short-id: a61d99e920140145
+  servername: filesconvert.org
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 30 - aceo
   server: 87.117.234.19
   port: 443
   udp: true
@@ -288,20 +314,7 @@ proxies:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
   servername: strapi.io
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 29 - aceo
-  server: 87.239.249.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  servername: www.foxsports.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -336,6 +349,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 27 - aceo
   - 🇬🇧 英国 (United Kingdom) 28 - aceo
   - 🇬🇧 英国 (United Kingdom) 29 - aceo
+  - 🇬🇧 英国 (United Kingdom) 30 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -370,5 +384,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 27 - aceo
   - 🇬🇧 英国 (United Kingdom) 28 - aceo
   - 🇬🇧 英国 (United Kingdom) 29 - aceo
+  - 🇬🇧 英国 (United Kingdom) 30 - aceo
 rules:
 - MATCH,PROXIES

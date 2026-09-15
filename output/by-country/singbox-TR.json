@@ -4,60 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "188.132.174.236",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
-      "server": "107.161.174.26",
-      "server_port": 443,
-      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
+      "server": "104.17.169.13",
+      "server_port": 2053,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
       "tls": {
         "enabled": true,
-        "server_name": "books.blackbigdog.com",
+        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/axch1mttbxz2k55y01",
         "headers": {
-          "Host": "BechBad.global.ssl.fastly.net"
+          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - aceo",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -78,8 +52,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - aceo",
-      "server": "172.67.134.170",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "172.67.151.109",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
       "tls": {
@@ -96,6 +70,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - aceo",
+      "server": "188.132.174.236",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -103,8 +85,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
         "🇹🇷 土耳其 (Turkey) 02 - aceo",
         "🇹🇷 土耳其 (Turkey) 03 - aceo",
-        "🇹🇷 土耳其 (Turkey) 04 - aceo",
-        "🇹🇷 土耳其 (Turkey) 05 - aceo"
+        "🇹🇷 土耳其 (Turkey) 04 - aceo"
       ]
     },
     {
@@ -114,8 +95,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
         "🇹🇷 土耳其 (Turkey) 02 - aceo",
         "🇹🇷 土耳其 (Turkey) 03 - aceo",
-        "🇹🇷 土耳其 (Turkey) 04 - aceo",
-        "🇹🇷 土耳其 (Turkey) 05 - aceo"
+        "🇹🇷 土耳其 (Turkey) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

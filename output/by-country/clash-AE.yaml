@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
-  server: 45.130.125.201
-  port: 80
+  server: 31.58.181.88
+  port: 8443
   udp: true
   type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: 31.56.189.27
   port: 2087
@@ -29,18 +30,6 @@ proxies:
   grpc-opts:
     grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b8fca50e-e3bb-4ae2-a44e-bde0e0495b2e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -50,30 +39,30 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: 85.204.107.177
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
-  server: 2.26.91.98
-  port: 1443
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
+  server: 116.204.164.27
+  port: 7443
   udp: true
   type: vless
-  uuid: 487273f5-4aeb-4631-b197-2e169dffc285
+  uuid: c82e5af9-5fef-4fdd-9454-2682873e1563
   tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 07 - aceo
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -82,8 +71,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,7 +82,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
   - 🇦🇪 阿联酋 (UAE) 05 - aceo
   - 🇦🇪 阿联酋 (UAE) 06 - aceo
-  - 🇦🇪 阿联酋 (UAE) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,6 +93,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
   - 🇦🇪 阿联酋 (UAE) 05 - aceo
   - 🇦🇪 阿联酋 (UAE) 06 - aceo
-  - 🇦🇪 阿联酋 (UAE) 07 - aceo
 rules:
 - MATCH,PROXIES
