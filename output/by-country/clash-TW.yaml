@@ -18,18 +18,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 35.229.136.113
-  port: 35412
+  server: 104.199.134.231
+  port: 28364
   udp: true
   type: vless
-  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
-    short-id: 0630b874d595
-  servername: www.amd.com
-  client-fingerprint: chrome
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
+  servername: www.sony.com
+  client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   server: 35.194.157.16
   port: 43450
@@ -44,39 +44,39 @@ proxies:
   servername: www.amd.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: 104.199.134.231
-  port: 28364
-  udp: true
-  type: vless
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - aceo
-  server: 35.201.163.218
-  port: 30837
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
+  server: 35.221.158.209
+  port: 32981
   udp: true
   type: vless
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: ios
+  client-fingerprint: random
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - aceo
+  server: 35.229.136.113
+  port: 35412
+  udp: true
+  type: vless
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
+  client-fingerprint: random
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - aceo
   server: 104.199.219.172
   port: 40800
@@ -89,18 +89,31 @@ proxies:
     public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
     short-id: 186e4c2732d61a3d
   servername: www.intel.com
-  client-fingerprint: random
+  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 08 - aceo
-  server: 35.221.158.209
-  port: 32981
+  server: 34.80.164.239
+  port: 21776
   udp: true
   type: vless
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - aceo
+  server: 35.201.163.218
+  port: 30837
+  udp: true
+  type: vless
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
   servername: www.sony.com
   client-fingerprint: firefox
 proxy-groups:
@@ -116,6 +129,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 06 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 07 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 08 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,5 +143,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 06 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 07 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 08 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 09 - aceo
 rules:
 - MATCH,PROXIES

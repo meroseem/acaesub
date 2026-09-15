@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 149.22.87.240
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
@@ -20,13 +20,20 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇯🇵 日本 (Japan) 03 - aceo
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - aceo
+  server: jp-2.gsafevpnapi.com
+  port: 31870
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+- name: 🇯🇵 日本 (Japan) 05 - aceo
   server: 168.110.60.104
   port: 18112
   udp: true
@@ -34,13 +41,6 @@ proxies:
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 05 - aceo
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 06 - aceo
   server: 154.31.114.248
   port: 50159
@@ -53,39 +53,39 @@ proxies:
     public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 47.74.3.200
+  server: 149.22.87.240
   port: 443
   udp: true
-  type: vless
-  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
-    short-id: ab3b914f0c9d9de5
-  servername: www.logitech.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 08 - aceo
-  server: 138.3.208.26
-  port: 50160
+  server: 168.138.43.75
+  port: 80
   udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
 - name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: mszz.mangshe.xyz
-  port: 20061
+  server: 172.111.146.64
+  port: 80
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  network: ws
+  ws-opts:
+    path: /vless/
 - name: 🇯🇵 日本 (Japan) 10 - aceo
-  server: 3.114.220.22
-  port: 19645
+  server: 103.75.118.228
+  port: 11452
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -95,23 +95,28 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 11 - aceo
-  server: 210.152.85.154
-  port: 19364
+  server: jp-1.gsafevpnapi.com
+  port: 20270
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  servername: www.yahoo.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 12 - aceo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 13 - aceo
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -123,19 +128,15 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 13 - aceo
-  server: 172.111.146.64
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 14 - aceo
+  server: 84.247.155.196
   port: 80
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇯🇵 日本 (Japan) 14 - aceo
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 15 - aceo
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -147,26 +148,62 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 15 - aceo
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 16 - aceo
+  server: 18.183.215.124
+  port: 28573
+  udp: true
+  type: vless
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 17 - aceo
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 18 - aceo
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 19 - aceo
+  server: 207.148.99.230
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /test/company/library?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 20 - aceo
   server: 137.220.221.179
   port: 443
   udp: true
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 16 - aceo
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  udp: true
-  type: vless
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  tls: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-    short-id: 28500ae15838f905
-  servername: www.yahoo.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 17 - aceo
+- name: 🇯🇵 日本 (Japan) 21 - aceo
   server: 31.76.91.72
   port: 2087
   udp: true
@@ -181,19 +218,37 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇯🇵 日本 (Japan) 18 - aceo
-  server: 168.138.43.75
-  port: 80
+- name: 🇯🇵 日本 (Japan) 22 - aceo
+  server: aa.ccmusic.jp
+  port: 443
   udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 23 - aceo
+  server: mszz.mangshe.xyz
+  port: 20061
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - aceo
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: android
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /tyxyws
     headers:
-      Host: 168.138.43.75
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -217,6 +272,12 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - aceo
   - 🇯🇵 日本 (Japan) 17 - aceo
   - 🇯🇵 日本 (Japan) 18 - aceo
+  - 🇯🇵 日本 (Japan) 19 - aceo
+  - 🇯🇵 日本 (Japan) 20 - aceo
+  - 🇯🇵 日本 (Japan) 21 - aceo
+  - 🇯🇵 日本 (Japan) 22 - aceo
+  - 🇯🇵 日本 (Japan) 23 - aceo
+  - 🇯🇵 日本 (Japan) 24 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -240,5 +301,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - aceo
   - 🇯🇵 日本 (Japan) 17 - aceo
   - 🇯🇵 日本 (Japan) 18 - aceo
+  - 🇯🇵 日本 (Japan) 19 - aceo
+  - 🇯🇵 日本 (Japan) 20 - aceo
+  - 🇯🇵 日本 (Japan) 21 - aceo
+  - 🇯🇵 日本 (Japan) 22 - aceo
+  - 🇯🇵 日本 (Japan) 23 - aceo
+  - 🇯🇵 日本 (Japan) 24 - aceo
 rules:
 - MATCH,PROXIES
