@@ -5,19 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 64.176.64.194
-  port: 25585
-  udp: true
-  type: vless
-  uuid: e4668a2b-66d6-4500-bcef-5ed52414e40a
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 64.176.64.194
+  port: 25585
+  udp: true
+  type: vless
+  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 185.223.57.10
   port: 33743
   udp: true
@@ -31,23 +38,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 45.192.12.93
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: 50.7.249.181
+  server: 50.7.249.172
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: pl-dedic-2.failspace.top
+  servername: pl-dedic-3.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 06 - aceo
@@ -58,31 +57,23 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 82.118.22.161
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 150.251.113.34
+  server: 144.31.5.64
   port: 443
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: pl6.moritech.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

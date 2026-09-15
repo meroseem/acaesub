@@ -4,25 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - aceo",
-      "server": "84.32.215.117",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
+      "server": "lt.aether-runet.top",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -31,7 +15,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -45,18 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 03 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 03 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

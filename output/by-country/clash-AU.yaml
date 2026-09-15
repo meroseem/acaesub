@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   udp: true
   type: vmess
@@ -21,27 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
-  server: au1.gsafevpnapi.com
-  port: 20270
-  udp: true
-  type: vless
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,8 +28,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,7 +35,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 rules:
 - MATCH,PROXIES

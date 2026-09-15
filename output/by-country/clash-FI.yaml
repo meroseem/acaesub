@@ -23,19 +23,6 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 31.77.199.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 rules:
 - MATCH,PROXIES
