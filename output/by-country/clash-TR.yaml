@@ -5,17 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 107.161.174.26
-  port: 443
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
-  servername: books.blackbigdog.com
-  client-fingerprint: chrome
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 156.67.63.231
   port: 443
@@ -28,26 +28,7 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
-  server: trexnet1.trexnet.cfd
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12726f0b-ff88-4082-85c2-a18e5356f41c
-  tls: true
-  reality-opts:
-    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
-    short-id: d7397feef49deef9
-  servername: www.upwork.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
-  server: 188.132.174.236
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +36,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 - aceo
-  - 🇹🇷 土耳其 (Turkey) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +43,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 - aceo
-  - 🇹🇷 土耳其 (Turkey) 04 - aceo
 rules:
 - MATCH,PROXIES

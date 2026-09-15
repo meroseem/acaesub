@@ -5,30 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - aceo
-  server: 188.114.97.6
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 02 - aceo
-  server: 162.159.0.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 03 - aceo
   server: 162.159.0.169
-  port: 2052
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -37,21 +15,7 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 04 - aceo
-  server: 194.87.10.110
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: VlXlucSsQwOeLoIq
-- name: 🇸🇬 新加坡 (Singapore) 05 - aceo
-  server: 176.97.64.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-- name: 🇸🇬 新加坡 (Singapore) 06 - aceo
+- name: 🇸🇬 新加坡 (Singapore) 02 - aceo
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -59,7 +23,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 07 - aceo
+- name: 🇸🇬 新加坡 (Singapore) 03 - aceo
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -67,19 +31,27 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 08 - aceo
-  server: 217.217.254.126
-  port: 2053
+- name: 🇸🇬 新加坡 (Singapore) 04 - aceo
+  server: 176.97.64.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+- name: 🇸🇬 新加坡 (Singapore) 05 - aceo
+  server: 91.192.81.214
+  port: 443
   udp: true
   type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  uuid: 607801ac-dbdd-4938-a167-129015d9978e
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
+    public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
+    short-id: d1742269
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 09 - aceo
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 06 - aceo
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -91,16 +63,20 @@ proxies:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: ''
-- name: 🇸🇬 新加坡 (Singapore) 10 - aceo
-  server: 138.2.73.238
-  port: 50160
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 07 - aceo
+  server: 217.217.254.126
+  port: 2053
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - aceo
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 08 - aceo
   server: 13.212.32.171
   port: 443
   udp: true
@@ -108,7 +84,7 @@ proxies:
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: vpn-sg-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 12 - aceo
+- name: 🇸🇬 新加坡 (Singapore) 09 - aceo
   server: sg-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -121,16 +97,64 @@ proxies:
     short-id: fc13d6208ebbae16
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - aceo
-  server: 54.151.142.26
+- name: 🇸🇬 新加坡 (Singapore) 10 - aceo
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 11 - aceo
+  server: 43.159.12.36
   port: 443
   udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /file/project/novel?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 12 - aceo
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 13 - aceo
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /act/company/intro?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 14 - aceo
-  server: 104.24.0.184
+  server: 104.16.10.104
   port: 443
   udp: true
   type: vless
@@ -144,125 +168,14 @@ proxies:
     headers:
       Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 15 - aceo
-  server: 47.129.241.226
-  port: 443
+  server: sg1.xiaoliyu.cyou
+  port: 1933
   udp: true
   type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: sg1.xiaoliyu.cyou
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 16 - aceo
-  server: 54.251.91.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 2nz68.udxf.ui6.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 2nz68.udxf.ui6.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 17 - aceo
-  server: support.zoom.us
-  port: 80
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 18 - aceo
-  server: 122.248.238.214
-  port: 443
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 2nz68.udxf.ui6.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 2nz68.udxf.ui6.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 19 - aceo
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 20 - aceo
-  server: 54.254.39.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: ut5rk.ovlk.qz7.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ut5rk.ovlk.qz7.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 21 - aceo
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 8a9dff00-0705-4c1b-9126-8c1bdc8b5d0a
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 22 - aceo
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 23 - aceo
-  server: 173.245.49.41
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  servername: singapore.36109178.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /static/media/video-chunk.f4v
-    headers:
-      Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 24 - aceo
   server: 104.18.93.167
   port: 2053
   udp: true
@@ -277,29 +190,69 @@ proxies:
     path: /static/media/video-chunk.f4v
     headers:
       Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 25 - aceo
-  server: 18.138.252.84
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 17 - aceo
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: ut5rk.ovlk.qz7.hh.vavava.kdns.fr
-  skip-cert-verify: false
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: ut5rk.ovlk.qz7.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 26 - aceo
-  server: sg1.xiaoliyu.cyou
-  port: 1933
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 18 - aceo
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 19 - aceo
+  server: news.zoom.us
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  tls: true
+  servername: u.srilankangrill.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 20 - aceo
+  server: 140.245.38.33
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /class/season?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 21 - aceo
+  server: 138.2.73.238
+  port: 50160
   udp: true
   type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - aceo
+- name: 🇸🇬 新加坡 (Singapore) 22 - aceo
   server: mszz.mangshe.xyz
   port: 20562
   udp: true
@@ -334,11 +287,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 - aceo
   - 🇸🇬 新加坡 (Singapore) 21 - aceo
   - 🇸🇬 新加坡 (Singapore) 22 - aceo
-  - 🇸🇬 新加坡 (Singapore) 23 - aceo
-  - 🇸🇬 新加坡 (Singapore) 24 - aceo
-  - 🇸🇬 新加坡 (Singapore) 25 - aceo
-  - 🇸🇬 新加坡 (Singapore) 26 - aceo
-  - 🇸🇬 新加坡 (Singapore) 27 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -366,10 +314,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 - aceo
   - 🇸🇬 新加坡 (Singapore) 21 - aceo
   - 🇸🇬 新加坡 (Singapore) 22 - aceo
-  - 🇸🇬 新加坡 (Singapore) 23 - aceo
-  - 🇸🇬 新加坡 (Singapore) 24 - aceo
-  - 🇸🇬 新加坡 (Singapore) 25 - aceo
-  - 🇸🇬 新加坡 (Singapore) 26 - aceo
-  - 🇸🇬 新加坡 (Singapore) 27 - aceo
 rules:
 - MATCH,PROXIES
