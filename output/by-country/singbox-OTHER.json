@@ -6,13 +6,16 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "ccs2g.pai50288.uk",
+      "server": "104.25.30.10",
       "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
+        "server_name": "de14.69lover.my",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,7 +23,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288"
+        "path": "/api/v2/6c316c769ad6853c/stream",
+        "headers": {
+          "Host": "de14.69lover.my"
+        }
       }
     },
     {
