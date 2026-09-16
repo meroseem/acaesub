@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   udp: true
   type: vmess
@@ -13,6 +13,14 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
   server: 103.75.119.126
   port: 2087
   udp: true
@@ -21,12 +29,12 @@ proxies:
   network: ws
   ws-opts:
     path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
+- name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: bd0b6458-917b-4b84-9c21-66b8699f4795
+  uuid: 1803e6f6-9da1-4b31-8cc5-ffa155771a14
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -42,6 +50,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +59,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 rules:
 - MATCH,PROXIES

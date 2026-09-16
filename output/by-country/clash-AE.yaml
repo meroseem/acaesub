@@ -28,7 +28,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 85.204.107.181
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
@@ -36,21 +36,6 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: 151.242.160.148
-  port: 8090
-  udp: true
-  type: vless
-  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
-  tls: true
-  servername: askuhgfdsg.space.coupons
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: askuhgfdsg.space.coupons
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -70,7 +55,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +64,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 rules:
 - MATCH,PROXIES
