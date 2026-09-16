@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - aceo
-  server: 49.254.204.133
-  port: 1774
+  server: 140.238.2.250
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 152.70.237.123
-  port: 2053
+  server: 3.36.93.74
+  port: 443
   udp: true
   type: hysteria2
-  password: maintell
-  sni: bing.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 3.36.93.74
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - aceo
   server: 3.39.4.109
@@ -33,6 +34,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 04 - aceo
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -44,31 +53,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
-  server: 140.238.2.250
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: glance.asuscomm.com
-  port: 10099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - aceo
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -80,56 +66,30 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 09 - aceo
-  server: 3.36.93.74
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  server: 152.70.237.123
+  port: 2053
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - aceo
-  server: 141.164.45.187
-  port: 8000
+- name: 🇰🇷 韩国 (South Korea) 08 - aceo
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇰🇷 韩国 (South Korea) 11 - aceo
-  server: 141.164.45.187
-  port: 5001
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 09 - aceo
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 12 - aceo
-  server: 141.164.45.187
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇰🇷 韩国 (South Korea) 13 - aceo
-  server: 141.164.45.187
-  port: 6697
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇰🇷 韩国 (South Korea) 14 - aceo
-  server: 141.164.45.187
-  port: 5498
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: 🇰🇷 韩国 (South Korea) 15 - aceo
-  server: 141.164.45.187
-  port: 2376
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,12 +104,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - aceo
   - 🇰🇷 韩国 (South Korea) 08 - aceo
   - 🇰🇷 韩国 (South Korea) 09 - aceo
-  - 🇰🇷 韩国 (South Korea) 10 - aceo
-  - 🇰🇷 韩国 (South Korea) 11 - aceo
-  - 🇰🇷 韩国 (South Korea) 12 - aceo
-  - 🇰🇷 韩国 (South Korea) 13 - aceo
-  - 🇰🇷 韩国 (South Korea) 14 - aceo
-  - 🇰🇷 韩国 (South Korea) 15 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,11 +118,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - aceo
   - 🇰🇷 韩国 (South Korea) 08 - aceo
   - 🇰🇷 韩国 (South Korea) 09 - aceo
-  - 🇰🇷 韩国 (South Korea) 10 - aceo
-  - 🇰🇷 韩国 (South Korea) 11 - aceo
-  - 🇰🇷 韩国 (South Korea) 12 - aceo
-  - 🇰🇷 韩国 (South Korea) 13 - aceo
-  - 🇰🇷 韩国 (South Korea) 14 - aceo
-  - 🇰🇷 韩国 (South Korea) 15 - aceo
 rules:
 - MATCH,PROXIES
