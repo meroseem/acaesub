@@ -4,20 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - aceo",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "server": "83.147.18.3",
+      "server_port": 443,
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
-      "server": "108.181.121.226",
+      "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
@@ -40,33 +53,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - aceo",
-      "server": "85.90.217.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "selector",
@@ -76,8 +68,7 @@
         "🇪🇸 西班牙 (Spain) 01 - aceo",
         "🇪🇸 西班牙 (Spain) 02 - aceo",
         "🇪🇸 西班牙 (Spain) 03 - aceo",
-        "🇪🇸 西班牙 (Spain) 04 - aceo",
-        "🇪🇸 西班牙 (Spain) 05 - aceo"
+        "🇪🇸 西班牙 (Spain) 04 - aceo"
       ]
     },
     {
@@ -87,8 +78,7 @@
         "🇪🇸 西班牙 (Spain) 01 - aceo",
         "🇪🇸 西班牙 (Spain) 02 - aceo",
         "🇪🇸 西班牙 (Spain) 03 - aceo",
-        "🇪🇸 西班牙 (Spain) 04 - aceo",
-        "🇪🇸 西班牙 (Spain) 05 - aceo"
+        "🇪🇸 西班牙 (Spain) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 172.64.32.108
-  port: 2082
+  server: 162.159.0.169
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,23 +16,35 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 172.64.158.146
-  port: 80
+  server: 104.21.14.42
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
+  tls: true
+  servername: 7x70yyvT7eQOtx-IQ9N3RJT1xn1jwkh9.asDFsAFdsAF.WORkerS.Dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /eyJqdW5rIjoiR2xWQ1FCQzYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 193.233.102.128
-  port: 1080
+  server: 172.64.153.235
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qidzCKN6hfaAMJngX_xYHQ
+  type: vless
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  tls: true
+  servername: socks5.revil-time3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /socks5://128.140.46.169:13482
+    headers:
+      Host: socks5.revil-time3.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 195.133.23.200
   port: 7018
@@ -41,6 +53,21 @@ proxies:
   cipher: aes-256-gcm
   password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 104.21.78.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  tls: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -48,7 +75,14 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: 91.240.86.70
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -56,28 +90,6 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: 31.76.71.252
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
   server: 45.12.75.242
   port: 26424
@@ -90,6 +102,29 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  server: 46.8.200.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  tls: true
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  server: els1.mangshe.xyz
+  port: 2056
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,6 +139,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
   - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,5 +155,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
   - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
 rules:
 - MATCH,PROXIES

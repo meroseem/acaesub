@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
-  server: 104.18.39.218
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
   server: 104.18.47.113
   port: 2095
   udp: true
@@ -26,8 +15,45 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
+  server: 104.18.46.234
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - aceo
-  server: 156.226.168.221
+  server: 166.62.113.123
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - aceo
+  server: 108.162.198.178
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - aceo
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -38,7 +64,22 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 06 - aceo
+  server: 104.18.32.47
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  tls: true
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /game
+    headers:
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +88,9 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
   - 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
   - 🇸🇨 塞舌尔 (Seychelles) 03 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +99,8 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
   - 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
   - 🇸🇨 塞舌尔 (Seychelles) 03 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 06 - aceo
 rules:
 - MATCH,PROXIES

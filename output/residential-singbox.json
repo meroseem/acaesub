@@ -5,22 +5,31 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-      "server": "172.64.32.108",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - aceo",
+      "server": "172.67.130.144",
+      "server_port": 443,
+      "uuid": "7da33b25-cdd6-e481-afcf-c5d532361a70",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-1bc8ab.sekiro-c18.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/sync",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "ez-1bc8ab.sekiro-c18.workers.dev"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
-      "server": "r3mrcg00129437x.cybervena.com",
+      "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
@@ -34,16 +43,8 @@
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
       "server": "118.167.212.163",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -52,7 +53,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -62,26 +63,49 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 (家宽) - aceo",
+      "server": "54.178.110.17",
+      "server_port": 4443,
+      "uuid": "d5fbd83b-7346-4ad9-94c0-76293724824d",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo"
+        "🇯🇵 日本 (Japan) 05 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo"
+        "🇯🇵 日本 (Japan) 05 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
