@@ -13,6 +13,20 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
+  server: 141.164.45.187
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇰🇷 韩国 (South Korea) 03 - aceo
+  server: 211.178.105.134
+  port: 6123
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 04 - aceo
   server: 146.56.112.110
   port: 8888
   udp: true
@@ -20,23 +34,23 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 03 - aceo
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
   server: 3.36.93.74
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-kr-003.fastervpn.world
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - aceo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -48,16 +62,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 08 - aceo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -70,65 +76,48 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 08 - aceo
+- name: 🇰🇷 韩国 (South Korea) 09 - aceo
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - aceo
+  server: 141.164.45.187
+  port: 5001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 11 - aceo
+  server: 151.245.106.49
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 12 - aceo
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
+  sni: 152.67.200.82
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - aceo
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 13 - aceo
+  server: 141.164.45.187
+  port: 5498
   udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - aceo
-  server: 110.10.178.240
-  port: 443
-  udp: true
-  type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-8oc.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-8oc.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 11 - aceo
-  server: 123.111.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
-- name: 🇰🇷 韩国 (South Korea) 12 - aceo
-  server: 132.145.80.230
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
 proxy-groups:
 - name: PROXIES
   type: select
@@ -146,6 +135,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - aceo
   - 🇰🇷 韩国 (South Korea) 11 - aceo
   - 🇰🇷 韩国 (South Korea) 12 - aceo
+  - 🇰🇷 韩国 (South Korea) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -163,5 +153,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - aceo
   - 🇰🇷 韩国 (South Korea) 11 - aceo
   - 🇰🇷 韩国 (South Korea) 12 - aceo
+  - 🇰🇷 韩国 (South Korea) 13 - aceo
 rules:
 - MATCH,PROXIES

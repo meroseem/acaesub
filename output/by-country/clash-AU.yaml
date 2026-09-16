@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -21,19 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  server: au1.gsafevpnapi.com
-  port: 20270
-  udp: true
-  type: vless
-  uuid: e0755aab-3f9c-4d27-a643-645a4d2753d3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +28,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +35,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: 172.67.208.1
+  server: 104.21.69.118
   port: 443
   udp: true
   type: vless
@@ -27,6 +27,19 @@ proxies:
   cipher: aes-256-gcm
   password: GEdoeeqLZtkJRgSa
 - name: 🇮🇳 印度 (India) 03 - aceo
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - aceo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -38,7 +51,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - aceo
+- name: 🇮🇳 印度 (India) 05 - aceo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -49,15 +62,15 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 05 - aceo
+- name: 🇮🇳 印度 (India) 06 - aceo
   server: vpn-in-001.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 06 - aceo
+- name: 🇮🇳 印度 (India) 07 - aceo
   server: 172.105.39.124
   port: 7002
   udp: true
@@ -75,6 +88,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - aceo
   - 🇮🇳 印度 (India) 05 - aceo
   - 🇮🇳 印度 (India) 06 - aceo
+  - 🇮🇳 印度 (India) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +100,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - aceo
   - 🇮🇳 印度 (India) 05 - aceo
   - 🇮🇳 印度 (India) 06 - aceo
+  - 🇮🇳 印度 (India) 07 - aceo
 rules:
 - MATCH,PROXIES

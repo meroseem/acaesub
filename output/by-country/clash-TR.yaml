@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 104.17.169.13
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  tls: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01
-    headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 156.67.63.231
   port: 443
   udp: true
@@ -32,34 +17,20 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
-  server: 107.161.174.26
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 31.214.152.140
   port: 443
   udp: true
   type: vless
-  uuid: 069ba4cf-e8af-4561-b11e-18bd07b0dbd3
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
-  servername: books.blackbigdog.com
+    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
+    short-id: 08
+  servername: dw.b-cdn.net
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
-  server: 172.67.151.109
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
-  tls: true
-  servername: jdzit4e4urks.xwzohsebujps.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
-    headers:
-      Host: jdzit4e4urks.xwzohsebujps.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 05 - aceo
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
   server: 93.114.98.212
   port: 443
   udp: true
@@ -74,6 +45,20 @@ proxies:
     path: /?ed=2048
     headers:
       Host: kkkk-xcd.pages.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +68,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
   - 🇹🇷 土耳其 (Turkey) 03 - aceo
   - 🇹🇷 土耳其 (Turkey) 04 - aceo
-  - 🇹🇷 土耳其 (Turkey) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +77,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
   - 🇹🇷 土耳其 (Turkey) 03 - aceo
   - 🇹🇷 土耳其 (Turkey) 04 - aceo
-  - 🇹🇷 土耳其 (Turkey) 05 - aceo
 rules:
 - MATCH,PROXIES

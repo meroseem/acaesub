@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
   server: 181.214.147.216
   port: 443
   udp: true
@@ -23,34 +16,17 @@ proxies:
     public-key: 66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk
   servername: lith.2clash.ru
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - aceo
-  server: lt.aether-runet.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  servername: lt.aether-runet.top
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - aceo
-  server: 172.67.130.144
+- name: 🇧🇷 巴西 (Brazil) 01 - aceo
+  server: 104.64.59.22
   port: 443
   udp: true
   type: vless
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
   tls: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  servername: kkkk-8oc.pages.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2048
     headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
+      Host: kkkk-8oc.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 (家宽) - aceo
+  - 🇧🇷 巴西 (Brazil) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 (家宽) - aceo
+  - 🇧🇷 巴西 (Brazil) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,40 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 (Norway) 01 - aceo
-  server: 46.29.238.88
-  port: 40443
-  udp: true
-  type: vless
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
-  tls: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-    short-id: f7b2
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇳🇴 挪威 (Norway) 02 - aceo
   server: 185.213.23.63
   port: 990
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇳🇴 挪威 (Norway) 03 - aceo
-  server: 185.125.171.128
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-xcd.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-xcd.pages.dev
-- name: 🇳🇴 挪威 (Norway) 04 - aceo
+- name: 🇳🇴 挪威 (Norway) 02 - aceo
   server: aldebaran.yokkastars.com
   port: 40443
   udp: true
@@ -57,8 +30,6 @@ proxy-groups:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - aceo
   - 🇳🇴 挪威 (Norway) 02 - aceo
-  - 🇳🇴 挪威 (Norway) 03 - aceo
-  - 🇳🇴 挪威 (Norway) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +37,5 @@ proxy-groups:
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - aceo
   - 🇳🇴 挪威 (Norway) 02 - aceo
-  - 🇳🇴 挪威 (Norway) 03 - aceo
-  - 🇳🇴 挪威 (Norway) 04 - aceo
 rules:
 - MATCH,PROXIES
