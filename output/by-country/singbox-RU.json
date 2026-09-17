@@ -6,7 +6,21 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "172.64.53.55",
+      "server": "104.18.47.113",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "server": "172.64.42.85",
       "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -19,29 +33,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-      "server": "188.114.97.6",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "server": "108.162.198.178",
       "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-      "server": "194.87.196.13",
-      "server_port": 9011,
-      "method": "aes-256-gcm",
-      "password": "4938e975724d0ed1"
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "188.114.97.8",
+      "server_port": 8443,
+      "uuid": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66",
+      "tls": {
+        "enabled": true,
+        "server_name": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "crimson-leaf-7e45.hzhduuebfjdcb.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
       "server": "195.133.5.102",
       "server_port": 9011,
       "method": "aes-256-gcm",
@@ -49,15 +88,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-      "server": "195.58.48.137",
-      "server_port": 9019,
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
+      "server": "194.87.196.13",
+      "server_port": 9011,
       "method": "aes-256-gcm",
-      "password": "8ad9d72a5571df86"
+      "password": "4938e975724d0ed1"
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - aceo",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -68,20 +107,16 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
-      "server": "msk.frkn.org",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
-      "tls": {
-        "enabled": true,
-        "server_name": "msk.frkn.org",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - aceo",
+      "server": "195.58.48.137",
+      "server_port": 9019,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - aceo",
       "server": "ru.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
@@ -92,8 +127,28 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - aceo",
+      "server": "msk.frkn.org",
+      "server_port": 443,
+      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "tls": {
+        "enabled": true,
+        "server_name": "msk.frkn.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - aceo",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 13 - aceo",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -116,7 +171,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 14 - aceo",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -148,7 +203,11 @@
         "🇷🇺 俄罗斯 (Russia) 07 - aceo",
         "🇷🇺 俄罗斯 (Russia) 08 - aceo",
         "🇷🇺 俄罗斯 (Russia) 09 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 10 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 10 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 11 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 12 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 13 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 14 - aceo"
       ]
     },
     {
@@ -164,7 +223,11 @@
         "🇷🇺 俄罗斯 (Russia) 07 - aceo",
         "🇷🇺 俄罗斯 (Russia) 08 - aceo",
         "🇷🇺 俄罗斯 (Russia) 09 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 10 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 10 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 11 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 12 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 13 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 14 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
