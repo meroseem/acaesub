@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  server: 116.204.164.30
-  port: 7443
+- name: 🇨🇿 捷克 (Czech) 01 - aceo
+  server: 172.67.147.209
+  port: 443
   udp: true
   type: vless
-  uuid: 8dd3f783-aa97-420b-8aaa-d8a6c9679dad
+  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
   tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vl/cxl8Wn1ylnsk63nJ0
     headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇨🇿 捷克 (Czech) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇨🇿 捷克 (Czech) 01 - aceo
 rules:
 - MATCH,PROXIES
