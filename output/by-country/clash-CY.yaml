@@ -29,20 +29,7 @@ proxies:
     public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
     short-id: 72104d27a0f5f62e
   servername: www.amazon.com
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  server: 2.56.121.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM
-    short-id: 86229a5e3b1e6ef4
-  servername: www.ikea.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 rules:
 - MATCH,PROXIES

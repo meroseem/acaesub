@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   server: r3mrcg001286ek2.cybervena.com
   port: 50099
@@ -19,6 +19,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  server: 82259754d625.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 82259754d625.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
   server: 7dba81fc3a0b.oylfmxz.cn
   port: 443
   udp: true
@@ -32,8 +46,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
-  server: 118.167.212.163
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -42,7 +56,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +66,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +76,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
 rules:
 - MATCH,PROXIES
