@@ -6,22 +6,24 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "d0da19f1-fb05-488e-99c2-262389b3537b",
-      "flow": "xtls-rprx-vision",
+      "server": "31.56.189.27",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
       "tls": {
         "enabled": true,
-        "server_name": "tradingview.com",
+        "server_name": "srv-21bac9.vless.monster",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-          "short_id": ""
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
       }
     },
     {
@@ -65,27 +67,43 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - aceo",
-      "server": "srv-21bac9.vless.monster",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "server": "85.204.107.178",
+      "server_port": 8080,
+      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
+        "server_name": "hopp-romania-new.roxa.org",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - aceo",
+      "server": "167.179.111.237",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/act/player/search?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - aceo",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -98,15 +116,24 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - aceo",
-      "server": "85.204.107.181",
-      "server_port": 8080,
-      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - aceo",
+      "server": "31.58.181.88",
+      "server_port": 8443,
+      "uuid": "d0da19f1-fb05-488e-99c2-262389b3537b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-romania-new.roxa.org",
-        "insecure": false
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
+          "short_id": ""
+        }
       }
     },
     {
@@ -119,7 +146,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - aceo",
         "🇦🇪 阿联酋 (UAE) 04 - aceo",
         "🇦🇪 阿联酋 (UAE) 05 - aceo",
-        "🇦🇪 阿联酋 (UAE) 06 - aceo"
+        "🇦🇪 阿联酋 (UAE) 06 - aceo",
+        "🇦🇪 阿联酋 (UAE) 07 - aceo"
       ]
     },
     {
@@ -131,7 +159,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - aceo",
         "🇦🇪 阿联酋 (UAE) 04 - aceo",
         "🇦🇪 阿联酋 (UAE) 05 - aceo",
-        "🇦🇪 阿联酋 (UAE) 06 - aceo"
+        "🇦🇪 阿联酋 (UAE) 06 - aceo",
+        "🇦🇪 阿联酋 (UAE) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
