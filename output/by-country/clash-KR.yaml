@@ -13,14 +13,34 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 152.70.237.123
-  port: 2053
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 03 - aceo
+  server: 3.36.93.74
+  port: 443
   udp: true
   type: hysteria2
-  password: maintell
-  sni: bing.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: google.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - aceo
+- name: 🇰🇷 韩国 (South Korea) 04 - aceo
+  server: 141.164.45.187
+  port: 9090
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -33,15 +53,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 04 - aceo
-  server: 3.36.93.74
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.36.93.74
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
   server: vpn-kr-002.fastervpn.world
   port: 443
   udp: true
@@ -49,20 +61,15 @@ proxies:
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - aceo
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -74,7 +81,7 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - aceo
+- name: 🇰🇷 韩国 (South Korea) 09 - aceo
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -82,22 +89,30 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - aceo
+- name: 🇰🇷 韩国 (South Korea) 10 - aceo
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: whatsapp.com
+  sni: 152.67.200.82
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - aceo
-  server: 141.164.45.187
-  port: 6679
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
 - name: 🇰🇷 韩国 (South Korea) 11 - aceo
+  server: 172.64.159.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
+  tls: true
+  servername: a860d725.69lover.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v2/288cd04559d84d1d/stream
+    headers:
+      Host: a860d725.69lover.site
+- name: 🇰🇷 韩国 (South Korea) 12 - aceo
   server: 132.226.226.189
   port: 50160
   udp: true
@@ -121,6 +136,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - aceo
   - 🇰🇷 韩国 (South Korea) 10 - aceo
   - 🇰🇷 韩国 (South Korea) 11 - aceo
+  - 🇰🇷 韩国 (South Korea) 12 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -137,5 +153,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - aceo
   - 🇰🇷 韩国 (South Korea) 10 - aceo
   - 🇰🇷 韩国 (South Korea) 11 - aceo
+  - 🇰🇷 韩国 (South Korea) 12 - aceo
 rules:
 - MATCH,PROXIES
