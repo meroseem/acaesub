@@ -5,23 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  server: r3mrcg00129437x.cybervena.com
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  server: R3MRCG00129437X.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  server: 118.167.212.163
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   server: 7dba81fc3a0b.oylfmxz.cn
   port: 443
@@ -37,13 +33,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
   server: 82259754d625.oylfmxz.cn
   port: 443
   udp: true
@@ -57,6 +46,17 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

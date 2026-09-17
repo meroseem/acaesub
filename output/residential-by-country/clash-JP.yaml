@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - aceo
-  server: 172.67.67.178
-  port: 443
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  server: 116.204.164.30
+  port: 7443
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: 8dd3f783-aa97-420b-8aaa-d8a6c9679dad
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES

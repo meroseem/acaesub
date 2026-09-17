@@ -4,9 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "172.67.134.170",
+      "server": "139.28.240.68",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "172.67.151.109",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
       "tls": {
@@ -21,14 +29,6 @@
           "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
-      "server": "139.28.240.68",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "selector",

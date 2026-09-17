@@ -16,30 +16,6 @@ proxies:
     headers:
       Host: netlivpn2950.bbxff.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  server: 152.67.75.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  server: 151.242.2.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf9.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 140.238.213.114
   port: 50160
   udp: true
@@ -47,7 +23,15 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  server: 104.165.205.40
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 104.18.28.234
   port: 443
   udp: true
@@ -62,6 +46,21 @@ proxies:
     path: /
     headers:
       Host: netlivpn5505.ffffdsaaa.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
+  server: 151.242.2.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  tls: true
+  servername: cf9.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf9.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select

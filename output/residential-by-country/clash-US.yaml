@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - aceo
   server: 23.252.104.131
   port: 54321
   udp: true
@@ -28,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  - 🇺🇸 美国 (United States) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  - 🇺🇸 美国 (United States) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES
