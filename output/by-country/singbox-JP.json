@@ -14,27 +14,35 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 02 - aceo",
-      "server": "154.31.114.248",
-      "server_port": 50159,
-      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
+      "server": "1-jp.ap.ku-ke.cc",
+      "server_port": 443,
+      "uuid": "d03c34c3-98fa-42ff-80a8-6ea1d0b24ac9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "cdn.jsdelivr.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
-          "short_id": "091e1c5db8451757"
+          "public_key": "ImUbTZ1OKgAaiNlCf8zkeO5NnbAdKHdm2fhphvEZNxY",
+          "short_id": "56"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 03 - aceo",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 04 - aceo",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
@@ -42,27 +50,6 @@
         "enabled": true,
         "server_name": "138.3.208.26",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 04 - aceo",
-      "server": "47.74.3.200",
-      "server_port": 443,
-      "uuid": "7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.logitech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk",
-          "short_id": "ab3b914f0c9d9de5"
-        }
       }
     },
     {
@@ -87,48 +74,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 06 - aceo",
-      "server": "1-jp.ap.ku-ke.cc",
-      "server_port": 443,
-      "uuid": "d03c34c3-98fa-42ff-80a8-6ea1d0b24ac9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.jsdelivr.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ImUbTZ1OKgAaiNlCf8zkeO5NnbAdKHdm2fhphvEZNxY",
-          "short_id": "56"
-        }
-      }
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 07 - aceo",
-      "server": "104.238.148.149",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/about?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - aceo",
       "server": "104.156.238.23",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -147,49 +102,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
-      "server": "85.121.50.16",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/friends/go.php?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
-      "server": "138.2.59.96",
-      "server_port": 10129,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/movie/help/events?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 08 - aceo",
       "server": "210.152.85.154",
       "server_port": 19364,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -208,17 +121,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - aceo",
-      "server": "172.64.153.3",
+      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
+      "server": "104.238.148.149",
       "server_port": 443,
-      "uuid": "8779033b-a16a-4a7b-8767-d1980008d82a",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "38973b0f.69lover.site",
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/about?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
+      "server": "108.160.136.71",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -226,15 +155,62 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/e9182405fa1a6489/stream",
+        "path": "/doc/products/view?ed=2560",
         "headers": {
-          "Host": "38973b0f.69lover.site"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 11 - aceo",
+      "server": "45.76.218.34",
+      "server_port": 39509,
+      "password": "ecc1f6d7-d378-40f1-a424-cfca853f0b2e",
+      "tls": {
+        "enabled": true,
+        "server_name": "lazeno.vip",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 12 - aceo",
+      "server": "45.142.166.211",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/knowledge?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 13 - aceo",
+      "server": "jp1.xiaoliyu.us",
+      "server_port": 27102,
+      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp1.xiaoliyu.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 14 - aceo",
       "server": "203.137.165.164",
       "server_port": 57554,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -257,91 +233,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - aceo",
-      "server": "45.142.166.211",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/knowledge?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 15 - aceo",
-      "server": "207.148.112.220",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/discuss?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - aceo",
-      "server": "172.67.217.240",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 17 - aceo",
       "server": "137.220.221.179",
       "server_port": 443,
       "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 18 - aceo",
-      "server": "jp1.xiaoliyu.us",
-      "server_port": 27102,
-      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp1.xiaoliyu.us",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 19 - aceo",
-      "server": "161.34.39.108",
-      "server_port": 443,
-      "password": "tsuchiya",
-      "tls": {
-        "enabled": true,
-        "server_name": "aa.ccmusic.jp",
-        "insecure": false
-      }
     },
     {
       "type": "selector",
@@ -362,11 +257,7 @@
         "🇯🇵 日本 (Japan) 12 - aceo",
         "🇯🇵 日本 (Japan) 13 - aceo",
         "🇯🇵 日本 (Japan) 14 - aceo",
-        "🇯🇵 日本 (Japan) 15 - aceo",
-        "🇯🇵 日本 (Japan) 16 - aceo",
-        "🇯🇵 日本 (Japan) 17 - aceo",
-        "🇯🇵 日本 (Japan) 18 - aceo",
-        "🇯🇵 日本 (Japan) 19 - aceo"
+        "🇯🇵 日本 (Japan) 15 - aceo"
       ]
     },
     {
@@ -387,11 +278,7 @@
         "🇯🇵 日本 (Japan) 12 - aceo",
         "🇯🇵 日本 (Japan) 13 - aceo",
         "🇯🇵 日本 (Japan) 14 - aceo",
-        "🇯🇵 日本 (Japan) 15 - aceo",
-        "🇯🇵 日本 (Japan) 16 - aceo",
-        "🇯🇵 日本 (Japan) 17 - aceo",
-        "🇯🇵 日本 (Japan) 18 - aceo",
-        "🇯🇵 日本 (Japan) 19 - aceo"
+        "🇯🇵 日本 (Japan) 15 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
