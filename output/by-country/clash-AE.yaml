@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
-  server: 104.143.223.76
-  port: 2085
-  udp: true
-  type: vless
-  uuid: 12813e61-ca56-48e3-ba31-ba193368bcbf
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
-  server: 104.143.223.232
-  port: 2085
-  udp: true
-  type: vless
-  uuid: 12813e61-ca56-48e3-ba31-ba193368bcbf
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -32,7 +14,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: srv-21bac9.vless.monster
   port: 2087
   udp: true
@@ -44,15 +26,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: 85.204.107.174
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
+  server: 85.204.107.175
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
   server: 31.58.181.88
   port: 8443
   udp: true
@@ -64,29 +46,6 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 07 - aceo
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - aceo
-  server: sa-18cf795a50985ad9.sr-fa525e02d0951c2f.r.vpvpn.club
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0c597b0d-99d7-4c27-befe-6c5d339d7dbe
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
-  servername: baeb.edge-static.space
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,10 +55,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
-  - 🇦🇪 阿联酋 (UAE) 06 - aceo
-  - 🇦🇪 阿联酋 (UAE) 07 - aceo
-  - 🇦🇪 阿联酋 (UAE) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,9 +64,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
-  - 🇦🇪 阿联酋 (UAE) 06 - aceo
-  - 🇦🇪 阿联酋 (UAE) 07 - aceo
-  - 🇦🇪 阿联酋 (UAE) 08 - aceo
 rules:
 - MATCH,PROXIES
