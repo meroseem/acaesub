@@ -15,18 +15,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 02 - aceo",
+      "server": "edge.netraidly.ru",
+      "server_port": 40443,
+      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ",
+          "short_id": "beb4"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - aceo"
+        "🇬🇷 希腊 (Greece) 01 - aceo",
+        "🇬🇷 希腊 (Greece) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - aceo"
+        "🇬🇷 希腊 (Greece) 01 - aceo",
+        "🇬🇷 希腊 (Greece) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
