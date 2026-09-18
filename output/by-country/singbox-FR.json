@@ -4,23 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 01 - aceo",
-      "server": "15.236.33.146",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+      "server": "13.37.239.112",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 02 - aceo",
-      "server": "13.38.187.46",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+      "server": "15.237.180.114",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 03 - aceo",
-      "server": "13.37.239.112",
+      "server": "13.36.169.164",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -28,24 +30,42 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 04 - aceo",
-      "server": "13.38.187.46",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 05 - aceo",
+      "server": "62.210.147.2",
+      "server_port": 43115,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 05 - aceo",
-      "server": "15.237.180.114",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇷 法国 (France) 06 - aceo",
-      "server": "13.38.187.46",
-      "server_port": 22224,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+      "server": "51.255.13.232",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "BqnqToih0PbU"
     },
     {
       "type": "vless",
@@ -59,7 +79,7 @@
         "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -69,51 +89,32 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇷 法国 (France) 08 - aceo",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "server": "35.181.166.40",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 09 - aceo",
-      "server": "143.246.209.46",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
+        "server_name": "vpn-fr-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 10 - aceo",
+      "tag": "🇫🇷 法国 (France) 09 - aceo",
       "server": "62.210.7.139",
       "server_port": 60111,
       "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "google.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 11 - aceo",
+      "tag": "🇫🇷 法国 (France) 10 - aceo",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -133,49 +134,9 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 12 - aceo",
-      "server": "vpn-fr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 13 - aceo",
-      "server": "51.255.13.232",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "BqnqToih0PbU"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 14 - aceo",
-      "server": "nasnet-162191099-direct.mbghalibaf.com",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 15 - aceo",
-      "server": "185.18.250.252",
+      "tag": "🇫🇷 法国 (France) 11 - aceo",
+      "server": "172.67.231.254",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -192,16 +153,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 16 - aceo",
-      "server": "13.36.169.164",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 17 - aceo",
+      "tag": "🇫🇷 法国 (France) 12 - aceo",
       "server": "54.37.136.194",
       "server_port": 2053,
       "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
@@ -220,23 +173,27 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 18 - aceo",
-      "server": "151.247.197.253",
-      "server_port": 36723,
-      "password": "Krab9Hyst2_Rk7pQ2xL",
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 13 - aceo",
+      "server": "158.180.231.216",
+      "server_port": 443,
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true
+        "server_name": "bab-6.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vws/",
+        "headers": {
+          "Host": "bab-6.site"
+        }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 19 - aceo",
-      "server": "15.236.33.146",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "type": "selector",
@@ -255,13 +212,7 @@
         "🇫🇷 法国 (France) 10 - aceo",
         "🇫🇷 法国 (France) 11 - aceo",
         "🇫🇷 法国 (France) 12 - aceo",
-        "🇫🇷 法国 (France) 13 - aceo",
-        "🇫🇷 法国 (France) 14 - aceo",
-        "🇫🇷 法国 (France) 15 - aceo",
-        "🇫🇷 法国 (France) 16 - aceo",
-        "🇫🇷 法国 (France) 17 - aceo",
-        "🇫🇷 法国 (France) 18 - aceo",
-        "🇫🇷 法国 (France) 19 - aceo"
+        "🇫🇷 法国 (France) 13 - aceo"
       ]
     },
     {
@@ -280,13 +231,7 @@
         "🇫🇷 法国 (France) 10 - aceo",
         "🇫🇷 法国 (France) 11 - aceo",
         "🇫🇷 法国 (France) 12 - aceo",
-        "🇫🇷 法国 (France) 13 - aceo",
-        "🇫🇷 法国 (France) 14 - aceo",
-        "🇫🇷 法国 (France) 15 - aceo",
-        "🇫🇷 法国 (France) 16 - aceo",
-        "🇫🇷 法国 (France) 17 - aceo",
-        "🇫🇷 法国 (France) 18 - aceo",
-        "🇫🇷 法国 (France) 19 - aceo"
+        "🇫🇷 法国 (France) 13 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

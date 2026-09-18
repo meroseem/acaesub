@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 02 - aceo
   server: 35.154.58.87
   port: 443
   udp: true
@@ -12,7 +23,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 02 - aceo
+- name: 🇮🇳 印度 (India) 03 - aceo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -24,13 +35,13 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - aceo
-  server: vpn-in-001.fastervpn.world
+- name: 🇮🇳 印度 (India) 04 - aceo
+  server: 13.207.151.141
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
+  sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -40,6 +51,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
+  - 🇮🇳 印度 (India) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +60,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
+  - 🇮🇳 印度 (India) 04 - aceo
 rules:
 - MATCH,PROXIES

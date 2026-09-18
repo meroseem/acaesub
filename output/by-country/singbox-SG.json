@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - aceo",
-      "server": "168.107.65.209",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "jzbveBTs+YuJotZVNhD1uM6abJDkpkxoV/ZPZTYTaSs="
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - aceo",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - aceo",
       "server": "149.88.23.202",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -21,27 +13,35 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - aceo",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - aceo",
       "server": "161.118.206.93",
       "server_port": 56927,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "sy97HcKMDTchOQqDSOIOklrpdXHtrJzbJ51u8/vCALs="
     },
     {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - aceo",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 04 - aceo",
-      "server": "138.2.71.128",
+      "server": "168.107.65.209",
       "server_port": 56927,
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY="
+      "password": "jzbveBTs+YuJotZVNhD1uM6abJDkpkxoV/ZPZTYTaSs="
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 05 - aceo",
-      "server": "167.150.100.115",
-      "server_port": 27755,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+      "server": "194.233.74.160",
+      "server_port": 2342,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XV4bvaJIWoxl3IYEC1e6W7"
     },
     {
       "type": "shadowsocks",
@@ -54,26 +54,45 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 07 - aceo",
-      "server": "161.118.242.116",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI="
+      "server": "167.150.100.115",
+      "server_port": 27755,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 08 - aceo",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "207.148.118.108",
+      "server_port": 443,
+      "uuid": "c840f4a7-85dd-4fda-ad81-e6e1cc7bb3dd",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.canva.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iXxVpLLyyqGkuoaKpEB6iWcWkj4gOLoyCOYKyLQdaDY",
+          "short_id": "41a923dd"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 09 - aceo",
-      "server": "194.233.74.160",
-      "server_port": 2342,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XV4bvaJIWoxl3IYEC1e6W7"
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.2.73.238",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -97,29 +116,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 11 - aceo",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
+      "server": "13.212.83.43",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
-        }
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 12 - aceo",
-      "server": "103.137.22.71",
+      "server": "140.235.38.206",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -128,12 +139,12 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/register?ed=2560",
+        "path": "/channels/act?ed=2560 ",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -142,7 +153,28 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 13 - aceo",
-      "server": "sg2-8sb.6121999.dpdns.org",
+      "server": "3.0.111.82",
+      "server_port": 10574,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - aceo",
+      "server": "146.235.16.130",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
       "flow": "xtls-rprx-vision",
@@ -161,32 +193,22 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - aceo",
-      "server": "13.212.83.43",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 15 - aceo",
-      "server": "45.202.247.152",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "217.217.254.126",
+      "server_port": 2053,
+      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
+          "short_id": "87829de0e2bb82cb"
         }
       }
     },
@@ -212,28 +234,26 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 17 - aceo",
-      "server": "3.0.111.82",
-      "server_port": 10574,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "server": "140.245.38.33",
+      "server_port": 2096,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/class/season",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 18 - aceo",
-      "server": "140.235.38.206",
+      "server": "103.137.22.71",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -242,12 +262,12 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/channels/act?ed=2560",
+        "path": "/register?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -256,12 +276,12 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 19 - aceo",
-      "server": "43.160.220.86",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "91.193.58.45",
+      "server_port": 2096,
+      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "free-server.techsonic.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -270,9 +290,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/buy/uploads?ed=2560",
+        "path": "/free-server.techsonic.dev",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "free-server.techsonic.dev"
         }
       }
     },
@@ -301,74 +321,6 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 21 - aceo",
-      "server": "140.245.38.33",
-      "server_port": 2096,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 22 - aceo",
-      "server": "91.193.58.45",
-      "server_port": 2096,
-      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "free-server.techsonic.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/free-server.techsonic.dev",
-        "headers": {
-          "Host": "free-server.techsonic.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 23 - aceo",
-      "server": "43.159.4.80",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/episode/files?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 24 - aceo",
       "server": "104.16.10.191",
       "server_port": 443,
       "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
@@ -390,8 +342,65 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 22 - aceo",
+      "server": "8.222.70.238",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/mall/china/doc?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 23 - aceo",
+      "server": "45.202.247.152",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 24 - aceo",
+      "server": "161.118.242.116",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI="
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 25 - aceo",
+      "server": "138.2.71.128",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY="
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 26 - aceo",
       "server": "64.120.95.203",
       "server_port": 119,
       "password": "skynet",
@@ -434,7 +443,8 @@
         "🇸🇬 新加坡 (Singapore) 22 - aceo",
         "🇸🇬 新加坡 (Singapore) 23 - aceo",
         "🇸🇬 新加坡 (Singapore) 24 - aceo",
-        "🇸🇬 新加坡 (Singapore) 25 - aceo"
+        "🇸🇬 新加坡 (Singapore) 25 - aceo",
+        "🇸🇬 新加坡 (Singapore) 26 - aceo"
       ]
     },
     {
@@ -465,7 +475,8 @@
         "🇸🇬 新加坡 (Singapore) 22 - aceo",
         "🇸🇬 新加坡 (Singapore) 23 - aceo",
         "🇸🇬 新加坡 (Singapore) 24 - aceo",
-        "🇸🇬 新加坡 (Singapore) 25 - aceo"
+        "🇸🇬 新加坡 (Singapore) 25 - aceo",
+        "🇸🇬 新加坡 (Singapore) 26 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
