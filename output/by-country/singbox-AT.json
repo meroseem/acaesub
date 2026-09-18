@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-      "server": "lt.aether-runet.top",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - aceo",
+      "server": "83.147.216.223",
+      "server_port": 4433,
+      "uuid": "660174a2-d32d-4521-840d-d1853bfc80b8",
       "tls": {
         "enabled": true,
-        "server_name": "lt.aether-runet.top",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
-          "short_id": "4fa44664f6a566d3"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
+        "🇦🇹 奥地利 (Austria) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
+        "🇦🇹 奥地利 (Austria) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

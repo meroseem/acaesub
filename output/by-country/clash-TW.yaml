@@ -16,16 +16,24 @@ proxies:
     public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 85.237.207.49
-  port: 50160
+  server: 103.115.109.49
+  port: 443
   udp: true
   type: hysteria2
-  password: a56619e2bed91121eabb97d20be207c3
-  sni: 85-237-207-49.liao.kdns.fr
-  skip-cert-verify: false
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
   server: 35.221.158.209
   port: 32981
   udp: true
@@ -38,22 +46,32 @@ proxies:
     short-id: 70f4b7a4c40636
   servername: www.sony.com
   client-fingerprint: random
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
-  server: 103.115.109.49
-  port: 443
+  server: 34.81.129.171
+  port: 34376
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
-  skip-cert-verify: true
+  type: vless
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
+  servername: www.sony.com
+  client-fingerprint: edge
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - aceo
+  server: 104.199.219.172
+  port: 40800
+  udp: true
+  type: vless
+  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
+    short-id: 186e4c2732d61a3d
+  servername: www.intel.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +82,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +93,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 06 - aceo
 rules:
 - MATCH,PROXIES

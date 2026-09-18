@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
-  server: 31.58.181.88
-  port: 8443
+  server: 45.130.125.201
+  port: 80
   udp: true
   type: vless
-  uuid: 41a463f0-8c2d-4090-8456-e3278cab8fa2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: 130.49.161.70
   port: 443
@@ -39,28 +38,14 @@ proxies:
   grpc-opts:
     grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: 89.47.55.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 1c4298fc-505c-7055-d362-f0bd7b57677c
-  tls: true
-  reality-opts:
-    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: 85.204.107.181
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
+- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -71,6 +56,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 41a463f0-8c2d-4090-8456-e3278cab8fa2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

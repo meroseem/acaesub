@@ -5,7 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 185.223.57.10
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: admin.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 144.31.5.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 50.7.248.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl-new-dedic.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 185.223.57.16
   port: 33743
   udp: true
   type: vless
@@ -18,63 +54,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 50.7.248.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl-new-dedic.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 194.61.121.93
-  port: 7538
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: streambox.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: atomic-prase23893.my-vm.work
-  port: 8088
-  udp: true
-  type: vless
-  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 144.31.93.126
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: pl3.moritech.net
+  server: 144.31.2.33
   port: 443
   udp: true
   type: vless
@@ -83,8 +64,15 @@ proxies:
   tls: true
   servername: pl3.moritech.net
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 194.61.121.93
+  port: 7538
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 144.31.5.3
   port: 443
   udp: true
@@ -95,6 +83,14 @@ proxies:
   servername: pl4.moritech.net
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  server: streambox.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

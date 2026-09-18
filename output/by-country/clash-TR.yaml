@@ -5,30 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: chat.openai.com
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 139.28.240.68
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
-- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 153.52.92.81
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  server: tur11.zavqeron.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: fafd0278-71ba-4809-8137-3c87e7d8dd58
+  tls: true
+  reality-opts:
+    public-key: t5qC-Lzm_NKsc6nQ8ORzyivswiRPlbPLK0hS4d3FxTY
+    short-id: a2eb2b8f0f0a88b1
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
 - name: 🇹🇷 土耳其 (Turkey) 04 - aceo
   server: 172.67.151.109
   port: 443

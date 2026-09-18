@@ -4,21 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "chat.openai.com",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vms.lifetime29.workers.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
       "server": "139.28.240.68",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -26,11 +13,31 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
       "server": "153.52.92.81",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
       "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "tur11.zavqeron.ir",
+      "server_port": 8443,
+      "uuid": "fafd0278-71ba-4809-8137-3c87e7d8dd58",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "t5qC-Lzm_NKsc6nQ8ORzyivswiRPlbPLK0hS4d3FxTY",
+          "short_id": "a2eb2b8f0f0a88b1"
+        }
+      }
     },
     {
       "type": "vless",
