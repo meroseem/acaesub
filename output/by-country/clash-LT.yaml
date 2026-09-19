@@ -5,14 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  server: 103.139.51.51
+  server: cloud.figmafound.org
   port: 443
   udp: true
   type: vless
@@ -23,9 +16,9 @@ proxies:
     public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
     short-id: 711ad7f475c35e5e
   servername: cloud.figmafound.org
-  client-fingerprint: edge
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - aceo
-  server: auth.figmafound.org
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
+  server: 103.139.51.21
   port: 443
   udp: true
   type: vless
@@ -36,7 +29,7 @@ proxies:
     public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
     short-id: 711ad7f475c35e5e
   servername: auth.figmafound.org
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
   - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
   - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 03 - aceo
 rules:
 - MATCH,PROXIES
