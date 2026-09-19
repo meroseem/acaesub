@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - aceo
-  server: 35.195.122.169
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - aceo
+  server: aotocon.ggisopi.su
   port: 443
   udp: true
   type: vless
-  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
-    short-id: 68e97022627fa882
-  servername: www.cloudflare.com
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: aotocon.ggisopi.su
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - aceo
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - aceo
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - aceo
 rules:
 - MATCH,PROXIES

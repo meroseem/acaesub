@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
+        "server_name": "usa.oblaco.bet",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+          "short_id": ""
+        }
       }
     },
     {
@@ -35,12 +44,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "server": "helvetica.pelmexo.ir",
+      "server_port": 7911,
+      "uuid": "23ddda0f-6333-493a-839d-f9c8e561f7e4",
+      "tls": {
+        "enabled": true,
+        "server_name": "play-apps-features.googleusercontent.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 02 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ]
     },
     {
@@ -48,7 +78,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 02 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
