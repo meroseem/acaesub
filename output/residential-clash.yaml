@@ -4,33 +4,79 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  server: 104.18.46.46
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - aceo
+  server: 172.67.67.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  server: 36.224.185.173
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
   server: 36.224.185.143
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  server: 36.224.185.173
-  port: 50099
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
 rules:
 - MATCH,PROXIES
