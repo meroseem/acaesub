@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   udp: true
   type: vmess
@@ -35,14 +35,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 05 - aceo
   server: 34.87.244.111
   port: 443
   udp: true
@@ -53,7 +45,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +55,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
   - 🇦🇺 澳大利亚 (Australia) 04 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +64,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
   - 🇦🇺 澳大利亚 (Australia) 04 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 05 - aceo
 rules:
 - MATCH,PROXIES

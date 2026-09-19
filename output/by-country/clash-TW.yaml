@@ -5,39 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - aceo
-  server: 130.211.240.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  tls: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-    short-id: d74a6321deec9f31
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 104.199.134.231
-  port: 28364
-  udp: true
-  type: vless
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
   server: 35.201.230.136
   port: 443
   udp: true
@@ -50,20 +17,66 @@ proxies:
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
-  server: 35.194.157.16
-  port: 43450
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: 35.201.163.218
+  port: 30837
   udp: true
   type: vless
-  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
-    short-id: e65d010354bdad73
-  servername: www.amd.com
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
+  server: 130.211.240.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  tls: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+    short-id: d74a6321deec9f31
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
+  server: 34.80.164.239
+  port: 21776
+  udp: true
+  type: vless
+  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
+    short-id: 79b6f82800c68925
+  servername: www.tesla.com
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - aceo
+  server: 34.81.129.171
+  port: 34376
+  udp: true
+  type: vless
+  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
+    short-id: 8dbafb690450d8a9
+  servername: www.sony.com
+  client-fingerprint: random
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - aceo
   server: 35.201.181.122
   port: 443
   udp: true
@@ -75,28 +88,19 @@ proxies:
     short-id: 32f66f37df3f58d2
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - aceo
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 08 - aceo
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-  port: 443
+  server: 35.229.136.113
+  port: 35412
   udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  flow: xtls-rprx-vision
   tls: true
-  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  reality-opts:
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
