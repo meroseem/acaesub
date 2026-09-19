@@ -14,15 +14,6 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
-  server: 104.143.223.69
-  port: 2085
-  udp: true
-  type: vless
-  uuid: f68a9fd4-16c7-46d1-b17c-0a4b224cc00d
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
   server: 104.143.223.71
   port: 2085
   udp: true
@@ -31,7 +22,39 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
+  server: 104.143.223.69
+  port: 2085
+  udp: true
+  type: vless
+  uuid: f68a9fd4-16c7-46d1-b17c-0a4b224cc00d
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 31.56.189.27
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
+- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
   server: 31.58.181.88
   port: 8443
   udp: true
@@ -43,28 +66,6 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: srv-21bac9.vless.monster
-  port: 2087
-  udp: true
-  type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  tls: true
-  servername: srv-21bac9.vless.monster
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 07 - aceo
   server: 85.204.107.176
   port: 8080

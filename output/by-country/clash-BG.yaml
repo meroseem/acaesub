@@ -14,20 +14,6 @@ proxies:
   servername: neth9.lunariai.ru
   skip-cert-verify: true
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  server: 64.227.67.161
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
   server: 87.120.196.212
   port: 443
   udp: true
@@ -45,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
 rules:
 - MATCH,PROXIES
