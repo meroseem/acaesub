@@ -26,8 +26,23 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: 🇹🇭 泰国 (Thailand) 03 - aceo
+  server: 8.222.70.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /mall/china/doc?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 泰国 (Thailand) 04 - aceo
   server: 118.193.57.167
   port: 49667
   udp: true
@@ -46,6 +61,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
   - 🇹🇭 泰国 (Thailand) 03 - aceo
+  - 🇹🇭 泰国 (Thailand) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +70,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
   - 🇹🇭 泰国 (Thailand) 03 - aceo
+  - 🇹🇭 泰国 (Thailand) 04 - aceo
 rules:
 - MATCH,PROXIES
