@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 199.232.78.101
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
-- name: 🇨🇿 捷克 (Czech) 02 - aceo
-  server: 194.87.59.104
-  port: 2085
-  udp: true
-  type: vless
-  uuid: 7b07d862-b698-47c1-884b-3e7dd6c8b862
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - aceo
   server: 95.85.230.35
   port: 443
   udp: true
@@ -42,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - aceo
-  - 🇨🇿 捷克 (Czech) 02 - aceo
-  - 🇨🇿 捷克 (Czech) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - aceo
-  - 🇨🇿 捷克 (Czech) 02 - aceo
-  - 🇨🇿 捷克 (Czech) 03 - aceo
 rules:
 - MATCH,PROXIES

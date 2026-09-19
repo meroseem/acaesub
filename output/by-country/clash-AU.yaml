@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 185.125.103.62
-  port: 8082
+  server: 82.198.246.37
+  port: 180
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
   server: 103.75.119.126
   port: 2087
@@ -29,13 +22,17 @@ proxies:
   ws-opts:
     path: /7586c69d3dc9
 - name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  server: vpn-au-002.fastervpn.world
+  server: 34.87.229.148
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  tls: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
   server: 34.87.244.111
   port: 443
@@ -47,7 +44,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇦🇺 澳大利亚 (Australia) 05 - aceo
   server: 51.161.204.244
   port: 443

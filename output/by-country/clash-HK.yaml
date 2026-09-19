@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 162.128.157.164
   port: 443
   udp: true
@@ -16,63 +36,16 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
-  sni: 525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 8.218.184.4
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 104.16.60.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
-  tls: true
-  servername: hk1.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
-    headers:
-      Host: hk1.69lover.my
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: 202.146.222.89
   port: 443
   udp: true
@@ -80,7 +53,43 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/clashv8
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: hk4.miyazono-kaori.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c43389cf-4364-4bf3-8ee2-6ba81a9104f8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
+    short-id: ea6b43
+  servername: hk4e-launcher-static.hoyoverse.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: 195.58.144.56
+  port: 11907
+  udp: true
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  tls: true
+  servername: 195.58.144.56
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: hk5.miyazono-kaori.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c43389cf-4364-4bf3-8ee2-6ba81a9104f8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HbjpGbCmp7lBysnS-twEYgGoriXACHZQObIpU9zJWVc
+    short-id: a273e9ee6ac0a466
+  servername: www.hsbc.com.hk
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -88,22 +97,14 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
-  server: 47.83.19.148
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  server: 119.246.1.143
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2fripaojiedian
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,6 +119,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,5 +134,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
 rules:
 - MATCH,PROXIES
