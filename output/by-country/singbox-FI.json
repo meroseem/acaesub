@@ -12,19 +12,26 @@
       "password": "o2rw2hICwu1blrr_gZAl2Q"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "server": "150.241.71.148",
+      "server_port": 448,
+      "password": "6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV",
       "tls": {
         "enabled": true,
-        "server_name": "hub-fi-02.hanvpn.cc",
-        "insecure": false
+        "server_name": "kiev.gosgenarchive.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "fi02-grpc-8e47a"
+        "service_name": "TrojanGRPC"
       }
     },
     {
