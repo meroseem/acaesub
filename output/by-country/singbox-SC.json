@@ -25,18 +25,39 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
+      "server": "132.243.203.207",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lives",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

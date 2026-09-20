@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
       "server": "103.139.51.21",
       "server_port": 443,
       "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
@@ -15,36 +23,7 @@
         "server_name": "auth.figmafound.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
-          "short_id": "711ad7f475c35e5e"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - aceo",
-      "server": "cloud.figmafound.org",
-      "server_port": 443,
-      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloud.figmafound.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -59,8 +38,7 @@
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 03 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 02 - aceo"
       ]
     },
     {
@@ -68,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 03 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
