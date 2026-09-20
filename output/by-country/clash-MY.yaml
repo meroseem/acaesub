@@ -5,20 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
-  server: 47.250.84.25
-  port: 443
-  udp: true
-  type: trojan
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: moltbot.doctoroyy.net
-  skip-cert-verify: true
-- name: 🇲🇾 马来西亚 (Malaysia) 02 - aceo
   server: mlxy1.mangshe.xyz
   port: 2060
   udp: true
   type: hysteria2
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: mlxy1.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - aceo
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 31378
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM
+    short-id: 0888830f7006f1
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇲🇾 马来西亚 (Malaysia) 03 - aceo
+  server: 47.250.84.25
+  port: 443
+  udp: true
+  type: trojan
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  sni: moltbot.doctoroyy.net
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -27,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
   - 🇲🇾 马来西亚 (Malaysia) 02 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
   - 🇲🇾 马来西亚 (Malaysia) 02 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 03 - aceo
 rules:
 - MATCH,PROXIES

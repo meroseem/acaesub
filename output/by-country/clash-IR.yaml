@@ -4,26 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - aceo
-  server: 189.74.97.47
-  port: 2087
+- name: 🇮🇷 IR 01 - aceo
+  server: 188.166.49.168
+  port: 2083
   udp: true
   type: vless
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /755276b33b6f
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - aceo
+  - 🇮🇷 IR 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - aceo
+  - 🇮🇷 IR 01 - aceo
 rules:
 - MATCH,PROXIES

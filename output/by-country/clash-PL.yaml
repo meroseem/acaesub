@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
   server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 185.223.57.16
   port: 33743
@@ -55,13 +55,6 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 144.31.131.38
   port: 443
   udp: true
@@ -74,6 +67,17 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: 144.31.5.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 09 - aceo
   server: 188.114.96.19
   port: 80
@@ -88,16 +92,16 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: 144.31.2.33
+  server: pl4.moritech.net
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: pl3.moritech.net
+  servername: pl4.moritech.net
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
