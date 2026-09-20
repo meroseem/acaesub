@@ -5,20 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
-  server: 172.67.221.230
-  port: 443
+  server: 104.143.223.50
+  port: 2089
   udp: true
   type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: true
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
+  uuid: d144d943-46bd-41ce-af2c-06358c845616
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: 130.49.161.70
   port: 443
@@ -43,7 +37,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: 85.204.107.181
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
@@ -51,7 +45,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -61,6 +55,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - aceo
+  server: 188.72.103.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  tls: true
+  servername: apicdn.4subnodes.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
+    headers:
+      Host: apicdn.4subnodes.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +80,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
   - 🇦🇪 阿联酋 (UAE) 05 - aceo
+  - 🇦🇪 阿联酋 (UAE) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +91,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
   - 🇦🇪 阿联酋 (UAE) 05 - aceo
+  - 🇦🇪 阿联酋 (UAE) 06 - aceo
 rules:
 - MATCH,PROXIES

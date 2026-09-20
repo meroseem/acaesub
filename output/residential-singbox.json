@@ -4,16 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-      "server": "36.224.185.173",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - aceo",
+      "server": "104.18.46.46",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "server": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
       "server": "118.167.246.43",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -33,7 +55,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
       "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -44,27 +66,8 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
-      "server": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn"
-        }
+        "path": "/"
       }
     },
     {
@@ -72,7 +75,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo"
@@ -82,7 +85,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo"

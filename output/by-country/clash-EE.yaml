@@ -29,14 +29,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 217.60.182.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -46,6 +38,22 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
+  server: tishina-axe.dedyn.io
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 319ed24b1c7203aa
+  sni: tishina-axe.dedyn.io
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +63,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +73,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 rules:
 - MATCH,PROXIES
