@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   server: 185.135.86.175
-  port: 9036
+  port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   server: 185.135.86.175
   port: 9082
@@ -32,6 +32,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: google.storage.v2.Storage
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +47,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +56,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
 rules:
 - MATCH,PROXIES

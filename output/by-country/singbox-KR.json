@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 01 - aceo",
-      "server": "140.238.2.250",
+      "server": "3.36.93.74",
       "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.36.93.74",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -32,8 +36,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 03 - aceo",
+      "server": "3.39.4.109",
+      "server_port": 13672,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - aceo",
       "server": "152.70.237.123",
       "server_port": 2053,
       "password": "maintell",
@@ -45,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -55,7 +80,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -66,7 +91,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
       "server": "152-69-231-175.liao.kdns.fr",
       "server_port": 50160,
       "password": "1beb216e3f60aea9555dae60d219a5ca",
@@ -74,27 +99,6 @@
         "enabled": true,
         "server_name": "152-69-231-175.liao.kdns.fr",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
-      "server": "47.80.14.8",
-      "server_port": 443,
-      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w",
-          "short_id": "71110d3f7ef57760"
-        }
       }
     },
     {
@@ -118,41 +122,8 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 08 - aceo",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - aceo",
-      "server": "3.36.93.74",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - aceo",
       "server": "132.226.226.189",
       "server_port": 50160,
       "password": "1671a252e2a97dc2bda4e515475931da",
@@ -164,19 +135,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - aceo",
-      "server": "vpn-kr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-kr-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - aceo",
       "server": "150-230-252-217.liao.kdns.fr",
       "server_port": 50160,
       "password": "9cfc9458e48c028ec03ff86ebc71c744",
@@ -185,6 +144,61 @@
         "server_name": "127.0.0.1",
         "insecure": true
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - aceo",
+      "server": "47.80.14.8",
+      "server_port": 443,
+      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w",
+          "short_id": "71110d3f7ef57760"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - aceo",
+      "server": "172.64.146.228",
+      "server_port": 443,
+      "uuid": "f5851a6e-72da-4e4e-99b2-c79629149503",
+      "tls": {
+        "enabled": true,
+        "server_name": "d24e02c6.69lover.site",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/e916944b060a3543/stream",
+        "headers": {
+          "Host": "d24e02c6.69lover.site"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - aceo",
+      "server": "140.238.2.250",
+      "server_port": 443,
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto"
     },
     {
       "type": "selector",

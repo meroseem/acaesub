@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: e18901aa-2836-44ce-a1d7-af6b174ccae7
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 - aceo
   server: 128.241.25.72
   port: 30021
   udp: true
@@ -34,7 +19,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 - aceo
+- name: 🇯🇵 日本 (Japan) 02 - aceo
   server: 162.159.228.255
   port: 443
   udp: true
@@ -49,7 +34,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 04 - aceo
+- name: 🇯🇵 日本 (Japan) 03 - aceo
   server: 129.153.71.28
   port: 28863
   udp: true
@@ -64,14 +49,29 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 05 - aceo
-  server: 168.110.60.104
-  port: 18112
+- name: 🇯🇵 日本 (Japan) 04 - aceo
+  server: 45.32.57.118
+  port: 4433
   udp: true
   type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: e18901aa-2836-44ce-a1d7-af6b174ccae7
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 - name: 🇯🇵 日本 (Japan) 06 - aceo
   server: 154.31.114.248
   port: 50159
@@ -86,78 +86,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 08 - aceo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - aceo
-  server: 45.32.57.118
-  port: 4433
-  udp: true
-  type: vmess
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 11 - aceo
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 12 - aceo
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - aceo
-  server: 92.113.124.204
-  port: 18443
-  udp: true
-  type: vless
-  uuid: 751a662a-d55f-4e3b-82f5-f6732f9efcaf
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 14 - aceo
-  server: 172.67.217.240
+  server: 172.67.156.147
   port: 443
   udp: true
   type: vless
@@ -171,21 +100,70 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - aceo
-  server: 206.251.53.91
-  port: 8443
+- name: 🇯🇵 日本 (Japan) 08 - aceo
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 09 - aceo
+  server: 92.113.124.204
+  port: 18443
+  udp: true
+  type: vless
+  uuid: 5a4e390a-f5b0-40f5-b187-f99f60a933f1
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 日本 (Japan) 10 - aceo
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 11 - aceo
+  server: 207.148.99.230
+  port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 16 - aceo
+- name: 🇯🇵 日本 (Japan) 12 - aceo
+  server: oc.imfun.fun
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 13 - aceo
   server: 210.152.85.154
   port: 19364
   udp: true
@@ -200,22 +178,22 @@ proxies:
     path: /collect/user/products?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 17 - aceo
-  server: 203.137.165.164
-  port: 57554
+- name: 🇯🇵 日本 (Japan) 14 - aceo
+  server: 45.76.206.46
+  port: 443
   udp: true
   type: vless
-  uuid: 7fdb95f9-c758-486c-865a-7c1219823670
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tags/go/groups?ed=2560
     headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 18 - aceo
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 15 - aceo
   server: 103.115.18.54
   port: 443
   udp: true
@@ -229,21 +207,58 @@ proxies:
     path: /episode/files?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 19 - aceo
-  server: 178.104.202.46
-  port: 4433
+- name: 🇯🇵 日本 (Japan) 16 - aceo
+  server: 206.251.53.91
+  port: 8443
   udp: true
   type: vless
-  uuid: 7fa84611-065f-477d-be7a-88db3ecdfaca
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /settings?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 17 - aceo
+  server: 104.156.238.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /bt/image/categories
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 18 - aceo
+  server: 92.113.124.204
+  port: 18443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /directory/ads/news?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 19 - aceo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 20 - aceo
   server: 104.238.148.149
   port: 443
@@ -259,109 +274,50 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 21 - aceo
-  server: 57.129.130.10
-  port: 52014
+  server: 64.176.60.226
+  port: 443
   udp: true
   type: vless
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /documents?ed=2560fp=chrome
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 22 - aceo
-  server: 5.9.117.252
-  port: 4433
+  server: 207.148.94.254
+  port: 443
   udp: true
   type: vless
-  uuid: ef286b0e-21ed-4e2b-9110-e2ddc7627892
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /library?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 23 - aceo
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
   tls: true
   servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - aceo
-  server: 116.204.164.5
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 6eb831ea-8829-457b-a5d1-52f640a97486
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 - name: 🇯🇵 日本 (Japan) 24 - aceo
-  server: 207.148.99.230
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 25 - aceo
-  server: 108.160.136.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /doc/products/view?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 26 - aceo
-  server: 38.47.96.220
-  port: 11424
-  udp: true
-  type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇯🇵 日本 (Japan) 27 - aceo
-  server: 92.113.124.204
-  port: 18443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /directory/ads/news?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 28 (家宽) - aceo
   server: 57.129.130.63
   port: 52014
   udp: true
@@ -376,13 +332,66 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - aceo
-  server: 137.220.221.179
-  port: 443
+- name: 🇯🇵 日本 (Japan) 25 - aceo
+  server: 38.47.96.220
+  port: 11424
   udp: true
   type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 30 - aceo
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇯🇵 日本 (Japan) 26 - aceo
+  server: 57.129.130.10
+  port: 52014
+  udp: true
+  type: vless
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 (Japan) 27 - aceo
+  server: 144.31.135.38
+  port: 9444
+  udp: true
+  type: vless
+  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 (Japan) 28 - aceo
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 7fdb95f9-c758-486c-865a-7c1219823670
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇯🇵 日本 (Japan) 29 - aceo
   server: 46.101.46.169
   port: 486
   udp: true
@@ -397,24 +406,38 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 31 - aceo
-  server: 45.76.87.125
-  port: 14750
+- name: 🇯🇵 日本 (Japan) 30 - aceo
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
-  uuid: c2c94230-7075-4558-89f4-ddf74d7de107
+  uuid: 73fd7403-7286-4839-97ad-257ab536054c
   tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 (Japan) 31 - aceo
+  server: 178.104.202.46
+  port: 4433
+  udp: true
+  type: vless
+  uuid: 7fa84611-065f-477d-be7a-88db3ecdfaca
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 - name: 🇯🇵 日本 (Japan) 32 - aceo
   server: 3.114.220.22
-  port: 10583
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -424,28 +447,13 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 33 - aceo
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 34 - aceo
-  server: 211.48.30.184
-  port: 30017
+- name: 🇯🇵 日本 (Japan) 33 - aceo
+  server: 116.204.164.60
+  port: 7443
   udp: true
   type: vless
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  uuid: 48942ced-a272-41c1-98ac-75745d83bf93
   tls: true
   servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   skip-cert-verify: false
@@ -455,6 +463,21 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 (Japan) 34 - aceo
+  server: 116.204.164.5
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 6eb831ea-8829-457b-a5d1-52f640a97486
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 - name: 🇯🇵 日本 (Japan) 35 - aceo
   server: 147.45.42.73
   port: 20443
@@ -471,11 +494,11 @@ proxies:
     headers:
       Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇯🇵 日本 (Japan) 36 - aceo
-  server: 116.204.164.60
-  port: 7443
+  server: 211.48.30.184
+  port: 30017
   udp: true
   type: vless
-  uuid: 48942ced-a272-41c1-98ac-75745d83bf93
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
   tls: true
   servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   skip-cert-verify: false
@@ -486,14 +509,6 @@ proxies:
     headers:
       Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇯🇵 日本 (Japan) 37 - aceo
-  server: msjp1.mangshe.xyz
-  port: 20561
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 38 - aceo
   server: 129.151.64.169
   port: 31867
   udp: true
@@ -508,27 +523,12 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 39 - aceo
-  server: 116.204.164.17
-  port: 7443
+- name: 🇯🇵 日本 (Japan) 38 - aceo
+  server: 45.77.241.190
+  port: 8441
   udp: true
   type: vless
-  uuid: 4e2efa26-2969-486b-ae60-390ba54af31b
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 40 - aceo
-  server: 116.204.164.27
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 4c7480b2-d67b-4bb9-9f33-0700dfcbdee6
+  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
   tls: true
   servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
   skip-cert-verify: false
@@ -538,20 +538,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 41 - aceo
-  server: 13.231.19.51
-  port: 11690
-  udp: true
-  type: vless
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  servername: www.tesla.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 42 - aceo
+- name: 🇯🇵 日本 (Japan) 39 - aceo
   server: 54.179.79.12
   port: 53646
   udp: true
@@ -566,45 +553,57 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 43 - aceo
-  server: 144.31.135.38
-  port: 9444
+- name: 🇯🇵 日本 (Japan) 40 - aceo
+  server: 64.83.39.176
+  port: 443
   udp: true
   type: vless
-  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /seller?ed=2560
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 44 - aceo
-  server: 161.34.39.108
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 41 - aceo
+  server: 137.220.221.179
   port: 443
   udp: true
-  type: trojan
-  password: tsuchiya
-  sni: aa.ccmusic.jp
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 45 - aceo
-  server: 161.34.39.108
-  port: 443
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 42 - aceo
+  server: msjp1.mangshe.xyz
+  port: 20561
   udp: true
-  type: trojan
-  password: tsuchiya
-  sni: aa.ccmusic.jp
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 46 - aceo
-  server: 161.34.39.108
-  port: 443
-  udp: true
-  type: trojan
-  password: tsuchiya
-  sni: 161.34.39.108
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 43 - aceo
+  server: 45.142.166.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /knowledge?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 44 - aceo
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -637,7 +636,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 25 - aceo
   - 🇯🇵 日本 (Japan) 26 - aceo
   - 🇯🇵 日本 (Japan) 27 - aceo
-  - 🇯🇵 日本 (Japan) 28 (家宽) - aceo
+  - 🇯🇵 日本 (Japan) 28 - aceo
   - 🇯🇵 日本 (Japan) 29 - aceo
   - 🇯🇵 日本 (Japan) 30 - aceo
   - 🇯🇵 日本 (Japan) 31 - aceo
@@ -654,8 +653,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 42 - aceo
   - 🇯🇵 日本 (Japan) 43 - aceo
   - 🇯🇵 日本 (Japan) 44 - aceo
-  - 🇯🇵 日本 (Japan) 45 - aceo
-  - 🇯🇵 日本 (Japan) 46 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -688,7 +685,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 25 - aceo
   - 🇯🇵 日本 (Japan) 26 - aceo
   - 🇯🇵 日本 (Japan) 27 - aceo
-  - 🇯🇵 日本 (Japan) 28 (家宽) - aceo
+  - 🇯🇵 日本 (Japan) 28 - aceo
   - 🇯🇵 日本 (Japan) 29 - aceo
   - 🇯🇵 日本 (Japan) 30 - aceo
   - 🇯🇵 日本 (Japan) 31 - aceo
@@ -705,7 +702,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 42 - aceo
   - 🇯🇵 日本 (Japan) 43 - aceo
   - 🇯🇵 日本 (Japan) 44 - aceo
-  - 🇯🇵 日本 (Japan) 45 - aceo
-  - 🇯🇵 日本 (Japan) 46 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
       "server": "svvedko.nxxzxaw.beer",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -37,45 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
-      "server": "84.32.217.120",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channels/act",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

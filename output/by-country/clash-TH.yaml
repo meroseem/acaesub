@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - aceo
-  server: 34.15.162.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  tls: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇹🇭 泰国 (Thailand) 02 - aceo
   server: 103.86.49.57
   port: 80
   udp: true
@@ -27,7 +15,7 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 泰国 (Thailand) 03 - aceo
+- name: 🇹🇭 泰国 (Thailand) 02 - aceo
   server: 118.193.57.167
   port: 49667
   udp: true
@@ -38,6 +26,32 @@ proxies:
   network: ws
   ws-opts:
     path: /d46bf492
+- name: 🇹🇭 泰国 (Thailand) 03 - aceo
+  server: 34.15.162.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  tls: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 04 - aceo
+  server: 104.18.26.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +60,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
   - 🇹🇭 泰国 (Thailand) 03 - aceo
+  - 🇹🇭 泰国 (Thailand) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +69,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
   - 🇹🇭 泰国 (Thailand) 03 - aceo
+  - 🇹🇭 泰国 (Thailand) 04 - aceo
 rules:
 - MATCH,PROXIES

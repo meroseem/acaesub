@@ -5,29 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 188.114.97.8
-  port: 443
-  udp: true
-  type: vless
-  uuid: 513beae3-56e7-4954-a17e-930e06237b27
-  tls: true
-  servername: cFOi-2fX16G3-8ry2KDxMcJ.wjESV2IlA3rXBuhpC2NsUgrAChGAWk.wOrKerS.DEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/FuJlzLUhMmosE6ySAHYtJDUq6XlF?ed=2560
-    headers:
-      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -35,29 +20,18 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 185.113.223.183
-  port: 8443
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: gta.internet-card.sbs
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,7 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 rules:
 - MATCH,PROXIES
