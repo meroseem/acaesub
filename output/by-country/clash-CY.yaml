@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   server: 5.253.30.99
   port: 40443
@@ -28,21 +28,8 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  server: 5.253.42.164
-  port: 40443
-  udp: true
-  type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
   server: hydra.yokkastars.com
   port: 2443
   udp: true
@@ -65,7 +52,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
 rules:
 - MATCH,PROXIES
