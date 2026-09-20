@@ -13,20 +13,12 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 162.249.126.2
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: t.me
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 rules:
 - MATCH,PROXIES

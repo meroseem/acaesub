@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: 192.145.31.5
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: true
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   server: 193.148.59.178
   port: 443
   udp: true
@@ -26,7 +17,7 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   server: 131.123.41.177
   port: 8081
   udp: true
@@ -35,6 +26,16 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  server: 192.145.31.5
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

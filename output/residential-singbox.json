@@ -4,29 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-      "server": "104.18.46.46",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
-      "server": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
+        "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
         "insecure": false
       },
       "transport": {
@@ -34,28 +20,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
-      "server": "118.167.246.43",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
       "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -66,8 +32,7 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
@@ -75,20 +40,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
