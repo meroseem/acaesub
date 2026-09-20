@@ -5,28 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - aceo
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 02 - aceo
-  server: 142.4.216.225
+  server: 216.152.147.28
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-- name: 🇨🇦 加拿大 (Canada) 03 - aceo
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-- name: 🇨🇦 加拿大 (Canada) 04 - aceo
+  type: vless
+  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
+    short-id: b9f8d3f8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 02 - aceo
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -34,21 +25,35 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 05 - aceo
-  server: 15.223.122.197
+- name: 🇨🇦 加拿大 (Canada) 03 - aceo
+  server: 142.4.216.225
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 06 - aceo
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+- name: 🇨🇦 加拿大 (Canada) 04 - aceo
   server: 138.197.141.58
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 05 - aceo
+  server: 134.195.196.211
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 06 - aceo
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
 - name: 🇨🇦 加拿大 (Canada) 07 - aceo
   server: 66.70.179.198
   port: 2053
@@ -62,31 +67,22 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 08 - aceo
-  server: 130.107.73.148
-  port: 41373
-  udp: true
-  type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 09 - aceo
-  server: 209.200.246.148
+  server: 184.107.106.68
   port: 443
   udp: true
   type: vless
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  flow: xtls-rprx-vision
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   tls: true
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: lizca2.footballfantasyforum.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 09 - aceo
+  server: 15.223.122.197
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 15.223.122.197
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 10 - aceo
   server: 158.69.112.254
   port: 443
@@ -101,31 +97,40 @@ proxies:
   servername: www.speedtest.net
   client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 11 - aceo
-  server: 216.152.147.28
-  port: 443
+  server: 130.107.73.148
+  port: 41373
   udp: true
   type: vless
-  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
-    short-id: b9f8d3f8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: random
 - name: 🇨🇦 加拿大 (Canada) 12 - aceo
-  server: 148.113.196.75
-  port: 8443
+  server: docs.fastline-labs.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 334f25ef-3fb7-44a0-8ab7-79527d613281
+  sni: docs.fastline-labs.com
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 (Canada) 13 - aceo
+  server: 209.200.246.148
+  port: 443
   udp: true
   type: vless
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+  flow: xtls-rprx-vision
   tls: true
-  servername: ov-canada1.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇨🇦 加拿大 (Canada) 13 - aceo
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 14 - aceo
   server: 66.70.179.124
   port: 443
   udp: true
@@ -138,14 +143,6 @@ proxies:
     short-id: af7e79b5
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 14 - aceo
-  server: docs.fastline-labs.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 334f25ef-3fb7-44a0-8ab7-79527d613281
-  sni: docs.fastline-labs.com
-  skip-cert-verify: false
 - name: 🇨🇦 加拿大 (Canada) 15 - aceo
   server: 51.222.12.127
   port: 445
@@ -153,15 +150,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 16 - aceo
-  server: 184.107.106.68
-  port: 443
-  udp: true
-  type: vless
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  tls: true
-  servername: lizca2.footballfantasyforum.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -182,7 +170,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 13 - aceo
   - 🇨🇦 加拿大 (Canada) 14 - aceo
   - 🇨🇦 加拿大 (Canada) 15 - aceo
-  - 🇨🇦 加拿大 (Canada) 16 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -203,6 +190,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 13 - aceo
   - 🇨🇦 加拿大 (Canada) 14 - aceo
   - 🇨🇦 加拿大 (Canada) 15 - aceo
-  - 🇨🇦 加拿大 (Canada) 16 - aceo
 rules:
 - MATCH,PROXIES

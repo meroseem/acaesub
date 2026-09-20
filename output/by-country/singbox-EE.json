@@ -28,18 +28,63 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
