@@ -25,6 +25,17 @@ proxies:
   password: 1e6fed5b-5edc-4ddb-a268-79d7fae4365c
   sni: filesconvert.org
   skip-cert-verify: true
+- name: 🇦🇹 奥地利 (Austria) 03 - aceo
+  server: 212.183.88.136
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - aceo
   - 🇦🇹 奥地利 (Austria) 02 - aceo
+  - 🇦🇹 奥地利 (Austria) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - aceo
   - 🇦🇹 奥地利 (Austria) 02 - aceo
+  - 🇦🇹 奥地利 (Austria) 03 - aceo
 rules:
 - MATCH,PROXIES
