@@ -4,21 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
-      "server": "104.238.149.30",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "172.67.231.254",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "www.calmlunch.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/redirect.php/comic?ed=2560",
+        "path": "/assignment",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,63 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
-      "server": "104.238.148.149",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/about?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
-      "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
-      "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
       "server": "118.167.246.43",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -80,8 +24,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - aceo",
+      "server": "104.238.149.30",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/redirect.php/comic?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
       "server": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -93,7 +56,25 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/"
+        "headers": {
+          "Host": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
+      "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -101,22 +82,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇯🇵 日本 (Japan) 02 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇯🇵 日本 (Japan) 02 (家宽) - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
