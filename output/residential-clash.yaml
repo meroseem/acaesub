@@ -15,20 +15,22 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - aceo
-  server: 104.238.149.30
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /redirect.php/comic?ed=2560
+    path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   port: 443
@@ -43,39 +45,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
 rules:
 - MATCH,PROXIES

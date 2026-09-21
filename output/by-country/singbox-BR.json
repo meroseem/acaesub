@@ -6,40 +6,17 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 - aceo",
-      "server": "147.90.89.173",
-      "server_port": 443,
+      "server": "129.151.64.169",
+      "server_port": 31867,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/source/buy/f?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - aceo",
-      "server": "185.125.100.76",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/trade/game/movies",
+        "path": "/files",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -50,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - aceo",
-        "🇧🇷 巴西 (Brazil) 02 - aceo"
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - aceo",
-        "🇧🇷 巴西 (Brazil) 02 - aceo"
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

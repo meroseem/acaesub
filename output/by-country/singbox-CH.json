@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
+        "server_name": "usa.oblaco.bet",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+          "short_id": ""
+        }
       }
     },
     {
@@ -56,13 +65,26 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+      "server": "82.38.64.229",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo"
       ]
     },
     {
@@ -71,7 +93,8 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
