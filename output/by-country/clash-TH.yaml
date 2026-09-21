@@ -26,7 +26,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 03 - aceo
   server: 118.193.57.167
   port: 49667
@@ -38,6 +38,35 @@ proxies:
   network: ws
   ws-opts:
     path: /d46bf492
+- name: 🇹🇭 泰国 (Thailand) 04 - aceo
+  server: 43.160.220.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /buy/uploads?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 泰国 (Thailand) 05 - aceo
+  server: 104.18.26.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +75,8 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
   - 🇹🇭 泰国 (Thailand) 03 - aceo
+  - 🇹🇭 泰国 (Thailand) 04 - aceo
+  - 🇹🇭 泰国 (Thailand) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +85,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
   - 🇹🇭 泰国 (Thailand) 03 - aceo
+  - 🇹🇭 泰国 (Thailand) 04 - aceo
+  - 🇹🇭 泰国 (Thailand) 05 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: 131.123.37.199
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   server: 192.145.31.5
   port: 8443
   udp: true
@@ -23,7 +14,28 @@ proxies:
   servername: neth9.lunariai.ru
   skip-cert-verify: true
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  server: 131.123.37.199
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  server: 45.9.156.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: e633de28-bfc0-4aca-aa67-e2e12e2c9e58
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+  servername: mzone.bg.3cloudhost.com
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
   server: 108.165.233.223
   port: 443
   udp: true
@@ -46,6 +58,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +67,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
 rules:
 - MATCH,PROXIES

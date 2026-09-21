@@ -4,14 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
-      "server": "104.21.39.30",
+      "server": "104.21.24.95",
       "server_port": 443,
-      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev",
+        "server_name": "1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/zJi4ccv7FeEo780U?ed=2560",
+        "headers": {
+          "Host": "1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - aceo",
+      "server": "188.114.98.134",
+      "server_port": 443,
+      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
+      "tls": {
+        "enabled": true,
+        "server_name": "o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,30 +49,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoicHV2Z0VMNllZQmtoZEMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "path": "/",
         "headers": {
-          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - aceo",
-      "server": "95.85.230.35",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
+          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
         }
       }
     },
@@ -62,13 +67,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - aceo",
+      "server": "95.85.230.35",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.oblaco.bet",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - aceo",
         "🇨🇿 捷克 (Czech) 02 - aceo",
-        "🇨🇿 捷克 (Czech) 03 - aceo"
+        "🇨🇿 捷克 (Czech) 03 - aceo",
+        "🇨🇿 捷克 (Czech) 04 - aceo"
       ]
     },
     {
@@ -77,7 +104,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - aceo",
         "🇨🇿 捷克 (Czech) 02 - aceo",
-        "🇨🇿 捷克 (Czech) 03 - aceo"
+        "🇨🇿 捷克 (Czech) 03 - aceo",
+        "🇨🇿 捷克 (Czech) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

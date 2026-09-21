@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - aceo
-  server: 104.17.148.22
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  server: 188.114.96.7
+  port: 8443
   udp: true
   type: vless
-  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
   tls: true
-  servername: bPB-4dc4958B.hXjkcgHcHv.woRkeRs.deV
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    path: /sync
     headers:
-      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
+      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES
