@@ -12,17 +12,27 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: se.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇩🇰 丹麦 (Denmark) 02 - aceo
+  server: 46.229.243.154
+  port: 4443
+  udp: true
+  type: trojan
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇰 丹麦 (Denmark) 01 - aceo
+  - 🇩🇰 丹麦 (Denmark) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇰 丹麦 (Denmark) 01 - aceo
+  - 🇩🇰 丹麦 (Denmark) 02 - aceo
 rules:
 - MATCH,PROXIES

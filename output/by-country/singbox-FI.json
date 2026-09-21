@@ -6,21 +6,20 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "2.27.48.140",
-      "server_port": 443,
-      "uuid": "7cbc0c1f-9aa1-4a4c-a052-45ccc855df10",
-      "flow": "xtls-rprx-vision",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "intel.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Ax1xKjjBS7afZ94zHY-9iI7hohBmzA-EpS-eRILX2CA",
-          "short_id": "c66279532e2e"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
     },
@@ -46,12 +45,81 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - aceo",
+      "server": "tt.sonyabibboop.com",
+      "server_port": 2055,
+      "uuid": "884b5fb5-13b5-433a-92cc-0ff4e5773375",
+      "tls": {
+        "enabled": true,
+        "server_name": "tt.sonyabibboop.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2C-oK3mN8pZ8jeTAVhgt6ubT-xqL7cklq9QmwtBY9mE",
+          "short_id": "7b86a01d952e8df4"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "sonya-grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - aceo",
+      "server": "est1313.ggisopi.su",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "est1313.ggisopi.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - aceo",
+      "server": "2.27.48.140",
+      "server_port": 443,
+      "uuid": "7cbc0c1f-9aa1-4a4c-a052-45ccc855df10",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ax1xKjjBS7afZ94zHY-9iI7hohBmzA-EpS-eRILX2CA",
+          "short_id": "c66279532e2e"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 02 - aceo",
+        "🇫🇮 芬兰 (Finland) 03 - aceo",
+        "🇫🇮 芬兰 (Finland) 04 - aceo",
+        "🇫🇮 芬兰 (Finland) 05 - aceo"
       ]
     },
     {
@@ -59,7 +127,10 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 02 - aceo",
+        "🇫🇮 芬兰 (Finland) 03 - aceo",
+        "🇫🇮 芬兰 (Finland) 04 - aceo",
+        "🇫🇮 芬兰 (Finland) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

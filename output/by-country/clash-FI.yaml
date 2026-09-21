@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 2.27.48.140
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 7cbc0c1f-9aa1-4a4c-a052-45ccc855df10
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: Ax1xKjjBS7afZ94zHY-9iI7hohBmzA-EpS-eRILX2CA
-    short-id: c66279532e2e
-  servername: intel.com
-  client-fingerprint: safari
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 196.196.206.38
   port: 443
@@ -30,6 +29,46 @@ proxies:
     short-id: d110331f200987ae
   servername: finkafsb.finiki.lol
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: tt.sonyabibboop.com
+  port: 2055
+  udp: true
+  type: vless
+  uuid: 884b5fb5-13b5-433a-92cc-0ff4e5773375
+  tls: true
+  reality-opts:
+    public-key: 2C-oK3mN8pZ8jeTAVhgt6ubT-xqL7cklq9QmwtBY9mE
+    short-id: 7b86a01d952e8df4
+  servername: tt.sonyabibboop.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: sonya-grpc
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: est1313.ggisopi.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+  server: 2.27.48.140
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7cbc0c1f-9aa1-4a4c-a052-45ccc855df10
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Ax1xKjjBS7afZ94zHY-9iI7hohBmzA-EpS-eRILX2CA
+    short-id: c66279532e2e
+  servername: intel.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
+  - 🇫🇮 芬兰 (Finland) 03 - aceo
+  - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
+  - 🇫🇮 芬兰 (Finland) 03 - aceo
+  - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES
