@@ -5,31 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 104.21.24.95
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tr/zJi4ccv7FeEo780U?ed=2560
-- name: 🇨🇿 捷克 (Czech) 02 - aceo
-  server: 188.114.98.134
+  server: 8.6.112.9
   port: 443
   udp: true
   type: vless
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
   tls: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - aceo
+  server: 153.76.185.186
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 03 - aceo
   server: 153.76.185.189
   port: 3090
@@ -40,6 +38,15 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 04 - aceo
+  server: 153.76.185.188
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 05 - aceo
   server: 95.85.230.35
   port: 443
   udp: true
@@ -51,6 +58,21 @@ proxies:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
   client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 06 - aceo
+  server: 157.173.125.214
+  port: 2087
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /redirect/china/view?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +82,8 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - aceo
   - 🇨🇿 捷克 (Czech) 03 - aceo
   - 🇨🇿 捷克 (Czech) 04 - aceo
+  - 🇨🇿 捷克 (Czech) 05 - aceo
+  - 🇨🇿 捷克 (Czech) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +93,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - aceo
   - 🇨🇿 捷克 (Czech) 03 - aceo
   - 🇨🇿 捷克 (Czech) 04 - aceo
+  - 🇨🇿 捷克 (Czech) 05 - aceo
+  - 🇨🇿 捷克 (Czech) 06 - aceo
 rules:
 - MATCH,PROXIES
