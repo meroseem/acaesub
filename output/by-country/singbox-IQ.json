@@ -4,22 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - aceo",
-      "server": "35.199.90.53",
+      "type": "trojan",
+      "tag": "🇮🇶 IQ 01 - aceo",
+      "server": "172.67.132.19",
       "server_port": 443,
-      "uuid": "e9c2ed7f-79ab-40a8-8910-24468f5da712",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw",
-          "short_id": "4b414f69a06e1e81"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/bDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d?ed=2560",
+        "headers": {
+          "Host": "vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

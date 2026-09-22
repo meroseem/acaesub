@@ -13,13 +13,19 @@ proxies:
   sni: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
-  server: aa683731-tm3mo0-unh4sc-xm0q.nw4.hyhuawei.com
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
   udp: true
-  type: hysteria2
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  sni: aa683731-tm3mo0-unh4sc-xm0q.nw4.hyhuawei.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

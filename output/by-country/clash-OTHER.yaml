@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  server: 128.241.25.3
-  port: 30021
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: 104.21.37.9
+  port: 443
   udp: true
   type: vless
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
+  uuid: 89c5493f-9485-85e5-c43f-df0600000000
   tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  servername: nameless-moon-7c4d.shafmrhjlos23.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vasl
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+      Host: nameless-moon-7c4d.shafmrhjlos23.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 rules:
 - MATCH,PROXIES

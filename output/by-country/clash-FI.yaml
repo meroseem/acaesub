@@ -12,17 +12,18 @@ proxies:
   cipher: aes-256-gcm
   password: rg0g3xp9rk9nk9o0
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 95.216.27.15
-  port: 2053
+  server: 95.217.24.119
+  port: 2087
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
+    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
+    short-id: e9fae729e40ae07e
+  servername: 62.238.103.54
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 152.233.54.104
   port: 443
@@ -38,32 +39,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 95.217.24.119
-  port: 2087
-  udp: true
-  type: vless
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  servername: 62.238.103.54
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +47,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,7 +55,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES
