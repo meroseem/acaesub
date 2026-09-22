@@ -17,17 +17,14 @@ proxies:
   servername: us04.mcloud.mov
   client-fingerprint: safari
 - name: 🇨🇿 捷克 (Czech) 02 - aceo
-  server: 95.85.230.35
-  port: 443
+  server: 153.76.185.86
+  port: 3090
   udp: true
   type: vless
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: de.oblaco.bet
-  client-fingerprint: chrome
+  uuid: 5bcba788-5e2d-457b-8bd2-67fa99e49e0f
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select

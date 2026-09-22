@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇮🇹 意大利 (Italy) 01 - aceo",
+      "server": "89.41.172.85",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 02 - aceo",
       "server": "57.131.48.45",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -13,37 +21,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 02 - aceo",
+      "tag": "🇮🇹 意大利 (Italy) 03 - aceo",
+      "server": "31.77.201.33",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "italia.superbuba.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 04 - aceo",
       "server": "204.216.216.23",
       "server_port": 10086,
       "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - aceo",
-      "server": "140.248.189.57",
-      "server_port": 80,
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "tazia.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇹 意大利 (Italy) 04 - aceo",
-      "server": "89.41.172.106",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 05 - aceo",
-      "server": "31.77.201.33",
+      "server": "31.76.113.231",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -73,7 +80,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -85,7 +92,7 @@
     {
       "type": "vmess",
       "tag": "🇮🇹 意大利 (Italy) 07 - aceo",
-      "server": "89.41.172.85",
+      "server": "89.41.172.106",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"

@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - aceo
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - aceo
   server: es.cache-4d8a.com
   port: 443
   udp: true
@@ -32,13 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - aceo
-  - 🇪🇸 西班牙 (Spain) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
-  - 🇪🇸 西班牙 (Spain) 02 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "87.58.148.70",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "rg0g3xp9rk9nk9o0"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
-      "server": "fi1.cache-4d8a.com",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
+      "server": "152.233.54.104",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
       "tls": {
@@ -34,6 +26,14 @@
         "type": "grpc",
         "service_name": "grpc"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
+      "server": "87.58.148.70",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "rg0g3xp9rk9nk9o0"
     },
     {
       "type": "vless",
@@ -58,23 +58,20 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - aceo",
-      "server": "202.166.187.132",
-      "server_port": 443,
-      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "f.yoptybla.ru",
-        "insecure": false,
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.yoptybla.ru"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
     },
@@ -100,6 +97,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - aceo",
+      "server": "202.166.187.132",
+      "server_port": 443,
+      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "f.yoptybla.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f.yoptybla.ru"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -108,7 +128,8 @@
         "🇫🇮 芬兰 (Finland) 02 - aceo",
         "🇫🇮 芬兰 (Finland) 03 - aceo",
         "🇫🇮 芬兰 (Finland) 04 - aceo",
-        "🇫🇮 芬兰 (Finland) 05 - aceo"
+        "🇫🇮 芬兰 (Finland) 05 - aceo",
+        "🇫🇮 芬兰 (Finland) 06 - aceo"
       ]
     },
     {
@@ -119,7 +140,8 @@
         "🇫🇮 芬兰 (Finland) 02 - aceo",
         "🇫🇮 芬兰 (Finland) 03 - aceo",
         "🇫🇮 芬兰 (Finland) 04 - aceo",
-        "🇫🇮 芬兰 (Finland) 05 - aceo"
+        "🇫🇮 芬兰 (Finland) 05 - aceo",
+        "🇫🇮 芬兰 (Finland) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
