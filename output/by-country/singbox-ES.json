@@ -4,12 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - aceo",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "shadowsocks",
@@ -20,32 +20,12 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
-      "server": "mygptagent.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
-      }
+      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -54,8 +34,7 @@
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - aceo",
         "🇪🇸 西班牙 (Spain) 02 - aceo",
-        "🇪🇸 西班牙 (Spain) 03 - aceo",
-        "🇪🇸 西班牙 (Spain) 04 - aceo"
+        "🇪🇸 西班牙 (Spain) 03 - aceo"
       ]
     },
     {
@@ -64,8 +43,7 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - aceo",
         "🇪🇸 西班牙 (Spain) 02 - aceo",
-        "🇪🇸 西班牙 (Spain) 03 - aceo",
-        "🇪🇸 西班牙 (Spain) 04 - aceo"
+        "🇪🇸 西班牙 (Spain) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,21 +6,23 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - aceo",
-      "server": "138.124.183.18",
+      "server": "185.255.179.11",
       "server_port": 9443,
       "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
         "server_name": "hub-de-03.hanvpn.cc",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "de03-grpc-8e47a"
+        "type": "ws",
+        "path": "/de03-ws-8e47a",
+        "headers": {
+          "Host": "hub-de-03.hanvpn.cc"
+        }
       }
     },
     {

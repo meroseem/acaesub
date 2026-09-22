@@ -10,16 +10,24 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: whatsapp.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 85.204.107.177
+  server: 85.204.107.171
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 38.180.35.145
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: bu2.freeguard.org
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 rules:
 - MATCH,PROXIES

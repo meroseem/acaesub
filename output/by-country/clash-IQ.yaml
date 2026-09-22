@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - aceo
-  server: 138.124.183.18
+  server: 185.255.179.11
   port: 9443
   udp: true
   type: vless
@@ -13,10 +13,11 @@ proxies:
   tls: true
   servername: hub-de-03.hanvpn.cc
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: de03-grpc-8e47a
+  network: ws
+  ws-opts:
+    path: /de03-ws-8e47a
+    headers:
+      Host: hub-de-03.hanvpn.cc
 proxy-groups:
 - name: PROXIES
   type: select
