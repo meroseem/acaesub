@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: b5f27d9a-4d7a-4fa3-a45a-09bfd3e8a248
+  uuid: ce55737c-243b-497f-9d9a-38700f327894
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -27,15 +27,28 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 85.204.107.178
+  server: 94.183.224.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: uae.unixzone.us
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -54,6 +67,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
+  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +77,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
+  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 rules:
 - MATCH,PROXIES
