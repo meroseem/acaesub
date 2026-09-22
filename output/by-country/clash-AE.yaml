@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: ceaf462e-a9fa-4c4b-94be-f192570465a7
+  uuid: 8a4c1e5d-5180-4026-83e2-0c208428e0a6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -27,26 +27,13 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 85.204.107.174
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: bgr.accessgate.link
-  port: 2443
-  udp: true
-  type: vless
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw
-    short-id: b0d8c9a285c70f6f
-  servername: unpkg.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +42,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
-  - 🇦🇪 阿联酋 (UAE) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +50,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
-  - 🇦🇪 阿联酋 (UAE) 04 - aceo
 rules:
 - MATCH,PROXIES

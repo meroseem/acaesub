@@ -6,26 +6,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "104.16.72.2",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 02 - aceo",
-      "server": "104.16.72.2",
+      "server": "104.16.72.41",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -46,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo",
-        "🌐 其他地区 (Other) 02 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo",
-        "🌐 其他地区 (Other) 02 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
