@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
-      "server": "86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "server": "654168416355441.oylfmxz.cn",
       "server_port": 443,
-      "password": "3437f34e-1b77-11eb-8684-f23c913c8d2b",
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com",
-        "insecure": true
+        "server_name": "654168416355441.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "654168416355441.oylfmxz.cn"
+        }
       }
     },
     {
@@ -36,7 +44,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo"
       ]
     },
@@ -44,7 +52,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"

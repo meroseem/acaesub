@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇶 IQ 01 - aceo",
-      "server": "172.67.132.19",
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+      "server": "my2.miyazono-kaori.com",
       "server_port": 443,
-      "password": "Telegram_healer_config",
+      "uuid": "e125bbfe-1307-471d-b21c-c1afe0c1de98",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.setel.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/bDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d?ed=2560",
-        "headers": {
-          "Host": "vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM",
+          "short_id": "ed77ac35a310"
         }
       }
     },
@@ -34,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

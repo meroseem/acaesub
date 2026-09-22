@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: 193.148.59.178
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  server: my2.miyazono-kaori.com
   port: 443
   udp: true
   type: vless
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  uuid: e125bbfe-1307-471d-b21c-c1afe0c1de98
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
+    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
+    short-id: ed77ac35a310
+  servername: www.setel.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
 rules:
 - MATCH,PROXIES

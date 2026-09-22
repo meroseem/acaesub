@@ -11,31 +11,17 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: 72.56.52.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: add59713-f5c6-4442-83a3-6bc9281f5c90
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.dexlen.cc
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
 rules:
 - MATCH,PROXIES

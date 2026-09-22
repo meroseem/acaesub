@@ -4,25 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "104.21.37.9",
+      "server": "104.16.72.2",
       "server_port": 443,
-      "uuid": "89c5493f-9485-85e5-c43f-df0600000000",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "nameless-moon-7c4d.shafmrhjlos23.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vasl",
+        "path": "/assignment",
         "headers": {
-          "Host": "nameless-moon-7c4d.shafmrhjlos23.workers.dev"
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 02 - aceo",
+      "server": "104.16.72.2",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -31,14 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo",
+        "🌐 其他地区 (Other) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo",
+        "🌐 其他地区 (Other) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

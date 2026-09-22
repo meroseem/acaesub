@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 87.58.148.70
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: rg0g3xp9rk9nk9o0
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 95.217.24.119
-  port: 2087
-  udp: true
-  type: vless
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  servername: 62.238.103.54
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 152.233.54.104
   port: 443
   udp: true
@@ -39,6 +19,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 95.217.24.119
+  port: 2087
+  udp: true
+  type: vless
+  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
+    short-id: e9fae729e40ae07e
+  servername: 62.238.103.54
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: 202.166.187.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  tls: true
+  servername: f.yoptybla.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f.yoptybla.ru
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
-      "server": "153.76.185.88",
-      "server_port": 3090,
-      "uuid": "5ba9f3dc-e8ec-4c8c-b273-68daed2fef12",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - aceo",
+      "server": "172.233.14.17",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,31 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - aceo
-  server: 104.21.37.9
+  server: 104.16.72.2
   port: 443
   udp: true
-  type: vless
-  uuid: 89c5493f-9485-85e5-c43f-df0600000000
-  tls: true
-  servername: nameless-moon-7c4d.shafmrhjlos23.workers.dev
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vasl
-    headers:
-      Host: nameless-moon-7c4d.shafmrhjlos23.workers.dev
+    path: /assignment
+- name: 🌐 其他地区 (Other) 02 - aceo
+  server: 104.16.72.2
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
 rules:
 - MATCH,PROXIES

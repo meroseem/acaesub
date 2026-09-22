@@ -5,17 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - aceo
-  server: 172.67.143.94
+  server: 104.21.16.123
   port: 443
   udp: true
   type: trojan
   password: Telegram_healer_config
-  sni: Z6Y-dAOx0HYhdTdy.R720KPbYX2L3i406.woRKers.DEV
-  skip-cert-verify: false
+  sni: 7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tr/P9UvWEJwKNGrOjrb1ICnWGhH8iQGDcG?ed=2560
+    path: /tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560
 - name: 🇬🇧 英国 (United Kingdom) 02 - aceo
+  server: 158.173.221.214
+  port: 11001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 03 - aceo
+  server: 51.77.225.200
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
+  server: 144.24.229.97
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU=
+- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
   server: 66.90.104.42
   port: 2083
   udp: true
@@ -24,29 +45,36 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 03 - aceo
-  server: 66.163.117.58
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
-  server: 51.38.71.51
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
 - name: 🇬🇧 英国 (United Kingdom) 06 - aceo
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+  server: 134.65.59.212
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Pd3wPrQChdIKBVDeZ9In4vIj5Lq1w4lygpl82gPp4po=
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+  server: labs.frkn.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+  sni: labs.frkn.org
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -58,21 +86,7 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
-  server: 144.24.229.97
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU=
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
   server: 31.76.88.10
   port: 443
   udp: true
@@ -87,7 +101,38 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf5.rumedia-cdn.com
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
+  server: pahobac.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: pahobac.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: pahobac.org
+- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
+  server: 51.38.71.51
+  port: 2083
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
+  server: 66.163.117.58
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
   server: 193.163.203.170
   port: 443
   udp: true
@@ -100,22 +145,6 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
-  server: 94.156.250.148
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
-  server: 2.27.205.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,6 +162,9 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
+  - 🇬🇧 英国 (United Kingdom) 13 - aceo
+  - 🇬🇧 英国 (United Kingdom) 14 - aceo
+  - 🇬🇧 英国 (United Kingdom) 15 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,5 +182,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
+  - 🇬🇧 英国 (United Kingdom) 13 - aceo
+  - 🇬🇧 英国 (United Kingdom) 14 - aceo
+  - 🇬🇧 英国 (United Kingdom) 15 - aceo
 rules:
 - MATCH,PROXIES

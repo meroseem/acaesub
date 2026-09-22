@@ -4,12 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "87.58.148.70",
+      "server": "152.233.54.104",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "rg0g3xp9rk9nk9o0"
+      "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.cache-4d8a.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U",
+          "short_id": "0a30e2aee95a7571"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "vless",
@@ -35,25 +51,24 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - aceo",
-      "server": "152.233.54.104",
+      "server": "202.166.187.132",
       "server_port": 443,
-      "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
+      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
       "tls": {
         "enabled": true,
-        "server_name": "fi1.cache-4d8a.com",
+        "server_name": "f.yoptybla.ru",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U",
-          "short_id": "0a30e2aee95a7571"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f.yoptybla.ru"
+        }
       }
     },
     {
