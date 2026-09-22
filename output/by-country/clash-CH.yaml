@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 82.38.64.229
   port: 8443
@@ -39,6 +39,21 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  server: 82.38.139.24
+  port: 8445
+  udp: true
+  type: vless
+  uuid: c6f6ecc2-26af-4e2f-95a7-e7018819a716
+  tls: true
+  reality-opts:
+    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
+    short-id: 6ba85179e30d4fc2
+  servername: hetzner.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: Google
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +62,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +71,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 rules:
 - MATCH,PROXIES
