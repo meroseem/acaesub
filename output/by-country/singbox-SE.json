@@ -4,63 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "84.32.106.171",
+      "server": "16.171.55.2",
       "server_port": 443,
-      "uuid": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "my.lunarchaff.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "short_id": "5d1e8b3f6c2a9d4e"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "moktana.net.v1.StreamService"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": false
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
-      "server": "185.207.66.8",
-      "server_port": 443,
-      "uuid": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "server": "193.42.39.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
-        "server_name": "hexagonicfield.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "short_id": "5d1e8b3f6c2a9d4e"
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "moktana.net.v1.StreamService"
+        "service_name": "TunService"
       }
     },
     {
@@ -69,8 +41,7 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo"
       ]
     },
     {
@@ -78,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

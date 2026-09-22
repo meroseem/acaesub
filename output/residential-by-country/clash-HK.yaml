@@ -1,0 +1,38 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  server: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+  sni: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+  server: aa683731-tm3mo0-unh4sc-xm0q.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+  sni: aa683731-tm3mo0-unh4sc-xm0q.nw4.hyhuawei.com
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+rules:
+- MATCH,PROXIES

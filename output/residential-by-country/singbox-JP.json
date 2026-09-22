@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇹 GT 01 - aceo",
-      "server": "185.47.254.251",
-      "server_port": 443,
-      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
+      "server": "128.241.25.3",
+      "server_port": 30021,
+      "uuid": "afec813e-a5c7-432d-be48-2803c30eea4e",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
-          "short_id": "6c059ecfddf9b179"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇹 GT 01 - aceo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇹 GT 01 - aceo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

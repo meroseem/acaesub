@@ -16,28 +16,17 @@ proxies:
     public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
   servername: us04.mcloud.mov
   client-fingerprint: safari
-- name: 🇨🇿 捷克 (Czech) 02 - aceo
-  server: 153.76.185.86
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 5bcba788-5e2d-457b-8bd2-67fa99e49e0f
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - aceo
-  - 🇨🇿 捷克 (Czech) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - aceo
-  - 🇨🇿 捷克 (Czech) 02 - aceo
 rules:
 - MATCH,PROXIES

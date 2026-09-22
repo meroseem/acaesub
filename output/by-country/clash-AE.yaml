@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 4e32f662-01da-4dad-bf33-ee17f578d118
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,8 +14,20 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b5f27d9a-4d7a-4fa3-a45a-09bfd3e8a248
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 85.204.107.175
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
@@ -35,19 +35,6 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: 94.183.224.45
-  port: 443
-  udp: true
-  type: vless
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: a1b2c3d4e5f67890
-  servername: dzen.ru
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,6 +63,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
   - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 rules:
 - MATCH,PROXIES
