@@ -5,41 +5,74 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - aceo
+  server: 158.51.123.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 02 - aceo
   server: 185.156.47.97
   port: 9443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-- name: 🇨🇦 加拿大 (Canada) 02 - aceo
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 03 - aceo
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 04 - aceo
   server: 142.4.216.225
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
-- name: 🇨🇦 加拿大 (Canada) 04 - aceo
-  server: 138.197.141.58
+- name: 🇨🇦 加拿大 (Canada) 05 - aceo
+  server: 134.195.196.211
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 06 - aceo
+  server: 51.79.49.116
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 (Canada) 07 - aceo
+  server: 66.163.113.176
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 08 - aceo
+  server: 134.195.198.214
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 09 - aceo
+  server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 05 - aceo
-  server: 15.235.75.71
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
-- name: 🇨🇦 加拿大 (Canada) 06 - aceo
+- name: 🇨🇦 加拿大 (Canada) 10 - aceo
   server: 66.70.179.198
   port: 2053
   udp: true
@@ -51,41 +84,6 @@ proxies:
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 07 - aceo
-  server: 188.114.97.6
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 08 - aceo
-  server: 158.51.123.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 09 - aceo
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 10 - aceo
-  server: 66.163.113.176
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 11 - aceo
   server: 15.223.122.197
   port: 443
@@ -95,56 +93,6 @@ proxies:
   sni: 15.223.122.197
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12 - aceo
-  server: 23.132.28.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
-    short-id: a7c31f92
-  servername: candy.atlasparser.site
-  client-fingerprint: qq
-- name: 🇨🇦 加拿大 (Canada) 13 - aceo
-  server: 130.107.73.148
-  port: 41373
-  udp: true
-  type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 14 - aceo
-  server: 158.69.112.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  servername: www.speedtest.net
-  client-fingerprint: edge
-- name: 🇨🇦 加拿大 (Canada) 15 - aceo
-  server: 188.114.97.6
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 16 - aceo
   server: 209.200.246.148
   port: 443
   udp: true
@@ -157,6 +105,46 @@ proxies:
     short-id: f98843107912e782
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 13 - aceo
+  server: 158.69.112.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: edge
+- name: 🇨🇦 加拿大 (Canada) 14 - aceo
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 15 - aceo
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 16 - aceo
+  server: 23.132.28.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
+    short-id: a7c31f92
+  servername: candy.atlasparser.site
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 17 - aceo
   server: mygptagent.org
   port: 443
@@ -172,6 +160,13 @@ proxies:
   ws-opts:
     path: /linkvws
 - name: 🇨🇦 加拿大 (Canada) 18 - aceo
+  server: 51.222.12.127
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 19 - aceo
   server: 148.113.196.75
   port: 8443
   udp: true
@@ -183,7 +178,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇨🇦 加拿大 (Canada) 19 - aceo
+- name: 🇨🇦 加拿大 (Canada) 20 - aceo
   server: 66.70.179.124
   port: 443
   udp: true
@@ -195,37 +190,20 @@ proxies:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
     short-id: af7e79b5
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 20 - aceo
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 21 - aceo
-  server: 51.79.49.116
-  port: 8882
+  server: 130.107.73.148
+  port: 41373
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 22 - aceo
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 23 - aceo
-  server: 134.195.198.214
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -252,8 +230,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 19 - aceo
   - 🇨🇦 加拿大 (Canada) 20 - aceo
   - 🇨🇦 加拿大 (Canada) 21 - aceo
-  - 🇨🇦 加拿大 (Canada) 22 - aceo
-  - 🇨🇦 加拿大 (Canada) 23 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -280,7 +256,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 19 - aceo
   - 🇨🇦 加拿大 (Canada) 20 - aceo
   - 🇨🇦 加拿大 (Canada) 21 - aceo
-  - 🇨🇦 加拿大 (Canada) 22 - aceo
-  - 🇨🇦 加拿大 (Canada) 23 - aceo
 rules:
 - MATCH,PROXIES
