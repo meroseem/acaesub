@@ -18,15 +18,6 @@ proxies:
   servername: moldova.cdn-europe.org
   client-fingerprint: random
 - name: 🇲🇩 摩尔多瓦 (Moldova) 02 - aceo
-  server: 143.246.219.51
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇲🇩 摩尔多瓦 (Moldova) 03 - aceo
   server: moldova.cdn-europe.org
   port: 4443
   udp: true
@@ -46,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
   - 🇲🇩 摩尔多瓦 (Moldova) 02 - aceo
-  - 🇲🇩 摩尔多瓦 (Moldova) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
   - 🇲🇩 摩尔多瓦 (Moldova) 02 - aceo
-  - 🇲🇩 摩尔多瓦 (Moldova) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 212.192.13.81
-  port: 8388
+  server: 103.136.150.119
+  port: 10090
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: zHrJcutXYr6BTYZa
+  password: 72553320ae6bcc8f
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: sth.free-outline.giize.com
   port: 1081
@@ -19,6 +19,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: wwj19enpp68px8t7
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 89.223.95.77
   port: 22324
   udp: true
@@ -26,18 +34,6 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 34.96.146.210
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  tls: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: 34.92.145.185
   port: 443
@@ -51,30 +47,29 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 119.246.1.143
-  port: 443
+  server: champion.xn--kivt58h.lol
+  port: 80
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2fripaojiedian
-  skip-cert-verify: true
+  type: vless
+  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
-  server: 202.146.222.29
+  server: 34.96.146.210
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá≥
-  skip-cert-verify: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  tls: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   server: hk-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -87,29 +82,46 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
-  server: 202.146.222.174
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
-  server: 103.136.150.119
-  port: 10090
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  server: 2.27.109.179
+  port: 45464
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  server: www.shopify.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - aceo
-  server: mz.hkychina.com
-  port: 8443
+  server: hk2.xiaoliyu.cyou
+  port: 4433
   udp: true
   type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - aceo
   server: 47.238.210.5
   port: 13779
@@ -123,34 +135,12 @@ proxies:
   servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 14 - aceo
-  server: 104.21.8.201
-  port: 2096
-  udp: true
-  type: vless
-  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
-  tls: true
-  servername: cdn-hk.skyvora.app
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /f7i3lo6xbs
-    headers:
-      Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - aceo
-  server: 2.27.109.179
-  port: 45464
+  server: 119.246.1.143
+  port: 443
   udp: true
   type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - aceo
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  password: BxceQaOe
+  sni: 119.246.1.143
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -171,8 +161,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 14 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 15 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 16 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -192,7 +180,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 14 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 15 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 16 - aceo
 rules:
 - MATCH,PROXIES
