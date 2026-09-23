@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  server: hkgb707.ifastcdncache.com
+  port: 60852
+  udp: true
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
   server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
   udp: true
@@ -24,11 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES

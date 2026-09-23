@@ -18,6 +18,25 @@ proxies:
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 193.23.201.65
+  port: 5432
+  udp: true
+  type: vless
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -30,14 +49,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assets
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: iq5ny.pleiades.codes
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +57,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
+  - 🇫🇮 芬兰 (Finland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +66,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
+  - 🇫🇮 芬兰 (Finland) 04 - aceo
 rules:
 - MATCH,PROXIES
