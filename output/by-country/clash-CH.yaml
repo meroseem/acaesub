@@ -17,6 +17,19 @@ proxies:
   servername: usa.oblaco.bet
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  server: 179.255.191.40
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
+  tls: true
+  servername: switz.luxes.network
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /assets
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
   server: 151.242.2.81
   port: 443
   udp: true
@@ -25,12 +38,21 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  server: 152.67.75.161
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 rules:
 - MATCH,PROXIES

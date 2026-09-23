@@ -5,25 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - aceo",
-      "server": "141.98.233.6",
-      "server_port": 443,
-      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tag": "🇮🇶 IQ 01 - aceo",
+      "server": "193.8.215.96",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
-        "server_name": "xi.tbv.ccwu.cc",
+        "server_name": "hub-de-03.hanvpn.cc",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "xi.tbv.ccwu.cc"
-        }
+        "type": "grpc",
+        "service_name": "de03-grpc-8e47a"
       }
     },
     {
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

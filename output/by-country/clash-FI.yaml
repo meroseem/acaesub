@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 62.60.229.124
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts
-  servername: finland.b2ai.top
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 193.23.201.65
   port: 5432
   udp: true
@@ -27,15 +15,7 @@ proxies:
   servername: 193.23.201.65
   skip-cert-verify: false
   client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: iq5ny.pleiades.codes
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -44,7 +24,6 @@ proxies:
   tls: true
   servername: fin.luxes.network
   skip-cert-verify: false
-  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assets
@@ -55,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 rules:
 - MATCH,PROXIES

@@ -15,7 +15,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
-  server: 85.204.107.178
+  server: 85.204.107.175
   port: 8080
   udp: true
   type: hysteria2
@@ -33,6 +33,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 139.185.44.42
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
+    short-id: 855834d3b002ad21
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +54,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +63,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
 rules:
 - MATCH,PROXIES
