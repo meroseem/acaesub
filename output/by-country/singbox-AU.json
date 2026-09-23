@@ -4,12 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - aceo",
-      "server": "82.198.246.37",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
     },
     {
       "type": "vless",
@@ -22,7 +35,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -34,27 +47,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - aceo",
-      "server": "51.161.204.244",
-      "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - aceo",
       "server": "34.87.229.148",
       "server_port": 443,
       "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
@@ -74,10 +66,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - aceo",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - aceo",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "6eef3a79-22bc-4086-b5e6-95e07db73016",
+      "uuid": "3da32b09-10e5-4ef9-b422-2e476dd72d87",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -94,29 +86,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - aceo",
-      "server": "nova.freshnet.ir",
-      "server_port": 2082,
-      "uuid": "ce2bd817-7fb1-4b94-8125-d6161de31962",
-      "tls": {
-        "enabled": true,
-        "server_name": "nova.freshnet.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cats/FslNz",
-        "headers": {
-          "Host": "nova.freshnet.ir"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -124,9 +93,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - aceo",
         "🇦🇺 澳大利亚 (Australia) 02 - aceo",
         "🇦🇺 澳大利亚 (Australia) 03 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 04 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 05 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 06 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 04 - aceo"
       ]
     },
     {
@@ -136,9 +103,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - aceo",
         "🇦🇺 澳大利亚 (Australia) 02 - aceo",
         "🇦🇺 澳大利亚 (Australia) 03 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 04 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 05 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 06 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

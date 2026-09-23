@@ -37,15 +37,6 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  server: 217.60.182.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +45,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +53,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
 rules:
 - MATCH,PROXIES
