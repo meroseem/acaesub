@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - aceo",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -24,20 +40,23 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
-      "server": "mygptagent.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
+      "server": "196.245.52.147",
+      "server_port": 25535,
+      "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
       "tls": {
         "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws"
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4",
+          "short_id": "7642ce57308852e7"
+        }
       }
     },
     {
@@ -46,7 +65,9 @@
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - aceo",
-        "🇪🇸 西班牙 (Spain) 02 - aceo"
+        "🇪🇸 西班牙 (Spain) 02 - aceo",
+        "🇪🇸 西班牙 (Spain) 03 - aceo",
+        "🇪🇸 西班牙 (Spain) 04 - aceo"
       ]
     },
     {
@@ -54,7 +75,9 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - aceo",
-        "🇪🇸 西班牙 (Spain) 02 - aceo"
+        "🇪🇸 西班牙 (Spain) 02 - aceo",
+        "🇪🇸 西班牙 (Spain) 03 - aceo",
+        "🇪🇸 西班牙 (Spain) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

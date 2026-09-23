@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-      "server": "84.32.215.94",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
+      "server": "185.71.219.128",
+      "server_port": 2052,
+      "uuid": "f4ade6db-3c64-4939-9f32-788b87a9392f",
       "tls": {
         "enabled": true,
-        "server_name": "lt.aether-runet.top",
+        "server_name": "185.71.219.128",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
-          "short_id": "4fa44664f6a566d3"
+          "fingerprint": "ios"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -17,18 +17,27 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: est1313.ggisopi.su
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: assets-fi.pleiades.codes
   port: 443
   udp: true
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
   server: 193.23.201.65
   port: 5432
   udp: true
@@ -39,13 +48,6 @@ proxies:
   servername: 193.23.201.65
   skip-cert-verify: false
   client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: p1tun3.greewebservices.ir
-  port: 2070
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LMnotcv4RdaEOBXT-LdtfA
 proxy-groups:
 - name: PROXIES
   type: select

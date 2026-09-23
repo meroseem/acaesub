@@ -12,6 +12,18 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 02 - aceo
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 03 - aceo
   server: 31.77.201.33
   port: 443
   udp: true
@@ -24,18 +36,12 @@ proxies:
     short-id: 4fa44664f6a566d3
   servername: italia.superbuba.top
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 03 - aceo
-  server: 57.131.38.163
-  port: 2053
+- name: 🇮🇹 意大利 (Italy) 04 - aceo
+  server: 204.216.216.23
+  port: 10086
   udp: true
   type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: random
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +50,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - aceo
   - 🇮🇹 意大利 (Italy) 02 - aceo
   - 🇮🇹 意大利 (Italy) 03 - aceo
+  - 🇮🇹 意大利 (Italy) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +59,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - aceo
   - 🇮🇹 意大利 (Italy) 02 - aceo
   - 🇮🇹 意大利 (Italy) 03 - aceo
+  - 🇮🇹 意大利 (Italy) 04 - aceo
 rules:
 - MATCH,PROXIES
