@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
-      "server": "199.232.78.101",
-      "server_port": 443,
-      "password": "MITIVpN",
+      "type": "vless",
+      "tag": "🇮🇶 IQ 01 - aceo",
+      "server": "193.8.215.96",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "hub-de-03.hanvpn.cc",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
-        }
+        "type": "grpc",
+        "service_name": "de03-grpc-8e47a"
       }
     },
     {
@@ -33,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

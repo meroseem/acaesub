@@ -4,28 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
-  server: 199.232.78.101
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 01 - aceo
+  server: 185.71.219.128
+  port: 2052
   udp: true
-  type: trojan
-  password: MITIVpN
-  sni: ssl.fastly.com
+  type: vless
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
+  tls: true
+  servername: 185.71.219.128
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 193.23.201.65
-  port: 5432
+  server: 185.79.138.71
+  port: 448
   udp: true
   type: vless
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
-  flow: xtls-rprx-vision
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   tls: true
-  servername: 193.23.201.65
-  skip-cert-verify: false
-  client-fingerprint: safari
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

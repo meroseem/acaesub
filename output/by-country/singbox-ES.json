@@ -4,36 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - aceo",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
-      "server": "mygptagent.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
+      "server": "196.245.52.147",
+      "server_port": 25535,
+      "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
       "tls": {
         "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws"
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4",
+          "short_id": "7642ce57308852e7"
+        }
       }
     },
     {
@@ -41,18 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - aceo",
-        "🇪🇸 西班牙 (Spain) 02 - aceo",
-        "🇪🇸 西班牙 (Spain) 03 - aceo"
+        "🇪🇸 西班牙 (Spain) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - aceo",
-        "🇪🇸 西班牙 (Spain) 02 - aceo",
-        "🇪🇸 西班牙 (Spain) 03 - aceo"
+        "🇪🇸 西班牙 (Spain) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
