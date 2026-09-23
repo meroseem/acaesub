@@ -4,28 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 193.23.201.65
-  port: 5432
+- name: 🇸🇪 瑞典 (Sweden) 01 - aceo
+  server: 143.246.194.213
+  port: 443
   udp: true
   type: vless
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
+  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
   flow: xtls-rprx-vision
   tls: true
-  servername: 193.23.201.65
-  skip-cert-verify: false
-  client-fingerprint: safari
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.ikea.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - aceo
+  - 🇸🇪 瑞典 (Sweden) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - aceo
+  - 🇸🇪 瑞典 (Sweden) 01 - aceo
 rules:
 - MATCH,PROXIES
