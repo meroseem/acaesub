@@ -4,40 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 01 - aceo",
-      "server": "34.64.149.137",
-      "server_port": 443,
-      "uuid": "700a7a0e-3f27-406c-81d1-aa1abe411af8",
+      "server": "131.186.19.174",
+      "server_port": 50160,
+      "password": "7302ad33229de166d393cd56143a1e4c",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - aceo",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - aceo",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8",
-          "short_id": "3fd0a8ddef3ae5c6"
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - aceo",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - aceo",
       "server": "152.69.231.175",
       "server_port": 50160,
       "password": "1beb216e3f60aea9555dae60d219a5ca",
@@ -48,46 +57,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
       "server": "152.67.200.82",
       "server_port": 50160,
       "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
         "server_name": "152.67.200.82",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
-      "server": "34.22.64.72",
-      "server_port": 443,
-      "uuid": "cb2abff3-5fe6-4b5a-aa19-5739deb285b6",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA",
-          "short_id": "8685f8b4d9f4f51e"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
-      "server": "131.186.19.174",
-      "server_port": 50160,
-      "password": "7302ad33229de166d393cd56143a1e4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
@@ -127,7 +112,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -137,26 +122,26 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - aceo",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - aceo",
       "server": "150-230-252-217.liao.kdns.fr",
       "server_port": 50160,
       "password": "9cfc9458e48c028ec03ff86ebc71c744",
       "tls": {
         "enabled": true,
         "server_name": "150-230-252-217.liao.kdns.fr",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - aceo",
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "tls": {
+        "enabled": true,
+        "server_name": "154.90.62.70",
         "insecure": true
       }
     },

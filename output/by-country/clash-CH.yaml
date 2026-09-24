@@ -31,13 +31,19 @@ proxies:
     headers:
       Host: netlivpn2584.vjvdgbc.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  server: 82.38.64.229
-  port: 8443
+  server: 151.242.2.81
+  port: 443
   udp: true
-  type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: true
+  type: vless
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  tls: true
+  servername: cf9.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf9.rumedia-cdn.com
 - name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 104.18.28.234
   port: 443
@@ -53,21 +59,6 @@ proxies:
     path: /
     headers:
       Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
-  server: 151.242.2.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf9.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf9.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,7 +68,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,6 +77,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 05 - aceo
 rules:
 - MATCH,PROXIES

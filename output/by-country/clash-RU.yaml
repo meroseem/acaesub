@@ -5,35 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 188.114.97.6
-  port: 8080
+  server: 104.21.14.42
+  port: 443
   udp: true
   type: vless
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 62.113.41.165
-  port: 888
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hF-qqin2wYhP7zS47SyR0Q
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 130.49.218.208
-  port: 5432
-  udp: true
-  type: vless
-  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
-  flow: xtls-rprx-vision
+  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
   tls: true
-  servername: 130.49.218.208
+  servername: 7x70yyvT7eQOtx-IQ9N3RJT1xn1jwkh9.asDFsAFdsAF.WORkerS.Dev
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR2xWQ1FCQzYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -41,7 +27,7 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 46.8.200.91
   port: 443
   udp: true
@@ -55,21 +41,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: fbsv6.guardora.pro
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,9 +49,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,8 +57,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 rules:
 - MATCH,PROXIES

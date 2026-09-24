@@ -20,17 +20,13 @@ proxies:
     headers:
       Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 02 - aceo
-  server: 34.47.245.203
+  server: 35.154.58.87
   port: 443
   udp: true
-  type: vless
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-  tls: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-    short-id: 50440423703c945f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - aceo
   server: 13.207.151.141
   port: 443
@@ -40,14 +36,6 @@ proxies:
   sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - aceo
-  server: 35.154.58.87
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - aceo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -68,7 +56,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
   - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +65,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
   - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
 rules:
 - MATCH,PROXIES
