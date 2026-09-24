@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -28,7 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 94.183.170.135
   port: 443
   udp: true
@@ -37,27 +28,24 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  server: 217.60.182.79
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+  server: 31.76.71.63
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  server: 45.11.27.86
-  port: 443
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  server: 94.183.170.135
+  port: 8443
   udp: true
   type: vless
-  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
-  flow: xtls-rprx-vision
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   tls: true
-  reality-opts:
-    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
-    short-id: d0aae44f
-  servername: 5post-gate.x5.ru
-  client-fingerprint: firefox
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +55,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,6 +64,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 rules:
 - MATCH,PROXIES
