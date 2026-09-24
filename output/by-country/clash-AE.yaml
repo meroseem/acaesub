@@ -15,15 +15,38 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
-  server: 85.204.107.178
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a5e01e69-d31d-4867-8433-bd77a82970f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
+  server: 85.204.107.174
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 45.130.125.201
+  port: 80
+  udp: true
+  type: vless
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -41,6 +64,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
+  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +74,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
+  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 rules:
 - MATCH,PROXIES

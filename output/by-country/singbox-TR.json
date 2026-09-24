@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
+      "server": "146.75.84.3",
+      "server_port": 443,
+      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "BechBad.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
       "server": "185.71.219.128",
       "server_port": 2052,
       "uuid": "f4ade6db-3c64-4939-9f32-788b87a9392f",
@@ -28,14 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
