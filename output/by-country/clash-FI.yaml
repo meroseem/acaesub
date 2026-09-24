@@ -13,22 +13,11 @@ proxies:
   tls: true
   servername: assets-fi.pleiades.codes
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: est1313.ggisopi.su
   port: 443
   udp: true
@@ -40,6 +29,18 @@ proxies:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
   server: iq5ny.pleiades.codes
   port: 8443
@@ -48,6 +49,21 @@ proxies:
   password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   sni: iq5ny.pleiades.codes
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+  server: 151.101.56.7
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  tls: true
+  servername: global.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +73,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +83,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES

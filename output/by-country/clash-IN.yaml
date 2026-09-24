@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 02 - aceo
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -23,9 +15,9 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - aceo
-  server: 13.207.151.141
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - aceo
+  server: 35.154.58.87
   port: 443
   udp: true
   type: hysteria2
@@ -39,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
-  - 🇮🇳 印度 (India) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
-  - 🇮🇳 印度 (India) 03 - aceo
 rules:
 - MATCH,PROXIES

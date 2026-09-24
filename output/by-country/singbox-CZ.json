@@ -5,12 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
+      "server": "153.76.185.150",
+      "server_port": 3090,
+      "uuid": "163130a7-42d6-40bf-9574-3d9eff14dcb2",
       "transport": {
-        "type": "ws"
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -18,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
