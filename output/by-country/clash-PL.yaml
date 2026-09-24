@@ -6,33 +6,26 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
   server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 217.30.10.44
   port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 185.223.57.10
   port: 33743
   udp: true
@@ -46,7 +39,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 144.31.131.38
   port: 443
   udp: true
@@ -59,14 +52,27 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 188.114.96.19
+  port: 80
+  udp: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 144.31.5.64
   port: 443
@@ -77,29 +83,7 @@ proxies:
   tls: true
   servername: pl6.moritech.net
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
-  server: 94.249.180.45
-  port: 443
-  udp: true
-  type: vless
-  uuid: fed5c436-f9aa-4a60-b25f-876052fdf578
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tihB0D9qSyy2YITcQ33I6vqspKe_riFJYXzJZaHbs1M
-  servername: pl.spbculture.org
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: 144.31.5.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,8 +97,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,7 +110,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
 rules:
 - MATCH,PROXIES

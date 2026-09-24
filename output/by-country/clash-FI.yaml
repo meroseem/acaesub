@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 95.216.27.15
-  port: 2053
+  server: 2.27.175.71
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: ''
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: est1313.ggisopi.su
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
@@ -29,21 +30,35 @@ proxies:
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: assets-fi.pleiades.codes
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: p1tun3.greewebservices.ir
-  port: 2070
+  server: me6.movieseryalirani.ir
+  port: 57361
+  udp: true
+  type: vmess
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+  server: p1tun2.greewebservices.ir
+  port: 2060
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
+- name: 🇫🇮 芬兰 (Finland) 06 - aceo
+  server: p1tun4.greewebservices.ir
+  port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -57,6 +72,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
+  - 🇫🇮 芬兰 (Finland) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +83,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
+  - 🇫🇮 芬兰 (Finland) 06 - aceo
 rules:
 - MATCH,PROXIES

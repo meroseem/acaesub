@@ -6,12 +6,12 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
       "tls": {
         "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
+        "server_name": "germany3.h2corp.local",
         "insecure": true
       }
     },
@@ -39,40 +39,67 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-      "server": "91.196.32.216",
-      "server_port": 9543,
-      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
-      "flow": "xtls-rprx-vision",
+      "server": "217.19.122.65",
+      "server_port": 443,
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
       "tls": {
         "enabled": true,
-        "server_name": "storage.yandexcloud.net",
+        "server_name": "fbsv6.guardora.pro",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcdf"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "fbsv6.guardora.pro"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
+      "server": "193.151.108.35",
+      "server_port": 43000,
+      "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
+        "server_name": "193.151.108.35",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iEIUvfQSP4eHihDkzb-qAQ-9zGaIINRJDvgwOrt6bkQ",
+          "short_id": "75df7f65ba2a8155"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -84,7 +111,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
       ]
     },
     {
@@ -94,7 +122,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

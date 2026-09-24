@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
+  server: 13.48.104.64
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
   server: 143.246.195.98
   port: 8081
   udp: true
@@ -13,16 +20,22 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - aceo
-  server: surstreming.vvzzkontaktezzvv.garden
+  server: 176.108.246.110
+  port: 9830
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  server: 5.157.10.148
   port: 443
   udp: true
   type: vless
@@ -33,21 +46,15 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: safari
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
-  server: 193.42.39.10
-  port: 33743
+  client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+  server: se-node.rumedia-cdn.com
+  port: 25443
   udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +64,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
+  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +74,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
+  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 rules:
 - MATCH,PROXIES
