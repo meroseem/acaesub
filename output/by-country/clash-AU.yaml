@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -25,6 +25,19 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
+  server: au1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
 rules:
 - MATCH,PROXIES

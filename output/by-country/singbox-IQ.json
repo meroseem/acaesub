@@ -4,24 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇶 IQ 01 - aceo",
-      "server": "172.67.191.121",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
+      "server": "193.56.135.137",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/V2VWNDZAAEIdXVjOCkLfJnefnR5Pum?ed=2560",
-        "headers": {
-          "Host": "47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev"
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
         }
       }
     },
