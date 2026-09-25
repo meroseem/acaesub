@@ -20,6 +20,21 @@ proxies:
     headers:
       Host: nautica-cff.kloningstrife002.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 02 - aceo
+  server: 172.67.173.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
+  tls: true
+  servername: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
+    headers:
+      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 03 - aceo
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -27,13 +42,6 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 03 - aceo
-  server: 168.107.84.176
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: zfRw8qHR5DsiUSSiFqxRnNjXZ0/oOyLeNKOqv5VW0PM=
 - name: 🇸🇬 新加坡 (Singapore) 04 - aceo
   server: 149.88.23.207
   port: 18000
@@ -50,42 +58,14 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
 - name: 🇸🇬 新加坡 (Singapore) 06 - aceo
-  server: 45.32.120.173
-  port: 443
+  server: 138.2.73.238
+  port: 50160
   udp: true
-  type: vmess
-  uuid: XEXEVIL
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 07 - aceo
-  server: 54.178.110.17
-  port: 4443
-  udp: true
-  type: vless
-  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 08 - aceo
-  server: 5.223.74.174
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
-    short-id: 36151c48e28cfb65
-  servername: 5.223.74.174
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 09 - aceo
   server: 206.206.76.75
   port: 443
   udp: true
@@ -98,16 +78,28 @@ proxies:
     short-id: 9930177816ab09da
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 10 - aceo
-  server: 138.2.73.238
-  port: 50160
+- name: 🇸🇬 新加坡 (Singapore) 08 - aceo
+  server: 4a453e27-tm96o0-tnggms-6gn6.sg7.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
+  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  sni: 4a453e27-tm96o0-tnggms-6gn6.sg7.hyhuawei.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - aceo
-  server: 146.235.16.130
+- name: 🇸🇬 新加坡 (Singapore) 09 - aceo
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 10 - aceo
+  server: sg2-8sb.6121999.dpdns.org
   port: 19825
   udp: true
   type: vless
@@ -119,32 +111,28 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12 - aceo
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 13 - aceo
-  server: 217.217.254.126
+- name: 🇸🇬 新加坡 (Singapore) 11 - aceo
+  server: 5.223.74.174
   port: 2053
   udp: true
   type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 - aceo
+    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
+    short-id: 36151c48e28cfb65
+  servername: 5.223.74.174
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 12 - aceo
+  server: 45.32.120.173
+  port: 443
+  udp: true
+  type: vmess
+  uuid: XEXEVIL
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 13 - aceo
   server: 46.137.202.178
   port: 12512
   udp: true
@@ -157,49 +145,8 @@ proxies:
     short-id: e692a8250d2e2fd0
   servername: www.intel.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 15 - aceo
-  server: 211.48.30.184
-  port: 30017
-  udp: true
-  type: vless
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 16 - aceo
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17 - aceo
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 - aceo
-  server: 91.193.58.15
+- name: 🇸🇬 新加坡 (Singapore) 14 - aceo
+  server: 91.193.58.108
   port: 2096
   udp: true
   type: vless
@@ -207,13 +154,28 @@ proxies:
   tls: true
   servername: free-server.techsonic.dev
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 19 - aceo
+- name: 🇸🇬 新加坡 (Singapore) 15 - aceo
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 16 - aceo
   server: 116.251.217.65
   port: 443
   udp: true
@@ -249,9 +211,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 14 - aceo
   - 🇸🇬 新加坡 (Singapore) 15 - aceo
   - 🇸🇬 新加坡 (Singapore) 16 - aceo
-  - 🇸🇬 新加坡 (Singapore) 17 - aceo
-  - 🇸🇬 新加坡 (Singapore) 18 - aceo
-  - 🇸🇬 新加坡 (Singapore) 19 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -273,8 +232,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 14 - aceo
   - 🇸🇬 新加坡 (Singapore) 15 - aceo
   - 🇸🇬 新加坡 (Singapore) 16 - aceo
-  - 🇸🇬 新加坡 (Singapore) 17 - aceo
-  - 🇸🇬 新加坡 (Singapore) 18 - aceo
-  - 🇸🇬 新加坡 (Singapore) 19 - aceo
 rules:
 - MATCH,PROXIES

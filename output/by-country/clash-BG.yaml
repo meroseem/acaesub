@@ -26,25 +26,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
-  server: 136.175.82.85
-  port: 18775
-  udp: true
-  type: vless
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
-  server: 31.56.222.61
-  port: 36587
-  udp: true
-  type: vless
-  uuid: 79251d3c-aabc-475c-b598-67263479b382
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +33,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,7 +40,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
 rules:
 - MATCH,PROXIES

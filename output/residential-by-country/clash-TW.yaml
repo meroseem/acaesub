@@ -4,15 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
-  server: hk01.kfc-520.com
-  port: 60001
-  udp: true
-  type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
   server: 24864168545164.oylfmxz.cn
   port: 443
   udp: true
@@ -26,7 +18,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   server: 118.167.230.191
   port: 24215
   udp: true
@@ -42,16 +34,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES

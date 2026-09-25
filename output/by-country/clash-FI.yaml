@@ -25,7 +25,6 @@ proxies:
   tls: true
   servername: assets-fi.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
@@ -37,6 +36,14 @@ proxies:
   uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
   alterId: 0
   cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +52,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
+  - 🇫🇮 芬兰 (Finland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +61,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
+  - 🇫🇮 芬兰 (Finland) 04 - aceo
 rules:
 - MATCH,PROXIES
