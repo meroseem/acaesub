@@ -5,31 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - aceo
-  server: www.speedtest.net
-  port: 443
+  server: 193.56.135.137
+  port: 9543
   udp: true
   type: vless
-  uuid: 805e7cd4-883c-484e-9dbb-7a36e4f42292
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
   tls: true
-  servername: 4obdaphmdx83ytmg7qns.z9lmpdr-yksbwrg4qf6qp4-nmikoumu4.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+- name: 🇮🇶 IQ 02 - aceo
+  server: 193.56.135.233
+  port: 9543
+  udp: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
+  servername: storage.yandexcloud.net
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/qtvOjBdF6OCXDon04L7v89llPpvY4?ed=2560
-    headers:
-      Host: 4obdaphmdx83ytmg7qns.z9lmpdr-yksbwrg4qf6qp4-nmikoumu4.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - aceo
+  - 🇮🇶 IQ 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - aceo
+  - 🇮🇶 IQ 02 - aceo
 rules:
 - MATCH,PROXIES
