@@ -5,28 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 77.74.123.98
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 85.204.107.171
+  server: 85.204.107.181
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: t.me
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 rules:
 - MATCH,PROXIES
