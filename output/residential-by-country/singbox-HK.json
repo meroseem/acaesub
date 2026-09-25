@@ -4,29 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "185.87.24.9",
-      "server_port": 2085,
-      "uuid": "edc86071-abb7-4f33-be52-fa956c0abc77",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

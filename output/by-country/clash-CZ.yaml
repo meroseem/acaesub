@@ -5,14 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 153.76.185.187
-  port: 3090
+  server: gerwai1488.vvzzkontaktezzvv.garden
+  port: 443
   udp: true
   type: vless
-  uuid: 7b219b61-9cc6-49ca-bf2d-5d5ec7960256
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
