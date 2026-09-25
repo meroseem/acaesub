@@ -13,45 +13,18 @@ proxies:
   password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   server: 185.135.86.175
-  port: 9086
+  port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
   server: 185.135.86.175
   port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - aceo
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - aceo
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,9 +33,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,8 +41,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - aceo
 rules:
 - MATCH,PROXIES

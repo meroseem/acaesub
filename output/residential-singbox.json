@@ -4,14 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
+      "server": "45.76.87.125",
+      "server_port": 14750,
+      "uuid": "9c090291-dd8d-454c-98df-3ca2178fcf01",
       "tls": {
         "enabled": true,
-        "server_name": "hk01.kfc-520.com",
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo",
+      "server": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
         "insecure": true
       }
     },
@@ -20,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

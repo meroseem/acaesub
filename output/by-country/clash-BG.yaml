@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  server: 193.148.59.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  server: 131.123.37.199
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -17,32 +39,12 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  server: 131.123.41.18
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
+  server: 31.56.222.61
+  port: 36587
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  servername: sheetpeek.com
-  client-fingerprint: random
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
-  server: gerwai1488.vvzzkontaktezzvv.garden
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
-    short-id: 0c13e8822e7f58aa
-  servername: gerwai1488.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
+  uuid: 79251d3c-aabc-475c-b598-67263479b382
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +53,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +62,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - aceo
 rules:
 - MATCH,PROXIES

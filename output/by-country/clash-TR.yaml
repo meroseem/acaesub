@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
+  server: 93.190.8.81
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 0d5d672c-e82a-46d7-af19-b5bf0027ff83
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 93.190.9.223
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 0d5d672c-e82a-46d7-af19-b5bf0027ff83
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
   server: 103.215.218.158
   port: 22324
   udp: true
@@ -18,11 +36,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
 rules:
 - MATCH,PROXIES

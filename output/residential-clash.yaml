@@ -4,25 +4,42 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
-  server: hk01.kfc-520.com
-  port: 60001
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  server: 45.76.87.125
+  port: 14750
+  udp: true
+  type: vless
+  uuid: 9c090291-dd8d-454c-98df-3ca2178fcf01
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES
