@@ -36,14 +36,6 @@ proxies:
     short-id: d2061bb1
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - aceo
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +44,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
-  - 🇪🇸 西班牙 (Spain) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +52,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
-  - 🇪🇸 西班牙 (Spain) 04 - aceo
 rules:
 - MATCH,PROXIES
