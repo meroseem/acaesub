@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - aceo
+  server: 35.176.47.30
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - aceo
+  server: 35.176.47.30
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - aceo
+  server: 35.176.47.30
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - aceo
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -17,13 +35,7 @@ proxies:
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - aceo
-  server: 35.176.47.30
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - aceo
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - aceo
   server: 50.7.5.165
   port: 443
   udp: true
@@ -41,6 +53,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 04 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +63,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 04 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 05 - aceo
 rules:
 - MATCH,PROXIES

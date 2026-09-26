@@ -13,6 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 02 - aceo
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 03 - aceo
   server: 83.147.18.3
   port: 443
   udp: true
@@ -25,7 +32,7 @@ proxies:
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
+- name: 🇪🇸 西班牙 (Spain) 04 - aceo
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -37,13 +44,26 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 04 - aceo
-  server: 140.174.184.5
+- name: 🇪🇸 西班牙 (Spain) 05 - aceo
+  server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 06 - aceo
+  server: esbe.vihodest.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
+    short-id: e93196a756abca09
+  servername: esbe.vihodest.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +73,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
+  - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +84,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
+  - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
 rules:
 - MATCH,PROXIES
