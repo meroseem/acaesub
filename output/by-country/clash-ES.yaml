@@ -17,38 +17,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 02 - aceo
-  server: 108.181.121.226
-  port: 8388
+  server: 66.163.118.73
+  port: 22324
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
-  server: esbe.vihodest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
-    short-id: e93196a756abca09
-  servername: esbe.vihodest.net
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - aceo
-  server: 138.124.181.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a975d79-6930-4861-a105-dc50793456de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: D2NOHlDThz1hjnJyALYmK_2You29nfyoZCwK9Vou9xU
-    short-id: 72ae7f89582e5c43
-  servername: bags.yump.online
-  client-fingerprint: random
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
-  - 🇪🇸 西班牙 (Spain) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
-  - 🇪🇸 西班牙 (Spain) 04 - aceo
 rules:
 - MATCH,PROXIES
