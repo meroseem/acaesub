@@ -12,16 +12,8 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -29,7 +21,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -44,6 +36,27 @@
           "enabled": true,
           "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
           "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
+      "server": "esbe.vihodest.net",
+      "server_port": 443,
+      "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "esbe.vihodest.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE",
+          "short_id": "e93196a756abca09"
         }
       }
     },
@@ -69,25 +82,29 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 06 - aceo",
-      "server": "esbe.vihodest.net",
+      "server": "mygptagent.org",
       "server_port": 443,
-      "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
-      "flow": "xtls-rprx-vision",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "esbe.vihodest.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE",
-          "short_id": "e93196a756abca09"
-        }
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - aceo",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -99,7 +116,8 @@
         "🇪🇸 西班牙 (Spain) 03 - aceo",
         "🇪🇸 西班牙 (Spain) 04 - aceo",
         "🇪🇸 西班牙 (Spain) 05 - aceo",
-        "🇪🇸 西班牙 (Spain) 06 - aceo"
+        "🇪🇸 西班牙 (Spain) 06 - aceo",
+        "🇪🇸 西班牙 (Spain) 07 - aceo"
       ]
     },
     {
@@ -111,7 +129,8 @@
         "🇪🇸 西班牙 (Spain) 03 - aceo",
         "🇪🇸 西班牙 (Spain) 04 - aceo",
         "🇪🇸 西班牙 (Spain) 05 - aceo",
-        "🇪🇸 西班牙 (Spain) 06 - aceo"
+        "🇪🇸 西班牙 (Spain) 06 - aceo",
+        "🇪🇸 西班牙 (Spain) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

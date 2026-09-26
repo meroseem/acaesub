@@ -4,8 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
+      "server": "185.87.24.169",
+      "server_port": 2085,
+      "uuid": "e8267fb2-155e-4e5b-afc8-04558de60b01",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "93.190.8.20",
+      "server_port": 3090,
+      "uuid": "e8267fb2-155e-4e5b-afc8-04558de60b01",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
       "server": "103.215.218.158",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -16,14 +38,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

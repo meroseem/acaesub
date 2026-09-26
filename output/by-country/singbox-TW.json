@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - aceo",
+      "server": "36.224.141.124",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
       "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -17,10 +25,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
-      "server": "35.221.158.209",
-      "server_port": 32981,
-      "uuid": "41b96ee9-ee5e-455f-9753-187a9dead97a",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
+      "server": "104.199.134.231",
+      "server_port": 28364,
+      "uuid": "3a62a0c2-ba80-43a9-b757-9aca88b0552e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -31,14 +39,26 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E",
-          "short_id": "70f4b7a4c40636"
+          "public_key": "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I",
+          "short_id": "7241c359c2dfab"
         }
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - aceo",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - aceo",
       "server": "35.194.157.16",
       "server_port": 43450,
       "uuid": "64d77a12-ad6b-4d85-a349-bd287535af1c",
@@ -58,27 +78,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - aceo",
-      "server": "104.199.134.231",
-      "server_port": 28364,
-      "uuid": "3a62a0c2-ba80-43a9-b757-9aca88b0552e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.sony.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I",
-          "short_id": "7241c359c2dfab"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -86,7 +85,8 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 04 - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 05 - aceo"
       ]
     },
     {
@@ -96,7 +96,8 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
         "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 04 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 04 - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
