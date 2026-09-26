@@ -4,27 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇬🇷 希腊 (Greece) 01 - aceo",
-      "server": "151.101.56.255",
+      "type": "vless",
+      "tag": "🇬🇹 GT 01 - aceo",
+      "server": "185.47.254.251",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
+          "short_id": "6c059ecfddf9b179"
         }
       }
     },
@@ -33,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - aceo"
+        "🇬🇹 GT 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - aceo"
+        "🇬🇹 GT 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
