@@ -26,8 +26,13 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: ireland-new-ded1.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - aceo
+  server: 16.60.17.14
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
 rules:
 - MATCH,PROXIES

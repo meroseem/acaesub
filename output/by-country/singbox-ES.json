@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - aceo",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -13,32 +33,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - aceo",
-      "server": "83.147.18.3",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
+      "server": "138.124.181.185",
       "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
+      "uuid": "0a975d79-6930-4861-a105-dc50793456de",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "bags.yump.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
+          "public_key": "D2NOHlDThz1hjnJyALYmK_2You29nfyoZCwK9Vou9xU",
+          "short_id": "72ae7f89582e5c43"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
@@ -64,26 +76,6 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 05 - aceo",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - aceo",
       "server": "esbe.vihodest.net",
       "server_port": 443,
       "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
@@ -93,7 +85,7 @@
         "server_name": "esbe.vihodest.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -103,12 +95,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - aceo",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - aceo",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "selector",
@@ -120,8 +112,7 @@
         "🇪🇸 西班牙 (Spain) 03 - aceo",
         "🇪🇸 西班牙 (Spain) 04 - aceo",
         "🇪🇸 西班牙 (Spain) 05 - aceo",
-        "🇪🇸 西班牙 (Spain) 06 - aceo",
-        "🇪🇸 西班牙 (Spain) 07 - aceo"
+        "🇪🇸 西班牙 (Spain) 06 - aceo"
       ]
     },
     {
@@ -133,8 +124,7 @@
         "🇪🇸 西班牙 (Spain) 03 - aceo",
         "🇪🇸 西班牙 (Spain) 04 - aceo",
         "🇪🇸 西班牙 (Spain) 05 - aceo",
-        "🇪🇸 西班牙 (Spain) 06 - aceo",
-        "🇪🇸 西班牙 (Spain) 07 - aceo"
+        "🇪🇸 西班牙 (Spain) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

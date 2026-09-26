@@ -5,25 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - aceo
-  server: 104.199.134.231
-  port: 28364
-  udp: true
-  type: vless
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
+  sni: 160.187.100.109
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   server: 35.221.158.209
@@ -39,14 +34,6 @@ proxies:
   servername: www.sony.com
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -69,7 +56,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +65,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
 rules:
 - MATCH,PROXIES
