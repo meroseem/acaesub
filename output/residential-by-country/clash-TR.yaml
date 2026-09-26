@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo
 rules:
 - MATCH,PROXIES
