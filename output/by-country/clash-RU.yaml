@@ -5,24 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 104.21.91.50
-  port: 443
-  udp: true
-  type: trojan
-  password: f88f080e9b4f66c6
-  sni: Open-39.AVL-a47261.WorKErS.DeV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/SpBOfUvsW3IMjIayEnU4fVTehv9gf4?ed=2560
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -30,21 +19,22 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 46.8.200.91
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: fbsv6.guardora.pro
   port: 443
   udp: true
   type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   tls: true
-  servername: cf3.rumedia-cdn.com
+  servername: fbsv6.guardora.pro
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /ws
     headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -65,7 +55,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +64,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,14 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 47.240.80.220
-  port: 2052
+  server: sth.free-outline.giize.com
+  port: 1081
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v7qnj9jvxtnpmj4l
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 82.152.160.245
+  port: 50898
+  udp: true
+  type: hysteria2
+  password: f15900b5-f86b-432d-a67c-45325dc66a2d
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 89.185.26.217
+  port: 443
+  udp: true
+  type: vless
+  uuid: f15900b5-f86b-432d-a67c-45325dc66a2d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EXIEsAJq-s30mA0r997iwrR8ijvGLZ7DOTkr_R39QCE
+    short-id: 54fc3827c8
+  servername: nono.hhhkkhktt.xyz
+  client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 119.246.1.143
   port: 443
   udp: true
@@ -20,38 +40,31 @@ proxies:
   password: BxceQaOe
   sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 202.146.222.89
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 'off'
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: sth.free-outline.giize.com
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ac2jdpwv1zl10jim
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   server: xg1.mangshe.xyz
   port: 2060
   udp: true
@@ -59,7 +72,7 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: xg1.mangshe.xyz
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -67,7 +80,7 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -75,7 +88,7 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -98,6 +111,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +127,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
 rules:
 - MATCH,PROXIES
