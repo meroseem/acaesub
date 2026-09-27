@@ -12,13 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
 - name: 🇿🇦 南非 (South Africa) 02 - aceo
-  server: 139.84.247.164
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-- name: 🇿🇦 南非 (South Africa) 03 - aceo
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -29,13 +22,13 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 04 - aceo
-  server: 102.133.165.160
-  port: 16233
+- name: 🇿🇦 南非 (South Africa) 03 - aceo
+  server: 139.84.247.164
+  port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: tfAcRikawhNoZAhu
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +37,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - aceo
   - 🇿🇦 南非 (South Africa) 02 - aceo
   - 🇿🇦 南非 (South Africa) 03 - aceo
-  - 🇿🇦 南非 (South Africa) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +45,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - aceo
   - 🇿🇦 南非 (South Africa) 02 - aceo
   - 🇿🇦 南非 (South Africa) 03 - aceo
-  - 🇿🇦 南非 (South Africa) 04 - aceo
 rules:
 - MATCH,PROXIES

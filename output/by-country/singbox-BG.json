@@ -4,33 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-      "server": "151.101.56.255",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -51,7 +26,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
       "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
@@ -63,8 +38,7 @@
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo"
       ]
     },
     {
@@ -72,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
