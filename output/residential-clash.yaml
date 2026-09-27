@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
-  server: 162.159.48.32
+- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  server: 188.114.97.6
   port: 2082
   udp: true
   type: vless
@@ -14,16 +14,16 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - aceo
-  server: 162.159.24.131
-  port: 80
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - aceo
+  server: 172.64.229.2
+  port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
@@ -42,16 +42,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
-  - 🇺🇸 美国 (United States) 02 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
-  - 🇺🇸 美国 (United States) 02 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES

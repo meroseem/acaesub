@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - aceo
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -32,20 +16,15 @@ proxies:
     public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
     short-id: e65d010354bdad73
   servername: www.amd.com
-  client-fingerprint: random
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: 35.221.158.209
-  port: 32981
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  server: vpn-tw-002.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  servername: www.sony.com
-  client-fingerprint: qq
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 rules:
 - MATCH,PROXIES
