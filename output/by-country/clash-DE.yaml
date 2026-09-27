@@ -5,17 +5,58 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - aceo
-  server: 199.232.78.101
-  port: 443
+  server: 130.61.227.119
+  port: 59924
   udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QQyhsWE4kraFnuIyxSx/tfdFnd1+IUu3YrQM92BGVrQ=
+- name: 🇩🇪 德国 (Germany) 02 - aceo
+  server: 130.61.178.43
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: SgyJkGCcYNgfF87vVJTcRI9Vd9Xa/GISuFw17bdtB6c=
+- name: 🇩🇪 德国 (Germany) 03 - aceo
+  server: 130.61.237.178
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +Md6uvx0q4r8xi+D4f0ohkfMPiaCVx5nHy7ScOhNlLM=
+- name: 🇩🇪 德国 (Germany) 04 - aceo
+  server: 8.209.74.72
+  port: 20001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 05 - aceo
+  server: 209.46.102.22
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 (Germany) 06 - aceo
+  server: 8.211.15.144
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: fc04RSUu3TfONQnlbKTwvA
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 07 - aceo
+  server: 192.248.179.81
+  port: 80
+  udp: true
+  type: vless
+  uuid: 2787849c-1a49-4457-9db7-efcdb2578268
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇩🇪 德国 (Germany) 02 - aceo
+    path: /
+- name: 🇩🇪 德国 (Germany) 08 - aceo
   server: 151.101.56.7
   port: 443
   udp: true
@@ -26,75 +67,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 03 - aceo
-  server: 51.195.126.38
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 04 - aceo
-  server: 130.61.232.1
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: UoUzY5YlcUBJpgXi/Z3PEaf58E+++FJ+3AKry5V7J9Y=
-- name: 🇩🇪 德国 (Germany) 05 - aceo
-  server: 209.46.102.22
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇩🇪 德国 (Germany) 06 - aceo
-  server: 89.169.53.176
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: gateway.icloud.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 07 - aceo
-  server: 95.85.252.59
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 08 - aceo
-  server: 162.55.242.208
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  tls: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-    short-id: 4d14da19b19cfc8c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 09 - aceo
-  server: 2.58.81.221
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 10 - aceo
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 11 - aceo
+- name: 🇩🇪 德国 (Germany) 10 - aceo
   server: 31.77.161.15
   port: 443
   udp: true
@@ -107,7 +87,32 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 11 - aceo
+  server: 89.169.53.176
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 12 - aceo
+  server: 162.55.242.208
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  tls: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 13 - aceo
   server: 159.69.103.251
   port: 80
   udp: true
@@ -120,35 +125,23 @@ proxies:
     short-id: 253126232f9bb9be
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13 - aceo
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
 - name: 🇩🇪 德国 (Germany) 14 - aceo
-  server: api-4pda-k9x4m.xubi.org
+  server: 193.108.117.54
   port: 443
   udp: true
-  type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
-    short-id: d4f6a8c1b2e3f9aa
-  servername: 4pda.to
-  client-fingerprint: ''
+  servername: aidrivercat.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
 - name: 🇩🇪 德国 (Germany) 15 - aceo
-  server: 95.85.252.78
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - aceo
   server: 82.39.171.142
   port: 443
   udp: true
@@ -161,50 +154,89 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 16 - aceo
+  server: rubifen.adaspoloandco.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /GOrbEh
 - name: 🇩🇪 德国 (Germany) 17 - aceo
+  server: api-4pda-k9x4m.xubi.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
+    short-id: d4f6a8c1b2e3f9aa
+  servername: 4pda.to
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 18 - aceo
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 19 - aceo
+  server: 64.118.158.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  servername: buckeye-retail-website.amazon.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 20 - aceo
+  server: 80.97.27.106
+  port: 116
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
+- name: 🇩🇪 德国 (Germany) 21 - aceo
   server: 2.58.81.221
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 18 - aceo
-  server: 213.202.208.199
-  port: 7001
+- name: 🇩🇪 德国 (Germany) 22 - aceo
+  server: 2.58.81.221
+  port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 (Germany) 19 - aceo
-  server: hikvision-plus.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 20 - aceo
-  server: freeman.curtvip.ir
-  port: 20410
-  udp: true
-  type: vless
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
-  tls: true
-  reality-opts:
-    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
-    short-id: e2ce3e050232978c
-  servername: secureconnect-pa.mtls.clients6.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 21 - aceo
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 23 - aceo
   server: 130.61.83.88
   port: 59924
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: bvHY/DNOgIpmarNB4MP65BYeGyXcXlZ1yF1k+2PnCGQ=
+- name: 🇩🇪 德国 (Germany) 24 - aceo
+  server: 178.105.120.168
+  port: 80
+  udp: true
+  type: vless
+  uuid: 1d9cbbf4-bb99-4b09-8750-1cc22d510018
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -231,6 +263,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 19 - aceo
   - 🇩🇪 德国 (Germany) 20 - aceo
   - 🇩🇪 德国 (Germany) 21 - aceo
+  - 🇩🇪 德国 (Germany) 22 - aceo
+  - 🇩🇪 德国 (Germany) 23 - aceo
+  - 🇩🇪 德国 (Germany) 24 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -257,5 +292,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 19 - aceo
   - 🇩🇪 德国 (Germany) 20 - aceo
   - 🇩🇪 德国 (Germany) 21 - aceo
+  - 🇩🇪 德国 (Germany) 22 - aceo
+  - 🇩🇪 德国 (Germany) 23 - aceo
+  - 🇩🇪 德国 (Germany) 24 - aceo
 rules:
 - MATCH,PROXIES
