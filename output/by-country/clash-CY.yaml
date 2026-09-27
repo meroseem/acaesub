@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
-  server: 2.56.123.131
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a975d79-6930-4861-a105-dc50793456de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wDAQ_iQ_vv6lQiB9nCxIJviEhARWOQOPyhzos8EJW3o
-    short-id: 9da47879658f9f25
-  servername: contact.yump.online
-  client-fingerprint: safari
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   server: 194.76.154.31
   port: 40443
   udp: true
@@ -28,13 +15,13 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  server: 5.253.30.99
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  server: 5.253.28.218
   port: 40443
   udp: true
   type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -42,7 +29,7 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
   server: 5.253.28.218
   port: 2443
   udp: true
@@ -65,7 +52,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - aceo
 rules:
 - MATCH,PROXIES

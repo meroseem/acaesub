@@ -13,22 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 85.237.207.49
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: a56619e2bed91121eabb97d20be207c3
-  sni: 85-237-207-49.liao.kdns.fr
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -41,6 +25,14 @@ proxies:
     short-id: e65d010354bdad73
   servername: www.amd.com
   client-fingerprint: random
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 rules:
 - MATCH,PROXIES

@@ -56,6 +56,21 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 07 - aceo
+  server: 116.204.164.27
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 3e438472-0f1e-4bbf-be5a-67d034afd8c0
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +82,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
   - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +94,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
   - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
 rules:
 - MATCH,PROXIES
