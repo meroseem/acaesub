@@ -6,23 +6,21 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - aceo",
-      "server": "104.18.155.229",
-      "server_port": 443,
-      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
+      "server": "143.42.46.37",
+      "server_port": 25605,
+      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA",
+          "short_id": "6df42a2c"
         }
       }
     },
@@ -69,35 +67,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - aceo",
-      "server": "143.42.46.37",
-      "server_port": 25605,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "trh3vhKtu_iAKb6E2GuUvloJDZ8tN0jtzyj4kpV5IQA",
-          "short_id": "6df42a2c"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - aceo",
         "🇦🇺 澳大利亚 (Australia) 02 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 03 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 04 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 03 - aceo"
       ]
     },
     {
@@ -106,8 +82,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - aceo",
         "🇦🇺 澳大利亚 (Australia) 02 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 03 - aceo",
-        "🇦🇺 澳大利亚 (Australia) 04 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

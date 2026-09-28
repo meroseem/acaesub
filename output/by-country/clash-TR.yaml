@@ -5,14 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 93.190.9.52
-  port: 3090
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

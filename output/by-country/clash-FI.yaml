@@ -5,22 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 87.120.107.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2
-  tls: true
-  reality-opts:
-    public-key: 20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc
-    short-id: fd4f9db207ff64db
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel_nl
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: est1313.ggisopi.su
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
@@ -30,7 +15,33 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
-  client-fingerprint: safari
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 45.149.147.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: 153.52.117.131
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  tls: true
+  servername: fi.astrafic.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
+  - 🇫🇮 芬兰 (Finland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
+  - 🇫🇮 芬兰 (Finland) 03 - aceo
 rules:
 - MATCH,PROXIES

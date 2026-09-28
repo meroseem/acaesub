@@ -20,24 +20,6 @@ proxies:
   grpc-opts:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   server: 94.183.170.65
   port: 8081
   udp: true
@@ -48,24 +30,24 @@ proxies:
     path: /ws/generate
     headers:
       Host: hys2.arkonsoft.top
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   server: 94.183.170.135
-  port: 443
+  port: 8443
   udp: true
   type: vless
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
-  server: 80.97.27.106
-  port: 114
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,8 +57,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,7 +66,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
 rules:
 - MATCH,PROXIES

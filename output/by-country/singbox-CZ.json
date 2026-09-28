@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - aceo",
+      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
       "server": "172.67.147.209",
       "server_port": 443,
       "uuid": "38d6b629-64c2-4c31-a10d-26eb3a2a053d",
@@ -31,23 +31,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 02 - aceo",
-      "server": "arcturus.yokkastars.com",
-      "server_port": 40443,
-      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-          "short_id": "db46e2946fc466fd"
-        }
+      "tag": "🇨🇿 捷克 (Czech) 02 - aceo",
+      "server": "153.76.185.153",
+      "server_port": 3090,
+      "uuid": "3afa6b6d-e8d1-4931-878d-8a28b328256b",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -55,16 +45,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - aceo",
-        "🇮🇶 IQ 02 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo",
+        "🇨🇿 捷克 (Czech) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - aceo",
-        "🇮🇶 IQ 02 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo",
+        "🇨🇿 捷克 (Czech) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
