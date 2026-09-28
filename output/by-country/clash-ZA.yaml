@@ -11,17 +11,39 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
+- name: 🇿🇦 南非 (South Africa) 02 - aceo
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 03 - aceo
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 - aceo
+  - 🇿🇦 南非 (South Africa) 02 - aceo
+  - 🇿🇦 南非 (South Africa) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇿🇦 南非 (South Africa) 01 - aceo
+  - 🇿🇦 南非 (South Africa) 02 - aceo
+  - 🇿🇦 南非 (South Africa) 03 - aceo
 rules:
 - MATCH,PROXIES

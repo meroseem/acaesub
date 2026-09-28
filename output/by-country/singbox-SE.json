@@ -12,8 +12,16 @@
       "password": "AxIYWtskJWIIaefW"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "server": "13.60.213.145",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -33,12 +41,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
+      "server": "51.20.143.248",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo",
+        "🇸🇪 瑞典 (Sweden) 03 - aceo",
+        "🇸🇪 瑞典 (Sweden) 04 - aceo"
       ]
     },
     {
@@ -46,7 +64,9 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo",
+        "🇸🇪 瑞典 (Sweden) 03 - aceo",
+        "🇸🇪 瑞典 (Sweden) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
