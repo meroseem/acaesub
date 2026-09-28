@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  server: 57.129.130.63
-  port: 52014
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: micro-svc-44607f.staging-api-dd63ef.workers.dev
+  port: 443
   udp: true
   type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  uuid: 0439ff62-13b1-4763-aa27-90e4d429366b
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  servername: micro-svc-44607f.staging-api-dd63ef.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: micro-svc-44607f-mlm.staging-api-dd63ef.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 rules:
 - MATCH,PROXIES

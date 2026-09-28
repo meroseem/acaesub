@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-      "server": "172.67.133.170",
-      "server_port": 2096,
-      "uuid": "7c6a566b-4c4a-b8f2-1719-a3096b424141",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "micro-svc-44607f.staging-api-dd63ef.workers.dev",
+      "server_port": 443,
+      "uuid": "0439ff62-13b1-4763-aa27-90e4d429366b",
       "tls": {
         "enabled": true,
-        "server_name": "peekconfigg.vipserver1-39d.workers.dev",
+        "server_name": "micro-svc-44607f.staging-api-dd63ef.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/",
         "headers": {
-          "Host": "peekconfigg.vipserver1-39d.workers.dev"
+          "Host": "micro-svc-44607f-mlm.staging-api-dd63ef.workers.dev"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

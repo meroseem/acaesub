@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - aceo
-  server: 45.164.20.85
-  port: 10226
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
+  server: 109.248.148.139
+  port: 11469
   udp: true
-  type: vless
-  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  type: ss
+  cipher: aes-128-gcm
+  password: ce45b16adec66e4a199d92b9689eae9f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
 rules:
 - MATCH,PROXIES
