@@ -5,23 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 162.249.127.133
+  server: 77.74.123.98
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  server: 162.249.127.135
   port: 8443
   udp: true
   type: hysteria2
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 77.74.123.100
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 85.204.107.176
+  server: 85.204.107.190
   port: 8443
   udp: true
   type: hysteria2
@@ -29,6 +29,14 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.amazon.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
   server: 162.249.125.133
   port: 443
   udp: true
@@ -38,29 +46,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - aceo
-  server: 80.97.27.106
-  port: 111
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - aceo
-  server: rou0001ntrhy01.tcp-reset-club.net
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
-  sni: tcp-reset-club.net
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,8 +56,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 06 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +66,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 06 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 07 - aceo
 rules:
 - MATCH,PROXIES

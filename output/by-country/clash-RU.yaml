@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 162.159.48.32
+  server: 162.159.43.187
   port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
@@ -23,13 +23,21 @@ proxies:
   cipher: aes-256-gcm
   password: 895b4b796a357570
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 91.196.32.163
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -41,13 +49,13 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: ru.xiaoliyu.cyou
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: ru1.xiaoliyu.cyou
   port: 18333
   udp: true
   type: hysteria2
   password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru.xiaoliyu.cyou
+  sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -59,6 +67,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +78,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 rules:
 - MATCH,PROXIES

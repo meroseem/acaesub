@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 104.17.247.68
-  port: 443
+  server: 217.30.10.44
+  port: 9099
   udp: true
-  type: vless
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  tls: true
-  servername: khoda.ak-khoda.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 217.30.10.44
   port: 9071
@@ -41,7 +33,7 @@ proxies:
   cipher: aes-256-cfb
   password: U6qnYRhfyDmn8sgn
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: 185.223.57.10
+  server: 185.223.57.16
   port: 33743
   udp: true
   type: vless
@@ -50,7 +42,7 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: qq
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -76,16 +68,16 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 144.31.5.3
+  server: 144.31.2.33
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: pl4.moritech.net
+  servername: pl3.moritech.net
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 09 - aceo
   server: admin.wwwinternetvideo.click
   port: 443
@@ -93,27 +85,15 @@ proxies:
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - aceo
   server: 146.59.116.19
   port: 17000
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇵🇱 波兰 (Poland) 12 - aceo
+- name: 🇵🇱 波兰 (Poland) 11 - aceo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -126,17 +106,17 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 13 - aceo
-  server: 144.31.2.33
+- name: 🇵🇱 波兰 (Poland) 12 - aceo
+  server: 144.31.5.3
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: pl3.moritech.net
+  servername: pl4.moritech.net
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -154,7 +134,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 10 - aceo
   - 🇵🇱 波兰 (Poland) 11 - aceo
   - 🇵🇱 波兰 (Poland) 12 - aceo
-  - 🇵🇱 波兰 (Poland) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -172,6 +151,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 10 - aceo
   - 🇵🇱 波兰 (Poland) 11 - aceo
   - 🇵🇱 波兰 (Poland) 12 - aceo
-  - 🇵🇱 波兰 (Poland) 13 - aceo
 rules:
 - MATCH,PROXIES
