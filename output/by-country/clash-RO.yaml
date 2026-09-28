@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
+  server: 162.249.127.133
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: 77.74.123.98
   port: 8443
   udp: true
@@ -12,14 +20,6 @@ proxies:
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 162.249.127.135
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: 85.204.107.190
   port: 8443
@@ -34,9 +34,22 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  server: 146.70.124.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - aceo
   server: 162.249.125.133
   port: 443
   udp: true
@@ -56,6 +69,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +80,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 06 - aceo
 rules:
 - MATCH,PROXIES

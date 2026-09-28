@@ -4,21 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
-      "server": "89.218.15.90",
-      "server_port": 10002,
-      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
+      "type": "trojan",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - aceo",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
         "enabled": true,
-        "server_name": "kz1.vpnjantit.com",
+        "server_name": "id1.nathaya.web.id",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vpnjantit",
+        "path": "/trojan",
         "headers": {
-          "Host": "kz1.vpnjantit.com"
+          "Host": "id1.nathaya.web.id"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo"
+        "🇮🇩 印尼 (Indonesia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo"
+        "🇮🇩 印尼 (Indonesia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
