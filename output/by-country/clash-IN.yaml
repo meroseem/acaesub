@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - aceo
   server: 139.84.177.239
   port: 443
   udp: true
@@ -28,7 +16,7 @@ proxies:
     public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
   servername: googleapis.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - aceo
+- name: 🇮🇳 印度 (India) 02 - aceo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -39,6 +27,18 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇮🇳 印度 (India) 03 - aceo
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
