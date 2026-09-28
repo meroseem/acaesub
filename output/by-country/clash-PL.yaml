@@ -6,39 +6,39 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
   server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 217.30.10.44
-  port: 9041
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 217.30.10.44
   port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 217.30.10.44
-  port: 9076
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 217.30.10.44
+  port: 9041
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
 - name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 185.223.57.16
   port: 33743
@@ -49,7 +49,7 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -67,7 +67,7 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: admin.wwwinternetvideo.click
+  server: 45.192.12.93
   port: 443
   udp: true
   type: hysteria2
@@ -75,26 +75,6 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 09 - aceo
-  server: pl.astrafic.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
-  tls: true
-  servername: pl.astrafic.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
-- name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: 146.59.116.19
-  port: 17000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇵🇱 波兰 (Poland) 11 - aceo
   server: poland-ded-new-one.failspace.top
   port: 443
   udp: true
@@ -104,19 +84,13 @@ proxies:
   tls: true
   servername: poland-ded-new-one.failspace.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 12 - aceo
-  server: 188.114.96.19
-  port: 80
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
+  server: 146.59.116.19
+  port: 17000
   udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,8 +106,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - aceo
   - 🇵🇱 波兰 (Poland) 09 - aceo
   - 🇵🇱 波兰 (Poland) 10 - aceo
-  - 🇵🇱 波兰 (Poland) 11 - aceo
-  - 🇵🇱 波兰 (Poland) 12 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,7 +121,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - aceo
   - 🇵🇱 波兰 (Poland) 09 - aceo
   - 🇵🇱 波兰 (Poland) 10 - aceo
-  - 🇵🇱 波兰 (Poland) 11 - aceo
-  - 🇵🇱 波兰 (Poland) 12 - aceo
 rules:
 - MATCH,PROXIES
