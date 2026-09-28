@@ -12,8 +12,16 @@
       "password": "tfAcRikawhNoZAhu"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 02 - aceo",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 03 - aceo",
       "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -26,12 +34,70 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 04 - aceo",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 05 - aceo",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103",
+        "headers": {
+          "Host": "platform103.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 06 - aceo",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 07 - aceo",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - aceo",
-        "🇿🇦 南非 (South Africa) 02 - aceo"
+        "🇿🇦 南非 (South Africa) 02 - aceo",
+        "🇿🇦 南非 (South Africa) 03 - aceo",
+        "🇿🇦 南非 (South Africa) 04 - aceo",
+        "🇿🇦 南非 (South Africa) 05 - aceo",
+        "🇿🇦 南非 (South Africa) 06 - aceo",
+        "🇿🇦 南非 (South Africa) 07 - aceo"
       ]
     },
     {
@@ -39,7 +105,12 @@
       "tag": "auto",
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - aceo",
-        "🇿🇦 南非 (South Africa) 02 - aceo"
+        "🇿🇦 南非 (South Africa) 02 - aceo",
+        "🇿🇦 南非 (South Africa) 03 - aceo",
+        "🇿🇦 南非 (South Africa) 04 - aceo",
+        "🇿🇦 南非 (South Africa) 05 - aceo",
+        "🇿🇦 南非 (South Africa) 06 - aceo",
+        "🇿🇦 南非 (South Africa) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

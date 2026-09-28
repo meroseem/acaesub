@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "51.20.72.15",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -21,7 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
       "server": "51.20.122.188",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -29,19 +21,56 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
-      "server": "13.48.104.64",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "server": "51.20.72.15",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
+      "server": "79.141.174.147",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - aceo",
-      "server": "16.170.163.124",
+      "server": "88.216.223.41",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "uuid": "94877739-3af6-4fbb-85b6-ca6fe86c7696",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "app.goonars.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0",
+          "short_id": "95e51c18"
+        }
+      }
     },
     {
       "type": "vless",
@@ -65,53 +94,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - aceo",
-      "server": "2.27.14.218",
-      "server_port": 2096,
-      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
-      "tls": {
-        "enabled": true,
-        "server_name": "stf7697.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "stf7697.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - aceo",
-      "server": "79.141.174.147",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -121,9 +103,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - aceo",
         "🇸🇪 瑞典 (Sweden) 04 - aceo",
         "🇸🇪 瑞典 (Sweden) 05 - aceo",
-        "🇸🇪 瑞典 (Sweden) 06 - aceo",
-        "🇸🇪 瑞典 (Sweden) 07 - aceo",
-        "🇸🇪 瑞典 (Sweden) 08 - aceo"
+        "🇸🇪 瑞典 (Sweden) 06 - aceo"
       ]
     },
     {
@@ -135,9 +115,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - aceo",
         "🇸🇪 瑞典 (Sweden) 04 - aceo",
         "🇸🇪 瑞典 (Sweden) 05 - aceo",
-        "🇸🇪 瑞典 (Sweden) 06 - aceo",
-        "🇸🇪 瑞典 (Sweden) 07 - aceo",
-        "🇸🇪 瑞典 (Sweden) 08 - aceo"
+        "🇸🇪 瑞典 (Sweden) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
