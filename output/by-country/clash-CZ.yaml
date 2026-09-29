@@ -4,26 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
-  server: platform128.golnamakcert.top
-  port: 80
+- name: 🇨🇿 捷克 (Czech) 01 - aceo
+  server: 153.76.185.155
+  port: 3090
   udp: true
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform128
+  uuid: 43b15d01-8cc5-40ea-b42a-cb1a727224dc
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
-      "server": "platform128.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
+      "server": "153.76.185.155",
+      "server_port": 3090,
+      "uuid": "43b15d01-8cc5-40ea-b42a-cb1a727224dc",
       "transport": {
-        "type": "ws",
-        "path": "/platform128"
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -19,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -35,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -45,12 +45,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "19990ed1bb252449.IROnlY4l.Ir",
+      "server_port": 443,
+      "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage-p2.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
+          "short_id": "37d86205006fe1fb"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo"
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo"
       ]
     },
     {
@@ -58,7 +79,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo"
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

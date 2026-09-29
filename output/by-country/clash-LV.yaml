@@ -6,33 +6,19 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
+  server: 185.135.86.175
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - aceo
   server: 31.57.28.147
   port: 443
   udp: true
@@ -44,7 +30,20 @@ proxies:
     public-key: d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc
     short-id: 7a18a196e730e1d5
   servername: download-cdn.jetbrains.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
+  server: latvia-3.kochvpn.pw
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8de0e6f4-d365-fa64-d5ba-eed9ea513e06
+  tls: true
+  servername: latvia-3.kochvpn.pw
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /stream/ws
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +53,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +62,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - aceo
 rules:
 - MATCH,PROXIES
