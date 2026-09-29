@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "germany3.h2corp.local",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -17,7 +37,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "193.233.247.60",
+      "server_port": 443,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.chitai-gorod.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c5VEuaQj6ClJwRZvXbXwb2vMBxdye2O-0jHi2Q3NEGU",
+          "short_id": "7e93843097e0c549"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
       "server": "217.19.122.200",
       "server_port": 443,
       "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
@@ -43,10 +87,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
       "server": "china.letsconnectpoint.com",
       "server_port": 443,
-      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
+      "uuid": "a368752a-32fc-42f3-980a-6b049218b23f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -63,15 +107,23 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-      "server": "ru1.xiaoliyu.cyou",
-      "server_port": 18333,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "ru1.xiaoliyu.cyou",
-        "insecure": true
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
       }
     },
     {
@@ -82,7 +134,10 @@
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ]
     },
     {
@@ -92,7 +147,10 @@
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

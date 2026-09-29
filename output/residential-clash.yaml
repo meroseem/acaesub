@@ -5,17 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  server: 104.18.34.14
-  port: 8880
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+      Host: ne4d3.thir.mn8.hh.vavava.kdns.fr
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -32,13 +47,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES

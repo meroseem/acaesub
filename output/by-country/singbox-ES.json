@@ -4,12 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - aceo",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -22,7 +22,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -32,8 +32,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 03 - aceo",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - aceo",
       "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
@@ -52,16 +68,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - aceo",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - aceo",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - aceo",
       "server": "185.174.137.172",
       "server_port": 8446,
       "password": "e9dc02d400b67c727aca1620",
@@ -69,23 +77,6 @@
         "enabled": true,
         "server_name": "185.174.137.172",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - aceo",
-      "server": "mygptagent.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "mygptagent.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws"
       }
     },
     {
