@@ -12,30 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: xg1.mangshe.xyz
-  port: 2060
+  server: 191.223.214.11
+  port: 8444
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xg1.mangshe.xyz
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 9204e085-34fa-48ec-b100-ffebcab83629
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: hk-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -48,15 +31,23 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 2.27.109.179
-  port: 45464
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  server: 202.146.222.89
+  port: 443
   udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -64,8 +55,8 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
-  server: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: 194.99.79.26
   port: 443
   udp: true
   type: vmess
@@ -78,14 +69,41 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
-  server: 47.240.80.220
-  port: 2052
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  server: 103.71.23.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,6 +118,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,5 +133,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,29 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: els.mangshe.xyz
-  port: 2060
+  server: 91.240.86.70
+  port: 22443
   udp: true
   type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: els.mangshe.xyz
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 130.49.189.158
-  port: 43558
+  server: china.letsconnectpoint.com
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: ru1.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 217.19.122.200
   port: 443
   udp: true
@@ -35,7 +33,7 @@ proxies:
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   tls: true
   servername: fbsv6.guardora.pro
-  skip-cert-verify: true
+  skip-cert-verify: false
   client-fingerprint: random
   network: ws
   ws-opts:
@@ -50,7 +48,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +56,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
 rules:
 - MATCH,PROXIES

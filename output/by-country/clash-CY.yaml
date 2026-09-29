@@ -15,33 +15,20 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: ''
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  server: dorado.yokkastars.com
-  port: 40443
-  udp: true
-  type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
-  server: india.letsconnectpoint.com
+  server: 5.253.42.159
   port: 443
   udp: true
   type: vless
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
     short-id: c1e3d5d4
   servername: india.letsconnectpoint.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 rules:
 - MATCH,PROXIES
