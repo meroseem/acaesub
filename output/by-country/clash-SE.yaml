@@ -5,27 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 51.20.96.231
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 51.20.86.152
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -40,13 +26,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,9 +33,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
-  - 🇸🇪 瑞典 (Sweden) 04 - aceo
-  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,8 +40,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
-  - 🇸🇪 瑞典 (Sweden) 04 - aceo
-  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 rules:
 - MATCH,PROXIES

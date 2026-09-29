@@ -18,18 +18,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - aceo",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+        "🇲🇾 马来西亚 (Malaysia) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+        "🇲🇾 马来西亚 (Malaysia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

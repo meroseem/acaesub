@@ -15,17 +15,28 @@ proxies:
     path: /platform128
     headers:
       Host: platform128.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - aceo
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 02 - aceo
 rules:
 - MATCH,PROXIES
