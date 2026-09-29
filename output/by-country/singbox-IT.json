@@ -12,18 +12,49 @@
       "password": "itzvpn@321"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 02 - aceo",
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 03 - aceo",
+      "server": "57.131.21.102",
+      "server_port": 8443,
+      "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
+      "tls": {
+        "enabled": true,
+        "server_name": "milan.adaspoloandco.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/RoBeRt",
+        "headers": {
+          "Host": "milan.adaspoloandco.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 意大利 (Italy) 01 - aceo"
+        "🇮🇹 意大利 (Italy) 01 - aceo",
+        "🇮🇹 意大利 (Italy) 02 - aceo",
+        "🇮🇹 意大利 (Italy) 03 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 意大利 (Italy) 01 - aceo"
+        "🇮🇹 意大利 (Italy) 01 - aceo",
+        "🇮🇹 意大利 (Italy) 02 - aceo",
+        "🇮🇹 意大利 (Italy) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
