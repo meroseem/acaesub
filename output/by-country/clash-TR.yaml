@@ -5,26 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 93.190.8.89
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 7809f866-9f42-43ae-ae11-34729db23236
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
-  server: 78.135.73.47
+  server: myda06.api3-max.ru
   port: 443
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
+  servername: myda06.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: myda08.api3-max.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: myda08.api3-max.ru
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

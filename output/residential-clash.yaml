@@ -4,32 +4,58 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  server: 128.241.25.3
-  port: 30021
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  server: 57.129.130.10
+  port: 52014
+  udp: true
+  type: vless
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
   tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
+  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES

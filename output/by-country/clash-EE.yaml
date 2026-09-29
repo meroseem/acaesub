@@ -5,24 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 94.183.170.135
-  port: 443
+  server: 94.183.170.147
+  port: 8443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  tls: true
+  reality-opts:
+    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+    short-id: 72ccd4a7563c2953
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 9d30d49278
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
+  server: 188.255.236.14
+  port: 52006
+  udp: true
+  type: vless
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: chatgpt.fastaichat.ru
+  skip-cert-verify: false
+  client-fingerprint: ios
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   server: 94.183.170.135
   port: 8443
@@ -34,33 +41,13 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  server: 94.183.170.147
-  port: 8443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
-  tls: true
-  reality-opts:
-    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
-    short-id: 72ccd4a7563c2953
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  server: 46.36.216.119
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44680084-c9dc-48ca-9db7-cb0c26bfc99e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nf9hAhB_OqveSsgdqqx7EW0FSoT4XNN_EzfD8lXVDVo
-    short-id: a1b2c3d4e5f6
-  servername: shop119.aktanow.shop
-  client-fingerprint: random
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +57,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +66,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 rules:
 - MATCH,PROXIES
