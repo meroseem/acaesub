@@ -12,6 +12,27 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - aceo
+  server: 152.53.1.40
+  port: 443
+  udp: true
+  type: vless
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  servername: at.quattro-tech.ru
+  client-fingerprint: random
+- name: 🇦🇹 奥地利 (Austria) 03 - aceo
+  server: 86.106.119.23
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: gr.freeguard.org
+  skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 04 - aceo
   server: 31.77.227.6
   port: 52006
   udp: true
@@ -28,6 +49,8 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - aceo
   - 🇦🇹 奥地利 (Austria) 02 - aceo
+  - 🇦🇹 奥地利 (Austria) 03 - aceo
+  - 🇦🇹 奥地利 (Austria) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +58,7 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - aceo
   - 🇦🇹 奥地利 (Austria) 02 - aceo
+  - 🇦🇹 奥地利 (Austria) 03 - aceo
+  - 🇦🇹 奥地利 (Austria) 04 - aceo
 rules:
 - MATCH,PROXIES

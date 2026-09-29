@@ -12,22 +12,70 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 91.196.32.163
+  server: 195.58.48.137
+  port: 40401
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 195.133.23.200
+  port: 40440
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: els.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: els.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 185.147.27.183
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  flow: xtls-rprx-vision
+  tls: true
+  servername: user-6a917f32.noooo.win
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 139.28.168.201
   port: 443
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 91.240.86.70
-  port: 22443
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 185.147.27.164
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
+  type: vless
+  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: speedtest.net
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
   server: 193.233.247.60
   port: 443
   udp: true
@@ -42,35 +90,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 217.19.122.200
+- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  server: tr3.wba-pn.ru
   port: 443
   udp: true
   type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
   tls: true
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: true
-  client-fingerprint: random
+  servername: tr3.wba-pn.ru
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: china.letsconnectpoint.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+    path: /
+- name: 🇷🇺 俄罗斯 (Russia) 11 - aceo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -94,6 +126,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,5 +142,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
 rules:
 - MATCH,PROXIES
