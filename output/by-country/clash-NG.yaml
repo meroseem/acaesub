@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
-  server: 45.207.207.25
+- name: 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
+  server: 103.97.91.17
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: la.freeguard.org
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
+  - 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
+  - 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
 rules:
 - MATCH,PROXIES
