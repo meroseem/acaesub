@@ -27,6 +27,27 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 04 - aceo
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 05 - aceo
+  server: 193.238.154.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  servername: assets-es.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇪🇸 西班牙 (Spain) 06 - aceo
   server: 66.163.118.73
   port: 443
   udp: true
@@ -51,6 +72,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
+  - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +83,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
+  - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
 rules:
 - MATCH,PROXIES

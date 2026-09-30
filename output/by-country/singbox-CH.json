@@ -28,12 +28,32 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "server": "185.18.250.245",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 02 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ]
     },
     {
@@ -41,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 02 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

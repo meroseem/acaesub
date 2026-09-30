@@ -4,21 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - aceo",
-      "server": "172.67.134.136",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "8.47.69.0",
       "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000003",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/assignment",
         "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -27,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
