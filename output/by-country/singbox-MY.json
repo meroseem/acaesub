@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+      "server": "my2.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "78d36530-c8b9-4ffa-bbe2-850fa11de2d8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.setel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM",
+          "short_id": "ed77ac35a310"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - aceo",
       "server": "platform128.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -13,7 +34,7 @@
         "type": "ws",
         "path": "/platform128",
         "headers": {
-          "Host": "platform128.halalkhor.info"
+          "Host": "platform128.golnamakcert.top"
         }
       }
     },
@@ -22,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+        "🇲🇾 马来西亚 (Malaysia) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+        "🇲🇾 马来西亚 (Malaysia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
