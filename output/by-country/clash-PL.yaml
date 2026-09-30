@@ -31,6 +31,17 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: pl-irancell7.xelfona.ir
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: connectivitycheck.android.com
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
@@ -42,14 +53,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: admin.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 188.114.96.19
   port: 80
@@ -64,28 +67,6 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 144.31.5.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: pl-irancell7.xelfona.ir
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /
-    headers:
-      Host: connectivitycheck.android.com
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: pl3.moritech.net
   port: 443
   udp: true
@@ -107,8 +88,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
-  - 🇵🇱 波兰 (Poland) 07 - aceo
-  - 🇵🇱 波兰 (Poland) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,7 +99,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
-  - 🇵🇱 波兰 (Poland) 07 - aceo
-  - 🇵🇱 波兰 (Poland) 08 - aceo
 rules:
 - MATCH,PROXIES
