@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - aceo
-  server: 103.172.197.3
-  port: 16006
+- name: 🇧🇪 比利时 (Belgium) 01 - aceo
+  server: 35.240.62.249
+  port: 443
   udp: true
   type: vless
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  flow: xtls-rprx-vision
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
   tls: true
   reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+    short-id: 31f187650d9530bb
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - aceo
+  - 🇧🇪 比利时 (Belgium) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - aceo
+  - 🇧🇪 比利时 (Belgium) 01 - aceo
 rules:
 - MATCH,PROXIES
