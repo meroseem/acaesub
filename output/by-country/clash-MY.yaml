@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
-  server: my2.miyazono-kaori.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 78d36530-c8b9-4ffa-bbe2-850fa11de2d8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
-    short-id: ed77ac35a310
-  servername: www.setel.com
-  client-fingerprint: chrome
-- name: 🇲🇾 马来西亚 (Malaysia) 02 - aceo
   server: platform128.golnamakcert.top
   port: 80
   udp: true
@@ -34,13 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
-  - 🇲🇾 马来西亚 (Malaysia) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
-  - 🇲🇾 马来西亚 (Malaysia) 02 - aceo
 rules:
 - MATCH,PROXIES

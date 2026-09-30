@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - aceo",
+      "server": "104.18.155.229",
+      "server_port": 443,
+      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "www.genflix.co.id.r3xxe.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - aceo",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -15,7 +38,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +52,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 01 - aceo",
+        "🇦🇺 澳大利亚 (Australia) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 01 - aceo",
+        "🇦🇺 澳大利亚 (Australia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

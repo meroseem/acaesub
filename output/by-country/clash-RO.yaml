@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 162.249.127.135
+  server: 162.249.127.133
   port: 8443
   udp: true
   type: hysteria2
@@ -21,7 +21,7 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 85.204.107.186
+  server: 85.204.107.183
   port: 8443
   udp: true
   type: hysteria2
@@ -29,14 +29,6 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
   server: 162.249.125.133
   port: 443
   udp: true
@@ -46,6 +38,14 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: google.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
