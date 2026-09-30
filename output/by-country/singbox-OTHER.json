@@ -6,13 +6,20 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "188.114.96.3",
+      "server": "104.17.121.9",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
