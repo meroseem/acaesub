@@ -4,26 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 153.76.185.108
-  port: 3090
+- name: 🇵🇹 葡萄牙 (Portugal) 01 - aceo
+  server: 185.231.233.91
+  port: 17167
   udp: true
-  type: vless
-  uuid: 14e227c3-5a83-4b4d-a41a-e5f499c79415
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: ss
+  cipher: aes-128-gcm
+  password: ca438054771821250089399a2f33275e
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇵🇹 葡萄牙 (Portugal) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇵🇹 葡萄牙 (Portugal) 01 - aceo
 rules:
 - MATCH,PROXIES

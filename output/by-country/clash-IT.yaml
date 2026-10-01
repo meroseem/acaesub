@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - aceo
-  server: 204.216.216.23
-  port: 10086
-  udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇮🇹 意大利 (Italy) 02 - aceo
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - aceo
   server: 89.41.172.85
   port: 22324
   udp: true
@@ -25,26 +12,20 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇮🇹 意大利 (Italy) 04 - aceo
+- name: 🇮🇹 意大利 (Italy) 02 - aceo
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 05 - aceo
-  server: 31.76.113.240
-  port: 443
+- name: 🇮🇹 意大利 (Italy) 03 - aceo
+  server: 91.201.65.122
+  port: 9053
   udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +34,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - aceo
   - 🇮🇹 意大利 (Italy) 02 - aceo
   - 🇮🇹 意大利 (Italy) 03 - aceo
-  - 🇮🇹 意大利 (Italy) 04 - aceo
-  - 🇮🇹 意大利 (Italy) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,7 +42,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - aceo
   - 🇮🇹 意大利 (Italy) 02 - aceo
   - 🇮🇹 意大利 (Italy) 03 - aceo
-  - 🇮🇹 意大利 (Italy) 04 - aceo
-  - 🇮🇹 意大利 (Italy) 05 - aceo
 rules:
 - MATCH,PROXIES
