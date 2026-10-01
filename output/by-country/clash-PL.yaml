@@ -18,13 +18,18 @@ proxies:
   servername: pmv.raketa-balance.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 45.192.12.93
+  server: 144.31.131.38
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: prod.pl-node-01.security-sbrf.ru
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 95.85.253.202
   port: 443
@@ -38,18 +43,13 @@ proxies:
   servername: pl0001.kubservice.icu
   client-fingerprint: qq
 - name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 144.31.131.38
+  server: 45.192.12.93
   port: 443
   udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: firefox
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: cheerful-swan.rooster465.autos
   port: 443
@@ -72,26 +72,6 @@ proxies:
   servername: google.com
   client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: scrap.halyvanedorogo.ru
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -104,6 +84,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: 95.81.75.9
+  port: 57160
+  udp: true
+  type: vless
+  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
+    short-id: 77b5
+  servername: funpay.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,7 +110,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,6 +123,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
 rules:
 - MATCH,PROXIES
