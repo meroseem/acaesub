@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - aceo",
-      "server": "th1.zestapp778.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "th1.zestapp778.com",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

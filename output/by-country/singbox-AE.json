@@ -6,6 +6,17 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
+      "server": "104.143.223.231",
+      "server_port": 2085,
+      "uuid": "a641fd38-0ad7-40bf-9a56-6715c1787be3",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -22,14 +33,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - aceo"
+        "🇦🇪 阿联酋 (UAE) 01 - aceo",
+        "🇦🇪 阿联酋 (UAE) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - aceo"
+        "🇦🇪 阿联酋 (UAE) 01 - aceo",
+        "🇦🇪 阿联酋 (UAE) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

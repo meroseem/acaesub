@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
+  server: 104.143.223.231
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a641fd38-0ad7-40bf-9a56-6715c1787be3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -21,11 +30,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
+  - 🇦🇪 阿联酋 (UAE) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
+  - 🇦🇪 阿联酋 (UAE) 02 - aceo
 rules:
 - MATCH,PROXIES
