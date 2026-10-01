@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 77.42.20.51
+  server: 204.168.147.195
   port: 1085
   udp: true
   type: vless
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 204.168.147.195
+  server: 77.42.20.51
   port: 1085
   udp: true
   type: vless
@@ -30,14 +30,6 @@ proxies:
   servername: web.eitaa.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: 212.147.245.198
   port: 443
   udp: true
@@ -50,6 +42,14 @@ proxies:
     short-id: 330a464a00000000
   servername: online.1c.ru
   client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  server: 64.177.90.30
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
+- name: 🇲🇽 墨西哥 (Mexico) 02 - aceo
   server: 34.51.119.243
   port: 443
   udp: true
@@ -22,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  - 🇲🇽 墨西哥 (Mexico) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  - 🇲🇽 墨西哥 (Mexico) 02 - aceo
 rules:
 - MATCH,PROXIES

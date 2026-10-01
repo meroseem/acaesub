@@ -10,24 +10,28 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'https:'
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: x-tw01.xueshan168.cc
+  port: 16000
+  udp: true
+  type: vless
+  uuid: cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

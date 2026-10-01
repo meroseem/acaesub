@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 208.103.161.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: d042a74a-c305-4eec-a89f-39a348022c92
-  tls: true
-  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
   server: 104.18.155.229
   port: 443
   udp: true
@@ -34,6 +19,21 @@ proxies:
     path: /au-do
     headers:
       Host: www.genflix.co.id.r3xxe.eu.cc
+- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
+  server: 208.103.161.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  tls: true
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
