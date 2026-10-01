@@ -1,0 +1,62 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
+      "server": "195.133.23.200",
+      "server_port": 20998,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+      "server": "139.28.168.201",
+      "server_port": 443,
+      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "china.letsconnectpoint.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI",
+          "short_id": "3b74d85e"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇷🇺 俄罗斯 (Russia) 01 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 02 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇷🇺 俄罗斯 (Russia) 01 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 02 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

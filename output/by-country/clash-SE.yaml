@@ -12,6 +12,33 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
+  server: 5.157.10.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: 176.108.246.110
+  port: 9830
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -33,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
+  - 🇸🇪 瑞典 (Sweden) 03 - aceo
+  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
+  - 🇸🇪 瑞典 (Sweden) 03 - aceo
+  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 rules:
 - MATCH,PROXIES

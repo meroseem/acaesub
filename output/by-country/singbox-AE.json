@@ -4,14 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
-      "server": "104.143.223.230",
-      "server_port": 2085,
-      "uuid": "8dafd22b-72fc-4d78-ae00-33affecb8fcd",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+      "server": "admin.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -29,25 +30,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
-      "server": "144.31.49.47",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
-        "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo"
+        "🇦🇪 阿联酋 (UAE) 02 - aceo"
       ]
     },
     {
@@ -55,8 +43,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
-        "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo"
+        "🇦🇪 阿联酋 (UAE) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

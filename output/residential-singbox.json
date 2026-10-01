@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-      "server": "162.159.48.32",
-      "server_port": 2086,
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - aceo",
+      "server": "162.159.43.187",
+      "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -19,9 +19,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 (移动家宽) - aceo",
-      "server": "172.64.154.8",
-      "server_port": 8080,
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - aceo",
+      "server": "162.159.43.187",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -34,8 +34,8 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 (家宽) - aceo",
-      "server": "172.64.32.103",
-      "server_port": 2095,
+      "server": "162.159.0.53",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -46,22 +46,58 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo",
+      "server": "hi.northcluster.info",
+      "server_port": 52300,
+      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/video"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - aceo",
-        "🇺🇸 美国 (United States) 03 (家宽) - aceo"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - aceo",
+        "🇺🇸 美国 (United States) 02 (家宽) - aceo",
+        "🇺🇸 美国 (United States) 03 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - aceo",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - aceo",
-        "🇺🇸 美国 (United States) 03 (家宽) - aceo"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - aceo",
+        "🇺🇸 美国 (United States) 02 (家宽) - aceo",
+        "🇺🇸 美国 (United States) 03 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
