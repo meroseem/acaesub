@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - aceo
+  server: 51.195.126.38
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 02 - aceo
   server: 185.177.229.129
   port: 22324
   udp: true
@@ -12,42 +19,54 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 (Germany) 02 - aceo
-  server: 188.245.25.223
-  port: 1085
+- name: 🇩🇪 德国 (Germany) 03 - aceo
+  server: 195.26.26.68
+  port: 25288
   udp: true
   type: vless
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-- name: 🇩🇪 德国 (Germany) 03 - aceo
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  uuid: 26c88828-53a0-40b9-84fc-e9a50fde5e7d
 - name: 🇩🇪 德国 (Germany) 04 - aceo
-  server: 51.195.126.38
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 05 - aceo
   server: 209.46.102.22
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 (Germany) 05 - aceo
+  server: 8.209.74.72
+  port: 20001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
 - name: 🇩🇪 德国 (Germany) 06 - aceo
-  server: 31.76.11.83
-  port: 23326
+  server: 188.245.25.223
+  port: 1085
+  udp: true
+  type: vless
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+- name: 🇩🇪 德国 (Germany) 07 - aceo
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 08 - aceo
+  server: 31.77.8.97
+  port: 110
   udp: true
   type: vmess
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 (Germany) 07 - aceo
+- name: 🇩🇪 德国 (Germany) 09 - aceo
+  server: 31.76.11.83
+  port: 26070
+  udp: true
+  type: vless
+  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+- name: 🇩🇪 德国 (Germany) 10 - aceo
   server: 31.77.161.15
   port: 443
   udp: true
@@ -60,7 +79,7 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 08 - aceo
+- name: 🇩🇪 德国 (Germany) 11 - aceo
   server: 85.234.100.9
   port: 40443
   udp: true
@@ -72,37 +91,42 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 09 - aceo
-  server: 31.70.111.146
-  port: 443
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - aceo
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - aceo
-  server: 193.108.117.54
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aidrivercat.org
-  skip-cert-verify: false
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /vless/
     headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 11 - aceo
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 13 - aceo
+  server: 31.76.11.83
+  port: 23326
+  udp: true
+  type: vmess
+  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 14 - aceo
+  server: meow-berlin.nethcloud.top
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 4cbefb4d-328c-411d-bf76-780df1082df8
+  sni: meow-berlin.nethcloud.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 15 - aceo
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 16 - aceo
   server: 189.24.82.195
   port: 443
   udp: true
@@ -119,15 +143,20 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇩🇪 德国 (Germany) 12 - aceo
-  server: de1.xiaoliyu.cyou
-  port: 4433
+- name: 🇩🇪 德国 (Germany) 17 - aceo
+  server: 31.70.111.146
+  port: 443
   udp: true
-  type: hysteria2
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 13 - aceo
+  type: vless
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 18 - aceo
   server: 82.39.171.142
   port: 443
   udp: true
@@ -140,18 +169,15 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 14 - aceo
-  server: 57.129.41.216
-  port: 80
+- name: 🇩🇪 德国 (Germany) 19 - aceo
+  server: 31.129.42.164
+  port: 6443
   udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 15 - aceo
+  type: trojan
+  password: ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x
+  sni: node111.ichost.cloud
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 20 - aceo
   server: 94.228.171.219
   port: 8444
   udp: true
@@ -165,20 +191,7 @@ proxies:
     path: /c7f5317cd04691bc
     headers:
       Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 16 - aceo
-  server: id-nl-01.mintrocket.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
-    short-id: fee1f986a72444db
-  servername: id-nl-01.mintrocket.org
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 17 - aceo
+- name: 🇩🇪 德国 (Germany) 21 - aceo
   server: 82.39.171.12
   port: 443
   udp: true
@@ -191,33 +204,20 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - aceo
-  server: 130.61.148.38
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0clp459flSB1OXx30XiuPR6wV1765Sn8Wwl9pBdEz/M=
-- name: 🇩🇪 德国 (Germany) 19 - aceo
-  server: de-7db4a237.sishka.network
+- name: 🇩🇪 德国 (Germany) 22 - aceo
+  server: id-nl-01.mintrocket.org
   port: 443
   udp: true
   type: vless
-  uuid: baae2743-e2b0-448a-9e97-da3a0fce6269
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
   flow: xtls-rprx-vision
   tls: true
-  servername: de-7db4a237.sishka.network
-  skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇩🇪 德国 (Germany) 20 - aceo
-  server: 216.106.187.60
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 21 - aceo
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 23 - aceo
   server: rubifen.adaspoloandco.com
   port: 443
   udp: true
@@ -226,9 +226,18 @@ proxies:
   tls: true
   servername: rubifen.adaspoloandco.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /GOrbEh
+- name: 🇩🇪 德国 (Germany) 24 - aceo
+  server: 216.106.187.60
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -255,6 +264,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 19 - aceo
   - 🇩🇪 德国 (Germany) 20 - aceo
   - 🇩🇪 德国 (Germany) 21 - aceo
+  - 🇩🇪 德国 (Germany) 22 - aceo
+  - 🇩🇪 德国 (Germany) 23 - aceo
+  - 🇩🇪 德国 (Germany) 24 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -281,5 +293,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 19 - aceo
   - 🇩🇪 德国 (Germany) 20 - aceo
   - 🇩🇪 德国 (Germany) 21 - aceo
+  - 🇩🇪 德国 (Germany) 22 - aceo
+  - 🇩🇪 德国 (Germany) 23 - aceo
+  - 🇩🇪 德国 (Germany) 24 - aceo
 rules:
 - MATCH,PROXIES

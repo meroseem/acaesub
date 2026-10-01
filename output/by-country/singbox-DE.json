@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 01 - aceo",
+      "server": "51.195.126.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2YdE4lFOid5a"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 02 - aceo",
       "server": "185.177.229.129",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -13,46 +21,60 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - aceo",
-      "server": "188.245.25.223",
-      "server_port": 1085,
-      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 03 - aceo",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "server": "195.26.26.68",
+      "server_port": 25288,
+      "uuid": "26c88828-53a0-40b9-84fc-e9a50fde5e7d"
     },
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 04 - aceo",
-      "server": "51.195.126.38",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2YdE4lFOid5a"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - aceo",
       "server": "209.46.102.22",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "1hhrqrokj3ag"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 05 - aceo",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 06 - aceo",
-      "server": "31.76.11.83",
-      "server_port": 23326,
-      "uuid": "3dff544a-379e-41f9-95d9-4b95a8e4026e",
+      "server": "188.245.25.223",
+      "server_port": 1085,
+      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 07 - aceo",
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 08 - aceo",
+      "server": "31.77.8.97",
+      "server_port": 110,
+      "uuid": "d2d8601b-c14b-42c6-b8ea-33889bce152a",
       "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 07 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 09 - aceo",
+      "server": "31.76.11.83",
+      "server_port": 26070,
+      "uuid": "e676c6c8-44a8-4a1d-82cc-821a1f70f0c0"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - aceo",
       "server": "31.77.161.15",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -73,7 +95,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 08 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 11 - aceo",
       "server": "85.234.100.9",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
@@ -83,7 +105,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -94,48 +116,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 09 - aceo",
-      "server": "31.70.111.146",
-      "server_port": 443,
-      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
-          "short_id": "d7de3a6ff4018957"
+      "tag": "🇩🇪 德国 (Germany) 12 - aceo",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "OV-Germany1.09vpn.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 10 - aceo",
-      "server": "193.108.117.54",
+      "tag": "🇩🇪 德国 (Germany) 13 - aceo",
+      "server": "31.76.11.83",
+      "server_port": 23326,
+      "uuid": "3dff544a-379e-41f9-95d9-4b95a8e4026e",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 14 - aceo",
+      "server": "meow-berlin.nethcloud.top",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
+      "password": "4cbefb4d-328c-411d-bf76-780df1082df8",
       "tls": {
         "enabled": true,
-        "server_name": "aidrivercat.org",
+        "server_name": "meow-berlin.nethcloud.top",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aidrivercat.org"
-        }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 15 - aceo",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 11 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 16 - aceo",
       "server": "189.24.82.195",
       "server_port": 443,
       "uuid": "bf7ca7a3-a028-488e-b9f1-34e467d6d897",
@@ -161,20 +184,29 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 12 - aceo",
-      "server": "de1.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 17 - aceo",
+      "server": "31.70.111.146",
+      "server_port": 443,
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "off",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 13 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 18 - aceo",
       "server": "82.39.171.142",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -194,22 +226,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 14 - aceo",
-      "server": "57.129.41.216",
-      "server_port": 80,
-      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "OV-Germany1.09vpn.com"
-        }
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 19 - aceo",
+      "server": "31.129.42.164",
+      "server_port": 6443,
+      "password": "ymk9eBP4Ams3-ncYCV4kDAezUzBfkR8x",
+      "tls": {
+        "enabled": true,
+        "server_name": "node111.ichost.cloud",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 15 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 20 - aceo",
       "server": "94.228.171.219",
       "server_port": 8444,
       "uuid": "9cb2520c-148b-4bbc-a149-9d5a43ff0db3",
@@ -228,28 +258,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 16 - aceo",
-      "server": "id-nl-01.mintrocket.org",
-      "server_port": 443,
-      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "id-nl-01.mintrocket.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
-          "short_id": "fee1f986a72444db"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 17 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 21 - aceo",
       "server": "82.39.171.12",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -269,53 +278,53 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 18 - aceo",
-      "server": "130.61.148.38",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "0clp459flSB1OXx30XiuPR6wV1765Sn8Wwl9pBdEz/M="
-    },
-    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 19 - aceo",
-      "server": "de-7db4a237.sishka.network",
+      "tag": "🇩🇪 德国 (Germany) 22 - aceo",
+      "server": "id-nl-01.mintrocket.org",
       "server_port": 443,
-      "uuid": "baae2743-e2b0-448a-9e97-da3a0fce6269",
+      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de-7db4a237.sishka.network",
-        "insecure": false,
+        "server_name": "id-nl-01.mintrocket.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+          "short_id": "fee1f986a72444db"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 20 - aceo",
-      "server": "216.106.187.60",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 21 - aceo",
+      "tag": "🇩🇪 德国 (Germany) 23 - aceo",
       "server": "rubifen.adaspoloandco.com",
       "server_port": 443,
       "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
       "tls": {
         "enabled": true,
         "server_name": "rubifen.adaspoloandco.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/GOrbEh"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 24 - aceo",
+      "server": "216.106.187.60",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -342,7 +351,10 @@
         "🇩🇪 德国 (Germany) 18 - aceo",
         "🇩🇪 德国 (Germany) 19 - aceo",
         "🇩🇪 德国 (Germany) 20 - aceo",
-        "🇩🇪 德国 (Germany) 21 - aceo"
+        "🇩🇪 德国 (Germany) 21 - aceo",
+        "🇩🇪 德国 (Germany) 22 - aceo",
+        "🇩🇪 德国 (Germany) 23 - aceo",
+        "🇩🇪 德国 (Germany) 24 - aceo"
       ]
     },
     {
@@ -369,7 +381,10 @@
         "🇩🇪 德国 (Germany) 18 - aceo",
         "🇩🇪 德国 (Germany) 19 - aceo",
         "🇩🇪 德国 (Germany) 20 - aceo",
-        "🇩🇪 德国 (Germany) 21 - aceo"
+        "🇩🇪 德国 (Germany) 21 - aceo",
+        "🇩🇪 德国 (Germany) 22 - aceo",
+        "🇩🇪 德国 (Germany) 23 - aceo",
+        "🇩🇪 德国 (Germany) 24 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

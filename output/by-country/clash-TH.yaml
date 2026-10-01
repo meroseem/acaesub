@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - aceo
-  server: www.asamping.ir
-  port: 2052
+- name: 🇹🇭 泰国 (Thailand) 01 - aceo
+  server: 103.86.49.57
+  port: 80
   udp: true
   type: vless
-  uuid: 5f424b45-29e5-4cbe-b752-88ac535c11b7
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: www.asamping.ir
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - aceo
+  - 🇹🇭 泰国 (Thailand) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - aceo
+  - 🇹🇭 泰国 (Thailand) 01 - aceo
 rules:
 - MATCH,PROXIES
