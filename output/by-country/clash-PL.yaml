@@ -5,14 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 45.192.12.93
+  server: 104.25.22.24
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  tls: true
+  servername: khoda.ak-khoda.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 149.86.227.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 733b2a78-9306-4bbc-a3a0-b8bfb55f430a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  servername: pmv.raketa-balance.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 95.85.253.202
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: pl0001.kubservice.icu
+  client-fingerprint: qq
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 144.31.131.38
   port: 443
   udp: true
@@ -25,7 +57,28 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 188.114.96.19
+  port: 80
+  udp: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
   server: 83.168.95.145
   port: 443
   udp: true
@@ -38,7 +91,26 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: admin.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  server: 144.31.2.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
   server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
@@ -49,37 +121,6 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 95.85.253.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: pl0001.kubservice.icu
-  client-fingerprint: qq
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: pl4.moritech.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -93,6 +134,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,5 +149,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
 rules:
 - MATCH,PROXIES

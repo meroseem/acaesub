@@ -4,22 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "92b6d0ff54070b56.IROnlY4l.Ir",
+      "type": "trojan",
+      "tag": "🇮🇶 IQ 01 - aceo",
+      "server": "188.114.96.8",
       "server_port": 443,
-      "uuid": "0b47cd2c-cd11-4398-a323-ef4a08475e77",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "y9p34jpjmqjazaypf.piiwddilxjcqehr17af22u7xk-yu.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
-          "short_id": "37d86205006fe1fb"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/1nWXnOaq1ajP7PKxbRS7Sdck48oy?ed=2560",
+        "headers": {
+          "Host": "y9p34jpjmqjazaypf.piiwddilxjcqehr17af22u7xk-yu.workers.dev"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇮🇶 IQ 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
