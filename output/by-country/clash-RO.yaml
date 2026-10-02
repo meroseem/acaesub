@@ -5,21 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 77.74.123.102
+  server: 77.74.123.103
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 162.249.127.137
+  server: 162.249.127.142
   port: 8443
   udp: true
   type: hysteria2
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +52,9 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +62,8 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 rules:
 - MATCH,PROXIES

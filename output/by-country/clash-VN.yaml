@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
-  server: 103.97.91.17
-  port: 443
+- name: 🇻🇳 越南 (Vietnam) 01 - aceo
+  server: 109.110.162.40
+  port: 23005
   udp: true
   type: trojan
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
-  sni: la.freeguard.org
+  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
+  sni: 82.yuanul.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
+  - 🇻🇳 越南 (Vietnam) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
+  - 🇻🇳 越南 (Vietnam) 01 - aceo
 rules:
 - MATCH,PROXIES
