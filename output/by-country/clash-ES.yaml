@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - aceo
-  server: 162.159.48.32
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 02 - aceo
   server: 193.238.154.5
   port: 443
   udp: true
@@ -28,49 +17,27 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 04 - aceo
+- name: 🇪🇸 西班牙 (Spain) 02 - aceo
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 05 - aceo
-  server: mygptagent.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: mygptagent.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 06 - aceo
-  server: 34.175.44.113
+- name: 🇪🇸 西班牙 (Spain) 03 - aceo
+  server: 46.28.71.247
   port: 443
   udp: true
   type: vless
-  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
-    short-id: fe85cb6a5c84e64c
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇪🇸 西班牙 (Spain) 07 - aceo
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - aceo
   server: 66.163.118.73
   port: 22324
   udp: true
@@ -87,9 +54,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
-  - 🇪🇸 西班牙 (Spain) 05 - aceo
-  - 🇪🇸 西班牙 (Spain) 06 - aceo
-  - 🇪🇸 西班牙 (Spain) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,8 +63,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
-  - 🇪🇸 西班牙 (Spain) 05 - aceo
-  - 🇪🇸 西班牙 (Spain) 06 - aceo
-  - 🇪🇸 西班牙 (Spain) 07 - aceo
 rules:
 - MATCH,PROXIES

@@ -12,20 +12,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 13.48.177.148
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
-  server: 13.61.185.249
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 143.246.196.207
   port: 443
   udp: true
@@ -37,7 +23,7 @@ proxies:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
   client-fingerprint: ''
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 5.157.10.148
   port: 443
   udp: true
@@ -50,6 +36,13 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  server: 13.48.177.148
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +52,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
-  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +61,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
-  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 rules:
 - MATCH,PROXIES
