@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
+  server: 60f05df6-tmm5c0-tmapa2-1ryup.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  sni: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
+  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  sni: 60f05df6-tmm5c0-tmapa2-1ryup.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 47.240.80.220
-  port: 2052
+  server: d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
+  type: hysteria2
+  password: 4729b4c8-1790-11eb-8684-f23c913c8d2b
+  sni: d68b7bb6-tmm5c0-ts40sw-14g76.nw4.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.174
@@ -26,26 +26,24 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: be86eb84-tmm5c0-tt2yf5-1j61y.nw4.hyhuawei.com
-  port: 443
+  server: telegram.khp25.com
+  port: 1080
   udp: true
-  type: hysteria2
-  password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
-  sni: be86eb84-tmm5c0-tt2yf5-1j61y.nw4.hyhuawei.com
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 202.146.222.89
-  port: 443
+  server: telegramx.khp25.com
+  port: 1080
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 202.146.222.29
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
@@ -53,23 +51,6 @@ proxies:
   sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
-  server: telegram.khp25.com
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   server: 194.99.79.26
   port: 443
   udp: true
@@ -83,6 +64,22 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2üá®üá≥
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
   server: mz.hkychina.com
   port: 8443
@@ -90,15 +87,7 @@ proxies:
   type: hysteria2
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
-  server: goldcnmltyljgfwgov.vip52.wogcnmnnagfwgov.com
-  port: 11252
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,7 +103,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,6 +118,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
 rules:
 - MATCH,PROXIES

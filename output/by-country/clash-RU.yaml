@@ -5,19 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 139.28.168.201
-  port: 443
+  server: 104.18.46.46
+  port: 2095
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: firefox
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 172.64.53.55
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 31.76.34.216
   port: 443
   udp: true
@@ -29,14 +38,6 @@ proxies:
     public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
   servername: ru-c-1.minzt.su
   client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 45.12.75.242
   port: 26424
@@ -64,6 +65,14 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +83,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +94,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
 rules:
 - MATCH,PROXIES
