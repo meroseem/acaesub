@@ -4,20 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - aceo",
-      "server": "vpn-tw-002.fastervpn.world",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
+      "server": "45.207.158.76",
+      "server_port": 9443,
+      "uuid": "3969ccbc-7bb3-4def-a9b4-26e2c84b66f8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
+          "short_id": "b390142456517acc"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - aceo",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -28,21 +57,14 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - aceo"
       ]
     },
     {
@@ -51,7 +73,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - aceo",
         "🇹🇼 中国台湾 (Taiwan) 02 - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 03 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 03 - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

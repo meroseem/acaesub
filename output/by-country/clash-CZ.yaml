@@ -1,0 +1,41 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czech) 01 - aceo
+  server: 104.21.67.113
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: x0C3lq1A15ip-65Kc4-l1A1tx.cv4CGvqS05m-F4Hg5xU07wIAlm0.wOrkerS.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/rkSn26veCGpvDy162Z?ed=2560
+- name: 🇨🇿 捷克 (Czech) 02 - aceo
+  server: 153.76.190.41
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  sni: speedtestmark.com
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 02 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 02 - aceo
+rules:
+- MATCH,PROXIES

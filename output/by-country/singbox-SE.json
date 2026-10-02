@@ -25,18 +25,28 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "server": "13.62.228.76",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - aceo"
+        "🇸🇪 瑞典 (Sweden) 01 - aceo",
+        "🇸🇪 瑞典 (Sweden) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - aceo"
+        "🇸🇪 瑞典 (Sweden) 01 - aceo",
+        "🇸🇪 瑞典 (Sweden) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

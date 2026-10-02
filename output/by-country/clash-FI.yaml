@@ -19,14 +19,6 @@ proxies:
   sni: fi01.clgate.network
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -39,6 +31,14 @@ proxies:
     short-id: 568d87a47271344e
   servername: 144.31.27.215
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

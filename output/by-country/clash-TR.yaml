@@ -5,43 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 83.217.9.140
-  port: 43000
+  server: 206.1.99.160
+  port: 443
   udp: true
-  type: vless
-  uuid: 85163fd9-6f73-4eea-b1df-3b327dacbabf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ptE_QnAka3pXNEf8BYKpA9CHdgj4U4xXTixjYWOji0U
-    short-id: 68d2eb23
-  servername: 83.217.9.140
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 - aceo
 rules:
 - MATCH,PROXIES
