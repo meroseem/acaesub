@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -36,12 +36,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "server": "179.237.103.152",
+      "server_port": 443,
+      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
+          "short_id": "9de8ae53dabf1dc2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 02 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ]
     },
     {
@@ -49,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 02 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

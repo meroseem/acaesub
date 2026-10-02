@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
+  server: 94.228.161.7
+  port: 4
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MBiJEJ5VgZXVSj58CEEFZA
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 149.86.227.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
+    short-id: 9e15546f267baa64
+  servername: waypoint.connectserverix.com
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 34.118.43.106
   port: 443
   udp: true
@@ -16,7 +36,7 @@ proxies:
     short-id: 7e7623474d41f032
   servername: www.cloudflare.com
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: pl.srv.vbuste-bot.com
   port: 444
   udp: true
@@ -31,27 +51,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: cheerful-swan.rooster465.autos
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 83.168.95.145
   port: 443
   udp: true
@@ -64,20 +72,32 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 149.86.227.200
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 31.77.13.19
+  port: 2063
   udp: true
   type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: waypoint.connectserverix.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: nodeepolsh1.mekovpnhere.abrdns.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4319f612-110f-4943-9555-7e3a29fa5289
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vHVEsKbVahlLvf9oJDIztzRikPL6utaxEwcnRkytWm0
+    short-id: 2bb8c86b393ddae8
+  servername: nodeepolsh1.mekovpnhere.abrdns.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -90,6 +110,25 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 11 - aceo
+  server: 144.31.2.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +141,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
+  - 🇵🇱 波兰 (Poland) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,5 +157,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
+  - 🇵🇱 波兰 (Poland) 11 - aceo
 rules:
 - MATCH,PROXIES

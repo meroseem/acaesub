@@ -27,7 +27,15 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - aceo
+  server: ie.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: ie.tronsg.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
+  - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
 rules:
 - MATCH,PROXIES
