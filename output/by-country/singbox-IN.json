@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - aceo",
-      "server": "hyfuuf6.wsone.icu",
+      "server": "194.195.119.26",
       "server_port": 443,
-      "password": "M7v%w11Se*",
+      "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": false
+        "server_name": "googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
+          "short_id": ""
+        }
       }
     },
     {
@@ -36,12 +45,25 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 03 - aceo",
+      "server": "hyfuuf6.wsone.icu",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "hyfuuf6.wsone.icu",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - aceo",
-        "🇮🇳 印度 (India) 02 - aceo"
+        "🇮🇳 印度 (India) 02 - aceo",
+        "🇮🇳 印度 (India) 03 - aceo"
       ]
     },
     {
@@ -49,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - aceo",
-        "🇮🇳 印度 (India) 02 - aceo"
+        "🇮🇳 印度 (India) 02 - aceo",
+        "🇮🇳 印度 (India) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
