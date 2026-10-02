@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - aceo",
+      "server": "162.159.24.131",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - aceo",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -14,7 +28,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +42,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - aceo"
+        "🇮🇳 印度 (India) 01 - aceo",
+        "🇮🇳 印度 (India) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - aceo"
+        "🇮🇳 印度 (India) 01 - aceo",
+        "🇮🇳 印度 (India) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

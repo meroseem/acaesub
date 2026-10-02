@@ -12,7 +12,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  server: 82.38.64.235
+  server: 82.38.64.239
   port: 8443
   udp: true
   type: hysteria2
@@ -20,14 +20,6 @@ proxies:
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  server: 104.165.205.41
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 3a92b39a-5f02-415e-a908-783ec320e83f
-  sni: speedtestmark.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 179.237.103.152
   port: 443
   udp: true
@@ -39,20 +31,28 @@ proxies:
     public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
     short-id: 9de8ae53dabf1dc2
   servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
-  server: 176.65.144.84
+  client-fingerprint: random
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  server: 45.90.59.15
   port: 443
   udp: true
   type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: indigo.clouderiux.com
-  client-fingerprint: safari
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
+  server: 104.165.205.41
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  sni: speedtestmark.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

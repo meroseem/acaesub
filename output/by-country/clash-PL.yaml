@@ -5,13 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 217.30.10.44
-  port: 9099
+  server: 95.85.253.202
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  type: vless
+  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: pl0001.kubservice.icu
+  client-fingerprint: qq
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 144.31.4.193
+  port: 444
+  udp: true
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 31.77.59.107
+  port: 443
+  udp: true
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: pl193.mech-pro.online
+  client-fingerprint: qq
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 202.78.163.237
   port: 443
   udp: true
@@ -19,7 +52,15 @@ proxies:
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: pl.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -32,47 +73,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 188.225.79.44
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: eh.vk.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 149.86.227.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: waypoint.connectserverix.com
-  client-fingerprint: safari
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -86,20 +86,18 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 185.91.53.86
-  port: 8444
+  server: 188.225.79.44
+  port: 443
   udp: true
   type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: ads.x5.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-reality
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: eh.vk.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
