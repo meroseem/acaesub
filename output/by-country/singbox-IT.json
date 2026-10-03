@@ -4,19 +4,78 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - aceo",
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇹 意大利 (Italy) 02 - aceo",
+      "server": "89.41.172.85",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 03 - aceo",
       "server": "204.216.216.23",
       "server_port": 10086,
       "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - aceo",
-      "server": "185.164.175.81",
-      "server_port": 19999,
+      "tag": "🇮🇹 意大利 (Italy) 04 - aceo",
+      "server": "91.201.65.122",
+      "server_port": 9050,
+      "method": "aes-256-cfb",
+      "password": "FG5ddLsMPbV5CutE"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 05 - aceo",
+      "server": "91.201.65.122",
+      "server_port": 9053,
+      "method": "aes-256-cfb",
+      "password": "SBM7R883jBmnqe6C"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 06 - aceo",
+      "server": "91.201.65.122",
+      "server_port": 9059,
+      "method": "aes-256-cfb",
+      "password": "9XwYyZsK8SNzQDtY"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 07 - aceo",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "italyji.global.ssl.fastly.net."
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 08 - aceo",
+      "server": "57.131.48.45",
+      "server_port": 8388,
       "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "password": "itzvpn@321"
     },
     {
       "type": "selector",
@@ -24,7 +83,13 @@
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - aceo",
-        "🇮🇹 意大利 (Italy) 02 - aceo"
+        "🇮🇹 意大利 (Italy) 02 - aceo",
+        "🇮🇹 意大利 (Italy) 03 - aceo",
+        "🇮🇹 意大利 (Italy) 04 - aceo",
+        "🇮🇹 意大利 (Italy) 05 - aceo",
+        "🇮🇹 意大利 (Italy) 06 - aceo",
+        "🇮🇹 意大利 (Italy) 07 - aceo",
+        "🇮🇹 意大利 (Italy) 08 - aceo"
       ]
     },
     {
@@ -32,7 +97,13 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - aceo",
-        "🇮🇹 意大利 (Italy) 02 - aceo"
+        "🇮🇹 意大利 (Italy) 02 - aceo",
+        "🇮🇹 意大利 (Italy) 03 - aceo",
+        "🇮🇹 意大利 (Italy) 04 - aceo",
+        "🇮🇹 意大利 (Italy) 05 - aceo",
+        "🇮🇹 意大利 (Italy) 06 - aceo",
+        "🇮🇹 意大利 (Italy) 07 - aceo",
+        "🇮🇹 意大利 (Italy) 08 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

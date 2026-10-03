@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - aceo
-  server: 102.37.156.224
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: tfAcRikawhNoZAhu
 - name: 🇿🇦 南非 (South Africa) 02 - aceo
   server: 102.133.165.160
   port: 16233
@@ -19,24 +19,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 (South Africa) 03 - aceo
-  server: 139.84.247.164
-  port: 8388
+  server: 102.37.156.224
+  port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-- name: 🇿🇦 南非 (South Africa) 04 - aceo
-  server: 34.35.174.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
-  tls: true
-  reality-opts:
-    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
-    short-id: 5ced03e42cc31aab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  password: aduB9HGxQHjA2SBMRjkHX6
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +33,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - aceo
   - 🇿🇦 南非 (South Africa) 02 - aceo
   - 🇿🇦 南非 (South Africa) 03 - aceo
-  - 🇿🇦 南非 (South Africa) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +41,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - aceo
   - 🇿🇦 南非 (South Africa) 02 - aceo
   - 🇿🇦 南非 (South Africa) 03 - aceo
-  - 🇿🇦 南非 (South Africa) 04 - aceo
 rules:
 - MATCH,PROXIES
