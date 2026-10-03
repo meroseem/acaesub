@@ -30,36 +30,6 @@ proxies:
   servername: www.blocket.se
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - aceo
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
-  server: 62.60.159.81
-  port: 2053
-  udp: true
-  type: vless
-  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
-  tls: true
-  reality-opts:
-    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
-    short-id: d0ea1847066af5a6
-  servername: www.samsung.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
   server: 177.3.209.165
   port: 443
   udp: true
@@ -72,6 +42,21 @@ proxies:
     short-id: da4d87fa
   servername: owkd.pashalloh.org
   client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  server: 62.60.159.81
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  tls: true
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +66,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
-  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +75,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
-  - 🇸🇪 瑞典 (Sweden) 05 - aceo
 rules:
 - MATCH,PROXIES
