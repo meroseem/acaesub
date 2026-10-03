@@ -11,31 +11,17 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  server: litva1.ali-bard.online
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: litva1.ali-bard.online
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
 rules:
 - MATCH,PROXIES

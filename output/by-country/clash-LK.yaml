@@ -13,12 +13,9 @@ proxies:
   tls: true
   servername: trackydev.site
   skip-cert-verify: false
-  client-fingerprint: random
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: trackydev.site
 proxy-groups:
 - name: PROXIES
   type: select

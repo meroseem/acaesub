@@ -25,6 +25,18 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
+- name: 🇿🇦 南非 (South Africa) 04 - aceo
+  server: 34.35.174.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
+  tls: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +45,7 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - aceo
   - 🇿🇦 南非 (South Africa) 02 - aceo
   - 🇿🇦 南非 (South Africa) 03 - aceo
+  - 🇿🇦 南非 (South Africa) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +54,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - aceo
   - 🇿🇦 南非 (South Africa) 02 - aceo
   - 🇿🇦 南非 (South Africa) 03 - aceo
+  - 🇿🇦 南非 (South Africa) 04 - aceo
 rules:
 - MATCH,PROXIES
