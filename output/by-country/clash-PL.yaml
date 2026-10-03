@@ -5,6 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
+  server: 222.167.245.240
+  port: 28015
+  udp: true
+  type: hysteria2
+  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  sni: api-test-udp-traffic.kaneki.cfd
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 83.168.95.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 144.31.4.193
   port: 444
   udp: true
@@ -19,7 +65,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
   server: 95.85.227.241
   port: 443
   udp: true
@@ -31,55 +77,6 @@ proxies:
     public-key: dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo
     short-id: 25934afbedc65791
   servername: proxy3d.h1guro.ovh
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 222.167.245.240
-  port: 28015
-  udp: true
-  type: hysteria2
-  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
-  sni: api-test-udp-traffic.kaneki.cfd
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: mix.pantera-radio.ru
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  sni: mix.pantera-radio.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 188.114.96.19
@@ -94,32 +91,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
-  server: 62.152.58.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1bb2af63-4472-44ed-9c70-8f316258b68b
-  tls: true
-  reality-opts:
-    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
-    short-id: 27e53bbcab7593d7
-  servername: 360.yandex.ru
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: pl.monkora.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,8 +104,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,7 +117,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
 rules:
 - MATCH,PROXIES
