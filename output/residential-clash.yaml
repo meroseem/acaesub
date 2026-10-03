@@ -4,60 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  server: 162.159.0.169
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 02 (家宽) - aceo
-  server: skk.moe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  server: e86088da-tmm5c0-tqbai3-1hpo0.hk3.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: wlyhc.c0mn.hvu.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - aceo
-  server: 188.34.142.174
-  port: 444
+  type: hysteria2
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: e86088da-tmm5c0-tqbai3-1hpo0.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+  server: 75a08777-tmm5c0-ttxkqc-e06r.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: da46ec1f-84ad-4470-866f-010b58357b19
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - aceo
-  server: 211.174.113.172
-  port: 49642
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - aceo
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - aceo
+  type: hysteria2
+  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  sni: 75a08777-tmm5c0-ttxkqc-e06r.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   server: 118.167.235.241
   port: 24215
   udp: true
@@ -68,27 +31,46 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - aceo
+  server: 178.83.46.216
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - aceo
+  server: 178.83.110.32
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 9bb71136-2380-4b6a-97be-1d4ba11d5a55
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  - 🇨🇦 加拿大 (Canada) 02 (家宽) - aceo
-  - 🇯🇵 日本 (Japan) 03 (家宽) - aceo
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - aceo
+  - 🇯🇵 日本 (Japan) 05 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  - 🇨🇦 加拿大 (Canada) 02 (家宽) - aceo
-  - 🇯🇵 日本 (Japan) 03 (家宽) - aceo
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - aceo
+  - 🇯🇵 日本 (Japan) 05 (家宽) - aceo
 rules:
 - MATCH,PROXIES

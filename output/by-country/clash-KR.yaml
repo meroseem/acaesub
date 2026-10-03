@@ -13,26 +13,38 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 141.164.45.187
-  port: 6679
+  server: 131.186.19.174
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  type: hysteria2
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - aceo
-  server: 3.39.4.109
-  port: 18967
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 04 - aceo
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -44,30 +56,14 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
+  client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 07 - aceo
-  server: 152.67.200.82
-  port: 50160
+  server: 154.90.62.70
+  port: 56127
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: whatsapp.com
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 08 - aceo
   server: 151.245.106.49
@@ -80,31 +76,20 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 09 - aceo
-  server: 154.90.62.70
-  port: 56127
+  server: 3.39.4.109
+  port: 18967
   udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - aceo
-  server: 131.186.19.174
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - aceo
-  server: goldcnmltyljgfwgov.vip64.wogcnmnnagfwgov.com
-  port: 11264
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,8 +104,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - aceo
   - 🇰🇷 韩国 (South Korea) 08 - aceo
   - 🇰🇷 韩国 (South Korea) 09 - aceo
-  - 🇰🇷 韩国 (South Korea) 10 - aceo
-  - 🇰🇷 韩国 (South Korea) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -135,7 +118,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - aceo
   - 🇰🇷 韩国 (South Korea) 08 - aceo
   - 🇰🇷 韩国 (South Korea) 09 - aceo
-  - 🇰🇷 韩国 (South Korea) 10 - aceo
-  - 🇰🇷 韩国 (South Korea) 11 - aceo
 rules:
 - MATCH,PROXIES

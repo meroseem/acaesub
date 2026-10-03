@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
   sni: fi01.clgate.network
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 95.216.27.15
   port: 2053
@@ -25,19 +25,29 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 81.94.148.120
-  port: 7449
+  server: 77.42.28.120
+  port: 1280
   udp: true
   type: vless
-  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: is1-ssl.mzstatic.com
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: finl11.ali-bard.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c
-    short-id: c0c41dc21cf7c18e
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finl11.ali-bard.online
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: 144.31.212.253
   port: 443
   udp: true
@@ -54,6 +64,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +74,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES
