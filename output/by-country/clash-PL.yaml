@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 144.31.4.193
   port: 444
   udp: true
@@ -19,7 +26,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 77.83.246.202
   port: 443
   udp: true
@@ -30,7 +37,15 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 222.167.245.240
+  port: 28015
+  udp: true
+  type: hysteria2
+  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  sni: api-test-udp-traffic.kaneki.cfd
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 202.78.163.237
   port: 443
   udp: true
@@ -38,20 +53,21 @@ proxies:
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 2.26.148.145
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 83.168.95.145
   port: 443
   udp: true
   type: vless
-  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: polo.ali-bard.online
-  client-fingerprint: edge
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: pl-waw.dontblockmepls.com
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 31.77.13.19
   port: 2063
   udp: true
   type: vless
@@ -62,7 +78,7 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -75,17 +91,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: pl3.moritech.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +103,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +116,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
 rules:
 - MATCH,PROXIES
