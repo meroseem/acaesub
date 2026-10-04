@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇶 AQ 01 - aceo
-  server: 2.27.26.128
-  port: 443
+- name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  server: 103.30.76.65
+  port: 39518
   udp: true
   type: vless
-  uuid: 8710a337-f504-4b75-8989-224cfd803b2d
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8
-    short-id: 90f9d05bf95cb335
-  servername: aq-1.global-cdn.org
+    public-key: DQDN2w0aoQnx-T3qF1fQnA2-stCUzVbBwmayI1smO0g
+    short-id: 4600771a0d0d50
+  servername: www.tesla.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇶 AQ 01 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇶 AQ 01 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 01 - aceo
 rules:
 - MATCH,PROXIES

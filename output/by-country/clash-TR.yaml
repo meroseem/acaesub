@@ -5,22 +5,73 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
+  server: 206.1.103.221
+  port: 14074
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: gc24/luU7zbPhMS6GH6mUzT1qZBjCXhKbAvgUjM4Yno=:NOerjaqxVAGVMkJfw/LwtWwz27auvlL0MNKBrjlTeV0=
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 05 - aceo
+  server: nimm.mpd.cc.cd
+  port: 2053
+  udp: true
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /0962
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
+  - 🇹🇷 土耳其 (Turkey) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
+  - 🇹🇷 土耳其 (Turkey) 05 - aceo
 rules:
 - MATCH,PROXIES
