@@ -1,0 +1,59 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 162.249.127.141
+  server: 162.249.127.142
   port: 8443
   udp: true
   type: hysteria2
@@ -13,7 +13,7 @@ proxies:
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 77.74.123.100
+  server: 77.74.123.103
   port: 8443
   udp: true
   type: hysteria2
@@ -21,13 +21,6 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   server: 162.249.125.133
   port: 443
   udp: true
@@ -37,6 +30,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  server: bl3fk52.sysopnova.art
+  port: 443
+  udp: true
+  type: vless
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+  servername: yandex.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
