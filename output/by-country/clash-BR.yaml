@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - aceo
-  server: 66.81.247.155
-  port: 2083
+- name: 🇧🇷 巴西 (Brazil) 01 - aceo
+  server: 89.39.161.157
+  port: 443
   udp: true
-  type: vless
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: testmikonim.hydrymhmdamyn7.workers.dev
+  servername: aksai.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /OAZko425kNFF0PpQ
+    path: /linkvws
     headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - aceo
+  - 🇧🇷 巴西 (Brazil) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - aceo
+  - 🇧🇷 巴西 (Brazil) 01 - aceo
 rules:
 - MATCH,PROXIES

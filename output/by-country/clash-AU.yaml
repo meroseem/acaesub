@@ -47,6 +47,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 05 - aceo
   server: 103.30.76.65
   port: 39518
   udp: true
@@ -68,6 +76,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
   - 🇦🇺 澳大利亚 (Australia) 04 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +86,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
   - 🇦🇺 澳大利亚 (Australia) 04 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 05 - aceo
 rules:
 - MATCH,PROXIES
