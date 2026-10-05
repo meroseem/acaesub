@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - aceo
-  server: 119.46.51.45
-  port: 37515
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  server: 47.250.135.244
+  port: 10000
   udp: true
   type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
 rules:
 - MATCH,PROXIES
