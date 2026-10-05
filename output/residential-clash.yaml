@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  server: 172.64.52.6
-  port: 2052
+  server: 104.18.47.113
+  port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇦🇹 奥地利 (Austria) 02 (家宽) - aceo
@@ -25,14 +25,32 @@ proxies:
   tls: true
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - aceo
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  server: tw6.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
-  server: 104.20.36.205
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
+  server: 45.192.201.140
   port: 443
   udp: true
   type: vless
@@ -40,12 +58,32 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
+- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - aceo
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - aceo
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +91,11 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - aceo
   - 🇦🇹 奥地利 (Austria) 02 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +103,10 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - aceo
   - 🇦🇹 奥地利 (Austria) 02 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - aceo
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - aceo
 rules:
 - MATCH,PROXIES

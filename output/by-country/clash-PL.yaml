@@ -29,8 +29,28 @@ proxies:
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: admin.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 31.77.13.19
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 83.168.95.145
   port: 443
   udp: true
@@ -43,40 +63,6 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 83.168.107.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
-    short-id: c56d4f1c
-  servername: google.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 188.114.96.19
-  port: 80
-  udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +74,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
-  - 🇵🇱 波兰 (Poland) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,6 +85,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
-  - 🇵🇱 波兰 (Poland) 07 - aceo
 rules:
 - MATCH,PROXIES

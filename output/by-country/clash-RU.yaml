@@ -5,28 +5,91 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 172.64.158.146
+  server: 162.159.43.187
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 104.18.47.113
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 172.64.229.2
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  server: 172.64.229.170
   port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 172.64.229.170
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 162.159.0.169
   port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 162.159.38.127
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 162.159.45.19
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 103.88.243.142
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -46,6 +109,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +123,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 rules:
 - MATCH,PROXIES

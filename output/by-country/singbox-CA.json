@@ -4,16 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 01 - aceo",
-      "server": "185.156.47.97",
-      "server_port": 9443,
-      "method": "aes-256-gcm",
-      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
+      "server": "158.51.121.63",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 02 - aceo",
+      "server": "51.79.85.185",
+      "server_port": 8118,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - aceo",
       "server": "138.197.141.58",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -21,19 +29,11 @@
     },
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - aceo",
+      "tag": "🇨🇦 加拿大 (Canada) 04 - aceo",
       "server": "198.57.27.190",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - aceo",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
@@ -44,16 +44,8 @@
       "password": "shadowsocks"
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - aceo",
-      "server": "158.51.123.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - aceo",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - aceo",
       "server": "66.70.179.198",
       "server_port": 2053,
       "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
@@ -62,7 +54,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -73,15 +65,31 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - aceo",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 08 - aceo",
-      "server": "51.222.200.165",
-      "server_port": 5000,
+      "server": "158.51.123.42",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - aceo",
+      "server": "51.222.155.32",
+      "server_port": 5003,
       "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "password": "g5MeD6Ft3CWlJId"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - aceo",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - aceo",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -101,27 +109,32 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - aceo",
-      "server": "158.51.121.63",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 11 - aceo",
+      "server": "188.114.97.6",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 11 - aceo",
-      "server": "milo.rubinaz.xyz",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
-    },
-    {
-      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 12 - aceo",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "188.114.97.6",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -152,6 +165,53 @@
       "security": "auto"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - aceo",
+      "server": "yyz-ca-01.blncvpn4u.cc",
+      "server_port": 9443,
+      "method": "aes-256-gcm",
+      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 16 - aceo",
+      "server": "51.79.49.116",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 17 - aceo",
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 18 - aceo",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 19 - aceo",
+      "server": "51.222.141.125",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 20 - aceo",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -169,7 +229,13 @@
         "🇨🇦 加拿大 (Canada) 11 - aceo",
         "🇨🇦 加拿大 (Canada) 12 - aceo",
         "🇨🇦 加拿大 (Canada) 13 - aceo",
-        "🇨🇦 加拿大 (Canada) 14 - aceo"
+        "🇨🇦 加拿大 (Canada) 14 - aceo",
+        "🇨🇦 加拿大 (Canada) 15 - aceo",
+        "🇨🇦 加拿大 (Canada) 16 - aceo",
+        "🇨🇦 加拿大 (Canada) 17 - aceo",
+        "🇨🇦 加拿大 (Canada) 18 - aceo",
+        "🇨🇦 加拿大 (Canada) 19 - aceo",
+        "🇨🇦 加拿大 (Canada) 20 - aceo"
       ]
     },
     {
@@ -189,7 +255,13 @@
         "🇨🇦 加拿大 (Canada) 11 - aceo",
         "🇨🇦 加拿大 (Canada) 12 - aceo",
         "🇨🇦 加拿大 (Canada) 13 - aceo",
-        "🇨🇦 加拿大 (Canada) 14 - aceo"
+        "🇨🇦 加拿大 (Canada) 14 - aceo",
+        "🇨🇦 加拿大 (Canada) 15 - aceo",
+        "🇨🇦 加拿大 (Canada) 16 - aceo",
+        "🇨🇦 加拿大 (Canada) 17 - aceo",
+        "🇨🇦 加拿大 (Canada) 18 - aceo",
+        "🇨🇦 加拿大 (Canada) 19 - aceo",
+        "🇨🇦 加拿大 (Canada) 20 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
