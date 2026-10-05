@@ -4,13 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
-      "server": "kayoor.hivaphone.ir",
-      "server_port": 2045,
-      "uuid": "d7e99010-e7c3-4978-9d30-2e63882dcfbe",
-      "transport": {
-        "type": "http"
+      "type": "hysteria2",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - aceo",
+      "server": "us3.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.xiaoliyu.cyou",
+        "insecure": true
       }
     },
     {
@@ -18,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

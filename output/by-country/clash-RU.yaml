@@ -5,44 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 194.38.11.86
-  port: 65443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 194.113.235.66
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 176.57.218.235
-  port: 443
-  udp: true
-  type: vless
-  uuid: 65616081-1772-49d7-a793-42bc13d22f69
-  tls: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: ru-1-8.imnotgay.party
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: 89.23.117.99
   port: 443
   udp: true
@@ -53,7 +15,18 @@ proxies:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: ru-1-9.imnotgay.party
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 176.57.218.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  tls: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: ru-1-8.imnotgay.party
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -65,7 +38,7 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 185.104.114.92
   port: 443
   udp: true
@@ -76,7 +49,7 @@ proxies:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: ru-1-5.imnotgay.party
   client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: 109.68.214.220
   port: 443
   udp: true
@@ -97,9 +70,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,8 +80,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
 rules:
 - MATCH,PROXIES

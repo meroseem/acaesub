@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 02 - aceo",
-      "server": "43.255.156.101",
+      "server": "43.255.156.57",
       "server_port": 31094,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -36,7 +36,7 @@
         "server_name": "www.lamer.com.sg",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -46,34 +46,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 03 - aceo",
-      "server": "103.172.197.2",
-      "server_port": 29172,
-      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇩 印尼 (Indonesia) 01 - aceo",
-        "🇮🇩 印尼 (Indonesia) 02 - aceo",
-        "🇮🇩 印尼 (Indonesia) 03 - aceo"
+        "🇮🇩 印尼 (Indonesia) 02 - aceo"
       ]
     },
     {
@@ -81,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇩 印尼 (Indonesia) 01 - aceo",
-        "🇮🇩 印尼 (Indonesia) 02 - aceo",
-        "🇮🇩 印尼 (Indonesia) 03 - aceo"
+        "🇮🇩 印尼 (Indonesia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
