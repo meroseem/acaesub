@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 45.149.114.171
-  port: 777
+  server: 185.103.110.68
+  port: 18283
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 144.31.212.253
   port: 443
@@ -20,6 +20,19 @@ proxies:
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: 185.166.154.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
+    short-id: 94f32cfc
+  servername: cdn.bulkavpn.top
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
   server: 131.123.13.93
   port: 443
   udp: true
@@ -32,13 +45,6 @@ proxies:
     short-id: 29455a3a790acbd0
   servername: 1mcfn.67resserv67.info
   client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 185.103.110.68
-  port: 18283
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 proxy-groups:
 - name: PROXIES
   type: select

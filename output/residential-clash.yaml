@@ -4,29 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  server: 128.241.25.215
-  port: 30036
+- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  server: 104.18.39.218
+  port: 2082
   udp: true
   type: vless
-  uuid: 196b7228-58df-4bcf-af2a-2e96608d5add
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
-  server: 212.74.39.235
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
-  server: argo6.5671234.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  server: 172.66.152.4
   port: 443
   udp: true
   type: vless
@@ -39,31 +29,19 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - aceo
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES

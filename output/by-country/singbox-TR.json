@@ -4,34 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "93.190.8.158",
-      "server_port": 3090,
-      "uuid": "2f322254-c1e3-4ec1-80ac-822d44a2238a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
       "server": "206.1.100.83",
       "server_port": 25178,
       "method": "2022-blake3-aes-256-gcm",
       "password": "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "cookie.wookshop.ir",
+      "server_port": 43233,
+      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cookie.wookshop.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - aceo",
       "server": "162.249.127.130",
       "server_port": 8081,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
         "enabled": true,
         "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -41,7 +51,8 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
         "🇹🇷 土耳其 (Turkey) 02 - aceo",
-        "🇹🇷 土耳其 (Turkey) 03 - aceo"
+        "🇹🇷 土耳其 (Turkey) 03 - aceo",
+        "🇹🇷 土耳其 (Turkey) 04 - aceo"
       ]
     },
     {
@@ -50,7 +61,8 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
         "🇹🇷 土耳其 (Turkey) 02 - aceo",
-        "🇹🇷 土耳其 (Turkey) 03 - aceo"
+        "🇹🇷 土耳其 (Turkey) 03 - aceo",
+        "🇹🇷 土耳其 (Turkey) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
