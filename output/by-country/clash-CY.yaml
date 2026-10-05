@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01 - aceo
-  server: 103.30.76.197
-  port: 44988
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
+  server: 194.76.154.31
+  port: 40443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   tls: true
   reality-opts:
-    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-    short-id: bb82c8
-  servername: www.tesla.com
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - aceo
-  server: 91.201.65.122
-  port: 9070
+  server: 185.164.175.81
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: bf7v334KKDV3YDhH
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 02 - aceo
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 03 - aceo
   server: 89.41.172.85
   port: 22324
   udp: true
@@ -19,6 +26,13 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🇮🇹 意大利 (Italy) 04 - aceo
+  server: 91.201.65.122
+  port: 9070
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: bf7v334KKDV3YDhH
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +40,8 @@ proxy-groups:
   - AUTO
   - 🇮🇹 意大利 (Italy) 01 - aceo
   - 🇮🇹 意大利 (Italy) 02 - aceo
+  - 🇮🇹 意大利 (Italy) 03 - aceo
+  - 🇮🇹 意大利 (Italy) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +49,7 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 (Italy) 01 - aceo
   - 🇮🇹 意大利 (Italy) 02 - aceo
+  - 🇮🇹 意大利 (Italy) 03 - aceo
+  - 🇮🇹 意大利 (Italy) 04 - aceo
 rules:
 - MATCH,PROXIES

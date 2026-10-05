@@ -5,30 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 206.1.100.83
-  port: 25178
+  server: 206.1.103.221
+  port: 53281
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
-  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
+  password: ymykCy/7ioXKe7u60ZifNpAK+N4XKMYW7ljHu/e+h1Q=:tu4qvwMmFqKGRd3SAMGdHSD7G0MDWjHffAr+XSXc/Go=
 - name: 🇹🇷 土耳其 (Turkey) 02 - aceo
-  server: cookie.wookshop.ir
-  port: 43233
-  udp: true
-  type: vless
-  uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cookie.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
   server: 162.249.127.130
   port: 8081
   udp: true
@@ -43,8 +26,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 - aceo
-  - 🇹🇷 土耳其 (Turkey) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +33,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 - aceo
-  - 🇹🇷 土耳其 (Turkey) 04 - aceo
 rules:
 - MATCH,PROXIES
