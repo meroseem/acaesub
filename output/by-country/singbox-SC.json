@@ -6,31 +6,30 @@
     {
       "type": "trojan",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
-      "server": "167.82.76.27",
+      "server": "45.205.26.194",
       "server_port": 443,
-      "password": "mitivpn",
+      "password": "53210e66-b1a6-484d-85e9-4e0e8432c47c",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
-        }
+        "server_name": "node5.luoye.ee",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
+      "server": "45.205.27.78",
+      "server_port": 10443,
+      "password": "4de28cca-46cf-4c1d-b843-1c4b974cc6b7",
+      "tls": {
+        "enabled": true,
+        "server_name": "45.205.27.78",
+        "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - aceo",
       "server": "45.207.207.25",
       "server_port": 443,
       "method": "aes-256-gcm",
@@ -42,7 +41,8 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - aceo"
       ]
     },
     {
@@ -50,7 +50,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
