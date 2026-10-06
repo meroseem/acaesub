@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 (Austria) 01 - aceo
-  server: 77.74.123.106
-  port: 4443
+- name: 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  server: 211.20.156.191
+  port: 28121
   udp: true
   type: trojan
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
+  password: i99Cef
+  sni: ctldl.windowsupdate.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 (Austria) 01 - aceo
+  - 🇲🇽 墨西哥 (Mexico) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 (Austria) 01 - aceo
+  - 🇲🇽 墨西哥 (Mexico) 01 - aceo
 rules:
 - MATCH,PROXIES

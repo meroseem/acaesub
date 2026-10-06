@@ -4,33 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
       "server": "206.1.103.221",
       "server_port": 42264,
       "method": "2022-blake3-aes-256-gcm",
       "password": "Rzv4KXTXvFEqeALuBgzETlujcXrzIAsrSMAevky5x8c=:hdA4n/xn83dcbzxCAxapim47QxGlbAUPQ8I1rbC2RN8="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "netork.povrak.ir",
+      "server_port": 37523,
+      "uuid": "ce0bcb75-baa7-41a7-833e-eb54a8f6a08e",
+      "security": "auto"
     },
     {
       "type": "selector",

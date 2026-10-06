@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
-  server: 54.178.110.17
-  port: 4443
+- name: 🇮🇶 IQ 01 - aceo
+  server: 8.47.69.9
+  port: 443
   udp: true
   type: vless
-  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
   tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇮🇶 IQ 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇮🇶 IQ 01 - aceo
 rules:
 - MATCH,PROXIES
