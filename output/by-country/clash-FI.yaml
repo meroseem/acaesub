@@ -5,25 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 37.143.129.188
-  port: 8443
+  server: 144.31.212.253
+  port: 443
   udp: true
   type: hysteria2
-  password: 146b8bbe-e77b-4934-b559-0d3438611389
-  sni: homelander-finland.cloud-files.app
-  skip-cert-verify: false
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 188.130.209.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: 444623e9-f27d-487c-b7cc-436931967e79
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho
+    short-id: 170ab9ced015571f
+  servername: emaar.ru
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 13.143.129.45
   port: 443
@@ -37,26 +38,6 @@ proxies:
     short-id: 7dd08043
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 188.130.209.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 444623e9-f27d-487c-b7cc-436931967e79
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho
-    short-id: 170ab9ced015571f
-  servername: emaar.ru
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
-  server: 45.149.114.171
-  port: 777
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,8 +46,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,7 +54,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES
