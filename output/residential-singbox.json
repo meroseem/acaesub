@@ -5,38 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-      "server": "172.66.152.4",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - aceo",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "server": "argo6.5671234.xyz",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
         "enabled": true,
         "server_name": "argo6.5671234.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/e8e2cecb6188f7fb",
-        "headers": {
-          "Host": "argo6.5671234.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 (家宽) - aceo",
-      "server": "31.77.227.6",
-      "server_port": 52006,
-      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bigdick.gamegrow.ru",
-        "insecure": false
+        "path": "/e8e2cecb6188f7fb"
       }
     },
     {
@@ -44,16 +31,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇦🇹 奥地利 (Austria) 02 (家宽) - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇦🇹 奥地利 (Austria) 02 (家宽) - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
