@@ -5,13 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
-      "server": "194.87.59.27",
-      "server_port": 2085,
-      "uuid": "755d2e25-9b0c-41ae-a27c-bd45318c7a4f",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - aceo",
+      "server": "108.162.198.178",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
@@ -19,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇺🇸 美国 (United States) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇺🇸 美国 (United States) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

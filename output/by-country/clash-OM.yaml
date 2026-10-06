@@ -4,26 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 194.87.59.27
-  port: 2085
+- name: 🇴🇲 OM 01 - aceo
+  server: w7k2mf.5tencent.asia
+  port: 35016
   udp: true
-  type: vless
-  uuid: 755d2e25-9b0c-41ae-a27c-bd45318c7a4f
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: ss
+  cipher: aes-128-gcm
+  password: 6ee847c4-04ef-4786-9720-eb6f73fbd80b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇴🇲 OM 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇴🇲 OM 01 - aceo
 rules:
 - MATCH,PROXIES

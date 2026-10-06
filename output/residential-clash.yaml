@@ -4,17 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 (Austria) 01 (家宽) - aceo
-  server: 31.77.227.6
-  port: 52006
+- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  server: 108.162.198.178
+  port: 80
   udp: true
   type: vless
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: bigdick.gamegrow.ru
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - aceo
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -29,7 +30,6 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
@@ -40,16 +40,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 (Austria) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 (Austria) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES
