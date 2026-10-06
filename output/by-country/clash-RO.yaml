@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 77.74.123.106
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
@@ -19,7 +19,7 @@ proxies:
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: ocober-romania-new.yyuyy.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: 162.249.125.133
   port: 443
@@ -31,13 +31,6 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
   server: 193.163.203.253
   port: 443
   udp: true
@@ -50,6 +43,33 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  server: 109.104.106.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - aceo
+  server: 85.90.196.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +80,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +91,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 06 - aceo
 rules:
 - MATCH,PROXIES

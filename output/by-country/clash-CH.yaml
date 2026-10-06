@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 82.38.64.237
   port: 8443
   udp: true
@@ -19,7 +12,7 @@ proxies:
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 140.238.213.114
   port: 50160
   udp: true
@@ -27,6 +20,13 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: 140.238.213.114
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 proxy-groups:
 - name: PROXIES
   type: select
