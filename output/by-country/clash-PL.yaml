@@ -14,47 +14,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 45.192.12.93
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 81.90.20.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: 70.34.255.101
-  port: 80
-  udp: true
-  type: vless
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 202.78.163.237
   port: 443
   udp: true
@@ -62,40 +21,15 @@ proxies:
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 189.74.116.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: 684a58f3-e942-4486-a3a1-effd2f277b25
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  servername: api.mediaperekat.cc
-  client-fingerprint: ios
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 144.31.49.47
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10 - aceo
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 188.114.96.19
   port: 80
   udp: true
@@ -108,6 +42,18 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 31.77.13.19
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,11 +64,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
-  - 🇵🇱 波兰 (Poland) 06 - aceo
-  - 🇵🇱 波兰 (Poland) 07 - aceo
-  - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,10 +74,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
-  - 🇵🇱 波兰 (Poland) 06 - aceo
-  - 🇵🇱 波兰 (Poland) 07 - aceo
-  - 🇵🇱 波兰 (Poland) 08 - aceo
-  - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
 rules:
 - MATCH,PROXIES

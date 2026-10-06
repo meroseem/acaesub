@@ -4,25 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "type": "hysteria2",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - aceo",
+      "server": "us3.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.xiaoliyu.cyou",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

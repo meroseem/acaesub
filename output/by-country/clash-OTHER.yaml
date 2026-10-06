@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - aceo
-  server: 211.20.156.191
-  port: 28121
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: 188.114.98.0
+  port: 443
   udp: true
   type: trojan
-  password: i99Cef
-  sni: ctldl.windowsupdate.com
-  skip-cert-verify: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 rules:
 - MATCH,PROXIES

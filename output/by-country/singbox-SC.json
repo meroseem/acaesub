@@ -4,33 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-1.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
       "server": "45.207.207.25",
       "server_port": 443,
       "method": "aes-256-gcm",
       "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
-      "server": "45.95.96.182",
-      "server_port": 443,
-      "uuid": "a47f8110-de83-4c37-b6a7-16010535aef4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ai.yump.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fpYQ3Ml1YhTM0tbf4Ixxx03gxMtOno3iGaq3uoxIszs",
-          "short_id": "a7268acdcfef5862"
-        }
-      }
     },
     {
       "type": "selector",

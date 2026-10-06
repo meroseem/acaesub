@@ -4,8 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
       "server": "157.228.155.185",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -25,64 +55,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
-      "server": "eu86.vaultberry.cloud",
-      "server_port": 443,
-      "uuid": "cfcb4c51-5c89-4132-a86d-bbbb757b56fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "eu86.vaultberry.cloud",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M",
-          "short_id": "1ed136481e0ede74"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - aceo",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo",
-        "🇦🇪 阿联酋 (UAE) 04 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo"
       ]
     },
     {
@@ -91,8 +70,7 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo",
-        "🇦🇪 阿联酋 (UAE) 04 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
