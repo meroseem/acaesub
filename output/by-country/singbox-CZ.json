@@ -4,19 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
-      "server": "130.49.161.70",
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
+      "server": "2.56.172.107",
       "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
+        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      "transport": {
+        "type": "ws",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "headers": {
+          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+        }
       }
     },
     {
@@ -24,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
