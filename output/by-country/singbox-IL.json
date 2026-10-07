@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,42 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇮🇱 以色列 (Israel) 02 - aceo",
+      "server": "31.57.185.180",
+      "server_port": 24110,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "gNFg0epW6zPt3VrbEdbLAogBehBPta16HrWNnrNBfcE=:Ultj5/Lb2FLYk9lH/gvVSd4AsBxotO3lFw8+ujM7rCw="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇱 以色列 (Israel) 03 - aceo",
+      "server": "85.209.157.177",
+      "server_port": 8080,
+      "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-transit.1cooldns.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - aceo"
+        "🇮🇱 以色列 (Israel) 01 - aceo",
+        "🇮🇱 以色列 (Israel) 02 - aceo",
+        "🇮🇱 以色列 (Israel) 03 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - aceo"
+        "🇮🇱 以色列 (Israel) 01 - aceo",
+        "🇮🇱 以色列 (Israel) 02 - aceo",
+        "🇮🇱 以色列 (Israel) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

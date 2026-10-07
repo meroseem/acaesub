@@ -16,18 +16,37 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 02 - aceo
+  server: 31.57.185.180
+  port: 24110
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: gNFg0epW6zPt3VrbEdbLAogBehBPta16HrWNnrNBfcE=:Ultj5/Lb2FLYk9lH/gvVSd4AsBxotO3lFw8+ujM7rCw=
+- name: 🇮🇱 以色列 (Israel) 03 - aceo
+  server: 85.209.157.177
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - aceo
+  - 🇮🇱 以色列 (Israel) 02 - aceo
+  - 🇮🇱 以色列 (Israel) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - aceo
+  - 🇮🇱 以色列 (Israel) 02 - aceo
+  - 🇮🇱 以色列 (Israel) 03 - aceo
 rules:
 - MATCH,PROXIES
