@@ -18,23 +18,19 @@ proxies:
   servername: ee-root.sworkingvpn.com
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 94.183.170.135
+  server: 5.175.178.30
   port: 443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
+    short-id: ae64c9b46bff174a
+  servername: ee1.sky-vault.top
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   server: 95.85.242.166
   port: 443
   udp: true
@@ -46,7 +42,18 @@ proxies:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
   servername: ee-root.sworkingvpn.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
   server: 94.183.170.135
   port: 8443
