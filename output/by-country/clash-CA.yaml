@@ -20,12 +20,17 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 03 - aceo
-  server: 138.197.141.58
-  port: 8080
+  server: 66.70.179.198
+  port: 2053
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  tls: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 04 - aceo
   server: 148.113.196.75
   port: 8443
@@ -39,6 +44,50 @@ proxies:
   ws-opts:
     path: /vless/
 - name: 🇨🇦 加拿大 (Canada) 05 - aceo
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 06 - aceo
+  server: amphetamine.adaspoloandco.com
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 97ea73b6-2043-4238-903c-a1e3d4a43c96
+  tls: true
+  servername: amphetamine.adaspoloandco.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /download.php
+    headers:
+      Host: amphetamine.adaspoloandco.com
+- name: 🇨🇦 加拿大 (Canada) 07 - aceo
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 08 - aceo
+  server: 134.195.196.211
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 09 - aceo
+  server: 137.184.174.93
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 10 - aceo
   server: 209.200.246.148
   port: 443
   udp: true
@@ -50,70 +99,22 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 06 - aceo
-  server: 66.70.179.198
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 07 - aceo
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 08 - aceo
-  server: 51.222.200.165
-  port: 5000
+- name: 🇨🇦 加拿大 (Canada) 11 - aceo
+  server: 51.79.85.185
+  port: 8118
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 09 - aceo
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 10 - aceo
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 12 - aceo
   server: milo.rubinaz.xyz
   port: 8080
   udp: true
   type: vless
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 加拿大 (Canada) 11 - aceo
-  server: 51.79.49.116
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 12 - aceo
-  server: 51.222.155.113
-  port: 5601
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
 - name: 🇨🇦 加拿大 (Canada) 13 - aceo
-  server: 51.222.136.236
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 14 - aceo
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   udp: true
   type: vmess
@@ -138,7 +139,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 11 - aceo
   - 🇨🇦 加拿大 (Canada) 12 - aceo
   - 🇨🇦 加拿大 (Canada) 13 - aceo
-  - 🇨🇦 加拿大 (Canada) 14 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -157,6 +157,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 11 - aceo
   - 🇨🇦 加拿大 (Canada) 12 - aceo
   - 🇨🇦 加拿大 (Canada) 13 - aceo
-  - 🇨🇦 加拿大 (Canada) 14 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,44 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - aceo
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - aceo
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - aceo
-  server: 13.231.247.130
+  server: 149.22.87.240
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: concrete-aardvark.rooster465.autos
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - aceo
-  server: 54.65.177.190
+  server: 45.32.10.7
   port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: winning-marten.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 05 - aceo
-  server: 138.3.208.26
-  port: 50160
   udp: true
   type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - aceo
+- name: 🇯🇵 日本 (Japan) 05 - aceo
   server: 132.226.14.77
   port: 443
   udp: true
@@ -50,7 +41,23 @@ proxies:
   password: my_super_password_123
   sni: open.w2m.ink
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: 54.65.177.190
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: winning-marten.rooster465.autos
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 07 - aceo
+  server: 158.101.148.79
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - aceo
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -63,23 +70,36 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 08 - aceo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: 45.32.52.173
-  port: 8886
+  server: obliging-louse.rooster465.autos
+  port: 443
   udp: true
   type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
+  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 10 - aceo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 11 - aceo
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 12 - aceo
   server: open.w2m.ink
   port: 5443
   udp: true
@@ -87,22 +107,31 @@ proxies:
   password: my_super_password_123
   sni: open.w2m.ink
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - aceo
-  server: 149.22.87.240
+- name: 🇯🇵 日本 (Japan) 13 - aceo
+  server: musical-terrier.rooster465.autos
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 12 - aceo
-  server: vp3.yysyy.online
+  type: trojan
+  password: UX82473651
+  sni: musical-terrier.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 14 - aceo
+  server: 45.32.52.173
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - aceo
+  server: open.2ml.bid
   port: 443
   udp: true
   type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
+  password: my_super_password_123
+  sni: open.2ml.bid
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - aceo
+- name: 🇯🇵 日本 (Japan) 16 - aceo
   server: 153.121.36.102
   port: 443
   udp: true
@@ -114,66 +143,38 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: www.amazon.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 14 - aceo
-  server: 158.101.148.79
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - aceo
-  server: organic-caribou.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: organic-caribou.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 16 - aceo
-  server: open.2ml.cc.cd
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: 'off'
-  skip-cert-verify: true
+  client-fingerprint: random
 - name: 🇯🇵 日本 (Japan) 17 - aceo
-  server: comic-poodle.rooster465.autos
+  server: jpba.osaip.net
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: true
+  type: vless
+  uuid: 2a73bd11-43d4-4af2-a46f-d8cb519fa2b3
+  tls: true
+  reality-opts:
+    public-key: oNBTLH-mw1gk3nDF74ATS7cpvb3eLVePL5iQHscEp3Y
+    short-id: 97e03274
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 18 - aceo
-  server: musical-terrier.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-terrier.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 19 - aceo
-  server: jp.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: jp.tronsg.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - aceo
-  server: 158.101.148.79
-  port: 443
+  server: 138.2.21.246
+  port: 5443
   udp: true
   type: hysteria2
   password: my_super_password_123
-  sni: 158.101.148.79
+  sni: 138.2.21.246
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 21 - aceo
+- name: 🇯🇵 日本 (Japan) 19 - aceo
+  server: 3.112.245.255
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: dynamic-imp.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 20 - aceo
   server: 3.114.220.22
-  port: 18007
+  port: 10583
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -183,29 +184,16 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 22 - aceo
-  server: jpga01.jumpernode.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
-    short-id: c8e49965
-  servername: amzn.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23 - aceo
-  server: 13.230.139.12
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 21 - aceo
+  server: 176.34.5.100
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: brief-glider.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 24 - aceo
+  sni: assuring-skink.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 22 - aceo
   server: 142.91.106.31
   port: 43000
   udp: true
@@ -218,37 +206,23 @@ proxies:
     short-id: 8d66106f
   servername: 142.91.106.31
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 23 - aceo
+  server: 43.207.198.39
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: fancy-javelin.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 24 - aceo
+  server: concrete-aardvark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: concrete-aardvark.rooster465.autos
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 25 - aceo
-  server: obliging-louse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 26 - aceo
-  server: 3.112.245.255
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: dynamic-imp.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 27 - aceo
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 28 - aceo
-  server: 54.250.237.143
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: accurate-frog.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 29 - aceo
   server: 18.176.61.69
   port: 443
   udp: true
@@ -256,33 +230,9 @@ proxies:
   password: UX82473651
   sni: intense-sole.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 30 - aceo
-  server: 54.199.66.128
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: integral-rodent.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 31 - aceo
-  server: 176.34.5.100
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: assuring-skink.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 32 - aceo
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 33 - aceo
+- name: 🇯🇵 日本 (Japan) 26 - aceo
   server: 3.114.220.22
-  port: 10583
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -292,16 +242,24 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 34 - aceo
-  server: prime-corgi.rooster465.autos
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 27 - aceo
+  server: accurate-frog.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: prime-corgi.rooster465.autos
+  sni: accurate-frog.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 28 - aceo
+  server: organic-caribou.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: organic-caribou.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 35 - aceo
+- name: 🇯🇵 日本 (Japan) 29 - aceo
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -313,42 +271,97 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 36 - aceo
-  server: fancy-javelin.rooster465.autos
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 30 - aceo
+  server: 54.199.66.128
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: fancy-javelin.rooster465.autos
+  sni: integral-rodent.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 37 - aceo
-  server: 84.247.155.196
-  port: 80
+- name: 🇯🇵 日本 (Japan) 31 - aceo
+  server: jpga01.jumpernode.site
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 38 - aceo
-  server: 52.192.217.187
+  type: vless
+  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
+    short-id: c8e49965
+  servername: amzn.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 32 - aceo
+  server: 54.249.36.167
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 33 - aceo
+  server: 54.249.55.154
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 34 - aceo
+  server: evolving-platypus.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: evolving-platypus.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 39 - aceo
-  server: jpba.osaip.net
+- name: 🇯🇵 日本 (Japan) 35 - aceo
+  server: 13.230.139.12
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: brief-glider.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 36 - aceo
+  server: jeffsubs.com
   port: 443
   udp: true
   type: vless
-  uuid: 2a73bd11-43d4-4af2-a46f-d8cb519fa2b3
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
   tls: true
-  reality-opts:
-    public-key: oNBTLH-mw1gk3nDF74ATS7cpvb3eLVePL5iQHscEp3Y
-    short-id: 97e03274
-  servername: cdn-dynmedia-1.microsoft.com
+  servername: jeffsubs.com
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
+- name: 🇯🇵 日本 (Japan) 37 - aceo
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 38 - aceo
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 39 - aceo
+  server: 52.192.45.137
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: promoted-rattler.rooster465.autos
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

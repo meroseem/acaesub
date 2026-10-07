@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - aceo
-  server: 108.181.121.226
-  port: 8388
+  server: 185.174.137.172
+  port: 8446
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 02 - aceo
   server: 212.227.235.66
   port: 2053
@@ -31,14 +32,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 04 - aceo
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - aceo
   server: 46.28.71.247
   port: 443
   udp: true
@@ -51,6 +44,13 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 05 - aceo
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 06 - aceo
   server: assets-es.pleiades.codes
   port: 443
