@@ -12,12 +12,16 @@
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
-      "server": "185.103.110.66",
-      "server_port": 18280,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps155-edge.kermemehori.ru",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -40,48 +44,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - aceo",
-      "server": "159.194.250.154",
-      "server_port": 443,
-      "uuid": "f0482c9d-ff67-4a43-af8e-76fc5d55c250",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-maps.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - aceo",
-      "server": "i.wareznet.ru",
-      "server_port": 8443,
-      "password": "d402d4c0b8354a90b70bb2566dce9a08",
-      "tls": {
-        "enabled": true,
-        "server_name": "i.wareznet.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - aceo",
         "🇫🇮 芬兰 (Finland) 02 - aceo",
-        "🇫🇮 芬兰 (Finland) 03 - aceo",
-        "🇫🇮 芬兰 (Finland) 04 - aceo",
-        "🇫🇮 芬兰 (Finland) 05 - aceo"
+        "🇫🇮 芬兰 (Finland) 03 - aceo"
       ]
     },
     {
@@ -90,9 +59,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - aceo",
         "🇫🇮 芬兰 (Finland) 02 - aceo",
-        "🇫🇮 芬兰 (Finland) 03 - aceo",
-        "🇫🇮 芬兰 (Finland) 04 - aceo",
-        "🇫🇮 芬兰 (Finland) 05 - aceo"
+        "🇫🇮 芬兰 (Finland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

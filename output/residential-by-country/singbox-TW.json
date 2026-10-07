@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-      "server": "172.66.152.4",
+      "server": "104.20.36.205",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
@@ -23,18 +23,38 @@
       }
     },
     {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "server": "tw3.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw3.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

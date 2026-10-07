@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - aceo
+  server: 153.76.185.164
+  port: 3090
+  udp: true
+  type: vless
+  uuid: b79172e2-06f1-4d78-86f1-d38fa0e3cc1e
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - aceo
   server: cz.h2.cleanersaz.help
   port: 443
   udp: true
@@ -18,11 +27,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 02 - aceo
 rules:
 - MATCH,PROXIES
