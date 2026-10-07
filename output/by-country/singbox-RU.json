@@ -4,12 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "194.38.11.86",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae"
+      "server": "104.21.16.123",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
+      "tls": {
+        "enabled": true,
+        "server_name": "7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560",
+        "headers": {
+          "Host": "7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev"
+        }
+      }
     },
     {
       "type": "vless",
@@ -41,23 +59,30 @@
       "password": "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-      "server": "45.151.71.63",
-      "server_port": 443,
-      "uuid": "3984a6ee-9fc6-4219-93fd-706c59e02171",
-      "flow": "xtls-rprx-vision",
+      "server": "194.38.11.86",
+      "server_port": 65443,
+      "method": "aes-256-cfb",
+      "password": "7eadc6dbe2ae"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "abuse.sellflow.org",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -69,7 +94,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
       ]
     },
     {
@@ -79,7 +105,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 04 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - aceo
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 02 - aceo
   server: 185.174.137.172
   port: 8446
   udp: true
@@ -12,26 +19,13 @@ proxies:
   password: e9dc02d400b67c727aca1620
   sni: 185.174.137.172
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 02 - aceo
-  server: 140.174.184.5
+- name: 🇪🇸 西班牙 (Spain) 03 - aceo
+  server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
-  server: 193.238.154.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-  tls: true
-  servername: assets-es.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 04 - aceo
   server: 212.227.235.66
   port: 2053
@@ -45,12 +39,43 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 05 - aceo
-  server: 108.181.121.226
-  port: 8388
+  server: es4.h1cloud.net
+  port: 25047
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: vless
+  uuid: 55a2940a-ae07-40b4-ab32-4d3e0617731f
+  tls: true
+  reality-opts:
+    public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
+    short-id: 8b7227d48365dda9
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 06 - aceo
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 07 - aceo
+  server: assets-es.pleiades.codes
+  port: 443
+  udp: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  servername: assets-es.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +86,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
   - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
+  - 🇪🇸 西班牙 (Spain) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +98,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - aceo
   - 🇪🇸 西班牙 (Spain) 04 - aceo
   - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
+  - 🇪🇸 西班牙 (Spain) 07 - aceo
 rules:
 - MATCH,PROXIES

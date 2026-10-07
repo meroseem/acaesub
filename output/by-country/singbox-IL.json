@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -33,12 +33,36 @@
       "password": "Pil67PqflZg0TtPVO/PoFLTMrJDyC5p27jc0S7fuFCQ=:SXou9caBcLaritdsJnL/7rwkcSbAoMnjszimt/5vmEg="
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - aceo",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-il",
+        "headers": {
+          "Host": "tgmansion.site"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - aceo",
-        "🇮🇱 以色列 (Israel) 02 - aceo"
+        "🇮🇱 以色列 (Israel) 02 - aceo",
+        "🇮🇱 以色列 (Israel) 03 - aceo"
       ]
     },
     {
@@ -46,7 +70,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - aceo",
-        "🇮🇱 以色列 (Israel) 02 - aceo"
+        "🇮🇱 以色列 (Israel) 02 - aceo",
+        "🇮🇱 以色列 (Israel) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

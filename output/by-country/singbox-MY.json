@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - aceo",
-      "server": "77.74.123.106",
-      "server_port": 4443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+      "server": "47.250.135.244",
+      "server_port": 10000,
+      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
