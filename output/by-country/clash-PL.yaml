@@ -5,20 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
+  server: 81.90.20.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.pupoe.sbs
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 70.34.255.101
   port: 80
   udp: true
   type: vless
   uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 70.34.252.154
-  port: 80
-  udp: true
-  type: vless
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
   network: ws
   ws-opts:
     path: /
@@ -29,21 +30,30 @@ proxies:
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 177.1.192.74
+  server: 83.168.107.220
   port: 443
   udp: true
   type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
+    short-id: c56d4f1c
+  servername: google.com
+  client-fingerprint: safari
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 70.34.252.154
+  port: 80
+  udp: true
+  type: vless
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 177.1.192.72
   port: 443
   udp: true
@@ -56,17 +66,6 @@ proxies:
     short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 81.90.20.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
   server: 144.31.49.47
   port: 443
@@ -74,7 +73,18 @@ proxies:
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: 64.176.73.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +97,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +110,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
 rules:
 - MATCH,PROXIES

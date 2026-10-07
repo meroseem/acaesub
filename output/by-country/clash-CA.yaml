@@ -5,21 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - aceo
-  server: 149.22.95.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦 加拿大 (Canada) 02 - aceo
-  server: 198.57.27.190
+  server: 158.51.121.63
   port: 22324
   udp: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 02 - aceo
+  server: 137.184.174.93
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 03 - aceo
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 04 - aceo
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 05 - aceo
   server: 66.70.179.198
   port: 2053
   udp: true
@@ -31,7 +46,14 @@ proxies:
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 04 - aceo
+- name: 🇨🇦 加拿大 (Canada) 06 - aceo
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 07 - aceo
   server: 148.113.196.75
   port: 8443
   udp: true
@@ -43,36 +65,20 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇨🇦 加拿大 (Canada) 05 - aceo
-  server: 138.197.141.58
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 06 - aceo
-  server: amphetamine.adaspoloandco.com
-  port: 2087
+- name: 🇨🇦 加拿大 (Canada) 08 - aceo
+  server: 45.148.103.85
+  port: 443
   udp: true
   type: vless
-  uuid: 97ea73b6-2043-4238-903c-a1e3d4a43c96
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
   tls: true
-  servername: amphetamine.adaspoloandco.com
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: amphetamine.adaspoloandco.com
-- name: 🇨🇦 加拿大 (Canada) 07 - aceo
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 08 - aceo
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: ca-root.sworkingvpn.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 09 - aceo
   server: 134.195.196.211
   port: 18000
   udp: true
@@ -80,13 +86,6 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 09 - aceo
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 10 - aceo
   server: 209.200.246.148
   port: 443
@@ -99,28 +98,21 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 11 - aceo
+  server: 51.222.155.113
+  port: 5601
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 12 - aceo
   server: 51.79.85.185
   port: 8118
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 (Canada) 12 - aceo
-  server: milo.rubinaz.xyz
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 加拿大 (Canada) 13 - aceo
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,7 +130,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 10 - aceo
   - 🇨🇦 加拿大 (Canada) 11 - aceo
   - 🇨🇦 加拿大 (Canada) 12 - aceo
-  - 🇨🇦 加拿大 (Canada) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -156,6 +147,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 10 - aceo
   - 🇨🇦 加拿大 (Canada) 11 - aceo
   - 🇨🇦 加拿大 (Canada) 12 - aceo
-  - 🇨🇦 加拿大 (Canada) 13 - aceo
 rules:
 - MATCH,PROXIES
