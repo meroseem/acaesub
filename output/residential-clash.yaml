@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  server: 104.20.36.205
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -13,25 +13,13 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  server: tw3.dexlos.com
-  port: 8080
-  udp: true
-  type: tuic
-  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw3.dexlos.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - aceo
+- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - aceo
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -45,15 +33,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - aceo
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - aceo
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES
