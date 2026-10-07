@@ -18,16 +18,13 @@ proxies:
   servername: d3-ee1.cloud-cdn.xyz
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 94.183.170.135
-  port: 443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   server: 94.183.170.135
   port: 8443
@@ -39,20 +36,7 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  server: 163.245.52.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  servername: d3-ee1.cloud-cdn.xyz
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  server: 77.72.85.247
+  server: 77.72.85.246
   port: 8443
   udp: true
   type: vless
@@ -74,7 +58,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +67,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 rules:
 - MATCH,PROXIES

@@ -13,6 +13,13 @@ proxies:
   password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
   server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - aceo
+  server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
@@ -25,6 +32,7 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
   - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
+  - 🇱🇹 立陶宛 (Lithuania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -32,5 +40,6 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
   - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
+  - 🇱🇹 立陶宛 (Lithuania) 03 - aceo
 rules:
 - MATCH,PROXIES

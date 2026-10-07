@@ -4,8 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  server: argo6.5671234.xyz
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - aceo
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  server: 172.66.152.4
   port: 443
   udp: true
   type: vless
@@ -13,48 +34,26 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
-  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - aceo
-  server: 46.101.46.169
-  port: 486
-  udp: true
-  type: vless
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - aceo
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - aceo
+  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇯🇵 日本 (Japan) 02 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - aceo
+  - 🇯🇵 日本 (Japan) 01 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES
