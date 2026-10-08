@@ -4,25 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "8.47.69.0",
+      "type": "hysteria2",
+      "tag": "🇨🇿 捷克 (Czech) 01 - aceo",
+      "server": "cz.h2.cleanersaz.help",
       "server_port": 443,
-      "password": "humanity",
+      "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
+        "server_name": "cz.h2.cleanersaz.help",
+        "insecure": true
       }
     },
     {
@@ -30,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

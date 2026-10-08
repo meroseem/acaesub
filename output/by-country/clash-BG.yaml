@@ -5,25 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: 87.120.216.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  servername: de-root.sworkingvpn.com
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
   server: 213.183.63.60
-  port: 9030
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  server: 136.175.82.85
+  port: 18775
+  udp: true
+  type: vless
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

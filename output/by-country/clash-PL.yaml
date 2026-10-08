@@ -5,43 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 70.34.252.154
-  port: 80
+  server: 45.192.12.93
+  port: 443
   udp: true
-  type: vless
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  network: ws
-  ws-opts:
-    path: /
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 70.34.255.101
-  port: 80
-  udp: true
-  type: vless
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 95.85.253.241
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 95.85.253.241
-  port: 2083
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 95.85.253.241
   port: 2087
   udp: true
@@ -50,25 +21,55 @@ proxies:
   tls: true
   servername: 95.85.253.241
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: cheerful-swan.rooster465.autos
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 45.192.12.93
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 31.77.13.19
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 95.85.253.241
+  port: 2053
+  udp: true
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 95.85.253.241
+  port: 2083
+  udp: true
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 177.1.192.74
+  server: 177.1.192.72
   port: 443
   udp: true
   type: vless
@@ -76,8 +77,8 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
