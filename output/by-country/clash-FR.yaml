@@ -5,13 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - aceo
-  server: 13.36.178.160
+  server: 13.36.241.80
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 02 - aceo
+  server: 15.237.53.180
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 03 - aceo
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 04 - aceo
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 05 - aceo
+  server: 51.44.167.227
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - aceo
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - aceo
   server: 13.36.234.11
   port: 443
   udp: true
@@ -19,15 +58,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-fr-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - aceo
-  server: 13.38.44.64
-  port: 443
+- name: 🇫🇷 法国 (France) 08 - aceo
+  server: 62.210.7.139
+  port: 60111
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 04 - aceo
+- name: 🇫🇷 法国 (France) 09 - aceo
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -39,37 +78,26 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - aceo
-  server: 51.255.166.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3k67dwms3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 06 - aceo
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 07 - aceo
-  server: 104.16.72.41
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 10 - aceo
+  server: 165.215.250.14
   port: 443
   udp: true
   type: trojan
   password: humanity
   sni: www.calmlunch.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 08 - aceo
+- name: 🇫🇷 法国 (France) 11 - aceo
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 12 - aceo
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -80,19 +108,11 @@ proxies:
     public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
     short-id: 2fed44d8c59f7e71
   servername: www.sony.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 09 - aceo
-  server: 51.44.167.227
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - aceo
+- name: 🇫🇷 法国 (France) 13 - aceo
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -105,111 +125,25 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - aceo
-  server: 54.37.136.194
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  tls: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 12 - aceo
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 13 - aceo
-  server: tyxyrytyro-51255165170-direct.araghchy.com
+- name: 🇫🇷 法国 (France) 14 - aceo
+  server: 51.255.166.202
   port: 443
   udp: true
   type: vless
-  uuid: tyxyrytyro
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
   flow: xtls-rprx-vision
   tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 14 - aceo
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 - name: 🇫🇷 法国 (France) 15 - aceo
-  server: 185.220.100.168
+  server: 13.38.44.64
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 16 - aceo
-  server: 8.47.69.0
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  tls: true
-  servername: fr.api-music-fa.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 17 - aceo
-  server: 172.67.190.248
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  tls: true
-  servername: www.large-files.info
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
-    headers:
-      Host: www.large-files.info
-- name: 🇫🇷 法国 (France) 18 - aceo
-  server: 149.202.58.99
-  port: 443
-  udp: true
-  type: vless
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  tls: true
-  servername: bab-6.site
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vws/
-- name: 🇫🇷 法国 (France) 19 - aceo
-  server: 185.225.68.232
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 20 - aceo
+- name: 🇫🇷 法国 (France) 16 - aceo
   server: 45.87.41.18
   port: 443
   udp: true
@@ -220,7 +154,107 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 17 - aceo
+  server: tyxyrytyro-51255165170-direct.araghchy.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: tyxyrytyro
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 18 - aceo
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 19 - aceo
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 20 - aceo
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: 🇫🇷 法国 (France) 21 - aceo
+  server: 13.36.178.160
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 22 - aceo
+  server: 172.67.193.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  tls: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 23 - aceo
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 24 - aceo
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 25 - aceo
+  server: 104.21.84.30
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  tls: true
+  servername: fr.api-music-fa.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 26 - aceo
   server: 155.103.71.142
   port: 443
   udp: true
@@ -231,6 +265,21 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 27 - aceo
+  server: 85.192.60.46
+  port: 443
+  udp: true
+  type: vless
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  tls: true
+  servername: bab-6.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -257,6 +306,12 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19 - aceo
   - 🇫🇷 法国 (France) 20 - aceo
   - 🇫🇷 法国 (France) 21 - aceo
+  - 🇫🇷 法国 (France) 22 - aceo
+  - 🇫🇷 法国 (France) 23 - aceo
+  - 🇫🇷 法国 (France) 24 - aceo
+  - 🇫🇷 法国 (France) 25 - aceo
+  - 🇫🇷 法国 (France) 26 - aceo
+  - 🇫🇷 法国 (France) 27 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -283,5 +338,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19 - aceo
   - 🇫🇷 法国 (France) 20 - aceo
   - 🇫🇷 法国 (France) 21 - aceo
+  - 🇫🇷 法国 (France) 22 - aceo
+  - 🇫🇷 法国 (France) 23 - aceo
+  - 🇫🇷 法国 (France) 24 - aceo
+  - 🇫🇷 法国 (France) 25 - aceo
+  - 🇫🇷 法国 (France) 26 - aceo
+  - 🇫🇷 法国 (France) 27 - aceo
 rules:
 - MATCH,PROXIES
