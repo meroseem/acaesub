@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: 87.120.216.137
+- name: 🇦🇱 AL 01 - aceo
+  server: 78.159.131.79
   port: 443
   udp: true
   type: vless
@@ -15,28 +15,34 @@ proxies:
   reality-opts:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
-  servername: de-root.sworkingvpn.com
+  servername: nl-root.sworkingvpn.com
   client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
-  server: 213.183.63.60
-  port: 9030
+- name: 🇦🇱 AL 02 - aceo
+  server: 45.89.60.202
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  type: vless
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: al-root.sworkingvpn.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  - 🇦🇱 AL 01 - aceo
+  - 🇦🇱 AL 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  - 🇦🇱 AL 01 - aceo
+  - 🇦🇱 AL 02 - aceo
 rules:
 - MATCH,PROXIES
