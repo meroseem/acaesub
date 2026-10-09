@@ -16,8 +16,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+      "server": "82.38.64.239",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -36,27 +48,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
-      "server": "188.120.236.239",
-      "server_port": 2096,
-      "uuid": "4f4ba283-2dd7-4eda-9211-63ae357373cf",
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+      "server": "185.18.250.245",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "id.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": true
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless-grpc-reality"
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
       }
     },
     {
@@ -66,7 +73,8 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo"
       ]
     },
     {
@@ -75,7 +83,8 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

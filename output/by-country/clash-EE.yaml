@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 95.85.242.160
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  servername: ee-root.sworkingvpn.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 94.183.170.135
   port: 443
   udp: true
@@ -26,12 +13,22 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 95.85.242.166
+  server: 95.85.242.160
   port: 443
   udp: true
   type: vless
-  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -48,6 +45,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
   server: 77.72.85.247
   port: 8443
@@ -62,6 +60,14 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
+  server: 79.98.37.18
+  port: 2097
+  udp: true
+  type: trojan
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  sni: stoniy.fytpn.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +78,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +89,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
 rules:
 - MATCH,PROXIES

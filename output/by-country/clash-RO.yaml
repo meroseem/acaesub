@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 77.74.123.108
+  server: 77.74.123.109
   port: 8443
   udp: true
   type: hysteria2
@@ -13,19 +13,6 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 46.183.16.4
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
-  tls: true
-  servername: ro1.b0w.ir
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: 46.28.67.55
   port: 443
   udp: true
@@ -38,6 +25,19 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: ''
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 146.70.124.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

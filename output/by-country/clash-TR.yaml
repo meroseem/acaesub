@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 162.249.126.40
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 78.135.73.47
   port: 443
   udp: true
@@ -24,8 +16,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 104.21.48.18
   port: 2053
   udp: true
@@ -43,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
-  - 🇹🇷 土耳其 (Turkey) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -6,41 +6,35 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
-      "server": "95.85.242.160",
-      "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-root.sworkingvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "94.183.170.135"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
-      "server": "95.85.242.166",
+      "server": "95.85.242.160",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-0018-a7f3-5a07b7b488c1",
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -65,7 +59,11 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -88,6 +86,22 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - aceo",
+      "server": "79.98.37.18",
+      "server_port": 2097,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "stoniy.fytpn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -96,7 +110,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - aceo"
       ]
     },
     {
@@ -107,7 +122,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - aceo",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

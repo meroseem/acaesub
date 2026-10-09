@@ -13,6 +13,14 @@ proxies:
   sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  server: 82.38.64.239
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -24,20 +32,17 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  server: 188.120.236.239
-  port: 2096
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  server: 185.18.250.245
+  port: 443
   udp: true
-  type: vless
-  uuid: 4f4ba283-2dd7-4eda-9211-63ae357373cf
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +51,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +60,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 rules:
 - MATCH,PROXIES
