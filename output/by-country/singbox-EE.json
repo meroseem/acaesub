@@ -7,13 +7,15 @@
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
       "server": "94.183.170.135",
-      "server_port": 443,
+      "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "94.183.170.135"
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -21,12 +23,11 @@
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
       "server": "94.183.170.135",
-      "server_port": 8443,
+      "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -49,30 +50,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo",
-      "server": "79.98.37.18",
-      "server_port": 2097,
-      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
-      "tls": {
-        "enabled": true,
-        "server_name": "stoniy.fytpn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo"
       ]
     },
     {
@@ -81,8 +65,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - aceo",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

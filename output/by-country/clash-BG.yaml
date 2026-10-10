@@ -5,24 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: 93.152.223.201
+  server: 136.175.82.85
+  port: 18775
+  udp: true
+  type: vless
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  server: 193.239.160.134
   port: 443
   udp: true
   type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: ger2.fytpn.com
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
 rules:
 - MATCH,PROXIES
