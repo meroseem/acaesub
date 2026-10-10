@@ -4,20 +4,71 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-      "server": "31.76.104.160",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
+      "server": "216.173.71.43",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
+      "server": "31.57.106.241",
+      "server_port": 443,
+      "uuid": "a4801105-c0c7-4cab-87c6-f257ff2afc09",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lmt.lv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o",
+          "short_id": "44f7c5615039ae1b"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - aceo",
       "server": "188.220.205.44",
       "server_port": 2097,
       "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
@@ -37,7 +88,9 @@
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - aceo"
       ]
     },
     {
@@ -45,7 +98,9 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

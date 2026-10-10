@@ -5,22 +5,96 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 156.224.77.171
+  port: 9443
+  udp: true
+  type: vless
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
+  sni: css.rbxcdn.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: full-ox.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: full-ox.rooster465.autos
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: japro02.xyy123.bid
+  port: 443
+  udp: true
+  type: vless
+  uuid: 23af32ca-bea1-4a5e-bebb-04d1b1b633bc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: p-nt-www-amazon-com-kalias.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: 34.92.19.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  tls: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
   server: 82.29.36.250
   port: 443
   udp: true
@@ -30,26 +104,10 @@ proxies:
   tls: true
   reality-opts:
     public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
+    short-id: ac3342a709db
   servername: aws.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
   server: 3696b38bsg.murphyweb.sbs
   port: 32134
   udp: true
@@ -61,7 +119,44 @@ proxies:
     public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
     short-id: 6c6c7c97
   servername: buylite.music.apple.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  server: 154.37.216.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  servername: www.bing.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: jmp1.907737.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - aceo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +168,14 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +187,13 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - aceo
 rules:
 - MATCH,PROXIES

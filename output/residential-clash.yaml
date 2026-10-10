@@ -4,13 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
-  server: 218.237.185.234
-  port: 4652
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  server: 61.18.134.10
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vless
+  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  tls: true
+  servername: mswo-gy191m.zhiyuantech.cloud
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+    headers:
+      Host: mswo-gy191m.zhiyuantech.cloud
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   server: 61.230.162.88
   port: 24215
@@ -27,14 +34,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES
