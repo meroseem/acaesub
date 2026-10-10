@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
       "server": "136.175.82.85",
       "server_port": 18775,
       "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
@@ -25,31 +41,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
-      "server": "193.239.160.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo"
       ]
     },
     {
@@ -57,7 +55,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

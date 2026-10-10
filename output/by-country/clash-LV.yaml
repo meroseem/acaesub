@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: 104.165.205.21
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   server: 216.173.71.43
   port: 443
   udp: true
@@ -38,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
 rules:
 - MATCH,PROXIES
