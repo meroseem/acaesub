@@ -11,6 +11,20 @@ proxies:
   type: vless
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 02 - aceo
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 03 - aceo
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 04 - aceo
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -22,14 +36,19 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 03 - aceo
-  server: 91.201.65.122
-  port: 9074
+- name: 🇮🇹 意大利 (Italy) 05 - aceo
+  server: itak.ali-bard.online
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: p5wSkb2uM3pKSS3j
-- name: 🇮🇹 意大利 (Italy) 04 - aceo
+  type: vless
+  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: itak.ali-bard.online
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 06 - aceo
   server: 82.118.16.187
   port: 443
   udp: true
@@ -42,13 +61,20 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 05 - aceo
-  server: 57.131.48.45
-  port: 8388
+- name: 🇮🇹 意大利 (Italy) 07 - aceo
+  server: 91.201.65.122
+  port: 9074
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  cipher: aes-256-cfb
+  password: p5wSkb2uM3pKSS3j
+- name: 🇮🇹 意大利 (Italy) 08 - aceo
+  server: 91.201.65.122
+  port: 9053
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +85,9 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - aceo
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
+  - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
+  - 🇮🇹 意大利 (Italy) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +98,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - aceo
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
+  - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
+  - 🇮🇹 意大利 (Italy) 08 - aceo
 rules:
 - MATCH,PROXIES

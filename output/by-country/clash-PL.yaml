@@ -5,52 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 95.85.253.241
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 91.215.43.248
+  server: pl-1-1.unturned-rust-dead.lol
   port: 443
   udp: true
   type: vless
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  tls: true
-  servername: my.kempekl.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 177.1.192.72
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   tls: true
   reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 195.133.80.152
   port: 443
   udp: true
@@ -63,7 +28,25 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: pl3.nztvpn.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 2.26.225.89
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 95.85.253.241
+  port: 2087
+  udp: true
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 177.1.192.74
   port: 443
   udp: true
@@ -76,16 +59,46 @@ proxies:
     short-id: 770618b6
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 2.26.225.89
-  port: 8443
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 95.85.253.241
+  port: 2083
   udp: true
   type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   tls: true
-  servername: pl.flen-vpn.xyz
+  servername: 95.85.253.241
   skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 202.78.163.237
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: polandsixsebenrkn010.qcloud.surf
+  port: 21384
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: polandsixsebenrkn010.qcloud.surf
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  server: 177.1.192.72
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
   server: 144.31.49.47
   port: 443
   udp: true
@@ -106,6 +119,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,5 +134,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - aceo
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
 rules:
 - MATCH,PROXIES
