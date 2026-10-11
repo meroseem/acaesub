@@ -25,36 +25,33 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws"
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
-      "server": "46.8.208.80",
-      "server_port": 8443,
-      "uuid": "56ff50da-a238-4646-95ab-dd159634bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru14.transitb2bsytems.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BC9xHGiLQKQkqNduzHvnwizRNDyr8TTr5Bxnf4Dov20",
-          "short_id": ""
-        }
-      },
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {

@@ -5,22 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 202.78.163.237
+  server: pl.golangwikito.cfd
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
+    short-id: f8b695e5c59d028c
+  servername: pl.golangwikito.cfd
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 45.192.12.93
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 95.85.253.241
   port: 2087
   udp: true
@@ -29,18 +26,16 @@ proxies:
   tls: true
   servername: 95.85.253.241
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 95.85.253.241
-  port: 2053
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 202.78.163.237
+  port: 443
   udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: pl-waw.dontblockmepls.com
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 31.77.13.19
   port: 2063
   udp: true
   type: vless
@@ -50,42 +45,18 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 31.76.251.107
-  port: 443
-  udp: true
-  type: vless
-  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2e-kBGQGyc6XtqOSCadWQxs8gAgLUhAAedXyk8A51Sw
-    short-id: 74402fce7bda718e
-  servername: google.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 177.1.192.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 144.31.49.47
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 95.85.253.241
+  port: 2053
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 91.215.43.248
   port: 443
   udp: true
@@ -100,32 +71,26 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: 177.1.192.72
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
+  server: 31.77.59.95
   port: 443
   udp: true
   type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - aceo
-  server: 77.110.105.122
-  port: 443
-  udp: true
-  type: vless
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
-  flow: xtls-rprx-vision
-  tls: true
-  servername: co-pl.speedtec.ru
+  servername: u6.luxcloud.space
   skip-cert-verify: false
-  client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 12 - aceo
-  server: 2.26.225.89
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  server: pl.flen-vpn.xyz
   port: 8443
   udp: true
   type: vless
@@ -147,9 +112,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
   - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
-  - 🇵🇱 波兰 (Poland) 11 - aceo
-  - 🇵🇱 波兰 (Poland) 12 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,8 +126,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
   - 🇵🇱 波兰 (Poland) 09 - aceo
-  - 🇵🇱 波兰 (Poland) 10 - aceo
-  - 🇵🇱 波兰 (Poland) 11 - aceo
-  - 🇵🇱 波兰 (Poland) 12 - aceo
 rules:
 - MATCH,PROXIES

@@ -18,14 +18,17 @@ proxies:
   grpc-opts:
     grpc-service-name: nl1grpc
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 94.183.170.135
-  port: 8443
+  server: 185.209.15.100
+  port: 443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  flow: xtls-rprx-vision
   tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM
+    short-id: c334408a1056aaf8
+  servername: n1.vimeostream.online
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   server: 178.214.113.10
@@ -42,41 +45,26 @@ proxies:
     grpc-service-name: nl1grpc
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   server: 94.183.170.135
-  port: 443
+  port: 8443
   udp: true
   type: vless
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  server: 185.209.15.100
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM
-    short-id: c334408a1056aaf8
-  servername: n1.vimeostream.online
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
-  server: 185.252.177.216
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
+  server: 13.143.239.75
   port: 443
   udp: true
   type: vless
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: est-1.ardesnode.ru
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
-  server: 77.72.85.247
+  servername: u5.luxcloud.space
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
+  server: 77.72.85.246
   port: 8443
   udp: true
   type: vless
@@ -89,20 +77,19 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - aceo
-  server: ee-1-1.unturned-rust-dead.lol
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
+  server: 185.31.242.61
   port: 443
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
+    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
+    short-id: 0da7e14db353e7d0
+  servername: est.nztvpn.com
   client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,7 +102,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,6 +114,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - aceo
 rules:
 - MATCH,PROXIES

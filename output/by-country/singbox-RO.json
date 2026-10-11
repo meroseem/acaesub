@@ -6,35 +6,59 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-      "server": "77.74.123.101",
+      "server": "77.74.123.102",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
-      "server": "146.70.124.85",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
+      "server": "82.152.132.120",
       "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
+      "uuid": "3e0c1fbf-467a-49d7-abd2-3a158628f3d0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
+        "server_name": "ro1.gigobingo.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
+          "public_key": "Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ",
+          "short_id": "ef7c4e4302bd52d7"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - aceo",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -42,7 +66,9 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
+        "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
+        "🇷🇴 罗马尼亚 (Romania) 04 - aceo"
       ]
     },
     {
@@ -50,7 +76,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
+        "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
+        "🇷🇴 罗马尼亚 (Romania) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

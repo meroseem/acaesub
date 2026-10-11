@@ -1,0 +1,69 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "server": "24864168545164.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "24864168545164.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "24864168545164.d6f54hd1j.cc"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "server": "654168416355441.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "654168416355441.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
