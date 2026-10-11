@@ -24,22 +24,7 @@ proxies:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
     short-id: cbd39bea0805e2
   servername: www.kaidee.com
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03 - aceo
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
-  - 🇹🇭 泰国 (Thailand) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - aceo
   - 🇹🇭 泰国 (Thailand) 02 - aceo
-  - 🇹🇭 泰国 (Thailand) 03 - aceo
 rules:
 - MATCH,PROXIES

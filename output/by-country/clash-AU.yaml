@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  server: sy2.australiacaregroup.site
+  port: 10001
+  udp: true
+  type: vmess
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  alterId: 0
+  cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
   server: vpn-au-001.fastervpn.world
   port: 443
   udp: true
@@ -18,11 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 02 - aceo
 rules:
 - MATCH,PROXIES
