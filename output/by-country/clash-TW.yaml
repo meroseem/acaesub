@@ -18,9 +18,22 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: 103.115.109.49
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: fsjp19.46852.top
+  port: 13460
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw
+    short-id: 05282fc98fd39400
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -34,14 +47,19 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: sg.australiacaregroup.site
-  port: 20004
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
+  server: fsjp19.46852.top
+  port: 13459
   udp: true
-  type: hysteria2
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  sni: tw.australiacaregroup.site
-  skip-cert-verify: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw
+    short-id: b9
+  servername: cloudflare.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +69,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +79,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
 rules:
 - MATCH,PROXIES
