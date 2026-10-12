@@ -4,28 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  server: 118.167.248.243
-  port: 24215
+- name: 🇧🇷 巴西 (Brazil) 01 - aceo
+  server: 35.199.90.53
+  port: 443
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   tls: true
   reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+    short-id: b62a4da6cd1c4dd6
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+  - 🇧🇷 巴西 (Brazil) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+  - 🇧🇷 巴西 (Brazil) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -28,15 +28,110 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-      "server": "94.198.54.132",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "server": "cape.flowzari.info",
       "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "uuid": "6c21cf57-a9a9-4075-ad9f-631152bd911e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "msk.frkn.org",
+        "server_name": "cape.flowzari.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc",
+          "short_id": "693e339ad3613446"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "194.87.118.184",
+      "server_port": 2053,
+      "password": "7ab3c77e-8fcc-4848-918f-cae3d4eac794",
+      "tls": {
+        "enabled": true,
+        "server_name": "match-stream.lovkisport.blog",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "du-rov.secureservice.top",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+      "server": "freede.aiage.work",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "freede.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
+          "short_id": "57e7977c9011061c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
+      "server": "193.233.74.6",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -45,7 +140,12 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 02 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ]
     },
     {
@@ -53,7 +153,12 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 02 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 02 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

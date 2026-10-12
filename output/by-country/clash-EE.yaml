@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 178.214.113.10
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: n2.vimeostream.online
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: nl1grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 185.209.15.100
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: n1.vimeostream.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: nl1grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -49,68 +13,17 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  server: ee-1-1.unturned-rust-dead.lol
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
-  server: 77.72.85.247
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  tls: true
-  servername: fdghyt.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
-  server: 87.228.33.153
-  port: 6443
-  udp: true
-  type: vless
-  uuid: 7b859f9e-0e6a-475f-b5e3-5d671b043164
-  flow: xtls-rprx-vision
-  tls: true
-  servername: for.cloudgamings.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - aceo
 rules:
 - MATCH,PROXIES

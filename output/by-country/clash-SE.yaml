@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: sweedenqfds777.qcloud.surf
-  port: 21223
+  server: swe.wizard.select
+  port: 443
   udp: true
-  type: hysteria2
-  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  sni: sweedenqfds777.qcloud.surf
-  skip-cert-verify: false
+  type: vless
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

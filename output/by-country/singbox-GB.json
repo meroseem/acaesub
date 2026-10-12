@@ -6,61 +6,59 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - aceo",
-      "server": "149.102.149.207",
+      "server": "158.173.24.73",
       "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - aceo",
+      "server": "149.102.149.207",
+      "server_port": 80,
       "method": "aes-256-gcm",
       "password": "LXchLsIwtCeUAUgu"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - aceo",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - aceo",
       "server": "149.102.132.184",
       "server_port": 80,
       "method": "aes-256-gcm",
       "password": "g5h5jleTRSyO3Rk4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - aceo",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - aceo",
-      "server": "149.102.132.184",
+      "server": "141.98.101.181",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 05 - aceo",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
+      "server": "23.81.34.204",
+      "server_port": 443,
+      "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "speed.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s",
+          "short_id": "b19b017d6f453873"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - aceo",
-      "server": "146.70.23.32",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - aceo",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - aceo",
       "server": "186.190.211.188",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -78,8 +76,52 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - aceo",
+      "server": "149.102.149.207",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 08 - aceo",
+      "server": "146.70.61.18",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - aceo",
+      "server": "146.70.23.32",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - aceo",
+      "server": "51.89.194.151",
+      "server_port": 2053,
+      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
+          "short_id": "d051f678212f9d54"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - aceo",
       "server": "46.250.250.149",
       "server_port": 2053,
       "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
@@ -88,7 +130,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -98,8 +140,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - aceo",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - aceo",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - aceo",
       "server": "46.250.240.80",
       "server_port": 2053,
       "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
@@ -108,7 +158,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -118,24 +168,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - aceo",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - aceo",
-      "server": "13.40.25.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - aceo",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - aceo",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
@@ -151,22 +185,6 @@
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
           "short_id": "8325360e8bd2"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - aceo",
-      "server": "gb.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "gb.tronsg.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     },
@@ -187,7 +205,8 @@
         "🇬🇧 英国 (United Kingdom) 10 - aceo",
         "🇬🇧 英国 (United Kingdom) 11 - aceo",
         "🇬🇧 英国 (United Kingdom) 12 - aceo",
-        "🇬🇧 英国 (United Kingdom) 13 - aceo"
+        "🇬🇧 英国 (United Kingdom) 13 - aceo",
+        "🇬🇧 英国 (United Kingdom) 14 - aceo"
       ]
     },
     {
@@ -206,7 +225,8 @@
         "🇬🇧 英国 (United Kingdom) 10 - aceo",
         "🇬🇧 英国 (United Kingdom) 11 - aceo",
         "🇬🇧 英国 (United Kingdom) 12 - aceo",
-        "🇬🇧 英国 (United Kingdom) 13 - aceo"
+        "🇬🇧 英国 (United Kingdom) 13 - aceo",
+        "🇬🇧 英国 (United Kingdom) 14 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

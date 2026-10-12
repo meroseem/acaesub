@@ -19,20 +19,38 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 144.31.212.253
+  server: fi.pythonsetupbib.online
   port: 443
   udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: 144.31.212.253
-  skip-cert-verify: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: bdf5852d1423e694
+  servername: fi.pythonsetupbib.online
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: tundra.venorix.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IHm9_n5a0hMAvgclNtwWpNpq68Xdj9-Q5NG3eLkcFjE
+    short-id: 52fe21c959620cd8
+  servername: tundra.venorix.online
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+- name: 🇫🇮 芬兰 (Finland) 06 - aceo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -44,19 +62,6 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - aceo
-  server: 170.168.4.59
-  port: 17170
-  udp: true
-  type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
-  tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
 proxy-groups:
 - name: PROXIES
   type: select

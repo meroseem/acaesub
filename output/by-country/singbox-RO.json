@@ -20,12 +20,33 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
-      "server": "194.68.44.42",
-      "server_port": 64546,
+      "server": "83.147.245.126",
+      "server_port": 443,
+      "uuid": "0cf8e402-e801-4aeb-9b7a-00a933f9f1c1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-str-53.nexus-infinitus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gLO2GRqV0iVDmVdytcJLqGyZEB5Swxb-NAOC9AL13UM",
+          "short_id": "344f1f56582dda0f"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
       "method": "chacha20-ietf-poly1305",
-      "password": "U83u9OGpvSatIUW7LsWffr"
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -33,7 +54,8 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
+        "🇷🇴 罗马尼亚 (Romania) 03 - aceo"
       ]
     },
     {
@@ -41,7 +63,8 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
+        "🇷🇴 罗马尼亚 (Romania) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
