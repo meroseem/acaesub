@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - aceo
+  server: 157.228.155.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
   server: 157.228.155.185
   port: 443
   udp: true
@@ -17,7 +30,7 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - aceo
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
   server: 130.49.161.70
   port: 443
   udp: true
@@ -27,7 +40,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -46,6 +59,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +68,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
+  - 🇦🇪 阿联酋 (UAE) 04 - aceo
 rules:
 - MATCH,PROXIES

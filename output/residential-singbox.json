@@ -4,24 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-      "server": "24864168545164.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "24864168545164.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "24864168545164.d6f54hd1j.cc"
-        }
-      }
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "vmess",
@@ -40,20 +27,42 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
+      "server": "24864168545164.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "24864168545164.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "24864168545164.d6f54hd1j.cc"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

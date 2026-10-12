@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 654168416355441.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   server: 24864168545164.d6f54hd1j.cc
   port: 443
   udp: true
@@ -20,20 +34,6 @@ proxies:
     path: /
     headers:
       Host: 24864168545164.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  udp: true
-  type: vmess
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 654168416355441.d6f54hd1j.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select

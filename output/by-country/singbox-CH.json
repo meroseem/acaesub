@@ -4,32 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-      "server": "82.38.64.239",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
-      }
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -52,13 +36,87 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "server": "82.38.64.237",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+      "server": "57.129.130.63",
+      "server_port": 52014,
+      "uuid": "d731cf09-79a6-4647-aabe-8e0fda4fe3be",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - aceo",
+      "server": "81.94.148.104",
+      "server_port": 2096,
+      "uuid": "3fcec4e4-a674-44d2-8cae-c253cec43b9c",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - aceo",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 05 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 06 - aceo"
       ]
     },
     {
@@ -67,7 +125,10 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 05 - aceo",
+        "🇨🇭 瑞士 (Switzerland) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

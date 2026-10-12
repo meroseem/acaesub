@@ -1,0 +1,42 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - aceo",
+      "server": "80.243.228.84",
+      "server_port": 2085,
+      "uuid": "fe33cc59-c464-4e60-9aff-2793793317bf",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
