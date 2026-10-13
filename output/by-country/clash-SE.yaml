@@ -17,17 +17,44 @@ proxies:
     short-id: 3b20e438da99
   servername: swe.wizard.select
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: sweedenqfds777.qcloud.surf
+  port: 21223
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
+  - 🇸🇪 瑞典 (Sweden) 02 - aceo
+  - 🇸🇪 瑞典 (Sweden) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
+  - 🇸🇪 瑞典 (Sweden) 02 - aceo
+  - 🇸🇪 瑞典 (Sweden) 03 - aceo
 rules:
 - MATCH,PROXIES

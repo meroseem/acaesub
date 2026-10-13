@@ -5,41 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo
-  server: test.keoplentuio.xyz
-  port: 2053
+  server: googol.wookshop.ir
+  port: 17915
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo
-  server: v10.hdacd.com
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  tls: true
+  servername: googol.wookshop.ir
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES

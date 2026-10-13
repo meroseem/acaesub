@@ -6,44 +6,28 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo",
-      "server": "v10.hdacd.com",
-      "server_port": 30807,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
+      "server": "googol.wookshop.ir",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "googol.wookshop.ir",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

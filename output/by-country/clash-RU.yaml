@@ -19,20 +19,12 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 193.233.74.6
-  port: 8444
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: freede.aiage.work
   port: 443
@@ -47,54 +39,35 @@ proxies:
   servername: freede.aiage.work
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: match-stream.lovkisport.blog
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: 194.87.118.184
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: cape.flowzari.info
-  port: 443
+  server: 153.80.241.206
+  port: 8444
   udp: true
   type: vless
-  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
-  flow: xtls-rprx-vision
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   tls: true
   reality-opts:
-    public-key: 5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc
-    short-id: 693e339ad3613446
-  servername: cape.flowzari.info
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 193.233.74.6
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -107,19 +80,6 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
-  server: 157.22.199.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: APNUbhzINRQPRCrd6JBE0EfUF9jsP2B34x_GqrBcWH8
-    short-id: c70198222fd20079
-  servername: mint.sparkvio.cfd
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,10 +91,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -146,9 +102,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
 rules:
 - MATCH,PROXIES
