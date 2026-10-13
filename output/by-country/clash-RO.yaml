@@ -15,6 +15,21 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  server: usa0001hy-noru.packet-drop-society.net
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f7f971ce-6171-4498-9737-23b037cc11f2
+  sni: packet-drop-society.net
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 194.68.44.42
+  port: 64546
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   server: 83.147.245.126
   port: 443
   udp: true
@@ -27,7 +42,7 @@ proxies:
     short-id: 344f1f56582dda0f
   servername: assets-str-53.nexus-infinitus.com
   client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
@@ -42,6 +57,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +67,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 rules:
 - MATCH,PROXIES
