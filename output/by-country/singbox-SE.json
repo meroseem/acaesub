@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "swe.wizard.select",
+      "server": "193.27.200.200",
       "server_port": 443,
       "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "swe.wizard.select",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -27,6 +27,63 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "server": "5.157.10.149",
+      "server_port": 443,
+      "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swerka.loknietotop.digital",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "server": "62.60.159.81",
+      "server_port": 2053,
+      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
+          "short_id": "d0ea1847066af5a6"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpce5bb9e71"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
+      "server": "sweedenqfds777.qcloud.surf",
+      "server_port": 21223,
+      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - aceo",
       "server": "94.143.231.146",
       "server_port": 443,
       "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
@@ -48,25 +105,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
-      "server": "sweedenqfds777.qcloud.surf",
-      "server_port": 21223,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 03 - aceo",
+        "🇸🇪 瑞典 (Sweden) 04 - aceo",
+        "🇸🇪 瑞典 (Sweden) 05 - aceo"
       ]
     },
     {
@@ -75,7 +122,9 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 03 - aceo",
+        "🇸🇪 瑞典 (Sweden) 04 - aceo",
+        "🇸🇪 瑞典 (Sweden) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
