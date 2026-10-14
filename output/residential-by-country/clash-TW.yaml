@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - aceo
-  server: 172.66.44.124
-  port: 8443
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
   udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: fujrdt.d6f54hd1j.cc
   skip-cert-verify: false
-  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES

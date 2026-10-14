@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 185.31.242.61
-  port: 443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
-    short-id: 0da7e14db353e7d0
-  servername: est.nztvpn.com
-  client-fingerprint: random
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 94.183.170.135
   port: 8443
@@ -26,31 +21,6 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  server: 188.225.38.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 30292475-4666-4c26-bcb2-338a0919958b
-  tls: true
-  servername: lalibobi.online
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: lalibobi.orbit.v3.Connect
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
-  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-  port: 443
-  udp: true
-  type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -59,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
 rules:
 - MATCH,PROXIES

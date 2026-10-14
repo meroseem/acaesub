@@ -4,16 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+          "Host": "fujrdt.d6f54hd1j.cc"
         }
       }
     },
@@ -22,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
