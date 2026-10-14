@@ -28,32 +28,6 @@ proxies:
   servername: browser.yandex.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 87.242.127.113
-  port: 4510
-  udp: true
-  type: vless
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
-    short-id: 2d0c188798bae174
-  servername: 9c99da.usecache.net
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 177.1.192.74
   port: 443
   udp: true
@@ -66,6 +40,32 @@ proxies:
     short-id: 770618b6
   servername: addons.mozilla.org
   client-fingerprint: randomized
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 37.18.14.145
+  port: 4510
+  udp: true
+  type: vless
+  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
+    short-id: 2d0c188798bae174
+  servername: 9c99da.usecache.net
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 177.1.192.72
   port: 443
@@ -80,6 +80,18 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: pl4.h1cloud.net
+  port: 25080
+  udp: true
+  type: vless
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  tls: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+    short-id: 103d1dc5ed8eaf4c
+  servername: www.ceneo.pl
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: pl.flen-vpn.xyz
   port: 8443
   udp: true
@@ -88,13 +100,6 @@ proxies:
   tls: true
   servername: pl.flen-vpn.xyz
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 51.83.192.80
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
 proxy-groups:
 - name: PROXIES
   type: select

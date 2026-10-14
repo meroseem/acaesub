@@ -5,27 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "104.21.70.22",
-      "server_port": 443,
-      "uuid": "efe19c5a-0ea1-4666-8a4c-4a33f4670775",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - aceo",
+      "server": "77.91.68.70",
+      "server_port": 55983,
+      "uuid": "f667a096-5231-4cfb-8759-92bb32473139",
       "tls": {
         "enabled": true,
-        "server_name": "luminouspetal.cyou",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/raccoonwsvless",
-        "headers": {
-          "Host": "luminouspetal.cyou"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg",
+          "short_id": "0e"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
