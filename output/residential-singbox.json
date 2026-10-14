@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
-      "server": "googol.wookshop.ir",
-      "server_port": 17915,
-      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
-      "tls": {
-        "enabled": true,
-        "server_name": "googol.wookshop.ir",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

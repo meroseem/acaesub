@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 138.124.96.88
@@ -27,6 +27,25 @@ proxies:
     path: /
     headers:
       Host: ''
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +53,8 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +62,7 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 rules:
 - MATCH,PROXIES

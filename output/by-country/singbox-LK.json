@@ -5,14 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo",
-      "server": "googol.wookshop.ir",
-      "server_port": 17915,
-      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
-      "tls": {
-        "enabled": true,
-        "server_name": "googol.wookshop.ir",
-        "insecure": false
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 80,
+      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
       }
     },
     {
@@ -20,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - aceo"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
