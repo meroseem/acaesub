@@ -5,22 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - aceo",
-      "server": "35.199.90.53",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
-          "short_id": "b62a4da6cd1c4dd6"
-        }
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pai50288"
       }
     },
     {
@@ -28,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

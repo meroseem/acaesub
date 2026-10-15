@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  server: 185.135.86.175
-  port: 9036
+  server: 195.123.213.28
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   server: 138.124.180.137
   port: 443
   udp: true
@@ -31,7 +30,7 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   server: 195.123.208.32
   port: 443
   udp: true
@@ -52,7 +51,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +59,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
-      "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -42,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - aceo",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -68,8 +73,7 @@
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
         "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - aceo"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo"
       ]
     },
     {
@@ -78,8 +82,7 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
         "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - aceo"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
