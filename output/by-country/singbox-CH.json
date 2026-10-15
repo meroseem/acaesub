@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -34,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -55,6 +47,14 @@
         "type": "grpc",
         "service_name": "GunService"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "vless",
@@ -79,43 +79,20 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 05 - aceo",
-      "server": "177.3.208.65",
-      "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
       "tls": {
         "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": true,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-il",
-        "headers": {
-          "Host": "tgmansion.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - aceo",
-      "server": "87.228.92.113",
-      "server_port": 25576,
-      "uuid": "d54a7512-dda3-4218-8ae7-c591d300fd7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc",
-          "short_id": "58914abc2bb85e84"
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
         }
       }
     },
@@ -128,8 +105,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
         "🇨🇭 瑞士 (Switzerland) 03 - aceo",
         "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 05 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 06 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 05 - aceo"
       ]
     },
     {
@@ -140,8 +116,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
         "🇨🇭 瑞士 (Switzerland) 03 - aceo",
         "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 05 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 06 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

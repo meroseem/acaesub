@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
-      "server": "hk3n.wxgqlfx.vip",
+      "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -25,18 +25,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - aceo",
+      "server": "45.137.43.168",
+      "server_port": 10443,
+      "uuid": "b4cc503a-c352-4775-85ad-fc982086884a"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

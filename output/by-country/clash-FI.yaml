@@ -12,17 +12,12 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 95.216.27.15
-  port: 2053
+  server: 185.103.110.66
+  port: 18280
   udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 152.233.71.81
   port: 443
@@ -37,115 +32,50 @@ proxies:
   servername: brointelengence.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 06 - aceo
-  server: b2a2.velqixa.ir
-  port: 39221
+  server: 109.172.54.135
+  port: 8444
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Pzlcb_PeV3uRgiC2NNoNKw
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇫🇮 芬兰 (Finland) 07 - aceo
-  server: fi-p1.h1cloud.net
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 08 - aceo
-  server: app-mi-28.spbstudentlife.com
+  server: 65.108.3.59
   port: 443
   udp: true
   type: vless
-  uuid: 090da6a8-69f7-4b49-8af9-a8f8bfb07f17
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VpHiR2qy9ielGf500Cp5S_e9eDR_of2dthqe7bNflRk
-    short-id: 1fcb15860699f6b1
-  servername: assets-mi-28.spbstudentlife.com
-  client-fingerprint: randomized
-- name: 🇫🇮 芬兰 (Finland) 09 - aceo
-  server: 79.175.136.238
-  port: 7879
-  udp: true
-  type: vless
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
-  tls: true
-  reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-    short-id: 63ca289314edc51b
-  servername: account.samsung.com
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 10 - aceo
-  server: 188.241.54.208
-  port: 443
-  udp: true
-  type: vless
-  uuid: fbaa413d-2ffb-4e36-8444-e1b1ab829fe1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qlVZ2ehdXHCxIADkf5swgXT2ZHrpSP7HM6SKTBMQXRU
-    short-id: 456bf62e2b728b97
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 11 - aceo
-  server: ultimate.warriorofblacksun.run
-  port: 443
-  udp: true
-  type: vless
-  uuid: 97c52223-dc53-4d59-ae9b-2bf4344eb5eb
-  tls: true
-  reality-opts:
-    public-key: Ww_HS9_n7ob3uESSXtbU23EPM-BOJ5ZYLp-RFB0L0SY
-  servername: ultimate.warriorofblacksun.run
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🇫🇮 芬兰 (Finland) 12 - aceo
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 13 - aceo
-  server: fi-p1.h1cloud.net
-  port: 25633
-  udp: true
-  type: vless
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  tls: true
-  reality-opts:
-    public-key: YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE
-    short-id: 200811f031ae7463
-  servername: www.icloud.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -158,12 +88,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - aceo
   - 🇫🇮 芬兰 (Finland) 06 - aceo
   - 🇫🇮 芬兰 (Finland) 07 - aceo
-  - 🇫🇮 芬兰 (Finland) 08 - aceo
-  - 🇫🇮 芬兰 (Finland) 09 - aceo
-  - 🇫🇮 芬兰 (Finland) 10 - aceo
-  - 🇫🇮 芬兰 (Finland) 11 - aceo
-  - 🇫🇮 芬兰 (Finland) 12 - aceo
-  - 🇫🇮 芬兰 (Finland) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -176,11 +100,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - aceo
   - 🇫🇮 芬兰 (Finland) 06 - aceo
   - 🇫🇮 芬兰 (Finland) 07 - aceo
-  - 🇫🇮 芬兰 (Finland) 08 - aceo
-  - 🇫🇮 芬兰 (Finland) 09 - aceo
-  - 🇫🇮 芬兰 (Finland) 10 - aceo
-  - 🇫🇮 芬兰 (Finland) 11 - aceo
-  - 🇫🇮 芬兰 (Finland) 12 - aceo
-  - 🇫🇮 芬兰 (Finland) 13 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 45.90.59.15
   port: 443
   udp: true
@@ -24,7 +17,7 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+- name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -39,6 +32,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 45.133.151.186
   port: 25393
@@ -52,32 +52,17 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
-  server: 177.3.208.65
-  port: 443
+  server: 208.69.78.217
+  port: 2053
   udp: true
   type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
-- name: 🇨🇭 瑞士 (Switzerland) 06 - aceo
-  server: 87.228.92.113
-  port: 25576
-  udp: true
-  type: vless
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   tls: true
   reality-opts:
-    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
-    short-id: 58914abc2bb85e84
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +73,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
   - 🇨🇭 瑞士 (Switzerland) 05 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +83,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
   - 🇨🇭 瑞士 (Switzerland) 05 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 06 - aceo
 rules:
 - MATCH,PROXIES

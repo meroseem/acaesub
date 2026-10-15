@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - aceo",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -29,14 +53,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - aceo",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
