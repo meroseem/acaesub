@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
-  server: 45.205.27.78
-  port: 10443
-  udp: true
-  type: trojan
-  password: 1f02add4-bdc6-4ee2-af47-33c4503efdcf
-  sni: 45.205.27.78
-  skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
-  server: 156.226.168.221
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -31,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - aceo
 rules:
 - MATCH,PROXIES

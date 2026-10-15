@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - aceo
   server: 195.238.126.20
-  port: 9078
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
   server: 195.238.126.20
   port: 9086
@@ -19,19 +19,25 @@ proxies:
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - aceo
-  server: 195.238.126.20
-  port: 9002
+  server: 195.238.126.84
+  port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - aceo
-  server: 195.238.126.20
-  port: 9001
+  server: 84.32.109.20
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
+    short-id: 0da7e14db353e7d0
+  servername: litv.nztvpn.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

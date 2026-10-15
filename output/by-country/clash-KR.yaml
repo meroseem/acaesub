@@ -13,14 +13,20 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 132.226.226.189
-  port: 50160
+  server: 141.164.45.187
+  port: 8000
   udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
 - name: 🇰🇷 韩国 (South Korea) 03 - aceo
+  server: 141.164.45.187
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇰🇷 韩国 (South Korea) 04 - aceo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -32,16 +38,28 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 04 - aceo
-  server: 152.70.237.123
-  port: 2053
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+  server: 152.69.231.175
+  port: 50160
   udp: true
   type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
+  server: 34.22.111.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  tls: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    short-id: 8685f8b4d9f4f51e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -54,16 +72,16 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 152.67.200.82
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 08 - aceo
+  server: 3.35.168.225
+  port: 443
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152-67-200-82.liao.kdns.fr
+  type: trojan
+  password: UX82473651
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
-  server: 141.164.43.178
+- name: 🇰🇷 韩国 (South Korea) 09 - aceo
+  server: 64.176.231.183
   port: 443
   udp: true
   type: vless
@@ -75,67 +93,31 @@ proxies:
     short-id: ca193e889d958f81
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 08 - aceo
-  server: 3.35.207.188
+- name: 🇰🇷 韩国 (South Korea) 10 - aceo
+  server: main-fawn.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - aceo
-  server: 3.34.192.47
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: central-jawfish.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 10 - aceo
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 11 - aceo
-  server: 34.22.111.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  tls: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-    short-id: 8685f8b4d9f4f51e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 12 - aceo
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - aceo
-  server: pure-kodiak.rooster465.autos
+  server: 3.36.50.213
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: pure-kodiak.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 14 - aceo
-  server: 43.201.100.203
+- name: 🇰🇷 韩国 (South Korea) 12 - aceo
+  server: 3.34.131.153
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: optimum-snapper.rooster465.autos
+  sni: pretty-rat.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 15 - aceo
+- name: 🇰🇷 韩国 (South Korea) 13 - aceo
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -146,37 +128,61 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 14 - aceo
+  server: 3.34.192.47
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: central-jawfish.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 15 - aceo
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 16 - aceo
-  server: 3.35.168.225
-  port: 443
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: false
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 17 - aceo
-  server: 3.34.131.153
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 18 - aceo
-  server: 4knprw5h74w4avns.v.3dns.vip
+  server: jp4.998998.best
   port: 443
   udp: true
   type: vmess
-  uuid: 10d6665f-10c9-4f03-9b83-ba45968f748d
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   alterId: 0
   cipher: auto
   tls: true
-  servername: 4knprw5h74w4avns.v.3dns.vip
+  servername: nat12.9966338.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /vvvvvvvvv
+    headers:
+      Host: nat12.9966338.xyz
+- name: 🇰🇷 韩国 (South Korea) 18 - aceo
+  server: 141.164.45.187
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 (South Korea) 19 - aceo
+  server: 141.164.45.187
+  port: 6679
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
 proxy-groups:
 - name: PROXIES
   type: select
@@ -200,6 +206,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 16 - aceo
   - 🇰🇷 韩国 (South Korea) 17 - aceo
   - 🇰🇷 韩国 (South Korea) 18 - aceo
+  - 🇰🇷 韩国 (South Korea) 19 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -223,5 +230,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 16 - aceo
   - 🇰🇷 韩国 (South Korea) 17 - aceo
   - 🇰🇷 韩国 (South Korea) 18 - aceo
+  - 🇰🇷 韩国 (South Korea) 19 - aceo
 rules:
 - MATCH,PROXIES

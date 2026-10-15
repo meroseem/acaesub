@@ -5,7 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
-  server: 5.253.28.240
+  server: 185.233.187.188
+  port: 2087
+  udp: true
+  type: hysteria2
+  password: d0589fb6-420b-4078-a72a-66d270a25fd9
+  sni: fireedge.eaglors.com
+  skip-cert-verify: false
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  server: 5.253.30.99
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
+  server: hydra.yokkastars.com
   port: 2443
   udp: true
   type: vless
@@ -15,7 +36,7 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
@@ -25,11 +46,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 rules:
 - MATCH,PROXIES
