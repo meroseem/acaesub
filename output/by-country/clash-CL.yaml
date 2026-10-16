@@ -4,28 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - aceo
-  server: 120.48.133.162
-  port: 10086
+- name: 🇨🇱 智利 (Chile) 01 - aceo
+  server: 64.176.2.21
+  port: 8388
   udp: true
-  type: vmess
-  uuid: 2b910c43-51e3-4b15-9be8-b658106ba35e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - aceo
+  - 🇨🇱 智利 (Chile) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - aceo
+  - 🇨🇱 智利 (Chile) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -27,6 +27,39 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 03 - aceo
+  server: platform106.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 04 - aceo
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 05 - aceo
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +67,9 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - aceo
   - 🇧🇷 巴西 (Brazil) 02 - aceo
+  - 🇧🇷 巴西 (Brazil) 03 - aceo
+  - 🇧🇷 巴西 (Brazil) 04 - aceo
+  - 🇧🇷 巴西 (Brazil) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +77,8 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - aceo
   - 🇧🇷 巴西 (Brazil) 02 - aceo
+  - 🇧🇷 巴西 (Brazil) 03 - aceo
+  - 🇧🇷 巴西 (Brazil) 04 - aceo
+  - 🇧🇷 巴西 (Brazil) 05 - aceo
 rules:
 - MATCH,PROXIES
