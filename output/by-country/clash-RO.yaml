@@ -28,19 +28,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 146.70.124.85
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   server: 82.117.255.174
   port: 443
   udp: true
@@ -53,7 +40,7 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
   server: 185.156.44.99
   port: 443
   udp: true
@@ -70,7 +57,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +66,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 rules:
 - MATCH,PROXIES

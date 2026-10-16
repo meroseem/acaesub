@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
+      "server": "fi1server.rabstvo.shop",
+      "server_port": 443,
+      "password": "9yOIR2_QAChKs26rYaiX_aoNnOALd0aU",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1server.rabstvo.shop",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -24,24 +48,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
-      "server": "fi1server.rabstvo.shop",
-      "server_port": 443,
-      "password": "9yOIR2_QAChKs26rYaiX_aoNnOALd0aU",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1server.rabstvo.shop",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo"
       ]
     },
     {
@@ -49,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - aceo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -13,16 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - aceo
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 (India) 03 - aceo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -33,6 +24,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 152.67.8.205
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
-  - 🇮🇳 印度 (India) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
-  - 🇮🇳 印度 (India) 03 - aceo
 rules:
 - MATCH,PROXIES
