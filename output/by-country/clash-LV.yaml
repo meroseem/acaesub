@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  server: 185.220.223.25
+  server: lv.aiage.work
   port: 443
   udp: true
   type: vless
@@ -18,12 +18,18 @@ proxies:
   servername: lv.aiage.work
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: 185.135.86.175
-  port: 9007
+  server: 195.123.213.28
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   server: 138.124.180.137
   port: 443
@@ -38,18 +44,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  server: 195.123.213.28
-  port: 443
+  server: 185.135.86.175
+  port: 9007
   udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
 proxy-groups:
 - name: PROXIES
   type: select

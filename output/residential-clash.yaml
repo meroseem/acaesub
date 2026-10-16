@@ -4,7 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - aceo
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -15,25 +39,42 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - aceo
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - aceo
 rules:
 - MATCH,PROXIES

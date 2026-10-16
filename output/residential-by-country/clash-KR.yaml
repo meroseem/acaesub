@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - aceo
+rules:
+- MATCH,PROXIES

@@ -5,20 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - aceo
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 02 - aceo
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - aceo
+- name: 🇮🇹 意大利 (Italy) 03 - aceo
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 03 - aceo
+- name: 🇮🇹 意大利 (Italy) 04 - aceo
   server: 31.59.180.155
   port: 443
   udp: true
@@ -30,8 +36,28 @@ proxies:
     public-key: _0bRaAOYHd4ccDCmnlIq9I13WLRuT4LzlXfV_GGHKE0
     short-id: 5aab0b0401044801
   servername: italynew.nztvpn.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 04 - aceo
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 05 - aceo
+  server: 91.201.65.122
+  port: 9053
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
+- name: 🇮🇹 意大利 (Italy) 06 - aceo
+  server: 82.118.16.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
+    short-id: 37fbf155c7a9f3ff
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 07 - aceo
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -43,13 +69,7 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 05 - aceo
-  server: 204.216.216.23
-  port: 10086
-  udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇮🇹 意大利 (Italy) 06 - aceo
+- name: 🇮🇹 意大利 (Italy) 08 - aceo
   server: 82.118.16.187
   port: 443
   udp: true
@@ -73,6 +93,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
   - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
+  - 🇮🇹 意大利 (Italy) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +106,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
   - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
+  - 🇮🇹 意大利 (Italy) 08 - aceo
 rules:
 - MATCH,PROXIES
