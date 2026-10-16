@@ -4,29 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - aceo
-  server: ccs2g.pai50288.uk
-  port: 443
+- name: 🇧🇾 白俄罗斯 (Belarus) 01 - aceo
+  server: 178.172.227.124
+  port: 14430
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - aceo
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - aceo
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - aceo
 rules:
 - MATCH,PROXIES

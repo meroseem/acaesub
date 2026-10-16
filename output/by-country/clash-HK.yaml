@@ -5,22 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 202.146.222.29
+  server: 212.192.15.215
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 08aOjhE9OsAeYV5b
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 207.56.137.51
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  type: vless
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 103.180.20.132
+  port: 20002
+  udp: true
+  type: vless
+  uuid: 2b2ec2d5-8961-473e-8b2b-5d926dc3ce5e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QTJCsEI6kStTp5vCNDl-M1QhDK5Ki2qgEYwCxpwst0E
+    short-id: c0196c432a03dcb5
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   server: 34.92.19.135
   port: 443
   udp: true
@@ -32,7 +75,7 @@ proxies:
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   server: 154.37.216.186
   port: 443
   udp: true
@@ -45,23 +88,7 @@ proxies:
     short-id: f39ad9d9eb26df47
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -77,30 +104,6 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
-  server: 530.150333.xyz
-  port: 21001
-  udp: true
-  type: vless
-  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
-  tls: true
-  reality-opts:
-    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
-    short-id: 2344dfc9d062ae22
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
-  server: 530.150333.xyz
-  port: 21004
-  udp: true
-  type: vless
-  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
-  tls: true
-  reality-opts:
-    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
-    short-id: 081ef10da8394346
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
   server: 34.150.46.137
   port: 443
@@ -110,42 +113,32 @@ proxies:
   sni: 34.150.46.137
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
-  server: 530.150333.xyz
-  port: 21002
+  server: 47.238.210.5
+  port: 13779
   udp: true
   type: vless
-  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   tls: true
   reality-opts:
-    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
-    short-id: c6156c9d0e42e230
-  servername: www.cloudflare.com
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - aceo
-  server: 530.150333.xyz
-  port: 21003
+  server: 2.27.109.179
+  port: 45464
   udp: true
-  type: vless
-  uuid: a7f30d09-59d6-4aee-8145-a9c58f8ae170
-  tls: true
-  reality-opts:
-    public-key: AgpdDitYHUIsl0-hVB6HV9vlTyfP25grps1E8G2BLDA
-    short-id: a2993515115a7293
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - aceo
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
+  server: sth.free-outline.giize.com
+  port: 1081
   udp: true
-  type: vless
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  servername: buylite.music.apple.com
-  client-fingerprint: random
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6qmp91myp2jj13dt
 - name: 🇭🇰 中国香港 (Hong Kong) 14 - aceo
   server: hk2.998998.best
   port: 443
@@ -163,18 +156,18 @@ proxies:
     headers:
       Host: server15.9966338.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 15 - aceo
-  server: 207.56.137.51
-  port: 443
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
   udp: true
   type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  servername: buylite.music.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,31 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 193.27.200.200
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: firefox
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: se1.h1cloud.net
-  port: 26100
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
-    short-id: 8045087bda646f1b
-  servername: www.icloud.com
-  client-fingerprint: qq
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: se1.h1cloud.net
   port: 26128
   udp: true
@@ -44,8 +30,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: df50147201bf
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
-  server: swe.wizard.select
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: 193.27.200.200
   port: 443
   udp: true
   type: vless
@@ -56,7 +42,22 @@ proxies:
     public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
     short-id: 3b20e438da99
   servername: swe.wizard.select
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 瑞典 (Sweden) 05 - aceo
   server: 62.60.159.81
   port: 2053
@@ -68,33 +69,22 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 06 - aceo
-  server: 5.178.109.174
-  port: 14430
+  server: swe.wizard.select
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 07 - aceo
-  server: se3.h1cloud.net
-  port: 25119
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
   client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
@@ -107,7 +97,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
   - 🇸🇪 瑞典 (Sweden) 06 - aceo
-  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,6 +108,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
   - 🇸🇪 瑞典 (Sweden) 06 - aceo
-  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 rules:
 - MATCH,PROXIES
