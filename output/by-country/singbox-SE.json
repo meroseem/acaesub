@@ -14,7 +14,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -28,32 +28,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
-      "server": "se1.h1cloud.net",
-      "server_port": 26128,
-      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk",
-          "short_id": "13ac4d3bdadf1ea1"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "df50147201bf"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
       "server": "hy-se.bypassme.online",
       "server_port": 443,
       "password": "e625f8ef-f935-4c7d-a259-0f154b6842fd",
@@ -65,22 +41,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
-      "server": "swe.wizard.select",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "server": "edge-lab-b.10media.top",
       "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
+      "uuid": "9cb8d71c-fe06-4402-a591-eaa1f173b890",
       "tls": {
         "enabled": true,
-        "server_name": "swe.wizard.select",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
+        "server_name": "edge-lab-b.10media.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "swedenfeed"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
         }
       }
     },
