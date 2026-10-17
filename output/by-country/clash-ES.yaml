@@ -18,6 +18,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 02 - aceo
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 03 - aceo
   server: 193.238.154.78
   port: 443
   udp: true
@@ -30,14 +38,6 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
