@@ -26,51 +26,7 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 176.32.32.108
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 153.80.241.206
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 194.87.196.107
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: match-stream.lovkisport.blog
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  server: m-vruvc.mvpstr.com
+  server: 168.113.135.90
   port: 443
   udp: true
   type: vless
@@ -82,7 +38,49 @@ proxies:
     short-id: 11ac376e18d20343
   servername: m-vruvc.mvpstr.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: xsru1.ddnsfree.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 153.80.241.206
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: 194.87.118.184
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
   server: 139.28.168.75
   port: 10444
   udp: true
@@ -94,34 +92,15 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11 - aceo
-  server: 193.233.74.6
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
   client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  server: 91.196.32.163
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -136,8 +115,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
   - 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -152,7 +129,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
   - 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
 rules:
 - MATCH,PROXIES

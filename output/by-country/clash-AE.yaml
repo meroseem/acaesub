@@ -37,7 +37,7 @@ proxies:
     public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
     short-id: 06e00e7c
   servername: addons.mozilla.org
-  client-fingerprint: random
+  client-fingerprint: randomized
 - name: 🇦🇪 阿联酋 (UAE) 04 - aceo
   server: 31.59.210.26
   port: 2088
@@ -91,6 +91,21 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 08 - aceo
+  server: 31.59.210.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
+  servername: www.yandex.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,6 +118,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - aceo
   - 🇦🇪 阿联酋 (UAE) 06 - aceo
   - 🇦🇪 阿联酋 (UAE) 07 - aceo
+  - 🇦🇪 阿联酋 (UAE) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,5 +131,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - aceo
   - 🇦🇪 阿联酋 (UAE) 06 - aceo
   - 🇦🇪 阿联酋 (UAE) 07 - aceo
+  - 🇦🇪 阿联酋 (UAE) 08 - aceo
 rules:
 - MATCH,PROXIES

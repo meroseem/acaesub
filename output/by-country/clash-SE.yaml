@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 45.12.63.219
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  tls: true
-  servername: edge-lab-b.10media.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: swedenfeed
-- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -32,7 +19,35 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
+  server: sub.merky.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 - name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: edge-lab-b.10media.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -51,6 +66,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
+  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +75,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
+  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 rules:
 - MATCH,PROXIES
