@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -24,29 +16,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
-      "server": "45.90.59.15",
-      "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - aceo",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -62,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - aceo",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - aceo",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -85,6 +56,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - aceo",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,8 +84,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
         "🇨🇭 瑞士 (Switzerland) 03 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 05 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo"
       ]
     },
     {
@@ -103,8 +94,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
         "🇨🇭 瑞士 (Switzerland) 03 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 05 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
