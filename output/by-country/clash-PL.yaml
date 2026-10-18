@@ -13,33 +13,6 @@ proxies:
   sni: pl1.dedushka.top
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: pl2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 83.168.91.16
   port: 443
   udp: true
@@ -52,6 +25,53 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: framefeed
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: pl2.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 78.17.171.62
+  port: 443
+  udp: true
+  type: trojan
+  password: u93yPGuY2zgIsisJZKS2QzJzg
+  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /f2fc2a1f
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 2.26.225.89
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +82,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
+  - 🇵🇱 波兰 (Poland) 06 - aceo
+  - 🇵🇱 波兰 (Poland) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +94,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
+  - 🇵🇱 波兰 (Poland) 06 - aceo
+  - 🇵🇱 波兰 (Poland) 07 - aceo
 rules:
 - MATCH,PROXIES
