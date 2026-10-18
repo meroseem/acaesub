@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - aceo",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
@@ -49,62 +53,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-      "server": "138.124.63.224",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - aceo",
-      "server": "80.240.18.227",
-      "server_port": 10051,
-      "uuid": "d161dcf1-fde2-44cc-b08d-d8944895e842",
-      "tls": {
-        "enabled": true,
-        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 05 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ]
     },
     {
@@ -113,9 +68,7 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - aceo",
         "🇨🇭 瑞士 (Switzerland) 02 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 03 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 04 - aceo",
-        "🇨🇭 瑞士 (Switzerland) 05 - aceo"
+        "🇨🇭 瑞士 (Switzerland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

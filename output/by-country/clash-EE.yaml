@@ -25,6 +25,35 @@ proxies:
     short-id: 7f3a91c2d8e640ab
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+  server: 196.198.111.107
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-6ad3c751.adhil.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  server: 196.198.111.138
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-6ad3c751.adhil.uk
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
+  server: ees92.shhflow.xyz
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: 43212c32-01f2-4356-b216-67dc1c178262
+  sni: ees92.shhflow.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +61,9 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +71,8 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - aceo
 rules:
 - MATCH,PROXIES

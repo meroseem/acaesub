@@ -18,7 +18,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: lv.aiage.work
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
+  server: 185.220.223.25
   port: 443
   udp: true
   type: vless
@@ -30,14 +43,6 @@ proxies:
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  server: 193.233.88.26
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
-  sni: ru1server.rabstvo.shop
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
