@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 200.181.82.91
-  port: 21148
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 47.244.120.197
-  port: 23026
-  udp: true
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
@@ -32,23 +12,22 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2≡ƒç
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: node1.luoye.ee
   port: 443
   udp: true
   type: trojan
-  password: 55b36ea5-12b3-4640-a87a-fd011e717ffc
+  password: 7e0eb2b0-e118-4cae-852f-5605573a744c
   sni: node1.luoye.ee
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 200.181.82.91
+  port: 21148
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 207.56.137.51
   port: 443
   udp: true
@@ -60,8 +39,8 @@ proxies:
     public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
     short-id: f713561d
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: 4c2d5151.266nets.com
   port: 12001
   udp: true
@@ -69,7 +48,7 @@ proxies:
   password: bad06c3525a6eaee1757b34776b83892
   sni: ixigua.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -85,23 +64,17 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
-  server: 2.27.109.179
-  port: 45464
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: nas.aizhzo.com
+  port: 5010
   udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
-  server: 200.181.82.91
-  port: 28122
-  udp: true
-  type: trojan
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  sni: www.baidu.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   server: 156.239.13.161
   port: 51443
   udp: true
@@ -114,30 +87,6 @@ proxies:
     short-id: aa5b653590725505
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - aceo
-  server: 82.29.36.250
-  port: 443
-  udp: true
-  type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - aceo
-  server: 47.244.120.197
-  port: 44867
-  udp: true
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,11 +100,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -169,10 +113,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
 rules:
 - MATCH,PROXIES
