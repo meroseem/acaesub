@@ -5,19 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: 148.113.5.44
-  port: 443
+  server: 139.84.166.47
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
+- name: 🇮🇳 印度 (India) 02 - aceo
+  server: 13.140.56.100
+  port: 14430
   udp: true
   type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - aceo
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇳 印度 (India) 03 - aceo
   server: 152.67.8.205
   port: 80
   udp: true
@@ -28,32 +31,18 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 03 - aceo
-  server: 13.140.56.100
-  port: 14430
+- name: 🇮🇳 印度 (India) 04 - aceo
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - aceo
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - aceo
-  server: 139.84.166.47
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +52,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
   - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +61,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
   - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
 rules:
 - MATCH,PROXIES

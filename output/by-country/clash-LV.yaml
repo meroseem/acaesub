@@ -29,33 +29,15 @@ proxies:
     public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  server: 195.123.208.32
+  server: 193.233.88.26
   port: 443
   udp: true
-  type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
-  server: lit.fytpn.com
-  port: 56789
-  udp: true
-  type: vless
-  uuid: a034eba2-8b2c-40af-9233-629c45b40fc2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ
-    short-id: a2aa
-  servername: lit.fytpn.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
+  sni: ru1server.rabstvo.shop
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +46,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +54,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
   - 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - aceo
 rules:
 - MATCH,PROXIES

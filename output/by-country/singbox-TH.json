@@ -14,28 +14,20 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - aceo",
-      "server": "v2ray.simspeedup.com",
+      "server": "103.86.49.57",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "ais.speedtest.net"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - aceo",
-      "server": "103.107.52.106",
-      "server_port": 52351,
-      "method": "aes-256-gcm",
-      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 04 - aceo",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - aceo",
       "server": "funagfrdfs.alixxplay.com",
       "server_port": 56415,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -55,15 +47,27 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - aceo",
+      "server": "103.107.52.106",
+      "server_port": 52351,
+      "method": "aes-256-gcm",
+      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
+    },
+    {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 05 - aceo",
-      "server": "104.16.10.185",
+      "server": "104.18.26.90",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
