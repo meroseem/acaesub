@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 13.140.91.117
+  port: 25111
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: jNyPnuL1dS5CZLfr6AeO8/CtbUvT3MIOWAaSwoJlTkc=:OpjCKODVTBraYcv12EFPOaral+oiAPdOTlA0Dv9O+fE=
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 13.140.91.117
+  port: 36154
+  udp: true
+  type: vmess
+  uuid: b2fd9449-458a-4243-bbf9-5735070d6817
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 13.140.91.117
+  port: 23808
+  udp: true
+  type: vless
+  uuid: b2fd9449-458a-4243-bbf9-5735070d6817
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
@@ -12,15 +33,23 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 202.146.222.29
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: 8c05abce-tnhmo0-tohhws-zn8y.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
+  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  sni: 8c05abce-tnhmo0-tohhws-zn8y.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 0a9bf068-tnhmo0-toktib-1hhyy.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  sni: 0a9bf068-tnhmo0-toktib-1hhyy.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
   server: 4c2d5151.266nets.com
   port: 12001
   udp: true
@@ -28,15 +57,20 @@ proxies:
   password: bad06c3525a6eaee1757b34776b83892
   sni: ixigua.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 2.27.109.179
-  port: 45464
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: fi.api.nurcloud.org
+  port: 443
   udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  type: vless
+  uuid: 29d5b0b0-0417-46cc-948f-8f3077ded709
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DYai8uLOumyG7Gh3H8ADSmRMZpfw-t98uU4D6ean_Gw
+    short-id: b289dd8ac05d4594
+  servername: fi.api.nurcloud.org
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -52,29 +86,6 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 207.56.137.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +98,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +112,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
 rules:
 - MATCH,PROXIES

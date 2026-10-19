@@ -25,18 +25,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 02 - aceo",
+      "server": "85.120.144.27",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "md1.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo",
+          "short_id": "5d7a45ac0ad6adff"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - aceo"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - aceo",
+        "🇲🇩 摩尔多瓦 (Moldova) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - aceo"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - aceo",
+        "🇲🇩 摩尔多瓦 (Moldova) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

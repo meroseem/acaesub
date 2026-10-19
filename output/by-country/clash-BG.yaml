@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 - aceo
-  server: 35.178.165.98
-  port: 22222
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  server: 213.183.63.60
+  port: 9085
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
 rules:
 - MATCH,PROXIES

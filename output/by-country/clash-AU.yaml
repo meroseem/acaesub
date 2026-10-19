@@ -18,18 +18,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  server: 212.81.47.99
-  port: 51106
-  udp: true
-  type: vless
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  tls: true
-  reality-opts:
-    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
-    short-id: abcd1234
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
   server: 51.161.204.242
   port: 443
   udp: true
@@ -42,7 +30,7 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
+- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
   server: 172.67.197.71
   port: 443
   udp: true
@@ -66,7 +54,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +62,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 rules:
 - MATCH,PROXIES
