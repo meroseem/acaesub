@@ -5,72 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 51.83.192.80
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 83.168.91.16
+  server: stratafolio.10media.top
   port: 443
   udp: true
   type: vless
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
   tls: true
-  servername: pl-exit-02.10media.top
+  servername: stratafolio.10media.top
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: framefeed
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 45.192.12.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
-    short-id: acccaaaa9f72147d
-  servername: pl.golangwikito.cfd
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 177.1.192.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
-    short-id: 85766a81
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: 177.1.192.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 78.17.171.62
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 31.133.0.186
   port: 443
   udp: true
   type: trojan
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  sni: freetoplay-2.tetris-game.world
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07 - aceo
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 177.1.192.72
   port: 443
   udp: true
@@ -83,34 +38,40 @@ proxies:
     short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - aceo
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: pl1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl1.dedushka.top
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: pl.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
+    short-id: f8b695e5c59d028c
+  servername: pl.golangwikito.cfd
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10 - aceo
-  server: pl2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 - aceo
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 37.9.4.112
   port: 17701
   udp: true
@@ -120,7 +81,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
-- name: 🇵🇱 波兰 (Poland) 12 - aceo
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
   server: scrap.halyvanedorogo.ru
   port: 35076
   udp: true
@@ -128,15 +89,7 @@ proxies:
   password: b4c8ee9caa74b7ba0a61
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 13 - aceo
-  server: pl1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 14 - aceo
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -149,15 +102,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 15 - aceo
-  server: 2.26.225.89
-  port: 8443
+- name: 🇵🇱 波兰 (Poland) 11 - aceo
+  server: 150.251.113.34
+  port: 443
   udp: true
   type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
   tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,10 +131,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - aceo
   - 🇵🇱 波兰 (Poland) 10 - aceo
   - 🇵🇱 波兰 (Poland) 11 - aceo
-  - 🇵🇱 波兰 (Poland) 12 - aceo
-  - 🇵🇱 波兰 (Poland) 13 - aceo
-  - 🇵🇱 波兰 (Poland) 14 - aceo
-  - 🇵🇱 波兰 (Poland) 15 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -194,9 +147,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - aceo
   - 🇵🇱 波兰 (Poland) 10 - aceo
   - 🇵🇱 波兰 (Poland) 11 - aceo
-  - 🇵🇱 波兰 (Poland) 12 - aceo
-  - 🇵🇱 波兰 (Poland) 13 - aceo
-  - 🇵🇱 波兰 (Poland) 14 - aceo
-  - 🇵🇱 波兰 (Poland) 15 - aceo
 rules:
 - MATCH,PROXIES

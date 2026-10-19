@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 51.161.204.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
   server: 51.161.204.242
   port: 443
   udp: true
@@ -30,22 +17,19 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  server: 172.67.197.71
+- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
+  server: 51.161.204.244
   port: 443
   udp: true
-  type: vmess
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
   tls: true
-  servername: aus.lovehk.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Sydney3
-    headers:
-      Host: aus.lovehk.xyz
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -16,8 +16,19 @@ proxies:
     public-key: uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc
     short-id: e022bfea
   servername: addons.mozilla.org
-  client-fingerprint: randomized
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
   server: hy2.aspidnet.xyz
   port: 443
   udp: true
@@ -27,38 +38,23 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 31.59.210.32
+- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
+  server: 31.59.210.37
   port: 443
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
-    short-id: 7ec4374ffc6308fd
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: 31.59.210.26
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 05 - aceo
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless

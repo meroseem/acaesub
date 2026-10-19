@@ -15,7 +15,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 45.144.234.157
   port: 14430
@@ -36,20 +36,6 @@ proxies:
   sni: fi.67chat.ru
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: bs.90909.club
-  port: 2096
-  udp: true
-  type: vless
-  uuid: e667f5c7-6b38-48ef-ab89-40519713afb0
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: 65.109.243.156
   port: 2112
   udp: true
@@ -70,7 +56,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +65,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES

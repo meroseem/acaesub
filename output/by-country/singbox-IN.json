@@ -4,23 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - aceo",
-      "server": "139.84.166.47",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 02 - aceo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 02 - aceo",
+      "server": "in.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tronsg.com",
+        "insecure": true
       }
     },
     {
@@ -34,7 +40,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,22 +50,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 04 - aceo",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - aceo",
         "🇮🇳 印度 (India) 02 - aceo",
-        "🇮🇳 印度 (India) 03 - aceo",
-        "🇮🇳 印度 (India) 04 - aceo"
+        "🇮🇳 印度 (India) 03 - aceo"
       ]
     },
     {
@@ -68,8 +65,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - aceo",
         "🇮🇳 印度 (India) 02 - aceo",
-        "🇮🇳 印度 (India) 03 - aceo",
-        "🇮🇳 印度 (India) 04 - aceo"
+        "🇮🇳 印度 (India) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
