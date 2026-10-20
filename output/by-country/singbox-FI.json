@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "2.26.3.75",
-      "server_port": 443,
-      "password": "d5530551-5e9a-4ac5-8539-cee87e38d9e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi.67chat.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -26,7 +14,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,33 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - aceo",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo",
-        "🇫🇮 芬兰 (Finland) 03 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo",
-        "🇫🇮 芬兰 (Finland) 03 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
