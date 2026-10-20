@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: de1.dedushka.top
   port: 443
   udp: true
@@ -27,7 +12,7 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de1.dedushka.top
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: 146.70.124.85
   port: 443
   udp: true
@@ -40,6 +25,21 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.amazon.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
