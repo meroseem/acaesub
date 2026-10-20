@@ -15,15 +15,8 @@ proxies:
     public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
     short-id: ce1dc482
   servername: www.cloudflare.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 176.32.33.143
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -38,19 +31,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 139.28.168.75
-  port: 10444
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 185.147.27.183
+  port: 8443
   udp: true
   type: vless
-  uuid: 154bd388-4968-4900-a088-18676f428a20
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: chrome
+  servername: user-6a917f32.noooo.win
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +50,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,6 +58,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
 rules:
 - MATCH,PROXIES

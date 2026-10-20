@@ -25,18 +25,65 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "62.133.63.45",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "104.21.48.18",
+      "server_port": 2053,
+      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nimm.mpd.cc.cd",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0962",
+        "headers": {
+          "Host": "nimm.mpd.cc.cd"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - aceo"
+        "🇹🇷 土耳其 (Turkey) 01 - aceo",
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

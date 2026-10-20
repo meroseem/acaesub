@@ -5,14 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 51.83.192.80
-  port: 8388
+  server: 31.133.0.186
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 45.194.66.202
+  server: 45.194.66.17
   port: 443
   udp: true
   type: vless
@@ -21,16 +22,16 @@ proxies:
   tls: true
   reality-opts:
     public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
-    short-id: f8b695e5c59d028c
+    short-id: acccaaaa9f72147d
   servername: pl.golangwikito.cfd
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: pl2.dedushka.top
+  server: pl1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
+  sni: pl1.dedushka.top
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 144.31.101.196
@@ -46,14 +47,6 @@ proxies:
   servername: browser.yandex.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: pl1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -66,6 +59,15 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 2.26.225.89
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

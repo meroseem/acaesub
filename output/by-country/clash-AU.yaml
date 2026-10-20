@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 212.81.47.99
-  port: 51106
-  udp: true
-  type: vless
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  tls: true
-  reality-opts:
-    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
-    short-id: abcd1234
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
   server: 51.161.204.244
   port: 443
   udp: true
@@ -28,20 +16,18 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 02 - aceo
 rules:
 - MATCH,PROXIES

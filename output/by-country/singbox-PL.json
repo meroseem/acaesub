@@ -4,17 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
-      "server": "51.83.192.80",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
+      "server": "31.133.0.186",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.dedushka.top",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "45.194.66.202",
+      "server": "45.194.66.17",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -23,24 +27,24 @@
         "server_name": "pl.golangwikito.cfd",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
-          "short_id": "f8b695e5c59d028c"
+          "short_id": "acccaaaa9f72147d"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
-      "server": "pl2.dedushka.top",
+      "server": "pl1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "pl2.dedushka.top",
+        "server_name": "pl1.dedushka.top",
         "insecure": false
       }
     },
@@ -66,20 +70,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - aceo",
-      "server": "pl1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 06 - aceo",
+      "tag": "🇵🇱 波兰 (Poland) 05 - aceo",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -90,6 +82,18 @@
         "headers": {
           "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - aceo",
+      "server": "2.26.225.89",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.flen-vpn.xyz",
+        "insecure": false
       }
     },
     {

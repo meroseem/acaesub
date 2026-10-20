@@ -5,49 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 207.56.137.51
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
-  type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: us.mediabox12wrr.site
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 1566a6e1-8181-41ef-894c-6d6d0d482470
-  tls: true
-  servername: us.mediabox12wrr.site
+  servername: jmp1.907737.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /dfefc609ed724b3d8647ed29
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
-      Host: us.mediabox12wrr.site
+      Host: jmp1.907737.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
 rules:
 - MATCH,PROXIES
