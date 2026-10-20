@@ -5,14 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: de1.dedushka.top
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  server: it1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de1.dedushka.top
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  sni: it1.dedushka.top
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: 146.70.124.85
   port: 443
   udp: true
@@ -24,15 +31,16 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 154.46.31.106
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  server: de1.dedushka.top
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de1.dedushka.top
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - aceo
   server: 185.156.44.99
   port: 443
   udp: true
@@ -49,6 +57,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +67,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 05 - aceo
 rules:
 - MATCH,PROXIES

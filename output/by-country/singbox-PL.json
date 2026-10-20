@@ -4,9 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
-      "server": "31.133.0.186",
+      "server": "51.83.192.80",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "45.194.66.202",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg",
+          "short_id": "f8b695e5c59d028c"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "server": "pl2.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
@@ -16,20 +45,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "pl1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "tag": "🇵🇱 波兰 (Poland) 04 - aceo",
       "server": "144.31.101.196",
       "server_port": 33891,
       "uuid": "1c794e75-bcd4-4a65-9f69-ed0a10f33d60",
@@ -49,28 +66,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - aceo",
-      "server": "pl1.h1cloud.net",
-      "server_port": 27591,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 05 - aceo",
+      "server": "pl1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
-          "short_id": "6c5c7900406a1ae7"
-        }
+        "server_name": "pl1.dedushka.top",
+        "insecure": false
       }
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 05 - aceo",
+      "tag": "🇵🇱 波兰 (Poland) 06 - aceo",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -84,25 +93,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - aceo",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - aceo",
-      "server": "2.26.225.89",
-      "server_port": 8443,
-      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.flen-vpn.xyz",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -112,8 +102,7 @@
         "🇵🇱 波兰 (Poland) 03 - aceo",
         "🇵🇱 波兰 (Poland) 04 - aceo",
         "🇵🇱 波兰 (Poland) 05 - aceo",
-        "🇵🇱 波兰 (Poland) 06 - aceo",
-        "🇵🇱 波兰 (Poland) 07 - aceo"
+        "🇵🇱 波兰 (Poland) 06 - aceo"
       ]
     },
     {
@@ -125,8 +114,7 @@
         "🇵🇱 波兰 (Poland) 03 - aceo",
         "🇵🇱 波兰 (Poland) 04 - aceo",
         "🇵🇱 波兰 (Poland) 05 - aceo",
-        "🇵🇱 波兰 (Poland) 06 - aceo",
-        "🇵🇱 波兰 (Poland) 07 - aceo"
+        "🇵🇱 波兰 (Poland) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
