@@ -5,40 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 149.22.87.240
-  port: 443
+  server: 154.31.114.248
+  port: 50159
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 02 - aceo
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - aceo
-  server: 130.94.67.119
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-- name: 🇯🇵 日本 (Japan) 04 - aceo
-  server: 130.94.67.79
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 05 - aceo
   server: 142.91.108.25
   port: 443
   udp: true
@@ -50,64 +29,53 @@ proxies:
     public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
     short-id: ea36c03d86f91287
   servername: jp3.nztvpn.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 06 - aceo
-  server: 216.23.83.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: 982edbef-3c5b-486f-baf3-813a1f8ad660
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1ICcfKdmQI8EpyAD4xsyG8tYMQ-D2En-vUzD-GGM6Qc
-    short-id: 6c96
-  servername: www.oracle.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 45.32.10.7
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - aceo
-  server: 103.75.118.228
-  port: 12683
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: 130.94.67.151
+- name: 🇯🇵 日本 (Japan) 03 - aceo
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 04 - aceo
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 130.94.66.165
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform102
     headers:
-      Host: platform101.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 10 - aceo
-  server: 130.94.67.207
+      Host: platform102.halalkhor.info
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: platform115.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform115
+- name: 🇯🇵 日本 (Japan) 07 - aceo
+  server: 130.94.67.156
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
     headers:
-      Host: platform106.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 11 - aceo
+      Host: platform103.halalkhor.info
+- name: 🇯🇵 日本 (Japan) 08 - aceo
   server: 8.211.175.236
   port: 8443
   udp: true
@@ -115,55 +83,31 @@ proxies:
   password: u63SxILNwtrQZ7Y1ZrFaZfsA
   sni: 8.211.175.236
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - aceo
-  server: 130.94.67.50
+- name: 🇯🇵 日本 (Japan) 09 - aceo
+  server: 130.94.67.40
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform113
+    path: /platform118
     headers:
-      Host: platform113.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 13 - aceo
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 14 - aceo
-  server: 3.114.220.22
-  port: 18007
+      Host: platform118.halalkhor.info
+- name: 🇯🇵 日本 (Japan) 10 - aceo
+  server: 18.183.215.124
+  port: 28573
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 15 - aceo
-  server: platform117.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 16 - aceo
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 11 - aceo
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -175,29 +119,93 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 17 - aceo
-  server: 3.114.220.22
-  port: 10583
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 12 - aceo
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 13 - aceo
+  server: 130.94.65.138
+  port: 80
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 18 - aceo
-  server: 138.3.208.26
-  port: 50160
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇯🇵 日本 (Japan) 14 - aceo
+  server: 45.32.10.7
+  port: 443
   udp: true
   type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - aceo
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 16 - aceo
+  server: 130.94.67.50
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform113
+- name: 🇯🇵 日本 (Japan) 17 - aceo
+  server: 161.33.185.151
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 18 - aceo
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 19 - aceo
+  server: platform101.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.golnamakcert.top
+- name: 🇯🇵 日本 (Japan) 20 - aceo
+  server: platform109.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇯🇵 日本 (Japan) 21 - aceo
   server: 45.76.98.127
   port: 443
   udp: true
@@ -212,73 +220,139 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- name: 🇯🇵 日本 (Japan) 20 - aceo
-  server: 130.94.65.138
+- name: 🇯🇵 日本 (Japan) 22 - aceo
+  server: 130.94.67.207
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 21 - aceo
-  server: 18.183.215.124
-  port: 28573
+    path: /platform106
+- name: 🇯🇵 日本 (Japan) 23 - aceo
+  server: 130.94.67.119
+  port: 80
   udp: true
   type: vless
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+- name: 🇯🇵 日本 (Japan) 24 - aceo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - aceo
+  server: 45.32.52.173
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 26 - aceo
+  server: 130.94.67.180
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇯🇵 日本 (Japan) 27 - aceo
+  server: 104.17.210.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - aceo
+  server: 3.114.220.22
+  port: 18007
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 22 - aceo
-  server: 130.94.67.156
-  port: 80
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 29 - aceo
+  server: 3.114.220.22
+  port: 10583
   udp: true
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 23 - aceo
-  server: 130.94.67.40
-  port: 80
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 30 - aceo
+  server: 166.88.97.224
+  port: 443
   udp: true
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-- name: 🇯🇵 日本 (Japan) 24 - aceo
-  server: 130.94.66.165
-  port: 80
+  uuid: 73ceae65-fbfc-480e-8f56-d039be69c16c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XEFPrL1_DWJ_lx0MLgOiXdEdn_6eysDDWlTxga7_z2E
+    short-id: 04b065db
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 31 - aceo
+  server: 39.109.110.80
+  port: 27916
   udp: true
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 25 - aceo
-  server: platform115.golnamakcert.top
-  port: 80
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ztQ8VYq_dVDc3x-QM8LXjup2161CirYrIBE1F7loVzQ
+    short-id: 6772eb2b7a
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 32 - aceo
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 33 - aceo
+  server: jp.yi-yi.xyz
+  port: 8443
   udp: true
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇯🇵 日本 (Japan) 26 - aceo
+  uuid: 36c06e11-028b-40a1-a91f-c8f38f03e829
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g3T4dVyrbNixv7HvSMlh91cYBa5kEsZCEInB7Xc_AEY
+    short-id: 956d8072a694ff37
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 34 - aceo
   server: jp5.998998.best
   port: 443
   udp: true
@@ -294,20 +368,20 @@ proxies:
     path: /ieusrdgfhteuirgfiuws
     headers:
       Host: server11.9966338.xyz
-- name: 🇯🇵 日本 (Japan) 27 - aceo
-  server: funagfrdfs.alixxplay.com
-  port: 56656
+- name: 🇯🇵 日本 (Japan) 35 - aceo
+  server: 216.23.83.153
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 982edbef-3c5b-486f-baf3-813a1f8ad660
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
-    short-id: aae6d935
-  servername: cdn-dynmedia-1.microsoft.com
+    public-key: 1ICcfKdmQI8EpyAD4xsyG8tYMQ-D2En-vUzD-GGM6Qc
+    short-id: 6c96
+  servername: www.oracle.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 28 - aceo
+- name: 🇯🇵 日本 (Japan) 36 - aceo
   server: funagfrdfs.alixxplay.com
   port: 35544
   udp: true
@@ -320,40 +394,6 @@ proxies:
     short-id: 25c79e5856c7
   servername: iosapps.itunes.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 29 - aceo
-  server: 39.109.110.80
-  port: 27916
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ztQ8VYq_dVDc3x-QM8LXjup2161CirYrIBE1F7loVzQ
-    short-id: 6772eb2b7a
-  servername: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 30 - aceo
-  server: 104.18.42.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - aceo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -390,6 +430,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - aceo
   - 🇯🇵 日本 (Japan) 30 - aceo
   - 🇯🇵 日本 (Japan) 31 - aceo
+  - 🇯🇵 日本 (Japan) 32 - aceo
+  - 🇯🇵 日本 (Japan) 33 - aceo
+  - 🇯🇵 日本 (Japan) 34 - aceo
+  - 🇯🇵 日本 (Japan) 35 - aceo
+  - 🇯🇵 日本 (Japan) 36 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -426,5 +471,10 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - aceo
   - 🇯🇵 日本 (Japan) 30 - aceo
   - 🇯🇵 日本 (Japan) 31 - aceo
+  - 🇯🇵 日本 (Japan) 32 - aceo
+  - 🇯🇵 日本 (Japan) 33 - aceo
+  - 🇯🇵 日本 (Japan) 34 - aceo
+  - 🇯🇵 日本 (Japan) 35 - aceo
+  - 🇯🇵 日本 (Japan) 36 - aceo
 rules:
 - MATCH,PROXIES

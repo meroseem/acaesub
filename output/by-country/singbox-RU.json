@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -34,7 +34,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -48,30 +48,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-      "server": "185.147.27.183",
-      "server_port": 8443,
-      "uuid": "379998c5-2a71-4202-9c74-522e0c3c5404",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "user-6a917f32.noooo.win",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 02 - aceo"
       ]
     },
     {
@@ -79,8 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 03 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

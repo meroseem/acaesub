@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 144.31.34.146
   port: 2096
   udp: true
@@ -46,15 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 rules:
 - MATCH,PROXIES
