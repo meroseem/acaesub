@@ -1,0 +1,47 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "server": "9641684.sdf65h4.top",
+      "server_port": 443,
+      "uuid": "250c015d-bab0-4ed3-b638-b4eda48f5840",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "9641684.sdf65h4.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

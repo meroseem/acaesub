@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - aceo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "server": "165.99.222.161",
+      "server_port": 443,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "in1.vkusnews.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4",
+          "short_id": ""
+        }
       }
     },
     {
@@ -26,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -50,23 +59,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 04 - aceo",
-      "server": "165.99.222.161",
-      "server_port": 443,
-      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "in1.vkusnews.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4",
-          "short_id": ""
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "in-152.67.8.205-0250"
         }
       }
     },

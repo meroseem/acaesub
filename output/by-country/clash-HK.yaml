@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 45.202.248.173
+  server: 45.207.157.8
   port: 9443
   udp: true
   type: vless
@@ -18,6 +18,19 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 141.11.149.174
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 151.242.85.236
   port: 443
   udp: true
@@ -30,15 +43,15 @@ proxies:
     short-id: 9b6fa4047c24629f
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: 45.39.198.205
   port: 8443
   udp: true
@@ -51,14 +64,38 @@ proxies:
     short-id: c5b8bed4faee8363
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 101.32.8.251
-  port: 50001
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 526.150333.xyz
+  port: 21002
   udp: true
-  type: vmess
-  uuid: 5706beb5-479b-475d-b557-00309327e9cc
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: f0e6a8bb98db3efd
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: 526.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: b6dfd5c750351c57
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +106,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +119,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
 rules:
 - MATCH,PROXIES

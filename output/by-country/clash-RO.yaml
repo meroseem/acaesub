@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  server: 46.28.67.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
   server: it1.dedushka.top
   port: 443
   udp: true
@@ -31,14 +12,22 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: it1.dedushka.top
   skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: de1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de1.dedushka.top
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +36,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +44,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
 rules:
 - MATCH,PROXIES

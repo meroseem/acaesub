@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - aceo
-  server: 13.134.170.98
-  port: 22222
+  server: 34.245.155.44
+  port: 443
   udp: true
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
+    path: /
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - aceo
-  server: 51.24.15.27
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - aceo
   server: ie1.dedushka.top
   port: 443
   udp: true
@@ -31,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
-  - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - aceo
   - 🇮🇪 爱尔兰 (Ireland) 02 - aceo
-  - 🇮🇪 爱尔兰 (Ireland) 03 - aceo
 rules:
 - MATCH,PROXIES
