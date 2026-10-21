@@ -5,42 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: webdisk.jaggyslawa.org
-  port: 443
+  server: 212.87.222.10
+  port: 8443
   udp: true
   type: vless
-  uuid: b62e3646-b84d-443c-9c94-718b646502e0
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: dda5f542d835
-  servername: www.foxsports.com
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 46.62.204.134
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
+  servername: www.nokia.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
 rules:
 - MATCH,PROXIES

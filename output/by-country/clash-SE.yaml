@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 13.60.198.133
+  server: 51.21.247.148
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     host: []
     path: /
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 51.21.247.148
+  server: 13.60.198.133
   port: 443
   udp: true
   type: vless
@@ -33,6 +33,18 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +53,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
+  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +62,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
+  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01 - aceo
-  server: 193.202.10.233
-  port: 8444
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇮🇱 以色列 (Israel) 02 - aceo
   server: 185.95.231.156
   port: 443
   udp: true
@@ -37,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - aceo
-  - 🇮🇱 以色列 (Israel) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - aceo
-  - 🇮🇱 以色列 (Israel) 02 - aceo
 rules:
 - MATCH,PROXIES
