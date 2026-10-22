@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
-  server: 5.252.179.15
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  server: my2.frnhk.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: 1c22bf94-702b-49ac-8f5e-24259beed2d8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
+    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
+    short-id: 6b7a8c9d
+  servername: www.waseda.jp
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
+  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 31.133.0.182
+  server: pl1.dedushka.top
   port: 443
   udp: true
   type: trojan
@@ -27,21 +27,19 @@ proxies:
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: 2.26.225.89
-  port: 8443
+  server: 144.31.0.140
+  port: 443
   udp: true
   type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
   tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: api.sakhalin.fyi
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -54,6 +52,23 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 2.26.225.89
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 92.118.150.146
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +80,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
+  - 🇵🇱 波兰 (Poland) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +92,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
+  - 🇵🇱 波兰 (Poland) 07 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 51.21.247.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 13.60.198.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -33,7 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
   server: 94.143.231.146
   port: 443
   udp: true
@@ -52,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
-  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
-  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 rules:
 - MATCH,PROXIES

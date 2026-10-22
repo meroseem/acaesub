@@ -5,22 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.amazon.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: de1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de1.dedushka.top
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: it1.dedushka.top
   port: 443
   udp: true
@@ -28,6 +20,14 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: it1.dedushka.top
   skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: vk.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

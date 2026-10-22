@@ -6,14 +6,34 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
-      "server": "84.235.244.108",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "f7ff2e67-b687-4098-a28a-d102c27ba19c",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
+        "type": "ws"
       }
     },
     {
@@ -21,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - aceo"
+        "🇦🇪 阿联酋 (UAE) 01 - aceo",
+        "🇦🇪 阿联酋 (UAE) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - aceo"
+        "🇦🇪 阿联酋 (UAE) 01 - aceo",
+        "🇦🇪 阿联酋 (UAE) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

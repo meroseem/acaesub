@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - aceo
-  server: 57.131.48.45
-  port: 8388
+  server: 202.50.253.63
+  port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 02 - aceo
   server: 202.50.253.99
   port: 19999
@@ -19,31 +19,90 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 03 - aceo
-  server: 185.164.175.81
+  server: 202.50.253.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 04 - aceo
-  server: 57.131.38.163
-  port: 2053
+  server: 57.131.48.45
+  port: 8388
   udp: true
-  type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 05 - aceo
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 06 - aceo
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 07 - aceo
   server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 08 - aceo
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 09 - aceo
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 10 - aceo
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 11 - aceo
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 12 - aceo
+  server: 202.50.253.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 13 - aceo
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +113,14 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - aceo
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
+  - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
+  - 🇮🇹 意大利 (Italy) 08 - aceo
+  - 🇮🇹 意大利 (Italy) 09 - aceo
+  - 🇮🇹 意大利 (Italy) 10 - aceo
+  - 🇮🇹 意大利 (Italy) 11 - aceo
+  - 🇮🇹 意大利 (Italy) 12 - aceo
+  - 🇮🇹 意大利 (Italy) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +131,13 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - aceo
   - 🇮🇹 意大利 (Italy) 04 - aceo
   - 🇮🇹 意大利 (Italy) 05 - aceo
+  - 🇮🇹 意大利 (Italy) 06 - aceo
+  - 🇮🇹 意大利 (Italy) 07 - aceo
+  - 🇮🇹 意大利 (Italy) 08 - aceo
+  - 🇮🇹 意大利 (Italy) 09 - aceo
+  - 🇮🇹 意大利 (Italy) 10 - aceo
+  - 🇮🇹 意大利 (Italy) 11 - aceo
+  - 🇮🇹 意大利 (Italy) 12 - aceo
+  - 🇮🇹 意大利 (Italy) 13 - aceo
 rules:
 - MATCH,PROXIES

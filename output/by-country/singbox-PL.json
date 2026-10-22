@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
-      "server": "31.133.0.182",
+      "server": "pl1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
@@ -37,25 +37,27 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04 - aceo",
-      "server": "2.26.225.89",
-      "server_port": 8443,
-      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "server": "144.31.0.140",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.flen-vpn.xyz",
-        "insecure": false
+        "server_name": "api.sakhalin.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - aceo",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
-    },
-    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 06 - aceo",
+      "tag": "🇵🇱 波兰 (Poland) 05 - aceo",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -69,6 +71,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - aceo",
+      "server": "2.26.225.89",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.flen-vpn.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 07 - aceo",
+      "server": "92.118.150.146",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -78,7 +108,8 @@
         "🇵🇱 波兰 (Poland) 03 - aceo",
         "🇵🇱 波兰 (Poland) 04 - aceo",
         "🇵🇱 波兰 (Poland) 05 - aceo",
-        "🇵🇱 波兰 (Poland) 06 - aceo"
+        "🇵🇱 波兰 (Poland) 06 - aceo",
+        "🇵🇱 波兰 (Poland) 07 - aceo"
       ]
     },
     {
@@ -90,7 +121,8 @@
         "🇵🇱 波兰 (Poland) 03 - aceo",
         "🇵🇱 波兰 (Poland) 04 - aceo",
         "🇵🇱 波兰 (Poland) 05 - aceo",
-        "🇵🇱 波兰 (Poland) 06 - aceo"
+        "🇵🇱 波兰 (Poland) 06 - aceo",
+        "🇵🇱 波兰 (Poland) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
