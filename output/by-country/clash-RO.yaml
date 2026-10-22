@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: de1.dedushka.top
+  server: 154.46.31.106
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de1.dedushka.top
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: it1.dedushka.top
   port: 443
@@ -21,13 +20,13 @@ proxies:
   sni: it1.dedushka.top
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: 185.156.44.99
+  server: de1.dedushka.top
   port: 443
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: vk.com
-  skip-cert-verify: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de1.dedushka.top
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
