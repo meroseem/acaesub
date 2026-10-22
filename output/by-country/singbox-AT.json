@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - aceo",
-      "server": "ie1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "ie1.dedushka.top",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - aceo",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - aceo"
+        "🇦🇹 奥地利 (Austria) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - aceo"
+        "🇦🇹 奥地利 (Austria) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

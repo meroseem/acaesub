@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - aceo
+  server: 67.159.18.34
+  port: 17001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
+- name: 🇨🇿 捷克 (Czech) 02 - aceo
+  server: 89.125.237.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: web.stride.surf
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 03 - aceo
   server: server.slavkiti.monster
   port: 443
   udp: true
@@ -23,11 +43,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 02 - aceo
+  - 🇨🇿 捷克 (Czech) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇨🇿 捷克 (Czech) 02 - aceo
+  - 🇨🇿 捷克 (Czech) 03 - aceo
 rules:
 - MATCH,PROXIES
