@@ -33,43 +33,14 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - aceo",
-      "server": "151.241.166.159",
-      "server_port": 443,
-      "uuid": "7ab86f1f-871e-4de6-9dae-7addf6dc976c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl-hsts.zloygo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ",
-          "short_id": "9a26e586f8cadc07"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - aceo",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
@@ -79,9 +50,7 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo",
-        "🇦🇪 阿联酋 (UAE) 04 - aceo",
-        "🇦🇪 阿联酋 (UAE) 05 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo"
       ]
     },
     {
@@ -90,9 +59,7 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo",
-        "🇦🇪 阿联酋 (UAE) 04 - aceo",
-        "🇦🇪 阿联酋 (UAE) 05 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

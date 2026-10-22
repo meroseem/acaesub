@@ -24,28 +24,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - aceo
-  server: 151.241.166.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ab86f1f-871e-4de6-9dae-7addf6dc976c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
-    short-id: 9a26e586f8cadc07
-  servername: pl-hsts.zloygo.com
-  client-fingerprint: ''
-- name: 🇦🇪 阿联酋 (UAE) 05 - aceo
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -54,6 +32,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,8 +42,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
-  - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +50,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - aceo
   - 🇦🇪 阿联酋 (UAE) 02 - aceo
   - 🇦🇪 阿联酋 (UAE) 03 - aceo
-  - 🇦🇪 阿联酋 (UAE) 04 - aceo
-  - 🇦🇪 阿联酋 (UAE) 05 - aceo
 rules:
 - MATCH,PROXIES
