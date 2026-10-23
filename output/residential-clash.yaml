@@ -4,7 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
+- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -15,33 +25,19 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: qq
-- name: 🇮🇳 印度 (India) 02 (家宽) - aceo
-  server: 122.176.216.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇮🇳 印度 (India) 02 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo
-  - 🇮🇳 印度 (India) 02 (家宽) - aceo
+  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES

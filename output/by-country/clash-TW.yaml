@@ -5,22 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - aceo
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -41,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
 rules:
 - MATCH,PROXIES
