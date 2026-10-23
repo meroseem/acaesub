@@ -5,53 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: 31.133.0.186
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 31.133.0.182
+  server: pl1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: pl1.dedushka.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
-  server: 92.118.150.146
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: pl2.dedushka.top
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -60,10 +27,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
-  - 🇵🇱 波兰 (Poland) 03 - aceo
-  - 🇵🇱 波兰 (Poland) 04 - aceo
-  - 🇵🇱 波兰 (Poland) 05 - aceo
-  - 🇵🇱 波兰 (Poland) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,9 +34,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
-  - 🇵🇱 波兰 (Poland) 03 - aceo
-  - 🇵🇱 波兰 (Poland) 04 - aceo
-  - 🇵🇱 波兰 (Poland) 05 - aceo
-  - 🇵🇱 波兰 (Poland) 06 - aceo
 rules:
 - MATCH,PROXIES

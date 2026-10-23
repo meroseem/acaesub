@@ -23,28 +23,13 @@
       "password": "1671a252e2a97dc2bda4e515475931da",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - aceo",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "132.145.80.230"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - aceo",
       "server": "152.69.231.175",
       "server_port": 50160,
       "password": "1beb216e3f60aea9555dae60d219a5ca",
@@ -55,10 +40,66 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - aceo",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
+      "server": "150-230-252-217.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "9cfc9458e48c028ec03ff86ebc71c744",
+      "tls": {
+        "enabled": true,
+        "server_name": "150-230-252-217.liao.kdns.fr",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "tls": {
+        "enabled": true,
+        "server_name": "154.90.62.70",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - aceo",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - aceo",
       "server": "3.39.4.109",
-      "server_port": 18967,
+      "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -66,7 +107,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -77,7 +118,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - aceo",
       "server": "64.176.231.183",
       "server_port": 443,
       "uuid": "583cc910-b57c-4dd0-a4a7-cea51a30b032",
@@ -97,22 +138,10 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - aceo",
-      "server": "150-230-252-217.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
-      "tls": {
-        "enabled": true,
-        "server_name": "150-230-252-217.liao.kdns.fr",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - aceo",
       "server": "3.39.4.109",
-      "server_port": 13672,
+      "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -120,57 +149,13 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
           "short_id": "48050fab"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - aceo",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - aceo",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - aceo",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-67-200-82.liao.kdns.fr",
-        "insecure": true
       }
     },
     {
@@ -187,8 +172,7 @@
         "🇰🇷 韩国 (South Korea) 07 - aceo",
         "🇰🇷 韩国 (South Korea) 08 - aceo",
         "🇰🇷 韩国 (South Korea) 09 - aceo",
-        "🇰🇷 韩国 (South Korea) 10 - aceo",
-        "🇰🇷 韩国 (South Korea) 11 - aceo"
+        "🇰🇷 韩国 (South Korea) 10 - aceo"
       ]
     },
     {
@@ -204,8 +188,7 @@
         "🇰🇷 韩国 (South Korea) 07 - aceo",
         "🇰🇷 韩国 (South Korea) 08 - aceo",
         "🇰🇷 韩国 (South Korea) 09 - aceo",
-        "🇰🇷 韩国 (South Korea) 10 - aceo",
-        "🇰🇷 韩国 (South Korea) 11 - aceo"
+        "🇰🇷 韩国 (South Korea) 10 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

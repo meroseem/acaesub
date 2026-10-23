@@ -12,18 +12,41 @@
       "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - aceo",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo",
+        "🇨🇿 捷克 (Czech) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - aceo"
+        "🇨🇿 捷克 (Czech) 01 - aceo",
+        "🇨🇿 捷克 (Czech) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

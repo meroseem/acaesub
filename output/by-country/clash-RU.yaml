@@ -5,50 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 45.128.78.178
-  port: 443
-  udp: true
-  type: vless
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 147.45.175.81
+  server: xsru1.ddnsfree.com
   port: 443
   udp: true
   type: vless
@@ -56,7 +13,7 @@ proxies:
   tls: true
   servername: xsru1.ddnsfree.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
@@ -66,19 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 rules:
 - MATCH,PROXIES
