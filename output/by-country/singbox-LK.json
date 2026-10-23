@@ -5,20 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 - aceo",
-      "server": "vpn.cintaku.qzz.io",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
-      },
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 80,
+      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
+        "path": "/",
         "headers": {
-          "Host": "vpn.cintaku.qzz.io"
+          "Host": "free.sahanwickramasinghe.me"
         }
       }
     },
@@ -27,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - aceo"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - aceo"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

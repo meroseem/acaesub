@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-      "server": "92.42.100.132",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "it1.dedushka.top",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
       }
     },
     {
@@ -32,34 +41,12 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
-      "server": "de1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - aceo",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 04 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 02 - aceo"
       ]
     },
     {
@@ -67,9 +54,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 02 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 03 - aceo",
-        "🇷🇴 罗马尼亚 (Romania) 04 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

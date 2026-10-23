@@ -6,39 +6,92 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - aceo
   server: 31.76.11.83
+  port: 22366
+  udp: true
+  type: vmess
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 02 - aceo
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 03 - aceo
+  server: 31.76.11.83
   port: 15731
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-- name: 🇩🇪 德国 (Germany) 02 - aceo
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 03 - aceo
-  server: 146.70.20.147
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇩🇪 德国 (Germany) 04 - aceo
-  server: 149.33.47.172
-  port: 9443
+  server: 89.169.53.176
+  port: 4443
   udp: true
   type: vless
-  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
+  client-fingerprint: ''
 - name: 🇩🇪 德国 (Germany) 05 - aceo
+  server: 213.202.208.199
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇩🇪 德国 (Germany) 06 - aceo
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 07 - aceo
+  server: 64.188.66.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  servername: ge-s-1.pythonmakemigreat.wiki
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 08 - aceo
+  server: 130.17.25.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  servername: github.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 09 - aceo
+  server: 5.45.100.100
+  port: 51511
+  udp: true
+  type: hysteria2
+  password: miaoge110
+  sni: 5.45.100.100
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - aceo
   server: 31.70.111.146
   port: 443
   udp: true
@@ -51,7 +104,14 @@ proxies:
     short-id: d7de3a6ff4018957
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 06 - aceo
+- name: 🇩🇪 德国 (Germany) 11 - aceo
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 12 - aceo
   server: 163.245.42.48
   port: 443
   udp: true
@@ -63,35 +123,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 07 - aceo
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 - aceo
-  server: 188.241.241.235
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de9.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 09 - aceo
-  server: de2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de2.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 10 - aceo
+- name: 🇩🇪 德国 (Germany) 13 - aceo
   server: edge.bookmai.com
   port: 443
   udp: true
@@ -103,7 +135,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 11 - aceo
+- name: 🇩🇪 德国 (Germany) 14 - aceo
   server: 91.107.247.173
   port: 2083
   udp: true
@@ -111,60 +143,77 @@ proxies:
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   tls: true
   servername: sino.bestsellers1.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 15 - aceo
+  server: 91.107.188.129
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  tls: true
+  servername: site.check-looks.space
   skip-cert-verify: false
   client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 12 - aceo
-  server: de3.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de3.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 13 - aceo
-  server: de10.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de10.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 14 - aceo
-  server: de5.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de5.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 15 - aceo
-  server: de12.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de12.dedushka.top
-  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 16 - aceo
-  server: 185.176.204.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 17 - aceo
-  server: 188.241.241.200
+  server: 82.39.171.12
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de7.dedushka.top
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 17 - aceo
+  server: 31.76.15.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a98bb9-8680-44b3-9962-902fff4631cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YM1SjW-RyGtPYs_SgjtfaIxJpw2m-TZ8qnNFxkDxHV0
+    short-id: a5543a67f52ea8ab
+  servername: www.apple.com
+  client-fingerprint: ''
+- name: 🇩🇪 德国 (Germany) 18 - aceo
+  server: uiuxtestsdcv-development-r6dg9.lucity.app
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58b06206-cd53-23d6-279a-0f0dd259cb0a
+  tls: true
+  servername: uiuxtestsdcv-development-r6dg9.lucity.app
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/58b06206-cd53-23d6-279a-0f0dd259cb0a
+    headers:
+      Host: uiuxtestsdcv-development-r6dg9.lucity.app
+- name: 🇩🇪 德国 (Germany) 19 - aceo
+  server: 144.31.215.196
+  port: 443
+  udp: true
+  type: vless
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jwLEnDwGROadL1ax-SrVC50sE5slaP7TbGQtBxkcTws
+    short-id: 8c9ab0f7b293f9ef
+  servername: c2.qwyak.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -187,6 +236,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15 - aceo
   - 🇩🇪 德国 (Germany) 16 - aceo
   - 🇩🇪 德国 (Germany) 17 - aceo
+  - 🇩🇪 德国 (Germany) 18 - aceo
+  - 🇩🇪 德国 (Germany) 19 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -209,5 +260,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15 - aceo
   - 🇩🇪 德国 (Germany) 16 - aceo
   - 🇩🇪 德国 (Germany) 17 - aceo
+  - 🇩🇪 德国 (Germany) 18 - aceo
+  - 🇩🇪 德国 (Germany) 19 - aceo
 rules:
 - MATCH,PROXIES

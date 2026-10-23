@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - aceo
-  server: 92.42.100.132
+  server: 46.28.67.55
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: it1.dedushka.top
-  skip-cert-verify: false
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - aceo
   server: 162.249.125.133
   port: 443
@@ -22,21 +27,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  server: de1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de1.dedushka.top
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - aceo
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
-  - 🇷🇴 罗马尼亚 (Romania) 04 - aceo
 rules:
 - MATCH,PROXIES

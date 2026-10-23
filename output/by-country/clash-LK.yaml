@@ -4,26 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 5.178.109.174
-  port: 14430
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
+  server: free.sahanwickramasinghe.me
+  port: 80
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   network: ws
   ws-opts:
-    path: /vless
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01 - aceo
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01 - aceo
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
 rules:
 - MATCH,PROXIES
