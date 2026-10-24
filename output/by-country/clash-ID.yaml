@@ -4,27 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - aceo
-  server: 155.117.19.17
-  port: 443
+- name: 🇮🇩 印尼 (Indonesia) 01 - aceo
+  server: 202.155.14.134
+  port: 55555
   udp: true
   type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
+  password: 78585441-c8b3-40fb-9b94-15edd312fdcf
   sni: www.bing.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇮🇩 印尼 (Indonesia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - aceo
+  - 🇮🇩 印尼 (Indonesia) 01 - aceo
 rules:
 - MATCH,PROXIES
