@@ -19,39 +19,13 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 03 - aceo
-  server: 51.89.194.151
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-  tls: true
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
   server: sql.popmintxo.cc
   port: 43385
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
   server: 31.59.217.164
   port: 443
   udp: true
@@ -64,21 +38,20 @@ proxies:
     short-id: 1625a2a79d01328f
   servername: www.adobe.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
-  server: 98.98.142.161
-  port: 8080
+- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
+  server: 191.44.108.31
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
-  server: 146.70.46.214
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
+  type: vless
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
+    short-id: 3ba10d9ce34380c9
+  servername: www.google.com
+  client-fingerprint: ios
+- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
   server: 57.129.132.223
   port: 80
   udp: true
@@ -91,38 +64,16 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
-  server: connect.hondamotor.site
-  port: 10002
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+  server: 193.188.21.253
+  port: 14430
   udp: true
   type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
-  server: 191.44.108.31
-  port: 443
-  udp: true
-  type: vless
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
-    short-id: 3ba10d9ce34380c9
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
-  server: vena.solomon-planet.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0ce6e041-b701-4dd0-a82a-96b287abc4bf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U
-  servername: vena.solomon-planet.ru
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -134,7 +85,13 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+  server: connect.hondamotor.site
+  port: 10002
+  udp: true
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -146,26 +103,6 @@ proxies:
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
-  server: webdisk.jaggyslawa.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 87174b37ce3b
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 17 - aceo
-  server: 82.38.31.215
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
 proxy-groups:
 - name: PROXIES
   type: select
@@ -181,13 +118,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 08 - aceo
   - 🇬🇧 英国 (United Kingdom) 09 - aceo
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
-  - 🇬🇧 英国 (United Kingdom) 11 - aceo
-  - 🇬🇧 英国 (United Kingdom) 12 - aceo
-  - 🇬🇧 英国 (United Kingdom) 13 - aceo
-  - 🇬🇧 英国 (United Kingdom) 14 - aceo
-  - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
-  - 🇬🇧 英国 (United Kingdom) 17 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -203,12 +133,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 08 - aceo
   - 🇬🇧 英国 (United Kingdom) 09 - aceo
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
-  - 🇬🇧 英国 (United Kingdom) 11 - aceo
-  - 🇬🇧 英国 (United Kingdom) 12 - aceo
-  - 🇬🇧 英国 (United Kingdom) 13 - aceo
-  - 🇬🇧 英国 (United Kingdom) 14 - aceo
-  - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
-  - 🇬🇧 英国 (United Kingdom) 17 - aceo
 rules:
 - MATCH,PROXIES

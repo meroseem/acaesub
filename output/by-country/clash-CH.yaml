@@ -19,18 +19,6 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: 'off'
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +26,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +33,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
-  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
 rules:
 - MATCH,PROXIES

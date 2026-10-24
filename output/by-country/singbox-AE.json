@@ -22,22 +22,62 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/"
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - aceo",
+      "server": "31.57.190.40",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - aceo",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "185.253.116.33"
+        }
       }
     },
     {
@@ -47,7 +87,9 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo",
+        "🇦🇪 阿联酋 (UAE) 04 - aceo",
+        "🇦🇪 阿联酋 (UAE) 05 - aceo"
       ]
     },
     {
@@ -56,7 +98,9 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo",
+        "🇦🇪 阿联酋 (UAE) 04 - aceo",
+        "🇦🇪 阿联酋 (UAE) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

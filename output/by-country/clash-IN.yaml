@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02 - aceo
   server: in.smrtai.top
   port: 443
   udp: true
@@ -16,18 +28,6 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - aceo
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - aceo
   server: 13.140.56.100
   port: 14430
@@ -40,16 +40,16 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 04 - aceo
-  server: 5.253.29.254
-  port: 14430
+  server: 152.67.8.205
+  port: 80
   udp: true
-  type: vless
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
