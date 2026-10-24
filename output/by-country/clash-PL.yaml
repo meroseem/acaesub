@@ -5,6 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 92.118.150.146
   port: 443
   udp: true
@@ -12,19 +18,7 @@ proxies:
   password: Trojan@82164024
   sni: pl.tronsg.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -45,7 +39,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
   - 🇵🇱 波兰 (Poland) 03 - aceo
-  - 🇵🇱 波兰 (Poland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +47,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
   - 🇵🇱 波兰 (Poland) 03 - aceo
-  - 🇵🇱 波兰 (Poland) 04 - aceo
 rules:
 - MATCH,PROXIES
