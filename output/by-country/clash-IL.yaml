@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - aceo
   server: 31.57.185.124
   port: 41957
@@ -25,6 +25,19 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: aJzB4p6wYQF+OEbPk2VmV3JvdFo/K4YVuBqjBEmkf+o=:fzmWR6oEtp740EsWBupO/siQ7E/XBZ5ZWJYweJgm420=
 - name: 🇮🇱 以色列 (Israel) 03 - aceo
+  server: 77.91.69.169
+  port: 19226
+  udp: true
+  type: vless
+  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
+    short-id: 7c
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇮🇱 以色列 (Israel) 04 - aceo
   server: 177.3.208.65
   port: 443
   udp: true
@@ -39,19 +52,6 @@ proxies:
     path: /vless-il
     headers:
       Host: tgmansion.site
-- name: 🇮🇱 以色列 (Israel) 04 - aceo
-  server: 77.91.69.169
-  port: 19226
-  udp: true
-  type: vless
-  uuid: f0b144bd-4c44-440d-b630-d79ec82cad3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk
-    short-id: 7c
-  servername: yahoo.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
