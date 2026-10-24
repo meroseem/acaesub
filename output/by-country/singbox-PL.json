@@ -4,8 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
+      "server": "92.118.150.146",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 04 - aceo",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -23,14 +53,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo",
+        "🇵🇱 波兰 (Poland) 04 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo",
+        "🇵🇱 波兰 (Poland) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
