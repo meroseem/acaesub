@@ -11,17 +11,27 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
+  server: 45.144.48.32
+  port: 56080
+  udp: true
+  type: vmess
+  uuid: f4daaec7-0e1e-4c8e-97e8-cff5347c2dae
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - aceo
 rules:
 - MATCH,PROXIES
