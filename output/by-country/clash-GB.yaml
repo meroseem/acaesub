@@ -12,65 +12,86 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 02 - aceo
-  server: 141.98.101.181
-  port: 443
+  server: 146.70.61.37
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 03 - aceo
-  server: 57.129.132.223
-  port: 80
+  server: 51.89.194.151
+  port: 2053
   udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
+  type: vless
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+  tls: true
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 04 - aceo
-  server: 146.70.46.199
+  server: 146.70.61.18
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 05 - aceo
-  server: 98.98.142.161
+  server: 146.70.46.214
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 06 - aceo
-  server: connect.hondamotor.site
-  port: 10002
+  server: 146.70.46.199
+  port: 8080
   udp: true
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
   server: sql.popmintxo.cc
   port: 43385
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
-  server: 196.247.163.10
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
+  server: connect.hondamotor.site
+  port: 10002
+  udp: true
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+  server: 191.44.108.31
   port: 443
   udp: true
   type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 5984Ah0pkfSVekU5xafQ1trZZN7MyNCJ-3KfCo-O6A4
-  servername: britainmh.eosvpn.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
+    short-id: 3ba10d9ce34380c9
+  servername: www.google.com
+  client-fingerprint: ios
+- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
   server: 193.188.21.253
   port: 14430
   udp: true
@@ -81,16 +102,7 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
-  server: 23.81.36.148
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -102,7 +114,17 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
+  server: 51.38.71.147
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  tls: true
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -113,7 +135,21 @@ proxies:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 17 - aceo
+  server: location15.cpanel-host16.ir
+  port: 56137
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,6 +167,11 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
+  - 🇬🇧 英国 (United Kingdom) 13 - aceo
+  - 🇬🇧 英国 (United Kingdom) 14 - aceo
+  - 🇬🇧 英国 (United Kingdom) 15 - aceo
+  - 🇬🇧 英国 (United Kingdom) 16 - aceo
+  - 🇬🇧 英国 (United Kingdom) 17 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,5 +189,10 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
+  - 🇬🇧 英国 (United Kingdom) 13 - aceo
+  - 🇬🇧 英国 (United Kingdom) 14 - aceo
+  - 🇬🇧 英国 (United Kingdom) 15 - aceo
+  - 🇬🇧 英国 (United Kingdom) 16 - aceo
+  - 🇬🇧 英国 (United Kingdom) 17 - aceo
 rules:
 - MATCH,PROXIES
