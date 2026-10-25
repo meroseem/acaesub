@@ -10,39 +10,27 @@ proxies:
   udp: true
   type: vless
   uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
-- name: 🇺🇸 美国 (United States) 02 (家宽) - aceo
-  server: 155.117.19.17
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - aceo
+  server: gu232.izzzzzi.com
+  port: 20052
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - aceo
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
+  type: trojan
+  password: e56e752c86a640cd
+  sni: gu232.izzzzzi.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) R50 - aceo
-  - 🇺🇸 美国 (United States) 02 (家宽) - aceo
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) R50 - aceo
-  - 🇺🇸 美国 (United States) 02 (家宽) - aceo
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - aceo
 rules:
 - MATCH,PROXIES

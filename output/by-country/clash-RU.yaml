@@ -17,18 +17,30 @@ proxies:
   servername: ozon.ru
   client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 45.151.71.147
-  port: 443
+  server: 193.160.140.117
+  port: 8443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  uuid: 57c87188-1056-4bd5-92f8-c7ca1fd19147
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: abuse.ozon.ru
-  client-fingerprint: ''
+  servername: apple.com
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 45.9.118.177
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 194.113.235.121
   port: 443
   udp: true
@@ -41,19 +53,58 @@ proxies:
     short-id: 12f319370b60ec2f
   servername: fr1-4v.zvcorp24.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 45.9.118.177
-  port: 8443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 45.151.71.147
+  port: 443
   udp: true
   type: vless
-  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
+  servername: abuse.ozon.ru
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 45.151.71.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: abuse.ozon.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 45.151.71.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: abuse.ozon.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 46.17.43.227
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  server: 103.88.243.142
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -68,7 +119,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  server: 46.243.142.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  tls: true
+  servername: santehdv.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: 🇷🇺 俄罗斯 (Russia) 12 - aceo
   server: 147.45.175.81
   port: 443
   udp: true
@@ -78,19 +144,6 @@ proxies:
   servername: xsru1.ddnsfree.com
   skip-cert-verify: false
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: xsru1.ddnsfree.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  skip-cert-verify: false
-  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
@@ -106,6 +159,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 12 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,5 +176,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 12 - aceo
 rules:
 - MATCH,PROXIES
