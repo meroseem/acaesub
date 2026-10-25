@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "50.7.38.243",
+      "server": "promo.betust.net",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
@@ -18,14 +18,42 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "server": "191.44.114.179",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "st33614.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/cdn/v3/live",
         "headers": {
-          "Host": "5.178.109.174"
+          "Host": "st33614.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "server": "se13-node.rumedia-cdn.com",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "st5ff8a.rumedia-cdn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st5ff8a.rumedia-cdn.com"
         }
       }
     },
@@ -35,7 +63,8 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo",
+        "🇸🇪 瑞典 (Sweden) 03 - aceo"
       ]
     },
     {
@@ -43,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo",
+        "🇸🇪 瑞典 (Sweden) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
