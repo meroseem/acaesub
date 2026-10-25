@@ -4,15 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
-      "server": "hkgb707.ifastcdncache.com",
-      "server_port": 60852,
-      "uuid": "f8eca8df-a1a5-4918-a194-d34112a3673f",
-      "security": "auto",
-      "alter_id": 2,
+      "type": "vless",
+      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - aceo",
+      "server": "80.243.228.84",
+      "server_port": 2085,
+      "uuid": "a7c66f66-76b7-42ea-8d2b-890a37239368",
       "transport": {
-        "type": "ws"
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -20,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

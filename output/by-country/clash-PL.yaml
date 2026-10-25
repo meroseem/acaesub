@@ -11,6 +11,18 @@ proxies:
   type: vless
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -23,13 +35,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: site.teslamotor.site
-  port: 20001
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: pl4-node.rumedia-cdn.com
+  port: 2096
   udp: true
   type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: stb6390.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stb6390.rumedia-cdn.com
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -51,6 +71,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - aceo
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
+  - 🇵🇱 波兰 (Poland) 05 - aceo
+  - 🇵🇱 波兰 (Poland) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +82,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - aceo
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
+  - 🇵🇱 波兰 (Poland) 05 - aceo
+  - 🇵🇱 波兰 (Poland) 06 - aceo
 rules:
 - MATCH,PROXIES

@@ -1,0 +1,29 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇰 斯洛伐克 (Slovakia) 01 - aceo
+  server: 80.243.228.84
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a7c66f66-76b7-42ea-8d2b-890a37239368
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇰 斯洛伐克 (Slovakia) 01 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇰 斯洛伐克 (Slovakia) 01 - aceo
+rules:
+- MATCH,PROXIES

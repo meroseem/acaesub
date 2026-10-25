@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: promo.betust.net
+  server: 50.7.38.243
   port: 443
   udp: true
   type: hysteria2
@@ -13,21 +13,6 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 191.44.114.179
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st33614.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: se13-node.rumedia-cdn.com
   port: 2096
   udp: true
@@ -48,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
-  - 🇸🇪 瑞典 (Sweden) 03 - aceo
 rules:
 - MATCH,PROXIES
