@@ -4,62 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "50.7.38.243",
+      "server": "se1-cl3.vless-fiberstasis.top",
       "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
+        "server_name": "se1-cl3.vless-fiberstasis.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
+          "short_id": "11d37dd92940329e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-se-3"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
-      "server": "150.241.87.200",
-      "server_port": 2096,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "tls": {
-        "enabled": true,
-        "server_name": "stb6390.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "stb6390.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
-      "server": "191.44.114.179",
-      "server_port": 2096,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "tls": {
-        "enabled": true,
-        "server_name": "st33614.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st33614.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -72,14 +42,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "server": "promo.betust.net",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo.betust.net",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo",
-        "🇸🇪 瑞典 (Sweden) 04 - aceo"
+        "🇸🇪 瑞典 (Sweden) 03 - aceo"
       ]
     },
     {
@@ -88,8 +69,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo",
-        "🇸🇪 瑞典 (Sweden) 04 - aceo"
+        "🇸🇪 瑞典 (Sweden) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

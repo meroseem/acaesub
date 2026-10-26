@@ -5,30 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 193.160.141.2
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 193.160.140.119
-  port: 443
-  udp: true
-  type: vless
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 45.9.118.177
   port: 8443
   udp: true
@@ -39,40 +15,39 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 193.223.104.106
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d68be168-fda7-4e8c-8638-33a82d2202ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 147.45.47.83
-  port: 443
+  server: 103.91.147.203
+  port: 8443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  uuid: a756c39b-da0c-4195-94fd-f2a35e37622a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: chrome
+  servername: apple.com
+  client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 193.160.141.27
-  port: 443
-  udp: true
-  type: vless
-  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: abuse.ozon.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
   server: 194.87.143.165
   port: 8443
   udp: true
@@ -84,7 +59,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 193.233.221.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2iedjEliJfyf7VYxQjSHRiY0RY9ylwj-GtO4MCfuQhg
+    short-id: a50534e181896415
+  servername: capableconjuretarnish.clarionconsult.info
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -97,7 +85,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru2.freeddns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  server: 147.45.47.83
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
   server: 185.147.27.164
   port: 8443
   udp: true
@@ -122,6 +137,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
   - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,5 +152,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
   - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
 rules:
 - MATCH,PROXIES

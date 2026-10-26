@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
-  server: 141.0.187.15
-  port: 443
+  server: 13.143.239.69
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
-  sni: crt.onecloudstream.com
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: ee4.pad-sservice.lat
   skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /EE4W
+    headers:
+      Host: ee4.pad-sservice.lat
 proxy-groups:
 - name: PROXIES
   type: select

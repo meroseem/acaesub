@@ -5,6 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
+  server: 45.149.147.213
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  tls: true
+  servername: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 45.149.147.213
+  port: 4444
+  udp: true
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-trojan
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 77.42.12.225
   port: 443
   udp: true
@@ -19,7 +43,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: f345a414c040
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -28,41 +64,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 45-149-147-213.sslip.io
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  tls: true
-  servername: 45-149-147-213.sslip.io
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: kobedin-server1-vless
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 45.149.147.213
-  port: 4444
-  udp: true
-  type: trojan
-  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  sni: 45-149-147-213.sslip.io
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: kobedin-server1-trojan
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
-  server: 2.27.203.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
-  servername: edge-fi2.lovely.my
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - aceo
   server: 65.109.212.193
   port: 465
@@ -78,30 +79,17 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 07 - aceo
-  server: 177.3.214.156
+  server: 31.76.89.226
   port: 443
   udp: true
   type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 08 - aceo
-  server: 107.181.151.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
-  servername: www.mozilla.org
-  client-fingerprint: firefox
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: ai.eosshop.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,7 +102,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - aceo
   - 🇫🇮 芬兰 (Finland) 06 - aceo
   - 🇫🇮 芬兰 (Finland) 07 - aceo
-  - 🇫🇮 芬兰 (Finland) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,6 +114,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - aceo
   - 🇫🇮 芬兰 (Finland) 06 - aceo
   - 🇫🇮 芬兰 (Finland) 07 - aceo
-  - 🇫🇮 芬兰 (Finland) 08 - aceo
 rules:
 - MATCH,PROXIES

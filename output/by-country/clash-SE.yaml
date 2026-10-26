@@ -5,43 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - aceo
-  server: 50.7.38.243
+  server: se1-cl3.vless-fiberstasis.top
   port: 443
   udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 150.241.87.200
-  port: 2096
-  udp: true
   type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   tls: true
-  servername: stb6390.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stb6390.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
-  server: 191.44.114.179
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st33614.rumedia-cdn.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo
+    short-id: 11d37dd92940329e
+  servername: se1-cl3.vless-fiberstasis.top
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-se-3
+- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -52,6 +30,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: promo.betust.net
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +46,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
-  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +54,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
   - 🇸🇪 瑞典 (Sweden) 02 - aceo
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
-  - 🇸🇪 瑞典 (Sweden) 04 - aceo
 rules:
 - MATCH,PROXIES

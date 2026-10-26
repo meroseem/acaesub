@@ -1,0 +1,54 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
+      "server": "216.24.57.225",
+      "server_port": 2087,
+      "uuid": "825a76ef-053f-41eb-ba81-411e29494251",
+      "tls": {
+        "enabled": true,
+        "server_name": "busstop.zandix.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wss",
+        "headers": {
+          "Host": "busstop.zandix.ir"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

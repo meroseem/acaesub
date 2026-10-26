@@ -4,8 +4,35 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+      "server": "112.169.175.199",
+      "server_port": 31157,
+      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "server": "118.167.211.77",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
       "server": "kw119.zxmm.eu.org",
       "server_port": 20031,
       "password": "00a72bf349e6479b",
@@ -20,14 +47,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
