@@ -17,17 +17,18 @@ proxies:
   servername: finlandlanzarotte.live
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 95.216.27.15
-  port: 2053
+  server: 45.149.147.213
+  port: 4443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
   tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  servername: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 45.149.147.213
   port: 4444
@@ -40,30 +41,18 @@ proxies:
   grpc-opts:
     grpc-service-name: kobedin-server1-trojan
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 2.27.203.251
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
-  servername: edge-fi2.lovely.my
-  client-fingerprint: chrome
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - aceo
-  server: 45-149-147-213.sslip.io
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  tls: true
-  servername: 45-149-147-213.sslip.io
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: kobedin-server1-vless
-- name: 🇫🇮 芬兰 (Finland) 06 - aceo
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -74,19 +63,13 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 07 - aceo
-  server: 213.176.92.168
-  port: 10444
+- name: 🇫🇮 芬兰 (Finland) 06 - aceo
+  server: 94.177.145.151
+  port: 2083
   udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: banJ58KfDF21KoMFZ5TXmg
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,7 +81,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - aceo
   - 🇫🇮 芬兰 (Finland) 05 - aceo
   - 🇫🇮 芬兰 (Finland) 06 - aceo
-  - 🇫🇮 芬兰 (Finland) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +92,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - aceo
   - 🇫🇮 芬兰 (Finland) 05 - aceo
   - 🇫🇮 芬兰 (Finland) 06 - aceo
-  - 🇫🇮 芬兰 (Finland) 07 - aceo
 rules:
 - MATCH,PROXIES
