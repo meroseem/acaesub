@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - aceo
-  server: 8.35.211.242
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
+  server: 141.0.187.15
   port: 443
   udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
+  type: hysteria2
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
 rules:
 - MATCH,PROXIES

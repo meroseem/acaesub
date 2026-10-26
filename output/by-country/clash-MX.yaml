@@ -5,14 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - aceo
-  server: 64.177.90.30
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-- name: 🇲🇽 墨西哥 (Mexico) 02 - aceo
-  server: mx001.zestapp778.com
+  server: 149.104.90.21
   port: 19167
   udp: true
   type: vless
@@ -20,7 +13,14 @@ proxies:
   tls: true
   servername: mx001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇲🇽 墨西哥 (Mexico) 02 - aceo
+  server: 64.177.90.30
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
 proxy-groups:
 - name: PROXIES
   type: select

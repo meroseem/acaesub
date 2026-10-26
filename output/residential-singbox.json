@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇳 CN 01 - aceo",
-      "server": "8.35.211.242",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "server": "kw119.zxmm.eu.org",
+      "server_port": 20031,
+      "password": "00a72bf349e6479b",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "server_name": "kw119.zxmm.eu.org",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - aceo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 5.22.221.127
-  port: 443
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 2.26.6.1
-  port: 2087
+  server: 191.217.211.128
+  port: 20270
   udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
+  type: hysteria2
+  password: dd56bf58-4c37-42e1-9e75-4b6c67939ffd
+  sni: pl1.song69.fun
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: site.teslamotor.site
@@ -26,21 +25,6 @@ proxies:
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 04 - aceo
-  server: tr2.soft10.ir
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
-  tls: true
-  servername: tr2.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr2.soft10.ir
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -53,7 +37,52 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 201.10.91.127
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl2.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /PL2W
+    headers:
+      Host: pl2.pad-service.com
 - name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 201.10.91.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl1.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /PL1W
+    headers:
+      Host: pl1.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 07 - aceo
+  server: 201.10.91.98
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl3.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /PL3W
+    headers:
+      Host: pl3.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 08 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -66,6 +95,24 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
+  server: 92.118.150.146
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +124,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
+  - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +139,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
   - 🇵🇱 波兰 (Poland) 06 - aceo
+  - 🇵🇱 波兰 (Poland) 07 - aceo
+  - 🇵🇱 波兰 (Poland) 08 - aceo
+  - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
 rules:
 - MATCH,PROXIES

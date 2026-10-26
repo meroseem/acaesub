@@ -6,22 +6,34 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - aceo",
-      "server": "51.161.204.242",
+      "server": "51.161.204.244",
       "server_port": 443,
-      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
-          "short_id": "d15c17cef9b2e456"
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - aceo",
+      "server": "au.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "au.tronsg.com",
+        "insecure": true
       }
     },
     {
@@ -29,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 01 - aceo",
+        "🇦🇺 澳大利亚 (Australia) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - aceo"
+        "🇦🇺 澳大利亚 (Australia) 01 - aceo",
+        "🇦🇺 澳大利亚 (Australia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

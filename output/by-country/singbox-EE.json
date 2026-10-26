@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇱 智利 (Chile) 01 - aceo",
-      "server": "64.176.2.21",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "xBStBEVqvGwHPocc"
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
+      "server": "141.0.187.15",
+      "server_port": 443,
+      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
+      "tls": {
+        "enabled": true,
+        "server_name": "crt.onecloudstream.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
