@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - aceo
-  server: 8.35.211.242
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: www.ubuntuupdates.com
   port: 443
   udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: vpn.cintaku.qzz.io
+  servername: www.ubuntuupdates.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /truth
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: www.ubuntuupdates.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 rules:
 - MATCH,PROXIES

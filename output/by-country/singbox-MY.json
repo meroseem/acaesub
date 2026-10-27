@@ -5,17 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - aceo",
-      "server": "ph001.zestapp778.com",
-      "server_port": 15656,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+      "server": "my.wawojk.dpdns.org",
+      "server_port": 8443,
+      "uuid": "264bee07-e004-41c7-812f-aaf2daaad2c9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ph001.zestapp778.com",
-        "insecure": false,
+        "server_name": "www.asus.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "akVbcyv-ypq-YT4-bsi_ts85pkDwhAIapn5bCb_hj28",
+          "short_id": "85f609aa0f0bead8"
         }
       }
     },
@@ -24,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

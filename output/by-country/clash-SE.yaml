@@ -20,26 +20,31 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-se-3
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: promo.betust.net
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
-  server: 191.44.114.154
-  port: 8443
+  server: 191.44.114.179
+  port: 2096
   udp: true
   type: vless
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY
-    short-id: c4359f3827231250
-  servername: www.wikipedia.org
+  servername: st33614.rumedia-cdn.com
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
