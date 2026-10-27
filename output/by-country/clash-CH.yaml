@@ -12,6 +12,27 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  server: 45.90.57.119
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
+    short-id: 16036bbef04d0509
+  servername: twitch.tv
+  client-fingerprint: ''
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
   server: 149.33.15.213
   port: 443
   udp: true
@@ -28,6 +49,8 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +58,7 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - aceo
   - 🇨🇭 瑞士 (Switzerland) 02 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 03 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 04 - aceo
 rules:
 - MATCH,PROXIES

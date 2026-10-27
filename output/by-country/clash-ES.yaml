@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - aceo
-  server: 66.163.118.251
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 02 - aceo
-  server: 156.252.229.11
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
-  tls: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
   server: 66.163.118.166
   port: 443
   udp: true
@@ -32,13 +12,13 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 04 - aceo
-  server: 66.163.118.131
+- name: 🇪🇸 西班牙 (Spain) 02 - aceo
+  server: 66.163.118.62
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -47,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
-  - 🇪🇸 西班牙 (Spain) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
-  - 🇪🇸 西班牙 (Spain) 04 - aceo
 rules:
 - MATCH,PROXIES
