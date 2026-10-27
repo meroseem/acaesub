@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
-  server: 5.253.42.164
-  port: 40443
+  server: 194.76.147.34
+  port: 443
   udp: true
-  type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 4b1be712-774c-4b65-8491-a3339e124a70
+  sni: hys-eu.letsconnectpoint.com
+  skip-cert-verify: false
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   server: 5.253.28.240
   port: 2443
@@ -28,7 +23,7 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763

@@ -5,13 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - aceo",
-      "server": "194.36.37.59",
-      "server_port": 10004,
-      "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
+      "tag": "🇨🇳 CN 01 - aceo",
+      "server": "8.35.211.242",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vpnjantit"
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {
@@ -19,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
+        "🇨🇳 CN 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - aceo"
+        "🇨🇳 CN 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
