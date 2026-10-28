@@ -6,6 +6,30 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
       "server": "forshynewh.duckdns.org",
       "server_port": 443,
       "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
@@ -17,24 +41,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - aceo",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "uae.unixzone.us"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
-      "server": "ams1.rvpn.app",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
       "type": "selector",
@@ -43,7 +60,8 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo",
+        "🇦🇪 阿联酋 (UAE) 04 - aceo"
       ]
     },
     {
@@ -52,7 +70,8 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
         "🇦🇪 阿联酋 (UAE) 02 - aceo",
-        "🇦🇪 阿联酋 (UAE) 03 - aceo"
+        "🇦🇪 阿联酋 (UAE) 03 - aceo",
+        "🇦🇪 阿联酋 (UAE) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

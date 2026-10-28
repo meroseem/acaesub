@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - aceo
-  server: 185.164.175.81
+  server: 202.50.253.99
   port: 19999
   udp: true
   type: ss
@@ -19,39 +19,20 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 03 - aceo
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04 - aceo
-  server: 202.50.253.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 05 - aceo
   server: 202.50.253.45
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 06 - aceo
-  server: 57.131.38.163
-  port: 2053
+- name: 🇮🇹 意大利 (Italy) 04 - aceo
+  server: 185.164.175.81
+  port: 19999
   udp: true
-  type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 07 - aceo
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 05 - aceo
   server: 147.45.51.171
   port: 8443
   udp: true
@@ -64,6 +45,25 @@ proxies:
     short-id: e723d26df67888b9
   servername: twitch.tv
   client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 06 - aceo
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 07 - aceo
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 08 - aceo
   server: 82.118.16.187
   port: 443
@@ -78,21 +78,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 09 - aceo
-  server: 202.50.253.18
+  server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 10 - aceo
-  server: 202.50.253.99
+  server: 202.50.253.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 11 - aceo
-  server: 202.50.253.54
+  server: 202.50.253.72
   port: 19999
   udp: true
   type: ss
@@ -106,14 +106,21 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 13 - aceo
-  server: 202.50.253.90
+  server: 202.50.253.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 14 - aceo
-  server: 202.50.253.72
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 15 - aceo
+  server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
@@ -138,6 +145,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 12 - aceo
   - 🇮🇹 意大利 (Italy) 13 - aceo
   - 🇮🇹 意大利 (Italy) 14 - aceo
+  - 🇮🇹 意大利 (Italy) 15 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -157,5 +165,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 12 - aceo
   - 🇮🇹 意大利 (Italy) 13 - aceo
   - 🇮🇹 意大利 (Italy) 14 - aceo
+  - 🇮🇹 意大利 (Italy) 15 - aceo
 rules:
 - MATCH,PROXIES

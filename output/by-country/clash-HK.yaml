@@ -5,55 +5,112 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 206.237.11.17
+  port: 50376
+  udp: true
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 156.224.79.61
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 50.7.44.28
-  port: 2091
-  udp: true
-  type: vless
-  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
+  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 103.238.227.211
-  port: 21003
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 165.154.63.139
+  port: 443
   udp: true
   type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: eb9539689690d35c
-  servername: www.cloudflare.com
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: 47.243.153.153
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  server: 8.218.195.61
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: EX1oGt73NzPQKAc2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  server: rhhierkwrf6fhs2h.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rhhierkwrf6fhs2h.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rhhierkwrf6fhs2h.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - aceo
   server: 103.238.227.211
   port: 21002
   udp: true
@@ -65,8 +122,44 @@ proxies:
     short-id: f0e6a8bb98db3efd
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
-  server: 8.217.254.88
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  server: 103.238.227.211
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: eb9539689690d35c
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  server: 526.150333.xyz
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: 2f34703f16523c80
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  server: 526.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: b6dfd5c750351c57
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - aceo
+  server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
   udp: true
   type: vmess
@@ -74,13 +167,13 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +186,13 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,5 +205,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 09 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 10 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 11 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 12 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - aceo
 rules:
 - MATCH,PROXIES
