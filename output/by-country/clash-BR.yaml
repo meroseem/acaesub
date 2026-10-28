@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - aceo
+  server: br001.zestapp778.com
+  port: 15040
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: br.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇧🇷 巴西 (Brazil) 02 - aceo
   server: 216.238.104.154
   port: 443
   udp: true
@@ -18,11 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - aceo
+  - 🇧🇷 巴西 (Brazil) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - aceo
+  - 🇧🇷 巴西 (Brazil) 02 - aceo
 rules:
 - MATCH,PROXIES

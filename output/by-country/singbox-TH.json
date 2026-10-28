@@ -6,15 +6,13 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - aceo",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
+      "server": "38.60.254.50",
+      "server_port": 22222,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": false
       }
     },
     {
@@ -39,29 +37,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - aceo",
-      "server": "38.60.254.50",
-      "server_port": 22222,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - aceo",
-        "🇹🇭 泰国 (Thailand) 02 - aceo",
-        "🇹🇭 泰国 (Thailand) 03 - aceo"
+        "🇹🇭 泰国 (Thailand) 02 - aceo"
       ]
     },
     {
@@ -69,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - aceo",
-        "🇹🇭 泰国 (Thailand) 02 - aceo",
-        "🇹🇭 泰国 (Thailand) 03 - aceo"
+        "🇹🇭 泰国 (Thailand) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

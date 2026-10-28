@@ -5,18 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: 178.212.35.198
-  port: 443
+  server: 139.84.145.241
+  port: 46362
   udp: true
   type: vless
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: in002.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - aceo
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 03 - aceo
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -27,26 +32,6 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 03 - aceo
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: in-152.67.8.205-0242
-- name: 🇮🇳 印度 (India) 04 - aceo
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +40,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
-  - 🇮🇳 印度 (India) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +48,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
-  - 🇮🇳 印度 (India) 04 - aceo
 rules:
 - MATCH,PROXIES

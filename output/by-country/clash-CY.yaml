@@ -6,12 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   server: 171.22.119.74
-  port: 8447
-  udp: true
-  type: vless
-  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  server: 171.22.119.74
   port: 8446
   udp: true
   type: trojan
@@ -21,7 +15,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-video-call
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   server: hys-eu.letsconnectpoint.com
   port: 443
   udp: true
@@ -36,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 rules:
 - MATCH,PROXIES
