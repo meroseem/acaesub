@@ -15,27 +15,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-video-call
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  server: hys-eu.letsconnectpoint.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4b1be712-774c-4b65-8491-a3339e124a70
-  sni: hys-eu.letsconnectpoint.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
-  - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
 rules:
 - MATCH,PROXIES

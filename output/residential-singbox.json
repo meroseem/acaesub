@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - aceo",
+      "tag": "🇮🇳 印度 (India) 02 (家宽) - aceo",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -15,7 +23,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "android"
         }
       },
       "transport": {
@@ -27,18 +35,30 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - aceo",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+        "🇮🇳 印度 (India) 02 (家宽) - aceo",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+        "🇮🇳 印度 (India) 02 (家宽) - aceo",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

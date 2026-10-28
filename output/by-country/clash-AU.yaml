@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
-  server: au001.zestapp778.com
+  server: 149.28.177.190
   port: 35652
   udp: true
   type: vless
@@ -21,21 +13,15 @@ proxies:
   tls: true
   servername: au001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  server: 51.161.204.244
+- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
+  server: 45.63.30.142
   port: 443
   udp: true
-  type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 04 - aceo
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 03 - aceo
   server: au.tronsg.com
   port: 443
   udp: true
@@ -51,7 +37,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +45,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
   - 🇦🇺 澳大利亚 (Australia) 02 - aceo
   - 🇦🇺 澳大利亚 (Australia) 03 - aceo
-  - 🇦🇺 澳大利亚 (Australia) 04 - aceo
 rules:
 - MATCH,PROXIES
