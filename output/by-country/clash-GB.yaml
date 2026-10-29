@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - aceo
-  server: 185.176.206.9
-  port: 19999
+  server: 141.98.101.181
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 02 - aceo
   server: 104.239.12.81
   port: 43385
@@ -19,25 +19,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
 - name: 🇬🇧 英国 (United Kingdom) 03 - aceo
-  server: 155.117.5.208
+  server: 185.176.206.9
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
+  server: 168.222.43.53
   port: 10002
   udp: true
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -49,27 +50,45 @@ proxies:
     short-id: d051f678212f9d54
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
-  server: london02.npvnot.com
-  port: 995
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+  server: 146.70.61.18
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: OGEyYWJkY2Y4OTFjYTQ1MTFmZmE0OWI2MTA5ZDgz
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
-  server: 92.113.107.120
-  port: 443
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  server: 146.70.46.199
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+  server: node-uk.connectsuite.org
+  port: 8443
   udp: true
   type: vless
-  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   tls: true
-  servername: indigostar.click
+  servername: node-uk.connectsuite.org
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
   server: 191.44.108.31
   port: 443
   udp: true
@@ -81,55 +100,8 @@ proxies:
     public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
     short-id: 3ba10d9ce34380c9
   servername: www.google.com
-  client-fingerprint: ios
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
-  server: en001.zestapp778.com
-  port: 44559
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: en001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 13 - aceo
-  server: vena.solomon-planet.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 46c16b68-2553-4e5e-8176-f63d6bf6ec0c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rvDa0xNkcJYEIJ-1Ncrq54BUjjwm99C_8Vv_-He6j1U
-  servername: vena.solomon-planet.ru
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -142,31 +114,43 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
-  server: node-uk.connectsuite.org
-  port: 8443
+- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
+  server: 51.38.71.147
+  port: 443
   udp: true
   type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
   tls: true
-  servername: node-uk.connectsuite.org
+  servername: uk1.connectsuite.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
+  server: 92.113.107.120
+  port: 443
+  udp: true
+  type: vless
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  tls: true
+  servername: indigostar.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
+  server: en001.zestapp778.com
+  port: 44559
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: en001.zestapp778.com
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 17 - aceo
-  server: 94.156.250.148
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 18 - aceo
   server: webdisk.jaggyslawa.org
   port: 443
   udp: true
@@ -201,7 +185,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 15 - aceo
   - 🇬🇧 英国 (United Kingdom) 16 - aceo
   - 🇬🇧 英国 (United Kingdom) 17 - aceo
-  - 🇬🇧 英国 (United Kingdom) 18 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -224,6 +207,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 15 - aceo
   - 🇬🇧 英国 (United Kingdom) 16 - aceo
   - 🇬🇧 英国 (United Kingdom) 17 - aceo
-  - 🇬🇧 英国 (United Kingdom) 18 - aceo
 rules:
 - MATCH,PROXIES
