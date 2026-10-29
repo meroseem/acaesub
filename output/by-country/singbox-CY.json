@@ -4,15 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
+      "server": "171.22.119.74",
+      "server_port": 8446,
+      "password": "Pass-Client-1",
+      "tls": {
+        "enabled": true,
+        "server_name": "171.22.119.74",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-video-call"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo",
       "server": "5.253.29.253",
       "server_port": 443,
       "uuid": "76ef5ab3-7075-4e23-b445-f3b1bd05d431",
       "tls": {
         "enabled": true,
         "server_name": "indi.qikbro.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -21,10 +41,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo",
-      "server": "5.253.42.164",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - aceo",
+      "server": "5.253.30.99",
       "server_port": 40443,
-      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -35,8 +55,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },
@@ -46,7 +66,8 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - aceo"
       ]
     },
     {
@@ -54,7 +75,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

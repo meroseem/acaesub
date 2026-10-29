@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
+  server: 171.22.119.74
+  port: 8446
+  udp: true
+  type: trojan
+  password: Pass-Client-1
+  sni: 171.22.119.74
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-video-call
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
   server: 5.253.29.253
   port: 443
   udp: true
@@ -13,20 +24,21 @@ proxies:
   tls: true
   servername: indi.qikbro.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: assets
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
-  server: 5.253.42.164
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
+  server: 5.253.30.99
   port: 40443
   udp: true
   type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
   client-fingerprint: chrome
 proxy-groups:
@@ -36,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - aceo
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - aceo
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - aceo
 rules:
 - MATCH,PROXIES

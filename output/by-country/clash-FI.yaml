@@ -16,13 +16,20 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 217.60.72.225
-  port: 443
+  server: 65.109.211.81
+  port: 465
   udp: true
-  type: hysteria2
-  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  sni: forshynewh.duckdns.org
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 65.109.210.221
   port: 465
@@ -39,20 +46,14 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 65.109.211.81
-  port: 465
+  server: mail.loyalsmile.net
+  port: 8080
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
+    path: /wp-content3
 proxy-groups:
 - name: PROXIES
   type: select

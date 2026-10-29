@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -26,25 +26,24 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
-      "server": "62.133.63.45",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "server": "206.1.101.85",
+      "server_port": 42654,
+      "uuid": "893845c5-8e4a-48d5-8a85-622f5b7ea950",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "206.1.101.85",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
