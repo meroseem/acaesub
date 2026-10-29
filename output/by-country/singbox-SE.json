@@ -12,7 +12,21 @@
       "tls": {
         "enabled": true,
         "server_name": "promo.betust.net",
-        "insecure": true
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -20,14 +34,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - aceo"
+        "🇸🇪 瑞典 (Sweden) 01 - aceo",
+        "🇸🇪 瑞典 (Sweden) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - aceo"
+        "🇸🇪 瑞典 (Sweden) 01 - aceo",
+        "🇸🇪 瑞典 (Sweden) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

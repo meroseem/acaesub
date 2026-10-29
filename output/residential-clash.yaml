@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
-  server: p141.panda001.net
-  port: 4652
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: 1234!@#$
 - name: 🇮🇳 印度 (India) 02 (家宽) - aceo
   server: 122.176.216.52
   port: 443
@@ -26,6 +26,13 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - aceo
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
   - 🇮🇳 印度 (India) 02 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
   - 🇮🇳 印度 (India) 02 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES
