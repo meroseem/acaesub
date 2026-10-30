@@ -4,21 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
-  server: 172.67.67.178
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
   server: 218.237.185.234
   port: 4652
@@ -35,7 +27,7 @@ proxies:
   tls: true
   servername: app-6ada5023.deploy.meerasolution.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
@@ -46,7 +38,7 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
   - 🇮🇳 印度 (India) 03 (家宽) - aceo
 - name: AUTO
@@ -54,7 +46,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
   - 🇮🇳 印度 (India) 03 (家宽) - aceo
 rules:

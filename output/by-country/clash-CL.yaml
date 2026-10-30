@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - aceo
-  server: 64.176.2.21
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
-- name: 🇨🇱 智利 (Chile) 02 - aceo
   server: 64.176.7.205
   port: 443
   udp: true
@@ -25,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇱 智利 (Chile) 01 - aceo
-  - 🇨🇱 智利 (Chile) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 智利 (Chile) 01 - aceo
-  - 🇨🇱 智利 (Chile) 02 - aceo
 rules:
 - MATCH,PROXIES

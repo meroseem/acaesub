@@ -31,29 +31,40 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 65.109.211.81
-  port: 465
+  server: 46.62.204.134
+  port: 443
   udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
+    path: /assignment
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: cd0.bmi.ir.kolman.com.de
-  port: 80
+  server: 46.62.204.134
+  port: 443
   udp: true
-  type: vmess
-  uuid: 2da85937-93d9-4509-8491-63b1921cf447
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+  server: 45.144.52.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  tls: true
+  servername: b.fi-1.bnc-gt.co.uk
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +74,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +84,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
+  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES

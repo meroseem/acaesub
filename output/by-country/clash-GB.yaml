@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - aceo
-  server: 162.159.152.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇬🇧 英国 (United Kingdom) 02 - aceo
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 02 - aceo
+  server: 104.239.12.81
+  port: 43385
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
 - name: 🇬🇧 英国 (United Kingdom) 03 - aceo
   server: 155.117.5.208
   port: 10002
@@ -40,56 +32,27 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 05 - aceo
-  server: 104.239.12.81
-  port: 43385
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
-  server: 51.38.71.147
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
-  server: 146.70.46.214
+- name: 🇬🇧 英国 (United Kingdom) 06 - aceo
+  server: 98.98.207.163
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
   server: 98.98.142.161
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
-  server: uk.2ul.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 77479eaf-c35e-4088-ae47-a2beb88a7272
-  tls: true
-  reality-opts:
-    public-key: C-e3vasFC42zQmJblol4foZozTe6j1c7TJMGqjvRm2U
-    short-id: 77479eaf
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
   server: 191.44.108.31
   port: 443
   udp: true
@@ -101,8 +64,20 @@ proxies:
     public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
     short-id: 3ba10d9ce34380c9
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
+  client-fingerprint: ios
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -115,7 +90,17 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+  server: 51.38.71.147
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  tls: true
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
   server: 57.129.132.223
   port: 80
   udp: true
@@ -128,38 +113,6 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
-  server: 94.156.250.148
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
-  server: 13.143.180.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
-    short-id: 51079f144d661484
-  servername: s12.bsh-net.ru
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -177,10 +130,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
-  - 🇬🇧 英国 (United Kingdom) 13 - aceo
-  - 🇬🇧 英国 (United Kingdom) 14 - aceo
-  - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -198,9 +147,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
-  - 🇬🇧 英国 (United Kingdom) 13 - aceo
-  - 🇬🇧 英国 (United Kingdom) 14 - aceo
-  - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
 rules:
 - MATCH,PROXIES

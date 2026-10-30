@@ -17,13 +17,6 @@ proxies:
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: pol.rvpn.app
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 70.34.252.255
   port: 443
   udp: true
@@ -31,7 +24,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -40,7 +33,7 @@ proxies:
   tls: true
   servername: 2.26.6.1
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -63,7 +56,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
-  - 🇵🇱 波兰 (Poland) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +66,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
   - 🇵🇱 波兰 (Poland) 05 - aceo
-  - 🇵🇱 波兰 (Poland) 06 - aceo
 rules:
 - MATCH,PROXIES
