@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 智利 (Chile) 01 - aceo
-  server: 64.176.7.205
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
+  server: 45.207.207.25
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 智利 (Chile) 01 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 (Chile) 01 - aceo
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
-      "server": "47.250.84.25",
-      "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "moltbot.doctoroyy.net",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - aceo",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇻🇳 越南 (Vietnam) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+        "🇻🇳 越南 (Vietnam) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
