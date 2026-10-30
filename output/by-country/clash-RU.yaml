@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: b.us-1.bnc-gt.co.uk
   skip-cert-verify: false
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
@@ -26,7 +27,7 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -44,18 +45,15 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 185.147.27.164
-  port: 8443
+  server: 103.88.243.142
+  port: 11592
   udp: true
-  type: vless
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: user-6a8d949a.noooo.win
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: srv-17e124.21freedom.net
+  server: 103.88.243.142
   port: 11592
   udp: true
   type: hysteria2
@@ -63,7 +61,49 @@ proxies:
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 147.45.175.81
+  server: srv-17e124.21freedom.net
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: du-rov.secureservice.top
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  server: 149.33.15.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  tls: true
+  servername: swz.proxyplankton.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
@@ -75,7 +115,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  server: alb.rvpn.app
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+- name: 🇷🇺 俄罗斯 (Russia) 12 - aceo
   server: 130.49.177.193
   port: 443
   udp: true
@@ -87,6 +134,18 @@ proxies:
     public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 13 - aceo
+  server: 46.254.19.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  tls: true
+  reality-opts:
+    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+    short-id: 8937c9ed2d470352
+  servername: wtb.tems.bet
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -100,6 +159,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 12 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 13 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,5 +177,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 11 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 12 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 13 - aceo
 rules:
 - MATCH,PROXIES
