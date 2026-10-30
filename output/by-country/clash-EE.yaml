@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01 - aceo
-  server: 107.189.7.176
-  port: 32752
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
+  server: 79.182.39.232
+  port: 25895
   udp: true
   type: vless
-  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
   reality-opts:
-    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
-    short-id: d758a643034ad90e
-  servername: www.apple.com
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
 rules:
 - MATCH,PROXIES

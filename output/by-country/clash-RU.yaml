@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
+  server: 82.22.2.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  tls: true
+  servername: b-wl.fr-2.bnc-gt.co.uk
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -18,19 +31,28 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: pol.qikbro.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: srv-17e124.21freedom.net
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  server: 201.24.121.243
   port: 443
   udp: true
   type: vless
-  uuid: 9f3d0b52-9b0f-4af7-ac42-d3ca2fd2a685
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
   tls: true
-  servername: pol.qikbro.com
+  servername: kk-ru24a1.testkknegr.online
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: assets
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+    grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: 185.147.27.183
   port: 8443
   udp: true
@@ -41,21 +63,39 @@ proxies:
   servername: ekb.eg
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: srv-17e124.21freedom.net
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 103.88.243.142
   port: 11592
   udp: true
   type: hysteria2
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 130.49.189.158
-  port: 43558
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 147.45.175.81
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +106,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +119,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
 rules:
 - MATCH,PROXIES

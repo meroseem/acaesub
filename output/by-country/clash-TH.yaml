@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - aceo
+  server: th001.zestapp778.com
+  port: 33079
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: th001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇹🇭 泰国 (Thailand) 02 - aceo
+  server: 38.60.233.38
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇹🇭 泰国 (Thailand) 03 - aceo
   server: 45.154.26.63
   port: 443
   udp: true
@@ -17,24 +35,6 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 02 - aceo
-  server: 38.60.233.38
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03 - aceo
-  server: th001.zestapp778.com
-  port: 33079
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: th001.zestapp778.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

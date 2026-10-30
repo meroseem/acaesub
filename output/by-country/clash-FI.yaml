@@ -16,21 +16,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 65.109.211.81
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 65.109.210.221
   port: 465
   udp: true
@@ -45,15 +30,30 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: mail.loyalsmile.net
-  port: 8080
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
+  server: 65.109.211.81
+  port: 465
   udp: true
   type: vless
-  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /wp-content3
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: cd0.bmi.ir.kolman.com.de
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 2da85937-93d9-4509-8491-63b1921cf447
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 195.123.245.241
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  server: 93.152.223.244
   port: 443
   udp: true
   type: vless
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
+  servername: ddk5-ger.newagetechnologies.live
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - aceo
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
 rules:
 - MATCH,PROXIES
