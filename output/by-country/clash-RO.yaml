@@ -23,6 +23,13 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - aceo
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - aceo
   - 🇷🇴 罗马尼亚 (Romania) 02 - aceo
+  - 🇷🇴 罗马尼亚 (Romania) 03 - aceo
 rules:
 - MATCH,PROXIES

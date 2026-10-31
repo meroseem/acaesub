@@ -17,14 +17,6 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 177.1.192.38
   port: 8443
   udp: true
@@ -37,20 +29,7 @@ proxies:
     short-id: b3e515e37815559d
   servername: upnl.giftsbattle.vip
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 05 - aceo
-  server: 177.1.192.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5QmUszafz1gigUjf3R2GwZ9RVsEwZT-polu0l8zfNgA
-    short-id: 830e615a39f4c811
-  servername: up4.uni-plan.com
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 06 - aceo
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: 177.1.192.117
   port: 443
   udp: true
@@ -63,24 +42,41 @@ proxies:
     short-id: 3952a220c86628a8
   servername: up7.uni-plan.com
   client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 31.59.143.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk
+    short-id: ae97223a8f799889
+  servername: pl2.waspnest.space
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 06 - aceo
+  server: 177.1.192.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5QmUszafz1gigUjf3R2GwZ9RVsEwZT-polu0l8zfNgA
+    short-id: 830e615a39f4c811
+  servername: up4.uni-plan.com
+  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 07 - aceo
-  server: 92.118.150.146
+  server: 70.34.252.255
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 08 - aceo
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 09 - aceo
   server: 54.37.131.126
   port: 80
   udp: true
@@ -93,6 +89,35 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 09 - aceo
+  server: pol.rvpn.app
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+- name: 🇵🇱 波兰 (Poland) 10 - aceo
+  server: 79.182.39.37
+  port: 27591
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 11 - aceo
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +132,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
   - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
+  - 🇵🇱 波兰 (Poland) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,5 +148,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - aceo
   - 🇵🇱 波兰 (Poland) 08 - aceo
   - 🇵🇱 波兰 (Poland) 09 - aceo
+  - 🇵🇱 波兰 (Poland) 10 - aceo
+  - 🇵🇱 波兰 (Poland) 11 - aceo
 rules:
 - MATCH,PROXIES

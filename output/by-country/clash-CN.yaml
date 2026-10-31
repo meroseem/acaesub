@@ -19,21 +19,6 @@ proxies:
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02 - aceo
-  server: 104.17.11.191
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 03 - aceo
   server: vpn.cintaku.qzz.io
   port: 443
   udp: true
@@ -43,6 +28,21 @@ proxies:
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 03 - aceo
+  server: 104.17.11.191
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  tls: true
+  servername: vpn.cintaku.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vlessws

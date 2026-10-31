@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - aceo",
-      "server": "122.176.216.52",
-      "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
+      "server": "95.56.251.12",
+      "server_port": 47443,
+      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
+        "server_name": "kz1.waspnest.space",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU",
+          "short_id": "ae97223a8f799877"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - aceo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - aceo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
