@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01 - aceo",
-      "server": "62.60.229.216",
+      "tag": "🇮🇳 印度 (India) 01 (家宽) - aceo",
+      "server": "122.176.216.52",
       "server_port": 443,
-      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
-      "flow": "xtls-rprx-vision",
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
       "tls": {
         "enabled": true,
-        "server_name": "aezaf1.uni-plan.com",
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eh8WqxaSUlfNmlGzFLYFYrJzk1novnvfU6qmaLLOiX4",
-          "short_id": "72d410ce5f2036c9"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "headers": {
+          "Host": "app-6ada5023.deploy.meerasolution.com"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - aceo"
+        "🇮🇳 印度 (India) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - aceo"
+        "🇮🇳 印度 (India) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,12 +12,19 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 02 - aceo
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 03 - aceo
   server: 155.117.5.208
   port: 10002
   udp: true
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 03 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -29,42 +36,14 @@ proxies:
     short-id: d051f678212f9d54
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
   server: 104.239.12.81
   port: 43385
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 06 - aceo
-  server: en001.zestapp778.com
-  port: 29813
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: en001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
-  server: 191.44.108.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE
-    short-id: b2baf331493d3de1
-  servername: c8.qwyak.ru
-  client-fingerprint: ''
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -77,21 +56,29 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
-  server: 98.98.142.161
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  server: en001.zestapp778.com
+  port: 29813
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: en001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
+  server: 98.98.207.163
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
   server: 191.44.108.31
   port: 443
   udp: true
@@ -104,14 +91,14 @@ proxies:
     short-id: 3ba10d9ce34380c9
   servername: www.google.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
-  server: 98.98.207.163
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
+  server: 98.98.142.161
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 12 - aceo
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -123,6 +110,19 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
+  server: 191.44.108.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE
+    short-id: b2baf331493d3de1
+  servername: c8.qwyak.ru
+  client-fingerprint: ''
 - name: 🇬🇧 英国 (United Kingdom) 14 - aceo
   server: 94.156.250.148
   port: 7001
@@ -139,20 +139,7 @@ proxies:
   tls: true
   servername: node-uk.connectsuite.org
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
-  server: webdisk.jaggyslawa.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: b62e3646-b84d-443c-9c94-718b646502e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: dda5f542d835
-  servername: www.foxsports.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -173,7 +160,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - aceo
   - 🇬🇧 英国 (United Kingdom) 14 - aceo
   - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -194,6 +180,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - aceo
   - 🇬🇧 英国 (United Kingdom) 14 - aceo
   - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
 rules:
 - MATCH,PROXIES
