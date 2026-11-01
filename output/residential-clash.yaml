@@ -4,7 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - aceo
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 112.169.175.199
+  port: 31157
+  udp: true
+  type: vless
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇮🇳 印度 (India) 03 (家宽) - aceo
   server: 122.176.216.52
   port: 443
   udp: true
@@ -24,12 +37,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  - 🇮🇳 印度 (India) 03 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
+  - 🇮🇳 印度 (India) 03 (家宽) - aceo
 rules:
 - MATCH,PROXIES

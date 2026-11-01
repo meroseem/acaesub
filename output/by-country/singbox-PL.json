@@ -4,35 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
-      "server": "70.34.252.255",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
       "server": "2.26.255.215",
       "server_port": 443,
       "uuid": "69e41e64-a832-471a-b740-94577ca85520",
@@ -52,13 +25,24 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo",
-        "🇵🇱 波兰 (Poland) 03 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ]
     },
     {
@@ -66,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo",
-        "🇵🇱 波兰 (Poland) 03 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
