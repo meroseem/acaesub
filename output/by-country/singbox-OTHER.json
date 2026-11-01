@@ -4,41 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "www.ubuntuupdates.com",
-      "server_port": 443,
-      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ubuntuupdates.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.ubuntuupdates.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - aceo",
-      "server": "188.114.96.198",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "104.16.10.135",
       "server_port": 443,
-      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "tepar-k4j9.jounet.workers.dev",
+        "server_name": "jp3.yohototo.top",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/DEVCOP/8651a8ada76c/loc-1",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "tepar-k4j9.jounet.workers.dev"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
@@ -47,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo",
-        "🌐 其他地区 (Other) 02 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo",
-        "🌐 其他地区 (Other) 02 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
