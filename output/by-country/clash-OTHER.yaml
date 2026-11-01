@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - aceo
-  server: 104.16.10.135
+  server: www.gptcloudai.com
   port: 443
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: jp3.yohototo.top
+  servername: www.gptcloudai.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /truth
     headers:
-      Host: jp3.yohototo.top
+      Host: www.gptcloudai.com
 proxy-groups:
 - name: PROXIES
   type: select

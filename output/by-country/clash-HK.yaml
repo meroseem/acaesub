@@ -13,25 +13,20 @@ proxies:
   sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.29
@@ -39,16 +34,37 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүҹү
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 202.146.222.89
+  server: dubai-cdn-keno.keno.su
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
+  type: vless
+  uuid: dc413f44-7dce-4cc4-b2c7-878ef70ce464
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9MgNwdrftjPf18DG8qYo6iHJw7IG7uSnULScDQ0WDy4
+    short-id: 0123456789abcdef
+  servername: dubai-cdn-keno.keno.su
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: euu1yAlfmcqvLJEx.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: euu1yAlfmcqvLJEx.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: euu1yAlfmcqvLJEx.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +75,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +86,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
 rules:
 - MATCH,PROXIES

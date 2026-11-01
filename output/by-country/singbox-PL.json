@@ -18,21 +18,38 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "2.26.255.215",
-      "server_port": 443,
-      "uuid": "69e41e64-a832-471a-b740-94577ca85520",
+      "server": "188.225.62.62",
+      "server_port": 7443,
+      "uuid": "6116f0f3-15eb-4217-b38e-16514dc00ba1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cloudflare.com",
+        "server_name": "ru2.datacore-tech.ru",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "server": "191.217.245.10",
+      "server_port": 443,
+      "uuid": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.lenvex.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
-          "short_id": "50"
+          "public_key": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+          "short_id": ""
         }
       }
     },
@@ -42,7 +59,8 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo"
       ]
     },
     {
@@ -50,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

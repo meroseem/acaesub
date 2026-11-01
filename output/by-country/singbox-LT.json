@@ -5,20 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 - aceo",
-      "server": "8.35.211.242",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
+      "server": "185.178.208.167",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "uuid": "2232d904-8e6a-4202-8240-6efd8aec02e9",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
+        "server_name": "lorettmay.top",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
+        "path": "/blog/posts",
         "headers": {
-          "Host": "vpn.cintaku.qzz.io"
+          "Host": "lorettmay.top"
         }
       }
     },
@@ -27,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -20,6 +20,22 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 160.187.100.109
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: ench-snet-app.w-ctrip.cn
+  port: 54815
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
+  server: ench-snet-app.w-ctrip.cn
+  port: 22003
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +43,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +52,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 rules:
 - MATCH,PROXIES

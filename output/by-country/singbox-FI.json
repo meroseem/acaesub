@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "b79d736d-0f10-4169-b626-362059d18204",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
+          "short_id": "10351b07c712d2a2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -18,18 +38,48 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - aceo",
+      "server": "65.109.211.81",
+      "server_port": 465,
+      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw6.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hw6.divarkhaghazi.com."
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo",
+        "🇫🇮 芬兰 (Finland) 02 - aceo",
+        "🇫🇮 芬兰 (Finland) 03 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo",
+        "🇫🇮 芬兰 (Finland) 02 - aceo",
+        "🇫🇮 芬兰 (Finland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

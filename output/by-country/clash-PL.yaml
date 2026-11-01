@@ -13,18 +13,28 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 2.26.255.215
+  server: 188.225.62.62
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 6116f0f3-15eb-4217-b38e-16514dc00ba1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ru2.datacore-tech.ru
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 191.217.245.10
   port: 443
   udp: true
   type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: ''
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: pl.lenvex.cc
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
 rules:
 - MATCH,PROXIES

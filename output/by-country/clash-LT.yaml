@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - aceo
-  server: 8.35.211.242
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - aceo
+  server: 185.178.208.167
   port: 443
   udp: true
   type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   tls: true
-  servername: vpn.cintaku.qzz.io
+  servername: lorettmay.top
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /blog/posts
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: lorettmay.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - aceo
+  - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - aceo
+  - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
 rules:
 - MATCH,PROXIES
