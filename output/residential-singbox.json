@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
-      "server": "112.169.175.199",
-      "server_port": 31157,
-      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 (家宽) - aceo",
+      "tag": "🇮🇳 印度 (India) 02 (家宽) - aceo",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -46,18 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
-        "🇮🇳 印度 (India) 03 (家宽) - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+        "🇮🇳 印度 (India) 02 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
-        "🇮🇳 印度 (India) 03 (家宽) - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo",
+        "🇮🇳 印度 (India) 02 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

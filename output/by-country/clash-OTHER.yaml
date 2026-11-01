@@ -1,0 +1,52 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🌐 其他地区 (Other) 02 - aceo
+  server: 188.114.96.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: b15f187e-9b34-437c-8243-8651a8ada76c
+  tls: true
+  servername: tepar-k4j9.jounet.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/DEVCOP/8651a8ada76c/loc-1
+    headers:
+      Host: tepar-k4j9.jounet.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - aceo
+  - 🌐 其他地区 (Other) 02 - aceo
+rules:
+- MATCH,PROXIES
