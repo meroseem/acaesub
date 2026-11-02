@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   server: 160.187.100.109
@@ -18,7 +18,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
+  sni: 127.0.0.1
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   server: ench-snet-app.w-ctrip.cn
@@ -36,6 +36,21 @@ proxies:
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   sni: cm.g.doubleclick.net
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - aceo
+  server: n04.jinggai.online
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  tls: true
+  servername: n04.jinggai.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +60,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +70,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 05 - aceo
 rules:
 - MATCH,PROXIES

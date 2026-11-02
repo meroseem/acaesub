@@ -13,7 +13,18 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 02 - aceo
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
   server: app-mi-26.spbstudentlife.com
   port: 443
   udp: true
@@ -26,17 +37,6 @@ proxies:
     short-id: a7856800c2deb7b2
   servername: assets-mi-26.spbstudentlife.com
   client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 03 - aceo
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
