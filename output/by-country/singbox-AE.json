@@ -4,19 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - aceo",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
+      "server": "forshynewh.duckdns.org",
+      "server_port": 443,
+      "password": "69e41e64-a832-471a-b740-94577ca85520",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - aceo",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - aceo",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -34,7 +52,8 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
-        "🇦🇪 阿联酋 (UAE) 02 - aceo"
+        "🇦🇪 阿联酋 (UAE) 02 - aceo",
+        "🇦🇪 阿联酋 (UAE) 03 - aceo"
       ]
     },
     {
@@ -42,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - aceo",
-        "🇦🇪 阿联酋 (UAE) 02 - aceo"
+        "🇦🇪 阿联酋 (UAE) 02 - aceo",
+        "🇦🇪 阿联酋 (UAE) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

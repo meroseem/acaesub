@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - aceo",
-      "server": "130.94.50.86",
-      "server_port": 46298,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "ph001.zestapp778.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇵🇭 菲律宾 (Philippines) 02 - aceo",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - aceo",
       "server": "149.104.109.252",
       "server_port": 8882,
       "method": "aes-256-gcm",
@@ -28,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - aceo",
-        "🇵🇭 菲律宾 (Philippines) 02 - aceo"
+        "🇵🇭 菲律宾 (Philippines) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - aceo",
-        "🇵🇭 菲律宾 (Philippines) 02 - aceo"
+        "🇵🇭 菲律宾 (Philippines) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
