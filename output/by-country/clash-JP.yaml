@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 149.22.87.240
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
@@ -19,28 +19,13 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - aceo
-  server: 149.22.87.241
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - aceo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 05 - aceo
-  server: 45.32.52.173
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - aceo
   server: 167.179.108.225
   port: 443
   udp: true
@@ -48,19 +33,29 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: discoverparttimepositionsandsupplementyourincomeguide.com
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 3.114.220.22
-  port: 10583
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 43.167.186.78
+  port: 8443
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  sni: 43.167.186.78
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 07 - aceo
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 'off'
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 08 - aceo
   server: 45.32.10.7
   port: 443
@@ -70,34 +65,21 @@ proxies:
   sni: vp3.yysyy.online
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: 138.3.208.26
-  port: 50160
+  server: 8.211.175.236
+  port: 8443
   udp: true
   type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 - aceo
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 11 - aceo
   server: 84.247.155.196
-  port: 443
+  port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 12 - aceo
+- name: 🇯🇵 日本 (Japan) 11 - aceo
   server: freedom.chenlan.top
   port: 12765
   udp: true
@@ -105,7 +87,7 @@ proxies:
   password: STYyftThFn
   sni: freedom.chenlan.top
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 13 - aceo
+- name: 🇯🇵 日本 (Japan) 12 - aceo
   server: ga1data.xyy123.bid
   port: 443
   udp: true
@@ -118,21 +100,7 @@ proxies:
     short-id: 00b0389a
   servername: www.amzn.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - aceo
-  server: 104.24.31.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - aceo
+- name: 🇯🇵 日本 (Japan) 13 - aceo
   server: 162.159.130.234
   port: 2083
   udp: true
@@ -148,27 +116,6 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 16 - aceo
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 17 - aceo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -187,10 +134,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - aceo
   - 🇯🇵 日本 (Japan) 12 - aceo
   - 🇯🇵 日本 (Japan) 13 - aceo
-  - 🇯🇵 日本 (Japan) 14 - aceo
-  - 🇯🇵 日本 (Japan) 15 - aceo
-  - 🇯🇵 日本 (Japan) 16 - aceo
-  - 🇯🇵 日本 (Japan) 17 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -209,9 +152,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - aceo
   - 🇯🇵 日本 (Japan) 12 - aceo
   - 🇯🇵 日本 (Japan) 13 - aceo
-  - 🇯🇵 日本 (Japan) 14 - aceo
-  - 🇯🇵 日本 (Japan) 15 - aceo
-  - 🇯🇵 日本 (Japan) 16 - aceo
-  - 🇯🇵 日本 (Japan) 17 - aceo
 rules:
 - MATCH,PROXIES

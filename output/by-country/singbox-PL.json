@@ -18,22 +18,49 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "179.198.49.218",
-      "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
+      "server": "84.23.52.120",
+      "server_port": 28448,
+      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
       "tls": {
         "enabled": true,
-        "server_name": "assets-44.topp-con.xyz",
+        "server_name": "pl.sparxiecn.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo",
-          "short_id": "75fe71d16ccae610"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lovelive"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "server": "84.23.52.120",
+      "server_port": 28447,
+      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.sparxiecn.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lovelive"
       }
     },
     {
@@ -42,7 +69,8 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo"
       ]
     },
     {
@@ -50,7 +78,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

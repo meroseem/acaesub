@@ -4,31 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo",
-      "server": "170.114.45.6",
-      "server_port": 8080,
-      "uuid": "990bf436-f1b9-4e7f-857d-14378acc4ae5",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "free.nadun.store"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
