@@ -1,0 +1,39 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+      "server": "xunlinknode.csdjhajkshdjkas.com",
+      "server_port": 40006,
+      "method": "chacha20-ietf-poly1305",
+      "password": "28789988-887e-4e41-83cd-27bbfb7999ad"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
