@@ -13,31 +13,31 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 84.23.52.120
-  port: 28448
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /lovelive
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 84.23.52.120
-  port: 28447
+  server: ru1.radiolumens.uk
+  port: 8445
   udp: true
   type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
   tls: true
-  servername: pl.sparxiecn.com
+  servername: ru1.radiolumens.uk
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /lovelive
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 proxy-groups:
 - name: PROXIES
   type: select

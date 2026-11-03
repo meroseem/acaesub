@@ -12,6 +12,22 @@ proxies:
   cipher: aes-256-cfb
   password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
   server: 60.248.219.78
   port: 443
   udp: true
@@ -25,21 +41,13 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - aceo
   server: 56481.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 0324fbc29561
   sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -48,8 +56,9 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,7 +66,8 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - aceo
 rules:
 - MATCH,PROXIES
