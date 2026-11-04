@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02 - aceo
   server: 178.212.35.198
   port: 443
   udp: true
@@ -16,26 +27,7 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - aceo
-  server: in002.zestapp778.com
-  port: 42733
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: in002.zestapp778.com
-  skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 03 - aceo
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - aceo
   server: 144.24.109.215
   port: 51000
   udp: true
@@ -43,18 +35,6 @@ proxies:
   password: d105c6ae-621b-47c1-b85b-075fd6a39aca
   sni: cn.cremedelamer.com
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - aceo
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +43,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
-  - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,7 +51,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
-  - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
 rules:
 - MATCH,PROXIES

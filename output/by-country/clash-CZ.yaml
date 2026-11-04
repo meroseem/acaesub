@@ -5,17 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - aceo
-  server: 193.124.17.190
+  server: 178.208.89.21
   port: 443
   udp: true
   type: vless
-  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: d659da01fb94
-  servername: www.foxsports.com
+  servername: prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

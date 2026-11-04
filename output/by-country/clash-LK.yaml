@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - aceo
-  server: 104.21.91.49
-  port: 443
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
+  server: 170.114.46.6
+  port: 8080
   udp: true
   type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: free.nadun.store
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - aceo
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - aceo
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
 rules:
 - MATCH,PROXIES
