@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
       "server": "se3.shtil.io",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
@@ -24,15 +36,17 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -41,7 +55,8 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo",
+        "🇸🇪 瑞典 (Sweden) 03 - aceo"
       ]
     },
     {
@@ -49,7 +64,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
-        "🇸🇪 瑞典 (Sweden) 02 - aceo"
+        "🇸🇪 瑞典 (Sweden) 02 - aceo",
+        "🇸🇪 瑞典 (Sweden) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

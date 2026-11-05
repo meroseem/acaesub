@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
+  server: 141.0.187.15
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
   server: 31.77.236.114
   port: 443
   udp: true
@@ -17,19 +25,6 @@ proxies:
     short-id: 1a2b3c4d
   servername: files.porsche.com
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - aceo
-  server: 109.71.247.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: static-47.topp-con.xyz
-  client-fingerprint: ios
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - aceo
   server: 147.45.245.17
   port: 443
