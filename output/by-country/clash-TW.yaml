@@ -5,41 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - aceo
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  server: er8u54dh.df6h451rh.xin
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: 83.147.13.74
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 rules:
 - MATCH,PROXIES
