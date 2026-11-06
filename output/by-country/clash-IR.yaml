@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - aceo
-  server: staging.lastilhame.monster
-  port: 443
+- name: 🇮🇷 IR 01 - aceo
+  server: 198.16.113.219
+  port: 8443
   udp: true
   type: vless
-  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
+  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 225e930cfd4d
-  servername: www.hollywoodreporter.com
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+  - 🇮🇷 IR 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+  - 🇮🇷 IR 01 - aceo
 rules:
 - MATCH,PROXIES

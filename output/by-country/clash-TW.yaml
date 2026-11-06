@@ -13,35 +13,13 @@ proxies:
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  server: 18.141.210.28
-  port: 10000
-  udp: true
-  type: hysteria2
-  password: eRlY6dXnQ4QUzVOQi6YDfZWq
-  sni: sg-transit-3.nebulacloud.win
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - aceo
-  server: n04.jinggai.online
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  tls: true
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
-  - 🇹🇼 中国台湾 (Taiwan) 04 - aceo
 rules:
 - MATCH,PROXIES

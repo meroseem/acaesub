@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - aceo
-  server: 140.238.213.114
-  port: 50160
+  server: 208.69.78.60
+  port: 443
   udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
-  skip-cert-verify: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 02 - aceo
   server: 45.90.59.15
   port: 443
@@ -26,25 +26,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 03 - aceo
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
-  server: 208.69.78.60
+  server: 208.69.78.33
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
+  sni: courses.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 04 - aceo
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 05 - aceo
   server: 208.69.78.29
   port: 443
@@ -52,6 +48,14 @@ proxies:
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 06 - aceo
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -63,6 +67,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
   - 🇨🇭 瑞士 (Switzerland) 05 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +78,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03 - aceo
   - 🇨🇭 瑞士 (Switzerland) 04 - aceo
   - 🇨🇭 瑞士 (Switzerland) 05 - aceo
+  - 🇨🇭 瑞士 (Switzerland) 06 - aceo
 rules:
 - MATCH,PROXIES
