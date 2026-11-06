@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - aceo
-  server: 216.238.104.154
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
-  skip-cert-verify: false
-- name: 🇧🇷 巴西 (Brazil) 02 - aceo
   server: 103.88.232.55
   port: 1270
   udp: true
@@ -23,6 +15,22 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇧🇷 巴西 (Brazil) 02 - aceo
+  server: 216.238.104.154
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  skip-cert-verify: false
+- name: 🇧🇷 巴西 (Brazil) 03 - aceo
+  server: br001.zestapp778.com
+  port: 39533
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: br001.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - aceo
   - 🇧🇷 巴西 (Brazil) 02 - aceo
+  - 🇧🇷 巴西 (Brazil) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - aceo
   - 🇧🇷 巴西 (Brazil) 02 - aceo
+  - 🇧🇷 巴西 (Brazil) 03 - aceo
 rules:
 - MATCH,PROXIES

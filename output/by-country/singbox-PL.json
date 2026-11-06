@@ -18,25 +18,47 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "ru1.radiolumens.uk",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "server": "lte-v2-ws.gacvpn.site",
+      "server_port": 8443,
+      "uuid": "981c7ccc-2b17-473c-8358-7fd1d6eec1b4",
       "tls": {
         "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
+        "server_name": "lte-v2-ws.gacvpn.site",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
+        "type": "ws",
+        "path": "/static/js/runtime.9d03c7.js",
+        "headers": {
+          "Host": "lte-v2-ws.gacvpn.site"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "server": "145.63.143.205",
+      "server_port": 8444,
+      "uuid": "35c9f200-7520-4005-b78e-f8a2fb9f68f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl1.meshbeat.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/devices/10be32b380/telemetry",
+        "headers": {
+          "Host": "pl1.meshbeat.online"
+        }
       }
     },
     {
@@ -45,7 +67,8 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo"
       ]
     },
     {
@@ -53,7 +76,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

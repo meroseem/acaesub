@@ -15,29 +15,17 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 194.104.94.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
-  - 🇸🇪 瑞典 (Sweden) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - aceo
-  - 🇸🇪 瑞典 (Sweden) 02 - aceo
 rules:
 - MATCH,PROXIES

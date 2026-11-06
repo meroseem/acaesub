@@ -15,22 +15,6 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
@@ -38,30 +22,22 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 47.244.120.197
-  port: 36703
-  udp: true
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 165.154.63.139
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: random
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,8 +47,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,7 +56,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
 rules:
 - MATCH,PROXIES

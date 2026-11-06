@@ -19,6 +19,14 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: steel7.hadsvpn.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 201.24.121.243
   port: 443
   udp: true
@@ -31,7 +39,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -44,6 +52,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  server: 130.49.177.193
+  port: 443
+  udp: true
+  type: vless
+  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+    short-id: 681fc2dd643bc2f3
+  servername: de-2.ffpn.pro
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +73,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +83,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
 rules:
 - MATCH,PROXIES
