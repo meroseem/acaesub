@@ -16,16 +16,15 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 129.6.29.252
-  port: 80
+  server: 179.253.82.47
+  port: 4444
   udp: true
-  type: vmess
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 172.66.0.1
+  server: 104.24.0.1
   port: 2053
   udp: true
   type: trojan
@@ -35,19 +34,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,7 +42,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,6 +50,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 rules:
 - MATCH,PROXIES

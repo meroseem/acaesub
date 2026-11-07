@@ -5,22 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo",
-      "server": "95.143.188.113",
-      "server_port": 443,
-      "uuid": "c47159bb-2c15-440d-b239-8594d7e7efbb",
+      "tag": "🇵🇪 秘鲁 (Peru) 01 - aceo",
+      "server": "134.185.81.5",
+      "server_port": 47881,
+      "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tz5gtjwlki.j.cloudfront.hls.hlsnode.net",
-        "insecure": false,
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4",
+          "short_id": "38d72071"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "sync.v1"
       }
     },
     {
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo"
+        "🇵🇪 秘鲁 (Peru) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo"
+        "🇵🇪 秘鲁 (Peru) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
