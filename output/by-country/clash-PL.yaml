@@ -13,6 +13,32 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 2.26.255.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 201.58.181.231
+  port: 4443
+  udp: true
+  type: vless
+  uuid: fafc7c16-f890-45ee-a856-02df225172dd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kn7Lh0yi6CYrHW5KpiQrfrs9FED-mbbEEKgOoiDkx2M
+    short-id: 858affa9443ebac6
+  servername: www.kinopoisk.ru
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
   server: pl3.japancase.site
   port: 443
   udp: true
@@ -32,6 +58,8 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
+  - 🇵🇱 波兰 (Poland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +67,7 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
+  - 🇵🇱 波兰 (Poland) 04 - aceo
 rules:
 - MATCH,PROXIES
