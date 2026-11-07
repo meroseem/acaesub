@@ -15,40 +15,17 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 179.253.82.47
-  port: 4444
-  udp: true
-  type: hysteria2
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 104.24.0.1
-  port: 2053
-  udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 rules:
 - MATCH,PROXIES

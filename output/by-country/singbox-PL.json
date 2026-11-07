@@ -16,18 +16,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "pl3.japancase.site",
+      "server_port": 443,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl3.japancase.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc",
+          "short_id": "5037f0423dc4e4ff"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
