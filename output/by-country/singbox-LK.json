@@ -5,24 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - aceo",
-      "server": "172.67.131.125",
-      "server_port": 2083,
-      "uuid": "f418674e-f518-4318-8ff9-e10000000046",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo",
+      "server": "170.114.45.6",
+      "server_port": 2096,
+      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
       "tls": {
         "enabled": true,
-        "server_name": "smart-edge-424.arti98399-1905.workers.dev",
+        "server_name": "pcloud.z-tas.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
         "headers": {
-          "Host": "smart-edge-424.arti98399-1905.workers.dev"
+          "Host": "pcloud.z-tas.com"
         }
       }
     },
@@ -31,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - aceo"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - aceo"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

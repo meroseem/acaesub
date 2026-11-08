@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - aceo",
+      "server": "87.228.61.175",
+      "server_port": 1443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tAGGzgRCi6W95UwG0qerf6"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

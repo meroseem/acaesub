@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01 - aceo
-  server: 172.67.131.125
-  port: 2083
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
+  server: 170.114.45.6
+  port: 2096
   udp: true
   type: vless
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   tls: true
-  servername: smart-edge-424.arti98399-1905.workers.dev
+  servername: pcloud.z-tas.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
+      Host: pcloud.z-tas.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01 - aceo
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01 - aceo
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - aceo
 rules:
 - MATCH,PROXIES

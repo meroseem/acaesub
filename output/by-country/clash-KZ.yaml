@@ -4,28 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
-  server: www.speedtest.net
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo
+  server: 38.107.234.57
   port: 80
   udp: true
-  type: vless
-  uuid: 7f88d52b-796a-4234-b8cb-71576978c890
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /vmess/
     headers:
-      Host: ratAn05-srBey720-v2.raTan-05.woRkeRs.deV
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - aceo
 rules:
 - MATCH,PROXIES
