@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+  server: www.speedtest.net
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7f88d52b-796a-4234-b8cb-71576978c890
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ratAn05-srBey720-v2.raTan-05.woRkeRs.deV
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - aceo
+rules:
+- MATCH,PROXIES
