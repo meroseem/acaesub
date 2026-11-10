@@ -5,17 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  server: 45.81.252.143
-  port: 2053
+  server: 84.32.209.103
+  port: 443
   udp: true
   type: vless
-  uuid: 53555197-bf0a-49e6-bea1-211fcfc1d962
+  uuid: 3f25b15b-1777-4c08-9ade-60336ac92a82
   tls: true
-  servername: germany3.banovano.space
+  servername: edge-lt.lindenpixel.com
   skip-cert-verify: false
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
-    grpc-service-name: ''
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select

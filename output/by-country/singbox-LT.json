@@ -6,19 +6,21 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-      "server": "45.81.252.143",
-      "server_port": 2053,
-      "uuid": "53555197-bf0a-49e6-bea1-211fcfc1d962",
+      "server": "84.32.209.103",
+      "server_port": 443,
+      "uuid": "3f25b15b-1777-4c08-9ade-60336ac92a82",
       "tls": {
         "enabled": true,
-        "server_name": "germany3.banovano.space",
+        "server_name": "edge-lt.lindenpixel.com",
         "insecure": false,
-        "alpn": [
-          "h2"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
       },
       "transport": {
-        "type": "grpc"
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
