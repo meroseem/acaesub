@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 95.217.128.44
-  port: 8443
+  server: fi1.obxodvpn.us
+  port: 443
   udp: true
-  type: vless
-  uuid: 9bb3824c-203c-4562-ad20-5f9a1000adf7
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.44.128.217.95.clients.your-server.de
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 65.109.208.183
   port: 443
@@ -37,14 +34,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: fi1.obxodvpn.us
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
   server: 169.40.34.41
   port: 443
   udp: true
@@ -66,7 +55,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +64,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES

@@ -39,51 +39,6 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - aceo
-  server: 85.234.100.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: c1208c5a-2350-0003-affd-fc41b4319286
-  tls: true
-  servername: decdn-28.nome-rkp.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: decdn-28.nome-rkp.net
-- name: 🇮🇳 印度 (India) 05 - aceo
-  server: 13.140.253.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
-  tls: true
-  servername: xray-m0642ki4-silver-nebula-10.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /362b2b2c7197d648
-    headers:
-      Host: xray-m0642ki4-silver-nebula-10.cloady.io
-- name: 🇮🇳 印度 (India) 06 - aceo
-  server: 13.140.253.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
-  tls: true
-  servername: xray-bprkdwje-clever-comet-4.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /27dbf143acdd7bca
-    headers:
-      Host: xray-bprkdwje-clever-comet-4.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,9 +47,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
-  - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
-  - 🇮🇳 印度 (India) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,8 +55,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
-  - 🇮🇳 印度 (India) 04 - aceo
-  - 🇮🇳 印度 (India) 05 - aceo
-  - 🇮🇳 印度 (India) 06 - aceo
 rules:
 - MATCH,PROXIES

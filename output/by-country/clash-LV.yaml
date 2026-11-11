@@ -18,14 +18,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - aceo
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
   server: 138.124.180.137
   port: 443
   udp: true
@@ -38,6 +30,14 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - aceo
+  server: 104.165.205.42
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

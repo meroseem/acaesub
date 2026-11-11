@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - aceo
-  server: th001.zestapp778.com
-  port: 33079
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: th001.zestapp778.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES
