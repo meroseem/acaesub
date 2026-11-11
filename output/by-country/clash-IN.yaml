@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02 - aceo
   server: 178.212.35.198
   port: 443
   udp: true
@@ -16,18 +28,6 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - aceo
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - aceo
   server: 13.140.56.100
   port: 14430
@@ -39,6 +39,51 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - aceo
+  server: 85.234.100.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1208c5a-2350-0003-affd-fc41b4319286
+  tls: true
+  servername: decdn-28.nome-rkp.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: decdn-28.nome-rkp.net
+- name: 🇮🇳 印度 (India) 05 - aceo
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  tls: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /362b2b2c7197d648
+    headers:
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
+- name: 🇮🇳 印度 (India) 06 - aceo
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
+  tls: true
+  servername: xray-bprkdwje-clever-comet-4.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /27dbf143acdd7bca
+    headers:
+      Host: xray-bprkdwje-clever-comet-4.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +92,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
+  - 🇮🇳 印度 (India) 04 - aceo
+  - 🇮🇳 印度 (India) 05 - aceo
+  - 🇮🇳 印度 (India) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +103,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
+  - 🇮🇳 印度 (India) 04 - aceo
+  - 🇮🇳 印度 (India) 05 - aceo
+  - 🇮🇳 印度 (India) 06 - aceo
 rules:
 - MATCH,PROXIES
