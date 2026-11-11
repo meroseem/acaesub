@@ -20,18 +20,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "2.26.224.174",
+      "server_port": 8443,
+      "uuid": "a4e5f910-23f4-470f-82a7-ed9d7be71dec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "teamdocs.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc",
+          "short_id": "10983e6c816181c2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
