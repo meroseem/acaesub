@@ -13,14 +13,30 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 158.247.253.243
-  port: 443
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - aceo
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152-67-200-82.liao.kdns.fr
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - aceo
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: 152.70.237.123
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - aceo
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -29,31 +45,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 04 - aceo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - aceo
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
   server: 152.69.231.175
   port: 50160
   udp: true
@@ -61,13 +53,26 @@ proxies:
   password: 1beb216e3f60aea9555dae60d219a5ca
   sni: 152.69.231.175
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - aceo
-  server: 211.178.105.134
-  port: 6123
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  server: 158.247.253.243
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - aceo
+  server: 151.245.106.49
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

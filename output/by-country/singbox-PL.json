@@ -24,44 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
-      "server": "201.58.189.105",
-      "server_port": 2083,
-      "uuid": "d7ddade6-b7a0-4cab-a910-d5d5c378d98a",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4",
-          "short_id": "8bd80253"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "google.storage.v2.Storage"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
