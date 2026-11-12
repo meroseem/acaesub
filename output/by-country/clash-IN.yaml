@@ -15,7 +15,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - aceo
   server: 178.212.35.198
   port: 443
@@ -39,6 +39,21 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - aceo
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
+  tls: true
+  servername: xray-bprkdwje-clever-comet-4.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /27dbf143acdd7bca
+    headers:
+      Host: xray-bprkdwje-clever-comet-4.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +62,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
+  - 🇮🇳 印度 (India) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +71,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - aceo
   - 🇮🇳 印度 (India) 02 - aceo
   - 🇮🇳 印度 (India) 03 - aceo
+  - 🇮🇳 印度 (India) 04 - aceo
 rules:
 - MATCH,PROXIES

@@ -12,26 +12,17 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - aceo
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - aceo
 rules:
 - MATCH,PROXIES

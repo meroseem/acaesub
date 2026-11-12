@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -28,8 +28,43 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - aceo",
+      "server": "188.225.37.43",
+      "server_port": 443,
+      "uuid": "4cabcd59-a405-4c00-96f5-03507e1e28fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "torvani.cyou",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/boards/live",
+        "headers": {
+          "Host": "torvani.cyou"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - aceo",
+      "server": "sclass-b1.catcat321.com",
+      "server_port": 20027,
+      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - aceo",
       "server": "sclass-b1.catcat321.com",
       "server_port": 20028,
       "password": "d7563108-615c-4338-a7bd-77f359869a4a",
@@ -40,12 +75,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - aceo",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo"
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo",
+        "🇹🇷 土耳其 (Turkey) 04 - aceo",
+        "🇹🇷 土耳其 (Turkey) 05 - aceo"
       ]
     },
     {
@@ -53,7 +111,10 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - aceo",
-        "🇹🇷 土耳其 (Turkey) 02 - aceo"
+        "🇹🇷 土耳其 (Turkey) 02 - aceo",
+        "🇹🇷 土耳其 (Turkey) 03 - aceo",
+        "🇹🇷 土耳其 (Turkey) 04 - aceo",
+        "🇹🇷 土耳其 (Turkey) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

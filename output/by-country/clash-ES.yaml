@@ -12,19 +12,81 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 02 - aceo
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 03 - aceo
   server: 66.163.118.103
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
+- name: 🇪🇸 西班牙 (Spain) 04 - aceo
   server: 167.17.71.167
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 05 - aceo
+  server: 212.227.235.66
+  port: 2053
+  udp: true
+  type: vless
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  tls: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 06 - aceo
+  server: 66.163.118.40
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 07 - aceo
+  server: 66.163.118.251
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 08 - aceo
+  server: 66.163.118.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 09 - aceo
+  server: 196.199.122.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +95,12 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
+  - 🇪🇸 西班牙 (Spain) 04 - aceo
+  - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
+  - 🇪🇸 西班牙 (Spain) 07 - aceo
+  - 🇪🇸 西班牙 (Spain) 08 - aceo
+  - 🇪🇸 西班牙 (Spain) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +109,11 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
   - 🇪🇸 西班牙 (Spain) 03 - aceo
+  - 🇪🇸 西班牙 (Spain) 04 - aceo
+  - 🇪🇸 西班牙 (Spain) 05 - aceo
+  - 🇪🇸 西班牙 (Spain) 06 - aceo
+  - 🇪🇸 西班牙 (Spain) 07 - aceo
+  - 🇪🇸 西班牙 (Spain) 08 - aceo
+  - 🇪🇸 西班牙 (Spain) 09 - aceo
 rules:
 - MATCH,PROXIES

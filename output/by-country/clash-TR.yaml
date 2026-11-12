@@ -15,11 +15,34 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - aceo
+  server: 188.225.37.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  tls: true
+  servername: torvani.cyou
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
+- name: 🇹🇷 土耳其 (Turkey) 03 - aceo
+  server: sclass-b1.catcat321.com
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - aceo
   server: sclass-b1.catcat321.com
   port: 20028
   udp: true
@@ -27,6 +50,18 @@ proxies:
   password: d7563108-615c-4338-a7bd-77f359869a4a
   sni: hk.catxstar.com
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - aceo
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +69,9 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
+  - 🇹🇷 土耳其 (Turkey) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +79,8 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
   - 🇹🇷 土耳其 (Turkey) 02 - aceo
+  - 🇹🇷 土耳其 (Turkey) 03 - aceo
+  - 🇹🇷 土耳其 (Turkey) 04 - aceo
+  - 🇹🇷 土耳其 (Turkey) 05 - aceo
 rules:
 - MATCH,PROXIES
