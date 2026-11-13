@@ -18,16 +18,6 @@ proxies:
   servername: conf.emaar.ru
   client-fingerprint: edge
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 65.109.208.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  tls: true
-  servername: free.for.member.iiproxy.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -35,18 +25,7 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: 94.183.164.119
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05 - aceo
+- name: 🇫🇮 芬兰 (Finland) 03 - aceo
   server: 146.103.118.189
   port: 443
   udp: true
@@ -61,6 +40,17 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
+- name: 🇫🇮 芬兰 (Finland) 04 - aceo
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +60,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +69,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
   - 🇫🇮 芬兰 (Finland) 04 - aceo
-  - 🇫🇮 芬兰 (Finland) 05 - aceo
 rules:
 - MATCH,PROXIES
