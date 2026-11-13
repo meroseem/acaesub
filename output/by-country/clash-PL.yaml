@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
+  server: 2.26.224.174
+  port: 8445
+  udp: true
+  type: vless
+  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
+    short-id: 10983e6c816181c2
+  servername: blog.ncknms.com
+  client-fingerprint: edge
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 20.215.66.17
   port: 2083
   udp: true
@@ -17,17 +30,34 @@ proxies:
     short-id: 0123456789abcdef
   servername: www.apple.com
   client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
+  - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
+  - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
 rules:
 - MATCH,PROXIES

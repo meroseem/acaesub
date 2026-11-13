@@ -6,22 +6,24 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "89.105.218.137",
+      "server": "200.102.183.50",
       "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
+      "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
       "tls": {
         "enabled": true,
-        "server_name": "golos.mail.ru",
+        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "qi8ws15c7jv5q2fa"
       }
     },
     {
@@ -68,6 +70,35 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "185.215.184.54",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.215.184.54",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
       "server": "38.60.223.125",
       "server_port": 13108,
       "method": "aes-128-gcm",
@@ -75,41 +106,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-      "server": "5.42.111.231",
-      "server_port": 443,
-      "uuid": "95f85937-7b95-45c4-8d69-95da6a978569",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps2.nemnogogo.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
-      "server": "185.22.153.117",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
-      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
-      "server": "prvtch.titun.su",
+      "server": "ee.subv.ru",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "perevodchiki.su",
+        "server_name": "dvizhok.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

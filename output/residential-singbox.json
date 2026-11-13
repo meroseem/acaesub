@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 01 (家宽) - aceo",
+      "server": "122.176.216.52",
+      "server_port": 443,
+      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tls": {
+        "enabled": true,
+        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "headers": {
+          "Host": "app-6ada5023.deploy.meerasolution.com"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
@@ -13,7 +36,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -35,16 +58,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
+        "🇮🇳 印度 (India) 01 (家宽) - aceo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - aceo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - aceo"
+        "🇮🇳 印度 (India) 01 (家宽) - aceo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
