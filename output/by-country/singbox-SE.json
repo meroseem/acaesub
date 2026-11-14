@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
       "server": "138.199.55.243",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
+      "server": "62.182.193.228",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2e555e46dbc421452416834962fd014f"
     },
     {
       "type": "vless",
@@ -62,8 +62,24 @@
       "tls": {
         "enabled": true,
         "server_name": "connect-se.mimowhat.online",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - aceo",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",
@@ -74,7 +90,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
         "🇸🇪 瑞典 (Sweden) 03 - aceo",
         "🇸🇪 瑞典 (Sweden) 04 - aceo",
-        "🇸🇪 瑞典 (Sweden) 05 - aceo"
+        "🇸🇪 瑞典 (Sweden) 05 - aceo",
+        "🇸🇪 瑞典 (Sweden) 06 - aceo"
       ]
     },
     {
@@ -85,7 +102,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
         "🇸🇪 瑞典 (Sweden) 03 - aceo",
         "🇸🇪 瑞典 (Sweden) 04 - aceo",
-        "🇸🇪 瑞典 (Sweden) 05 - aceo"
+        "🇸🇪 瑞典 (Sweden) 05 - aceo",
+        "🇸🇪 瑞典 (Sweden) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
