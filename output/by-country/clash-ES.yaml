@@ -38,22 +38,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - aceo
-  server: 66.163.118.203
+  server: 66.163.118.40
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.discovergreatjobsandadvanceyourcareer.com
+  sni: cdn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 06 - aceo
-  server: 66.163.118.251
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 07 - aceo
   server: 66.163.118.115
   port: 443
   udp: true
@@ -72,7 +64,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - aceo
   - 🇪🇸 西班牙 (Spain) 05 - aceo
   - 🇪🇸 西班牙 (Spain) 06 - aceo
-  - 🇪🇸 西班牙 (Spain) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +75,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - aceo
   - 🇪🇸 西班牙 (Spain) 05 - aceo
   - 🇪🇸 西班牙 (Spain) 06 - aceo
-  - 🇪🇸 西班牙 (Spain) 07 - aceo
 rules:
 - MATCH,PROXIES
