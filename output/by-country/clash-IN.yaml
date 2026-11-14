@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - aceo
   server: 194.61.31.126
   port: 2053
@@ -27,7 +27,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - aceo
   server: 13.140.56.100
   port: 14430
@@ -38,19 +38,20 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇮🇳 印度 (India) 04 - aceo
-  server: 13.140.253.35
+  server: xray-dmr3b3hy-calm-maple-7.cloady.io
   port: 443
   udp: true
   type: vless
-  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   tls: true
-  servername: xray-h0urp9tx-rapid-summit-2.cloady.io
-  skip-cert-verify: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /050334203cc522a3
+    path: /0175469f14317d82
     headers:
-      Host: xray-h0urp9tx-rapid-summit-2.cloady.io
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
