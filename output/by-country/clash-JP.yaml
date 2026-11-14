@@ -5,13 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 84.247.155.196
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - aceo
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 03 - aceo
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -19,29 +27,36 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: 138.3.208.26
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - aceo
+- name: 🇯🇵 日本 (Japan) 04 - aceo
   server: 84.247.155.196
-  port: 80
+  port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 04 - aceo
-  server: 104.21.0.1
-  port: 2083
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 104.24.31.89
+  port: 443
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: or3.sfacg.uk
+  servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /or3
+    path: /tyxyws
     headers:
-      Host: or3.sfacg.uk
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +66,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - aceo
   - 🇯🇵 日本 (Japan) 03 - aceo
   - 🇯🇵 日本 (Japan) 04 - aceo
+  - 🇯🇵 日本 (Japan) 05 - aceo
+  - 🇯🇵 日本 (Japan) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +77,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - aceo
   - 🇯🇵 日本 (Japan) 03 - aceo
   - 🇯🇵 日本 (Japan) 04 - aceo
+  - 🇯🇵 日本 (Japan) 05 - aceo
+  - 🇯🇵 日本 (Japan) 06 - aceo
 rules:
 - MATCH,PROXIES
