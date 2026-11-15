@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - aceo",
-      "server": "70.34.212.124",
+      "server": "62.182.193.228",
       "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "method": "chacha20-ietf-poly1305",
+      "password": "2e555e46dbc421452416834962fd014f"
     },
     {
       "type": "shadowsocks",
@@ -20,30 +20,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - aceo",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - aceo",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -62,6 +40,61 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - aceo",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - aceo",
+      "server": "132.243.163.89",
+      "server_port": 443,
+      "uuid": "632cd343-1e8f-4bf6-a9a2-20ada1f6970f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "3fb2b6t.se1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA",
+          "short_id": "1061f1b1cdaad3ad"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - aceo",
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "tls": {
+        "enabled": true,
+        "server_name": "connect-se.mimowhat.online",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -70,7 +103,9 @@
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
         "🇸🇪 瑞典 (Sweden) 03 - aceo",
         "🇸🇪 瑞典 (Sweden) 04 - aceo",
-        "🇸🇪 瑞典 (Sweden) 05 - aceo"
+        "🇸🇪 瑞典 (Sweden) 05 - aceo",
+        "🇸🇪 瑞典 (Sweden) 06 - aceo",
+        "🇸🇪 瑞典 (Sweden) 07 - aceo"
       ]
     },
     {
@@ -81,7 +116,9 @@
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
         "🇸🇪 瑞典 (Sweden) 03 - aceo",
         "🇸🇪 瑞典 (Sweden) 04 - aceo",
-        "🇸🇪 瑞典 (Sweden) 05 - aceo"
+        "🇸🇪 瑞典 (Sweden) 05 - aceo",
+        "🇸🇪 瑞典 (Sweden) 06 - aceo",
+        "🇸🇪 瑞典 (Sweden) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
