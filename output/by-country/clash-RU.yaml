@@ -12,17 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 5.59.204.81
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
-  flow: xtls-rprx-vision
-  tls: true
-  servername: id-6af3f40b.adhil.uk
-  skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 201.24.121.243
   port: 443
   udp: true
@@ -42,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - aceo
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 03 - aceo
 rules:
 - MATCH,PROXIES

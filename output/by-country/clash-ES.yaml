@@ -36,7 +36,7 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 05 - aceo
   server: 66.163.118.115
   port: 443
@@ -46,22 +46,6 @@ proxies:
   sni: discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 06 - aceo
-  server: 66.163.118.203
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 07 - aceo
-  server: 66.163.118.40
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 08 - aceo
   server: 46.28.71.247
   port: 443
   udp: true
@@ -74,6 +58,54 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 07 - aceo
+  server: 66.163.118.251
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 08 - aceo
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 09 - aceo
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.118.62
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 10 - aceo
+  server: 66.163.118.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 11 - aceo
+  server: 66.163.118.40
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 12 - aceo
+  server: 66.163.118.203
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +119,10 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - aceo
   - 🇪🇸 西班牙 (Spain) 07 - aceo
   - 🇪🇸 西班牙 (Spain) 08 - aceo
+  - 🇪🇸 西班牙 (Spain) 09 - aceo
+  - 🇪🇸 西班牙 (Spain) 10 - aceo
+  - 🇪🇸 西班牙 (Spain) 11 - aceo
+  - 🇪🇸 西班牙 (Spain) 12 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +136,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - aceo
   - 🇪🇸 西班牙 (Spain) 07 - aceo
   - 🇪🇸 西班牙 (Spain) 08 - aceo
+  - 🇪🇸 西班牙 (Spain) 09 - aceo
+  - 🇪🇸 西班牙 (Spain) 10 - aceo
+  - 🇪🇸 西班牙 (Spain) 11 - aceo
+  - 🇪🇸 西班牙 (Spain) 12 - aceo
 rules:
 - MATCH,PROXIES
