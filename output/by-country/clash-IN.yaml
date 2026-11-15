@@ -5,14 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - aceo
-  server: 13.140.56.100
-  port: 14430
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - aceo
   server: 178.212.35.198
   port: 443
@@ -26,7 +29,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - aceo
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+  server: 13.140.253.35
   port: 443
   udp: true
   type: vless
