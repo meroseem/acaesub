@@ -5,14 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
+  server: 185.231.101.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
+    short-id: 51057fb54d2364f4
+  servername: fuzora.net
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 185.22.153.117
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
-  server: 200.169.179.233
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  server: 103.88.243.142
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  server: 201.24.116.192
   port: 443
   udp: true
   type: vless
@@ -24,7 +45,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
   server: 201.24.121.243
   port: 443
   udp: true
@@ -37,7 +58,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
   server: 185.39.204.117
   port: 10002
   udp: true
@@ -49,6 +70,43 @@ proxies:
   network: ws
   ws-opts:
     path: /vpnjantit
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 83.141.70.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8c0676ea-ac9f-4de5-9c6f-b0de31e38704
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY
+    short-id: 8b8dd8a1c0c468d3
+  servername: ch.primarymaster.online
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: 87.228.56.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e39H8hQXcwfiUnkUOmG0JkBTX5VCxaBQ3_EWEj9PZRc
+    short-id: e938e26c4425
+  servername: ru4.gofizzin.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  server: 87.228.56.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ru4.gofizzin.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +116,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +130,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - aceo
   - 🇷🇺 俄罗斯 (Russia) 03 - aceo
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 05 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 rules:
 - MATCH,PROXIES

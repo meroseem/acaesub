@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: t.me
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - aceo
   server: 160.187.100.109
@@ -18,8 +18,21 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - aceo
+  server: 114.37.105.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3OEqq4MiCKoUP5yKBOmZsjuwg4i8A1fb8WrEDOFQek8
+    short-id: 2c14765d0b
+  servername: tw1.gofizzin.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - aceo
   - 🇹🇼 中国台湾 (Taiwan) 02 - aceo
+  - 🇹🇼 中国台湾 (Taiwan) 03 - aceo
 rules:
 - MATCH,PROXIES
