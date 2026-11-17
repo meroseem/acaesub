@@ -5,43 +5,38 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
-      "server": "132.243.212.204",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - aceo",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "10w0wjw.virtual-network.lol",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo",
-      "server": "45.86.60.174",
-      "server_port": 16443,
-      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - aceo"
+        "🇷🇴 罗马尼亚 (Romania) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

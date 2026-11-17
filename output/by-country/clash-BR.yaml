@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - aceo
-  server: 103.14.27.207
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇧🇷 巴西 (Brazil) 02 - aceo
   server: 216.238.104.154
   port: 443
   udp: true
@@ -29,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - aceo
-  - 🇧🇷 巴西 (Brazil) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - aceo
-  - 🇧🇷 巴西 (Brazil) 02 - aceo
 rules:
 - MATCH,PROXIES

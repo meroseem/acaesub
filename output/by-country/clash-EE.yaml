@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
-  server: 49.254.204.133
-  port: 1774
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
+  server: 45.86.60.174
+  port: 16443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -17,18 +17,29 @@ proxies:
   servername: pl8.galioncc.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 212.87.190.249
+  server: 45.194.66.177
   port: 443
   udp: true
   type: vless
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 31tawwo0.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
-    short-id: b545243c33282b73
-  servername: d4a338t.pl8.h1clayd.click
-  client-fingerprint: firefox
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
+  - 🇵🇱 波兰 (Poland) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - aceo
-  server: 382218.xyz
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: api.opencode.ai
   port: 443
   udp: true
   type: vless
-  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+  uuid: 2874e26b-45e3-4d12-9e01-3f5a1c6a7105
   tls: true
-  servername: 382218.xyz
+  servername: dietary-forms-begun-orientation.trycloudflare.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /d9fb7b4f14c1
     headers:
-      Host: 382218.xyz
+      Host: dietary-forms-begun-orientation.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 rules:
 - MATCH,PROXIES
