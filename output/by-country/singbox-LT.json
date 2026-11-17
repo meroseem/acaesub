@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-      "server": "84.32.248.124",
+      "server": "84.32.83.197",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "net-io-api.galioncc.com",
+        "server_name": "api-dns-gw.galioncc.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -24,44 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-      "server": "84.32.149.211",
-      "server_port": 443,
-      "uuid": "49db4ce7-ad48-41a3-9b6f-4c6dabd94504",
-      "tls": {
-        "enabled": true,
-        "server_name": "acorn.willowfen.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M-cE7q2hNgBeNv7COM8DS2QC3GGi6Pu7pD1lvUfG0mo",
-          "short_id": "e4fc6803b3212ad4"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

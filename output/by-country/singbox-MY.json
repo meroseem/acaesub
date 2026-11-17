@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇷 阿根廷 (Argentina) 01 - aceo",
-      "server": "186.122.177.79",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - aceo",
+      "server": "382218.xyz",
       "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d801d4d9-111a-46e8-91fc-e2fb39ef2d22",
       "tls": {
         "enabled": true,
-        "server_name": "ar1.gofizz.in",
+        "server_name": "382218.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pBEW9XYZQsXxjgt44pCQcxoEOe-B1CdxaTdTnL2QhAA",
-          "short_id": "a5d67406"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "382218.xyz"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇷 阿根廷 (Argentina) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇷 阿根廷 (Argentina) 01 - aceo"
+        "🇲🇾 马来西亚 (Malaysia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
