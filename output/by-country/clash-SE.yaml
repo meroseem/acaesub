@@ -12,17 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: 84.32.154.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app.streamru10.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -35,7 +24,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -46,7 +35,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 95.143.196.97
   port: 443
   udp: true
@@ -54,18 +43,44 @@ proxies:
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   sni: connect-se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06 - aceo
-  server: 143.246.195.46
+- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+  server: 92.223.84.254
   port: 443
   udp: true
   type: vless
-  uuid: 5311859f-0b5d-4c26-a8bf-2648f113e4ea
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  servername: subgift.gcorecdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 瑞典 (Sweden) 06 - aceo
+  server: 88.216.60.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 07 - aceo
+  server: 88.216.189.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM
-    short-id: 4e1682
-  servername: sweden13.clearorbitllc.com
+    public-key: 1VhM5R3IlHPjzxEeTuik1lcUad-HI6C57MzXxppyXg4
+  servername: modx.wey-land.net
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -78,6 +93,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
   - 🇸🇪 瑞典 (Sweden) 06 - aceo
+  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +105,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
   - 🇸🇪 瑞典 (Sweden) 06 - aceo
+  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 rules:
 - MATCH,PROXIES

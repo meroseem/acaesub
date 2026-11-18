@@ -12,6 +12,18 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - aceo
+  server: 67.159.17.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZSxFQHVt_avgBDW1Rbbn0SBDidOEftqHgAF9NH565kM
+  servername: sdfsdfsf.wey-land.net
+  client-fingerprint: edge
+- name: 🇦🇹 奥地利 (Austria) 03 - aceo
   server: 154.47.19.225
   port: 1270
   udp: true
@@ -29,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - aceo
   - 🇦🇹 奥地利 (Austria) 02 - aceo
+  - 🇦🇹 奥地利 (Austria) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - aceo
   - 🇦🇹 奥地利 (Austria) 02 - aceo
+  - 🇦🇹 奥地利 (Austria) 03 - aceo
 rules:
 - MATCH,PROXIES
