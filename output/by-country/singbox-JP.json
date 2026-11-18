@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - aceo",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 02 - aceo",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 03 - aceo",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 04 - aceo",
       "server": "168.110.63.247",
       "server_port": 8081,
       "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
@@ -16,8 +40,28 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 05 - aceo",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 06 - aceo",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 07 - aceo",
       "server": "45.77.8.233",
       "server_port": 443,
       "uuid": "242212a6-200b-4c09-b2e5-86a8dd490331",
@@ -44,42 +88,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - aceo",
-      "server": "45.76.222.108",
-      "server_port": 443,
-      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
-          "short_id": "b5c85d2d"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - aceo",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 08 - aceo",
       "server": "45.76.106.69",
       "server_port": 443,
       "uuid": "db102c51-5f7f-4283-b9c1-942c5c6e2616",
@@ -105,41 +114,41 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - aceo",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - aceo",
-      "server": "104.16.111.195",
+      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
+      "server": "45.76.222.108",
       "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
+          "short_id": "b5c85d2d"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/ws",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "itunes.apple.com"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 08 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "1",
         "insecure": true
       }
     },
@@ -155,7 +164,9 @@
         "🇯🇵 日本 (Japan) 05 - aceo",
         "🇯🇵 日本 (Japan) 06 - aceo",
         "🇯🇵 日本 (Japan) 07 - aceo",
-        "🇯🇵 日本 (Japan) 08 - aceo"
+        "🇯🇵 日本 (Japan) 08 - aceo",
+        "🇯🇵 日本 (Japan) 09 - aceo",
+        "🇯🇵 日本 (Japan) 10 - aceo"
       ]
     },
     {
@@ -169,7 +180,9 @@
         "🇯🇵 日本 (Japan) 05 - aceo",
         "🇯🇵 日本 (Japan) 06 - aceo",
         "🇯🇵 日本 (Japan) 07 - aceo",
-        "🇯🇵 日本 (Japan) 08 - aceo"
+        "🇯🇵 日本 (Japan) 08 - aceo",
+        "🇯🇵 日本 (Japan) 09 - aceo",
+        "🇯🇵 日本 (Japan) 10 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

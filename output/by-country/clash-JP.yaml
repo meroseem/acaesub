@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - aceo
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 03 - aceo
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04 - aceo
   server: 168.110.63.247
   port: 8081
   udp: true
@@ -15,7 +36,22 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇯🇵 日本 (Japan) 02 - aceo
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 07 - aceo
   server: 45.77.8.233
   port: 443
   udp: true
@@ -32,31 +68,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 03 - aceo
-  server: 45.76.222.108
-  port: 443
-  udp: true
-  type: vless
-  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
-  tls: true
-  reality-opts:
-    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
-    short-id: b5c85d2d
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 04 - aceo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 05 - aceo
+- name: 🇯🇵 日本 (Japan) 08 - aceo
   server: 45.76.106.69
   port: 443
   udp: true
@@ -73,34 +85,30 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 06 - aceo
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 104.16.111.195
+- name: 🇯🇵 日本 (Japan) 09 - aceo
+  server: 45.76.222.108
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
   tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+  reality-opts:
+    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
+    short-id: b5c85d2d
+  servername: itunes.apple.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - aceo
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 10 - aceo
   server: 138.3.208.26
   port: 50160
   udp: true
   type: hysteria2
   password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 'off'
+  sni: '1'
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -115,6 +123,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - aceo
   - 🇯🇵 日本 (Japan) 07 - aceo
   - 🇯🇵 日本 (Japan) 08 - aceo
+  - 🇯🇵 日本 (Japan) 09 - aceo
+  - 🇯🇵 日本 (Japan) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,5 +138,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - aceo
   - 🇯🇵 日本 (Japan) 07 - aceo
   - 🇯🇵 日本 (Japan) 08 - aceo
+  - 🇯🇵 日本 (Japan) 09 - aceo
+  - 🇯🇵 日本 (Japan) 10 - aceo
 rules:
 - MATCH,PROXIES

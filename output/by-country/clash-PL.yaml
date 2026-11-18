@@ -5,16 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 80.47.10.106
+  server: 179.253.101.162
   port: 443
   udp: true
   type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
+  servername: app.streamru17.net
+  skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 54.37.131.126
@@ -29,19 +28,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
-  - 🇵🇱 波兰 (Poland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
   - 🇵🇱 波兰 (Poland) 02 - aceo
-  - 🇵🇱 波兰 (Poland) 03 - aceo
 rules:
 - MATCH,PROXIES

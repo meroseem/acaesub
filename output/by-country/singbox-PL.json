@@ -6,20 +6,17 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
-      "server": "80.47.10.106",
+      "server": "179.253.101.162",
       "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "uuid": "fd90e601-a56c-42b8-aab7-aa02d26fcb04",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl8.galioncc.com",
+        "server_name": "app.streamru17.net",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
         }
       }
     },
@@ -39,34 +36,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo",
-        "🇵🇱 波兰 (Poland) 03 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ]
     },
     {
@@ -74,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo",
-        "🇵🇱 波兰 (Poland) 03 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
