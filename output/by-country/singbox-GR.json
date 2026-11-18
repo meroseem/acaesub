@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - aceo",
-      "server": "api.opencode.ai",
+      "tag": "🇬🇷 希腊 (Greece) 01 - aceo",
+      "server": "85.90.197.220",
       "server_port": 443,
-      "uuid": "2874e26b-45e3-4d12-9e01-3f5a1c6a7105",
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dietary-forms-begun-orientation.trycloudflare.com",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/d9fb7b4f14c1",
-        "headers": {
-          "Host": "dietary-forms-begun-orientation.trycloudflare.com"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇬🇷 希腊 (Greece) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - aceo"
+        "🇬🇷 希腊 (Greece) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
