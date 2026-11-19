@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 144.31.0.101
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1eEtiZY5qDDosntp-9_xFnOIvOBzHy4d3-eA7v11qx0
-  servername: gmtrtb.wey-land.net
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 80.47.10.106
   port: 443
   udp: true
@@ -28,34 +16,17 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: pl8.galioncc.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
-  - 🇵🇱 波兰 (Poland) 02 - aceo
-  - 🇵🇱 波兰 (Poland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
-  - 🇵🇱 波兰 (Poland) 02 - aceo
-  - 🇵🇱 波兰 (Poland) 03 - aceo
 rules:
 - MATCH,PROXIES

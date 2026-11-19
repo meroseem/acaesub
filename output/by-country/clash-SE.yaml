@@ -12,17 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
-  server: lodizu.hagrid-connected.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: beda6bd0-7ce4-477a-91f1-860d018dbfcb
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lodizu.hagrid-connected.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -33,15 +22,18 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
-  server: 95.143.196.97
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: 5.178.109.174
+  port: 14430
   udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -50,40 +42,18 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - aceo
-  server: 37.9.4.62
+- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+  server: 95.143.196.97
   port: 443
   udp: true
-  type: vless
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  tls: true
-  reality-opts:
-    public-key: vP4XeQ-z8LYtkSz1SCAxRMAEPreaHspoXm2nt0okQVw
-    short-id: c7674e
-  servername: 360.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇪 瑞典 (Sweden) 07 - aceo
-  server: 92.223.84.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
-  tls: true
-  servername: subgift.gcorecdn.com
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,8 +64,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
-  - 🇸🇪 瑞典 (Sweden) 06 - aceo
-  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,7 +74,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
-  - 🇸🇪 瑞典 (Sweden) 06 - aceo
-  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 rules:
 - MATCH,PROXIES
