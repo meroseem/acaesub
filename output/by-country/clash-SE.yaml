@@ -24,17 +24,6 @@ proxies:
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - aceo
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -45,15 +34,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -66,6 +47,25 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - aceo
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

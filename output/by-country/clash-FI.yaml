@@ -16,22 +16,7 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 84.22.150.39
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 104.18.63.135
+  server: 162.159.160.117
   port: 2083
   udp: true
   type: vless
@@ -52,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
-  - 🇫🇮 芬兰 (Finland) 03 - aceo
 rules:
 - MATCH,PROXIES

@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 45.194.66.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 31tawwo0.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
   server: 82.40.63.138
   port: 443
   udp: true
@@ -29,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
-  - 🇵🇱 波兰 (Poland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
-  - 🇵🇱 波兰 (Poland) 02 - aceo
 rules:
 - MATCH,PROXIES

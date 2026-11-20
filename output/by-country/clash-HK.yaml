@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: 47.242.93.89
   port: 12012
   udp: true
@@ -19,13 +12,21 @@ proxies:
   password: '12012'
   sni: ali-hk.b-gfw.cfd
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.174
@@ -33,7 +34,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: 152.32.254.68
@@ -46,13 +47,12 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  server: 202.146.222.29
-  port: 443
+  server: 213.176.92.148
+  port: 40647
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 proxy-groups:
 - name: PROXIES
   type: select

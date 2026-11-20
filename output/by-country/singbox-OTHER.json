@@ -5,21 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - aceo",
-      "server": "85.92.156.133",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "104.16.111.195",
       "server_port": 443,
-      "uuid": "67864856-8730-40cc-9e1a-a0df697d912b",
-      "flow": "xtls-rprx-vision",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "de.krabvpn.pro",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

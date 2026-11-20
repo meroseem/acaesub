@@ -4,28 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - aceo
-  server: 85.92.156.133
+- name: 🌐 其他地区 (Other) 01 - aceo
+  server: 104.16.111.195
   port: 443
   udp: true
   type: vless
-  uuid: 67864856-8730-40cc-9e1a-a0df697d912b
-  flow: xtls-rprx-vision
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: de.krabvpn.pro
+  servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - aceo
+  - 🌐 其他地区 (Other) 01 - aceo
 rules:
 - MATCH,PROXIES

@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-      "server": "201.51.12.98",
+      "server": "200.169.179.233",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -45,20 +45,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -80,8 +68,74 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "201.51.12.98",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+      "server": "vps3.nemnogogo.com",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+      "server": "147.45.175.81",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xsru2.freeddns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsru",
+        "headers": {
+          "Host": "xsru2.freeddns.org"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - aceo",
       "server": "168.113.254.247",
       "server_port": 443,
       "password": "b006650f-8771-0001-b7fa-e18fc6e80ef1",
@@ -89,30 +143,6 @@
         "enabled": true,
         "server_name": "vcerx-ru-67sb.my-fade.cloud",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
-      "server": "78.159.245.147",
-      "server_port": 445,
-      "uuid": "37af0181-5598-4aad-a040-d926bcb65757",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
@@ -125,7 +155,8 @@
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
         "🇷🇺 俄罗斯 (Russia) 04 - aceo",
         "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ]
     },
     {
@@ -137,7 +168,8 @@
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
         "🇷🇺 俄罗斯 (Russia) 04 - aceo",
         "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 07 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
