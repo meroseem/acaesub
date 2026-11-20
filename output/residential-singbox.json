@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - aceo",
+      "server": "47.85.162.44",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -23,28 +39,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - aceo",
-      "server": "47.85.162.44",
-      "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇩🇪 德国 (Germany) 02 (移动家宽) - aceo"
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - aceo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - aceo",
-        "🇩🇪 德国 (Germany) 02 (移动家宽) - aceo"
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - aceo",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - aceo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

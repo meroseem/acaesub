@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - aceo",
-      "server": "104.17.3.81",
+      "type": "hysteria2",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
+      "server": "87.121.112.83",
       "server_port": 443,
-      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
+      "password": "9a9f167d-b461-466f-be50-f0ffd598a6f8",
       "tls": {
         "enabled": true,
-        "server_name": "natan.srpcom.cloud",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "natan.srpcom.cloud"
-        }
+        "server_name": "bulghys.live",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - aceo"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

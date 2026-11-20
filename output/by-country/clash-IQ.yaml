@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - aceo
-  server: 104.17.3.81
+- name: 🇮🇶 IQ 01 - aceo
+  server: 85.92.156.133
   port: 443
   udp: true
   type: vless
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
+  uuid: 67864856-8730-40cc-9e1a-a0df697d912b
+  flow: xtls-rprx-vision
   tls: true
-  servername: natan.srpcom.cloud
+  servername: de.krabvpn.pro
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: natan.srpcom.cloud
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - aceo
+  - 🇮🇶 IQ 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - aceo
+  - 🇮🇶 IQ 01 - aceo
 rules:
 - MATCH,PROXIES
