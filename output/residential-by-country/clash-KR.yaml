@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 31.210.78.66
-  port: 1080
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: o3-9Eg79umh4CaY8sWC7b3
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES

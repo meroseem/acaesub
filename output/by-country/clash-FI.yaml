@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 185.88.101.105
-  port: 443
+  server: static.28.210.29.2.clients.your-server.de
+  port: 25565
   udp: true
-  type: vless
-  uuid: f2341274-8dd8-4b80-95fd-780641f6f2da
-  tls: true
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-  servername: fl13.svinka.pro
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fl13svinkapro-grpc
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
 - name: 🇫🇮 芬兰 (Finland) 02 - aceo
   server: 45.144.234.157
   port: 14430
@@ -31,33 +23,20 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - aceo
-  server: 179.254.126.220
-  port: 443
+  server: 162.159.160.117
+  port: 2083
   udp: true
   type: vless
-  uuid: d3863595-3afe-4a74-8305-612ab69cd21c
-  flow: xtls-rprx-vision
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   tls: true
-  reality-opts:
-    public-key: -ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk
-    short-id: 597e1c279d224774
-  servername: 4c980ft.fi15.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - aceo
-  server: f0f0bet.fi2.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 537d8ade-134d-4ec2-905c-0187e7e1e22e
-  tls: true
-  reality-opts:
-    public-key: _oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY
-    short-id: cf2a731a5f2dc451
-  servername: f0f0bet.fi2.h1clayd.click
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  servername: vipfree.dr-ping.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +45,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +53,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
   - 🇫🇮 芬兰 (Finland) 02 - aceo
   - 🇫🇮 芬兰 (Finland) 03 - aceo
-  - 🇫🇮 芬兰 (Finland) 04 - aceo
 rules:
 - MATCH,PROXIES
