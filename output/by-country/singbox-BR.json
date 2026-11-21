@@ -4,25 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo",
-      "server": "45.86.60.174",
-      "server_port": 16443,
-      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - aceo",
+      "server": "103.14.27.207",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo"
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - aceo"
+        "🇧🇷 巴西 (Brazil) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

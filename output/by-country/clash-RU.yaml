@@ -16,8 +16,21 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   servername: apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
+  server: 37.235.247.81
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
   server: 48.103.133.47
   port: 8443
   udp: true
@@ -29,8 +42,8 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 103.88.243.142
   port: 11592
   udp: true
@@ -38,18 +51,8 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 200.169.179.233
+  server: vps3.nemnogogo.com
   port: 443
   udp: true
   type: vless
@@ -57,25 +60,11 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
   server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
@@ -98,7 +87,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +98,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - aceo
   - 🇷🇺 俄罗斯 (Russia) 05 - aceo
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 07 - aceo
 rules:
 - MATCH,PROXIES
