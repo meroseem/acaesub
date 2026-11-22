@@ -6,22 +6,24 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - aceo",
-      "server": "147.45.66.208",
-      "server_port": 43000,
-      "uuid": "01e61db7-9e0b-4431-a995-a5288a01b951",
-      "flow": "xtls-rprx-vision",
+      "server": "188.225.78.178",
+      "server_port": 443,
+      "uuid": "a4740bee-81ad-4a58-99c9-eca576ecb6e6",
       "tls": {
         "enabled": true,
-        "server_name": "147.45.66.208",
+        "server_name": "cadrin.wtf",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg",
-          "short_id": "4d3d8e15"
+          "fingerprint": "edge"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cache.sync.v1"
       }
     },
     {

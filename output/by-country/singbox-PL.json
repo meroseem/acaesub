@@ -1,0 +1,49 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
+      "server": "217.30.10.70",
+      "server_port": 9020,
+      "method": "aes-256-cfb",
+      "password": "BNmAXXxAHYpTRdzu"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "217.30.10.70",
+      "server_port": 9018,
+      "method": "aes-256-cfb",
+      "password": "fG2artUmHfNT2cX7"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
