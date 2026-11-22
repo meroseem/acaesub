@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-      "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
       "server": "195.123.209.159",
       "server_port": 8443,
       "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
@@ -33,25 +25,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - aceo",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "selector",
@@ -59,8 +38,7 @@
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo"
       ]
     },
     {
@@ -68,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - aceo"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
