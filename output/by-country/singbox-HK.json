@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - aceo",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - aceo",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - aceo",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -17,19 +41,59 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - aceo",
-      "server": "202.146.222.29",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - aceo",
+      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - aceo",
+      "server": "64.118.130.152",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "nb1hk.hikigo.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - aceo",
+      "server": "hkgb707.ifastcdncache.com",
+      "server_port": 60852,
+      "uuid": "f8eca8df-a1a5-4918-a194-d34112a3673f",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - aceo",
+      "server": "pdmv4.xiaoyan.io",
+      "server_port": 16632,
+      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - aceo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - aceo",
       "server": "62.60.232.226",
       "server_port": 2096,
       "uuid": "3d409814-b663-411e-8f54-a112ecba7ddd",
@@ -45,37 +109,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - aceo",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.174",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - aceo",
-      "server": "nb2hk.hikigo.com",
-      "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "tls": {
-        "enabled": true,
-        "server_name": "nb2hk.hikigo.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "o5qgnpl75wayhkn5"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -84,7 +117,10 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - aceo",
         "🇭🇰 中国香港 (Hong Kong) 03 - aceo",
         "🇭🇰 中国香港 (Hong Kong) 04 - aceo",
-        "🇭🇰 中国香港 (Hong Kong) 05 - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 05 - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 06 - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 07 - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 08 - aceo"
       ]
     },
     {
@@ -95,7 +131,10 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - aceo",
         "🇭🇰 中国香港 (Hong Kong) 03 - aceo",
         "🇭🇰 中国香港 (Hong Kong) 04 - aceo",
-        "🇭🇰 中国香港 (Hong Kong) 05 - aceo"
+        "🇭🇰 中国香港 (Hong Kong) 05 - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 06 - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 07 - aceo",
+        "🇭🇰 中国香港 (Hong Kong) 08 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

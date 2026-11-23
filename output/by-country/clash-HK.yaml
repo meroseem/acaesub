@@ -5,6 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.89
   port: 443
   udp: true
@@ -12,15 +29,47 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: 202.146.222.29
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: 64.118.130.152
+  port: 443
+  udp: true
+  type: trojan
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: nb1hk.hikigo.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: hkgb707.ifastcdncache.com
+  port: 60852
+  udp: true
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  server: pdmv4.xiaoyan.io
+  port: 16632
+  udp: true
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
   server: 62.60.232.226
   port: 2096
   udp: true
@@ -31,24 +80,6 @@ proxies:
   servername: nova-house.justext.space
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: nb2hk.hikigo.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nb2hk.hikigo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: o5qgnpl75wayhkn5
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +90,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +103,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
 rules:
 - MATCH,PROXIES

@@ -20,12 +20,52 @@
       "password": "fG2artUmHfNT2cX7"
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - aceo",
+      "server": "45.194.66.177",
+      "server_port": 443,
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "31tawwo0.virtual-network.lol",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - aceo",
+      "server": "191.217.253.12",
+      "server_port": 443,
+      "uuid": "6dd17e9f-5b7c-466d-a53a-7c30f5dc8338",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "191.217.253.12",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo",
+        "🇵🇱 波兰 (Poland) 04 - aceo"
       ]
     },
     {
@@ -33,7 +73,9 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - aceo",
-        "🇵🇱 波兰 (Poland) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 02 - aceo",
+        "🇵🇱 波兰 (Poland) 03 - aceo",
+        "🇵🇱 波兰 (Poland) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

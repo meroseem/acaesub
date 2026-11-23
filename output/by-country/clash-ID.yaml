@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
-  server: 157.254.38.210
-  port: 20051
+- name: 🇮🇩 印尼 (Indonesia) 01 - aceo
+  server: 149.33.27.162
+  port: 443
   udp: true
   type: trojan
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: hk.catxstar.com
-  skip-cert-verify: false
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: i1tr.mateflora.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
+  - 🇮🇩 印尼 (Indonesia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇬 尼日利亚 (Nigeria) 01 - aceo
+  - 🇮🇩 印尼 (Indonesia) 01 - aceo
 rules:
 - MATCH,PROXIES
