@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - aceo
-  server: 104.18.32.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
-  tls: true
-  servername: sinavm3.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - aceo
   server: 188.225.78.178
   port: 443
   udp: true
@@ -28,7 +13,7 @@ proxies:
   tls: true
   servername: cadrin.wtf
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: cache.sync.v1
@@ -38,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - aceo
-  - 🇹🇷 土耳其 (Turkey) 02 - aceo
 rules:
 - MATCH,PROXIES

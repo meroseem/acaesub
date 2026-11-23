@@ -25,24 +25,28 @@ proxies:
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 130.49.189.158
-  port: 43558
+  server: 103.88.243.142
+  port: 11592
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
-  server: 136.148.83.69
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 200.169.179.233
+  server: vps3.nemnogogo.com
   port: 443
   udp: true
   type: vless
@@ -55,26 +59,6 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
   server: 147.45.175.81
   port: 443
   udp: true
@@ -87,25 +71,31 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  server: 147.45.221.225
+- name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
+  server: 188.68.216.33
   port: 443
   udp: true
   type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 08ef7604-b3a5-0001-b264-0038fa7c44fc
   tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
+  servername: pmdhivnevikmltdhqp.fcloudservices.site
   skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  server: cedar.filnex.baby
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  servername: fieldstone.moltex.click
+  skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /media/ws/
-- name: 🇷🇺 俄罗斯 (Russia) 10 - aceo
-  server: 90.156.203.62
-  port: 5112
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+    path: /api/de7/stream
+    headers:
+      Host: cedar.filnex.baby
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,8 +109,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,7 +122,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
-  - 🇷🇺 俄罗斯 (Russia) 10 - aceo
 rules:
 - MATCH,PROXIES

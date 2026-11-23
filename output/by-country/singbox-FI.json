@@ -4,8 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
+      "server": "2.29.210.28",
+      "server_port": 25565,
+      "method": "chacha20-ietf-poly1305",
+      "password": "C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
+      "server": "65.21.247.47",
+      "server_port": 443,
+      "uuid": "fd419342-f50f-49b7-9074-d694b7d09508",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.47.247.21.65.clients.your-server.de",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - aceo",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -18,12 +47,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
-      "server": "static.28.210.29.2.clients.your-server.de",
-      "server_port": 25565,
-      "method": "chacha20-ietf-poly1305",
-      "password": "C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc"
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - aceo",
+      "server": "150.241.71.225",
+      "server_port": 8081,
+      "uuid": "13001c5c-c691-4d64-a8ff-83084ff82d3c",
+      "tls": {
+        "enabled": true,
+        "server_name": "ang-el.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ang-el.ir"
+        }
+      }
     },
     {
       "type": "selector",
@@ -31,7 +75,9 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 02 - aceo",
+        "🇫🇮 芬兰 (Finland) 03 - aceo",
+        "🇫🇮 芬兰 (Finland) 04 - aceo"
       ]
     },
     {
@@ -39,7 +85,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 02 - aceo",
+        "🇫🇮 芬兰 (Finland) 03 - aceo",
+        "🇫🇮 芬兰 (Finland) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

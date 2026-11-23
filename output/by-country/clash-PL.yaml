@@ -6,30 +6,19 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
   server: 217.30.10.70
-  port: 9020
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BNmAXXxAHYpTRdzu
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 217.30.10.70
   port: 9018
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: fG2artUmHfNT2cX7
-- name: 🇵🇱 波兰 (Poland) 03 - aceo
-  server: 45.194.66.177
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 02 - aceo
+  server: 217.30.10.70
+  port: 9020
   udp: true
-  type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 31tawwo0.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  type: ss
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
+- name: 🇵🇱 波兰 (Poland) 03 - aceo
   server: 191.217.253.12
   port: 443
   udp: true
@@ -42,6 +31,32 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: 191.217.253.12
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 04 - aceo
+  server: 144.31.1.172
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: harbortarget.newbuzideas.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇵🇱 波兰 (Poland) 05 - aceo
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +66,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - aceo
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
+  - 🇵🇱 波兰 (Poland) 05 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +76,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - aceo
   - 🇵🇱 波兰 (Poland) 03 - aceo
   - 🇵🇱 波兰 (Poland) 04 - aceo
+  - 🇵🇱 波兰 (Poland) 05 - aceo
 rules:
 - MATCH,PROXIES

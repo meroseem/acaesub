@@ -12,6 +12,17 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - aceo
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -22,7 +33,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -31,23 +42,10 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
-  server: 185.117.88.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 05 - aceo
   server: 77.232.143.142
   port: 443
@@ -62,29 +60,18 @@ proxies:
   ws-opts:
     path: /media/ws/
 - name: 🇸🇪 瑞典 (Sweden) 06 - aceo
-  server: 2.26.93.106
-  port: 443
+  server: 185.117.88.9
+  port: 8443
   udp: true
   type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
+  flow: xtls-rprx-vision
   tls: true
-  servername: depotchannel.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 07 - aceo
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  reality-opts:
+    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
+    short-id: f8d0271b4b5f9efc
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +83,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
   - 🇸🇪 瑞典 (Sweden) 06 - aceo
-  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,6 +94,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
   - 🇸🇪 瑞典 (Sweden) 06 - aceo
-  - 🇸🇪 瑞典 (Sweden) 07 - aceo
 rules:
 - MATCH,PROXIES

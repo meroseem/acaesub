@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - aceo
-  server: 87.82.59.60
-  port: 837
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vless
-  uuid: d8b42cd5-b149-4356-9e61-444444444444
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - aceo
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES
