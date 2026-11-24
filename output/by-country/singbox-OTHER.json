@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - aceo",
-      "server": "135.136.33.134",
-      "server_port": 8443,
-      "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
-      "flow": "xtls-rprx-vision",
+      "tag": "🌐 其他地区 (Other) 01 - aceo",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "sinavm2.soft10.ir",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU",
-          "short_id": "f8d0271b4b5f9efc"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm2.soft10.ir"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - aceo"
+        "🌐 其他地区 (Other) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

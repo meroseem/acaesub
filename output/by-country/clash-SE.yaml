@@ -23,6 +23,30 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - aceo
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -33,45 +57,6 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - aceo
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 05 - aceo
-  server: 77.232.143.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: volumestyle.komediyatorg.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 06 - aceo
-  server: 185.117.88.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +67,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
-  - 🇸🇪 瑞典 (Sweden) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +77,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - aceo
   - 🇸🇪 瑞典 (Sweden) 04 - aceo
   - 🇸🇪 瑞典 (Sweden) 05 - aceo
-  - 🇸🇪 瑞典 (Sweden) 06 - aceo
 rules:
 - MATCH,PROXIES

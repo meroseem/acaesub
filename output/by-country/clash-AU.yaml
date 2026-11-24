@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 45.63.30.142
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 02 - aceo
   server: 159.13.55.48
   port: 20000
   udp: true
@@ -20,11 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - aceo
+  - 🇦🇺 澳大利亚 (Australia) 02 - aceo
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 丹麦 (Denmark) 01 - aceo
-  server: 135.136.33.134
-  port: 8443
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - aceo
+  server: 03e488t.es12.h1clayd.shop
+  port: 443
   udp: true
   type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
+  uuid: c5470a56-1b9b-451c-b075-02c82ee4aa6c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
+    public-key: F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo
+    short-id: bd35558b17a4930b
+  servername: 03e488t.es12.h1clayd.shop
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 丹麦 (Denmark) 01 - aceo
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 丹麦 (Denmark) 01 - aceo
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - aceo
 rules:
 - MATCH,PROXIES
