@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - aceo",
-      "server": "149.22.87.204",
+      "server": "149.22.87.240",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 02 - aceo",
-      "server": "149.22.87.241",
+      "server": "149.22.87.204",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
@@ -22,18 +22,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 03 - aceo",
-      "server": "168.138.205.100",
-      "server_port": 53758,
+      "server": "149.22.87.241",
+      "server_port": 443,
       "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 04 - aceo",
-      "server": "149.22.87.240",
-      "server_port": 443,
+      "server": "168.138.205.100",
+      "server_port": 53758,
       "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "password": "Bwlqh7GcFB"
     },
     {
       "type": "vless",
@@ -57,15 +57,18 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 06 - aceo",
-      "server": "94.177.131.113",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "kuruish.org",
-        "insecure": false
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "jp01.a0a.xyz"
+        }
       }
     },
     {
@@ -98,23 +101,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "jp01.a0a.xyz"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
+      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
       "server": "129.225.181.46",
       "server_port": 8443,
       "password": "oracle_hy2_pass_2026",
@@ -125,15 +113,27 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.211.175.236",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 11 - aceo",
-      "server": "168.110.63.247",
-      "server_port": 8081,
-      "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
+      "server": "94.177.131.113",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "kuruish.org",
+        "insecure": false
       }
     },
     {
@@ -145,31 +145,23 @@
       "password": "3eOFeNssde7PYYMv"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 13 - aceo",
-      "server": "win2loxfde0303.gggrelay.org",
-      "server_port": 34745,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "tls": {
-        "enabled": true,
-        "server_name": "nu3rb.supertoolify.com",
-        "insecure": true
-      }
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 14 - aceo",
-      "server": "104.19.12.94",
+      "server": "104.16.10.234",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",

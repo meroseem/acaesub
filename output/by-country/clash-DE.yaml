@@ -5,131 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - aceo
-  server: 146.70.20.147
-  port: 8080
+  server: 185.176.204.18
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇩🇪 德国 (Germany) 02 - aceo
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 03 - aceo
+  server: 195.110.15.216
+  port: 31652
+  udp: true
+  type: vless
+  uuid: 2da03bdf-8af3-4207-96c7-d70e0dd22c36
+- name: 🇩🇪 德国 (Germany) 04 - aceo
+  server: 47.254.128.109
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 德国 (Germany) 05 - aceo
   server: 193.108.116.98
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 03 - aceo
+- name: 🇩🇪 德国 (Germany) 06 - aceo
   server: 152.53.120.90
   port: 50955
   udp: true
   type: vless
   uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-- name: 🇩🇪 德国 (Germany) 04 - aceo
-  server: 57.129.113.16
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-- name: 🇩🇪 德国 (Germany) 05 - aceo
-  server: 47.85.227.36
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
-- name: 🇩🇪 德国 (Germany) 06 - aceo
-  server: 193.108.117.61
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 07 - aceo
-  server: 193.108.119.87
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 08 - aceo
-  server: 193.111.248.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: a8e5585a-6020-4649-a364-c1ebf3a40548
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0KDql59THS-DXg30wMR0QGgFB6rXARDhr8WoWyfVA2M
-    short-id: 6f0091ebe3029ebb
-  servername: tagderdeutscheneinheit.de
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 09 - aceo
-  server: 94.103.168.62
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
-  tls: true
-  servername: uuyjnfbv.localip.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - aceo
-  server: 169.150.210.233
+  server: 146.70.20.147
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 11 - aceo
-  server: 185.177.229.95
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 12 - aceo
-  server: vde.b.qaz.it.com
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 13 - aceo
-  server: 88.216.70.125
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  tls: true
-  servername: o685y.save-node.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
-    headers:
-      Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 14 - aceo
+- name: 🇩🇪 德国 (Germany) 08 - aceo
   server: 57.129.41.216
   port: 80
   udp: true
@@ -140,22 +62,97 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 09 - aceo
+  server: 193.108.117.61
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 10 - aceo
+  server: 57.129.113.16
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: 🇩🇪 德国 (Germany) 11 - aceo
+  server: 169.150.210.233
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 12 - aceo
+  server: 193.108.119.87
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 13 - aceo
+  server: 94.103.168.169
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
+  tls: true
+  servername: ytsdnol.localip.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 14 - aceo
+  server: 94.103.168.62
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
+  tls: true
+  servername: uuyjnfbv.localip.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 15 - aceo
-  server: 185.226.172.8
-  port: 8008
+  server: 91.107.169.224
+  port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vmess
+  uuid: 014f8bf6-9221-4f99-838f-4c16ca90334f
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
 - name: 🇩🇪 德国 (Germany) 16 - aceo
-  server: 185.176.204.18
-  port: 19999
+  server: 94.159.98.82
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 94.159.98.82
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 17 - aceo
-  server: 146.103.42.138
+  server: 13.141.36.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+    short-id: 6976d670818644cc
+  servername: 4935e4t.de25.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 18 - aceo
+  server: 146.103.41.14
   port: 9543
   udp: true
   type: vless
@@ -167,8 +164,8 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 18 - aceo
-  server: 146.103.42.26
+- name: 🇩🇪 德国 (Germany) 19 - aceo
+  server: leviko-de8799.shopingggg.ir
   port: 9543
   udp: true
   type: vless
@@ -179,27 +176,45 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - aceo
-  server: 178.162.254.38
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 20 - aceo
-  server: 93.123.101.198
+  server: 176.98.176.60
   port: 443
   udp: true
   type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mosaic.topp-con.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 21 - aceo
+  server: leviko-de7171.shopingggg.ir
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: de14-r.bankai.party
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 21 - aceo
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 22 - aceo
+  server: 81.200.158.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  servername: fernglade.gerqix.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de1.v1
+- name: 🇩🇪 德国 (Germany) 23 - aceo
   server: 82.39.171.12
   port: 443
   udp: true
@@ -212,20 +227,70 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 22 - aceo
-  server: 195.206.235.202
+- name: 🇩🇪 德国 (Germany) 24 - aceo
+  server: birchbark.gerqix.online
   port: 443
   udp: true
   type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   tls: true
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  servername: 4935e4t.de25.h1clayd.click
+  servername: birchbark.gerqix.online
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 23 - aceo
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de7.v1
+- name: 🇩🇪 德国 (Germany) 25 - aceo
+  server: vellum.filnex.baby
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  servername: rookery.moltex.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: glush.de3.v1
+- name: 🇩🇪 德国 (Germany) 26 - aceo
+  server: 72.56.238.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  servername: silverfen.elvano.website
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: sundial.filnex.baby
+- name: 🇩🇪 德国 (Germany) 27 - aceo
+  server: 213.202.208.199
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇩🇪 德国 (Germany) 28 - aceo
+  server: 104.27.97.42
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 29 - aceo
   server: 194.135.34.118
   port: 8443
   udp: true
@@ -238,13 +303,6 @@ proxies:
   network: ws
   ws-opts:
     path: /api/v4/media/session
-- name: 🇩🇪 德国 (Germany) 24 - aceo
-  server: 47.254.167.157
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -274,6 +332,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 22 - aceo
   - 🇩🇪 德国 (Germany) 23 - aceo
   - 🇩🇪 德国 (Germany) 24 - aceo
+  - 🇩🇪 德国 (Germany) 25 - aceo
+  - 🇩🇪 德国 (Germany) 26 - aceo
+  - 🇩🇪 德国 (Germany) 27 - aceo
+  - 🇩🇪 德国 (Germany) 28 - aceo
+  - 🇩🇪 德国 (Germany) 29 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -303,5 +366,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 22 - aceo
   - 🇩🇪 德国 (Germany) 23 - aceo
   - 🇩🇪 德国 (Germany) 24 - aceo
+  - 🇩🇪 德国 (Germany) 25 - aceo
+  - 🇩🇪 德国 (Germany) 26 - aceo
+  - 🇩🇪 德国 (Germany) 27 - aceo
+  - 🇩🇪 德国 (Germany) 28 - aceo
+  - 🇩🇪 德国 (Germany) 29 - aceo
 rules:
 - MATCH,PROXIES

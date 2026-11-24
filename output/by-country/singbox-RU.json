@@ -4,21 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - aceo",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - aceo",
-      "server": "201.24.116.192",
+      "server": "147.45.221.225",
+      "server_port": 443,
+      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.lucheeebezlimitnoekino.stream",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/media/ws/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -27,7 +39,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         }
       },
       "transport": {
@@ -37,23 +49,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - aceo",
-      "server": "136.148.83.70",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "server": "136.148.83.69",
       "server_port": 443,
-      "uuid": "00000000-0000-0001-0000-000000000000",
+      "uuid": "7dff1be7-b930-0001-a8ad-dc7850168215",
       "tls": {
         "enabled": true,
-        "server_name": "aszbk-ru-78dc.my-fade.cloud",
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - aceo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
       "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
@@ -73,22 +85,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - aceo",
-      "server": "176.98.176.60",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - aceo",
+      "server": "147.45.175.81",
       "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "mosaic.topp-con.xyz",
+        "server_name": "xsru2.freeddns.org",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsru",
+        "headers": {
+          "Host": "xsru2.freeddns.org"
         }
       }
     },
@@ -101,7 +115,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
         "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
       ]
     },
     {
@@ -112,7 +127,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - aceo",
         "🇷🇺 俄罗斯 (Russia) 03 - aceo",
         "🇷🇺 俄罗斯 (Russia) 04 - aceo",
-        "🇷🇺 俄罗斯 (Russia) 05 - aceo"
+        "🇷🇺 俄罗斯 (Russia) 05 - aceo",
+        "🇷🇺 俄罗斯 (Russia) 06 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

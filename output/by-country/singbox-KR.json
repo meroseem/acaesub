@@ -12,26 +12,29 @@
       "security": "auto"
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 02 - aceo",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "kr02.a0a.xyz"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 03 - aceo",
-      "server": "132.226.226.189",
-      "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "152.70.237.123",
         "insecure": true
       }
     },
@@ -43,27 +46,28 @@
       "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - aceo",
       "server": "152.69.226.63",
       "server_port": 25555,
       "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - aceo",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",

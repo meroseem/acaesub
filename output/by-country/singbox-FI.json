@@ -6,47 +6,37 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
+      "server": "31.76.77.231",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
+          "public_key": "PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4",
+          "short_id": "cc85fc7134024405"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
-      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

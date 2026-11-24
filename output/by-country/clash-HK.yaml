@@ -5,28 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 152.32.254.68
@@ -39,12 +38,26 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  server: 27.124.5.86
-  port: 8388
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+  server: 116.213.43.43
+  port: 11103
+  udp: true
+  type: vless
+  uuid: bb836d81-d0c5-4f01-a584-806cdf65e36a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4
+    short-id: 9564e1a7a1cf8b3a
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +68,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +79,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
 rules:
 - MATCH,PROXIES

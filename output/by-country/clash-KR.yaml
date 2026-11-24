@@ -13,20 +13,25 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 03 - aceo
   server: 152.70.237.123
   port: 2053
   udp: true
   type: hysteria2
   password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - aceo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 'off'
+  sni: 152.70.237.123
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 04 - aceo
   server: 152.67.200.82
@@ -34,16 +39,9 @@ proxies:
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
+  sni: css.rbxcdn.com
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - aceo
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -52,6 +50,13 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
+  server: 211.178.105.134
+  port: 6123
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
