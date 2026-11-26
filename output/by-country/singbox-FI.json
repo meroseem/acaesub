@@ -6,43 +6,24 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
-      "flow": "xtls-rprx-vision",
+      "server": "ifi1.modemjibi.com",
+      "server_port": 993,
+      "uuid": "17ead557-8407-42ae-b9a1-f11a869f99c6",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "ifi1.modemjibi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
-      "server": "31.76.77.231",
-      "server_port": 443,
-      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4",
-          "short_id": "cc85fc7134024405"
-        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -50,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - aceo",
-        "🇫🇮 芬兰 (Finland) 02 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

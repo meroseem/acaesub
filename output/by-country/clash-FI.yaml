@@ -5,44 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 157.180.98.124
-  port: 49659
+  server: ifi1.modemjibi.com
+  port: 993
   udp: true
   type: vless
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  flow: xtls-rprx-vision
+  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
   tls: true
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  servername: apple.com
+  servername: ifi1.modemjibi.com.
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - aceo
-  server: 31.76.77.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
-    short-id: cc85fc7134024405
-  servername: www.google.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
-  - 🇫🇮 芬兰 (Finland) 02 - aceo
 rules:
 - MATCH,PROXIES

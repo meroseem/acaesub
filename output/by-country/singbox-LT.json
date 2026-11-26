@@ -4,61 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-      "server": "84.32.209.118",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-dns-gw.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7d309e4c16b825f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - aceo",
-      "server": "lt.memepn.com",
-      "server_port": 443,
-      "uuid": "f69e272f-e0e5-4e9d-b180-5be63930cde9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lt.memepn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - aceo",
-        "🇱🇹 立陶宛 (Lithuania) 02 - aceo"
+        "🇱🇹 立陶宛 (Lithuania) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

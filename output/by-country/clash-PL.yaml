@@ -5,23 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - aceo
-  server: 217.30.10.70
-  port: 9037
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: TN2YqghxeFDKZfLU
-- name: 🇵🇱 波兰 (Poland) 02 - aceo
-  server: 150.241.87.52
+  server: 82.118.22.161
   port: 443
   udp: true
   type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -29,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - aceo
-  - 🇵🇱 波兰 (Poland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - aceo
-  - 🇵🇱 波兰 (Poland) 02 - aceo
 rules:
 - MATCH,PROXIES

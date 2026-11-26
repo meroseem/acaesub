@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - aceo
-  server: 195.123.213.28
-  port: 443
+  server: 213.183.45.23
+  port: 8450
   udp: true
   type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: fonts.plumstatic.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select

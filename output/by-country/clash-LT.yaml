@@ -5,43 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  server: 84.32.209.118
-  port: 443
+  server: 195.238.126.20
+  port: 9086
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7d309e4c16b825f
-  servername: api-dns-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - aceo
-  server: lt.memepn.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: f69e272f-e0e5-4e9d-b180-5be63930cde9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: lt.memepn.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - aceo
-  - 🇱🇹 立陶宛 (Lithuania) 02 - aceo
 rules:
 - MATCH,PROXIES
