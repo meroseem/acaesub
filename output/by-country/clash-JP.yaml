@@ -12,32 +12,13 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - aceo
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - aceo
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - aceo
-  server: 156.231.117.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05 - aceo
+- name: 🇯🇵 日本 (Japan) 03 - aceo
   server: 158.101.151.157
   port: 443
   udp: true
@@ -50,70 +31,48 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - aceo
-  server: 161.33.20.255
-  port: 8880
+- name: 🇯🇵 日本 (Japan) 04 - aceo
+  server: 168.138.43.75
+  port: 80
   udp: true
   type: vmess
-  uuid: e0856508-d693-450a-a099-455091dc4f25
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
-- name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 149.28.29.156
-  port: 443
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 168.110.63.247
+  port: 8081
   udp: true
-  type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
-  tls: true
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  servername: itunes.apple.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 08 - aceo
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: vl-x2.qz10086.top
-  port: 38105
+    path: /vless
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: 155.248.175.201
+  port: 23169
   udp: true
   type: vless
-  uuid: d235ad20-8f30-441e-871e-ee2695e4c430
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: y0p1yI8OoWqcOE4XEv7ueudaSOOc5UIb5yFyA3SstD8
-    short-id: 7e7e8c23
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 10 - aceo
-  server: 213.183.41.31
-  port: 8463
-  udp: true
-  type: vless
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  tls: true
-  servername: share.plumstatic.com
+  servername: djj.zjlo.top
   skip-cert-verify: false
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 🇯🇵 日本 (Japan) 11 - aceo
-  server: 104.21.70.228
+- name: 🇯🇵 日本 (Japan) 07 - aceo
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 08 - aceo
+  server: 104.16.0.1
   port: 443
   udp: true
   type: vless
@@ -140,9 +99,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - aceo
   - 🇯🇵 日本 (Japan) 07 - aceo
   - 🇯🇵 日本 (Japan) 08 - aceo
-  - 🇯🇵 日本 (Japan) 09 - aceo
-  - 🇯🇵 日本 (Japan) 10 - aceo
-  - 🇯🇵 日本 (Japan) 11 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -156,8 +112,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - aceo
   - 🇯🇵 日本 (Japan) 07 - aceo
   - 🇯🇵 日本 (Japan) 08 - aceo
-  - 🇯🇵 日本 (Japan) 09 - aceo
-  - 🇯🇵 日本 (Japan) 10 - aceo
-  - 🇯🇵 日本 (Japan) 11 - aceo
 rules:
 - MATCH,PROXIES
