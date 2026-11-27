@@ -12,19 +12,19 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - aceo
-  server: 8.216.15.55
-  port: 5555
+  server: 149.22.87.204
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: '123456'
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - aceo
-  server: 47.91.31.150
-  port: 5555
+  server: 149.22.87.241
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: '123456'
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - aceo
   server: 158.101.151.157
   port: 443
@@ -39,37 +39,57 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 05 - aceo
-  server: 161.33.20.255
-  port: 8880
-  udp: true
-  type: vmess
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
-- name: 🇯🇵 日本 (Japan) 06 - aceo
-  server: 149.22.87.204
+  server: 50.7.159.242
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 213.183.41.31
-  port: 8463
-  udp: true
   type: vless
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
   tls: true
-  servername: share.plumstatic.com
+  servername: jp.reddotcorp.org
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 06 - aceo
+  server: 198.13.53.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  tls: true
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  servername: itunes.apple.com
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 07 - aceo
+  server: 149.28.29.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  tls: true
+  reality-opts:
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 08 - aceo
+  server: 8.211.174.60
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 09 - aceo
   server: 8.211.175.236
   port: 8443
   udp: true
@@ -77,8 +97,8 @@ proxies:
   password: u63SxILNwtrQZ7Y1ZrFaZfsA
   sni: 8.211.175.236
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - aceo
-  server: 104.17.50.227
+- name: 🇯🇵 日本 (Japan) 10 - aceo
+  server: 104.24.0.1
   port: 443
   udp: true
   type: vless
@@ -86,18 +106,12 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - aceo
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 proxy-groups:
 - name: PROXIES
   type: select

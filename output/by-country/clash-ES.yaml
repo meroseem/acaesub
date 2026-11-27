@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - aceo
-  server: 62.93.179.97
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 02 - aceo
-  server: 79.127.139.242
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
   server: 108.181.121.170
   port: 443
   udp: true
@@ -31,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - aceo
-  - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
-  - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
 rules:
 - MATCH,PROXIES

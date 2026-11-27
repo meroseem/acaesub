@@ -14,18 +14,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 02 - aceo",
-      "server": "8.216.15.55",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 03 - aceo",
-      "server": "47.91.31.150",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "vless",
@@ -49,48 +49,86 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 05 - aceo",
-      "server": "161.33.20.255",
-      "server_port": 8880,
-      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - aceo",
-      "server": "149.22.87.204",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - aceo",
-      "server": "213.183.41.31",
-      "server_port": 8463,
-      "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
+      "tag": "🇯🇵 日本 (Japan) 05 - aceo",
+      "server": "50.7.159.242",
+      "server_port": 443,
+      "uuid": "8840fac2-5361-4cb6-b887-cd1b95092394",
       "tls": {
         "enabled": true,
-        "server_name": "share.plumstatic.com",
+        "server_name": "jp.reddotcorp.org",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - aceo",
+      "server": "198.13.53.39",
+      "server_port": 443,
+      "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k",
+          "short_id": "7a7cc838"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - aceo",
+      "server": "149.28.29.156",
+      "server_port": 443,
+      "uuid": "aa1a9052-720f-4bb0-92be-21b6baf9f386",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0",
+          "short_id": "e535df57"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 08 - aceo",
+      "server": "8.211.174.60",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
       "server": "8.211.175.236",
       "server_port": 8443,
       "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
@@ -102,14 +140,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - aceo",
-      "server": "104.17.50.227",
+      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
+      "server": "104.24.0.1",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -118,14 +160,6 @@
           "Host": "jp3.yohototo.top"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 10 - aceo",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
     },
     {
       "type": "selector",
