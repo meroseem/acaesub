@@ -5,30 +5,31 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-      "server": "213.183.45.23",
-      "server_port": 8450,
-      "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
+      "tag": "🇵🇱 波兰 (Poland) 01 - aceo",
+      "server": "48.102.207.169",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fonts.plumstatic.com",
-        "insecure": false,
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "h7PkRRDOuhS9DQtU9TX0lQWiUW_u_803F7nVimuhln8",
+          "short_id": "0d059b684c11c739"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - aceo",
-      "server": "195.123.213.28",
+      "tag": "🇵🇱 波兰 (Poland) 02 - aceo",
+      "server": "150.251.113.34",
       "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -39,8 +40,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
+          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
+          "short_id": "150a627d15154cf2"
         }
       }
     },
@@ -49,16 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - aceo",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - aceo"
+        "🇵🇱 波兰 (Poland) 01 - aceo",
+        "🇵🇱 波兰 (Poland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

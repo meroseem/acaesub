@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - aceo",
-      "server": "195.123.226.21",
-      "server_port": 443,
-      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
+      "server": "one.alpheratzz.org",
+      "server_port": 8443,
+      "uuid": "0173d52e-8e1b-4681-831e-11529677b72f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "api-6b04608f.adhil.uk",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
-          "short_id": "77bb0d07bddbc832"
+          "fingerprint": "safari"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - aceo"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - aceo
-  server: 149.22.87.240
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
@@ -19,6 +19,28 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - aceo
+  server: 8.216.9.41
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 04 - aceo
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - aceo
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - aceo
   server: 158.101.151.157
   port: 443
   udp: true
@@ -31,7 +53,71 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 04 - aceo
+- name: 🇯🇵 日本 (Japan) 07 - aceo
+  server: 161.33.20.255
+  port: 8880
+  udp: true
+  type: vmess
+  uuid: e0856508-d693-450a-a099-455091dc4f25
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e0856508-d693-450a-a099-455091dc4f25-vm
+- name: 🇯🇵 日本 (Japan) 08 - aceo
+  server: 45.32.57.15
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  tls: true
+  servername: senflarelink-node-nwz76h.pages.dev
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /flow=
+    headers:
+      Host: senflarelink-node-nwz76h.pages.dev
+- name: 🇯🇵 日本 (Japan) 09 - aceo
+  server: 104.21.34.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 10 - aceo
+  server: 156.239.224.107
+  port: 57278
+  udp: true
+  type: vmess
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇯🇵 日本 (Japan) 11 - aceo
+  server: 213.183.41.31
+  port: 8463
+  udp: true
+  type: vless
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
+  tls: true
+  servername: share.plumstatic.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇯🇵 日本 (Japan) 12 - aceo
   server: 168.138.43.75
   port: 80
   udp: true
@@ -42,50 +128,8 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 05 - aceo
-  server: 168.110.63.247
-  port: 8081
-  udp: true
-  type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇯🇵 日本 (Japan) 06 - aceo
-  server: 155.248.175.201
-  port: 23169
-  udp: true
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 07 - aceo
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 08 - aceo
-  server: 104.16.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
     headers:
-      Host: jp3.yohototo.top
+      Host: jp01.a0a.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +143,10 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - aceo
   - 🇯🇵 日本 (Japan) 07 - aceo
   - 🇯🇵 日本 (Japan) 08 - aceo
+  - 🇯🇵 日本 (Japan) 09 - aceo
+  - 🇯🇵 日本 (Japan) 10 - aceo
+  - 🇯🇵 日本 (Japan) 11 - aceo
+  - 🇯🇵 日本 (Japan) 12 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,5 +160,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 06 - aceo
   - 🇯🇵 日本 (Japan) 07 - aceo
   - 🇯🇵 日本 (Japan) 08 - aceo
+  - 🇯🇵 日本 (Japan) 09 - aceo
+  - 🇯🇵 日本 (Japan) 10 - aceo
+  - 🇯🇵 日本 (Japan) 11 - aceo
+  - 🇯🇵 日本 (Japan) 12 - aceo
 rules:
 - MATCH,PROXIES

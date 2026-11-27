@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
-  server: 209.9.200.147
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - aceo
+  server: 172.64.88.98
   port: 443
   udp: true
   type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560fp=chrome
+    headers:
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇩🇪 德国 (Germany) 01 (家宽) - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - aceo
+  - 🇩🇪 德国 (Germany) 01 (家宽) - aceo
 rules:
 - MATCH,PROXIES

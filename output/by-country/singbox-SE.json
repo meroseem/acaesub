@@ -12,16 +12,17 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - aceo",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -45,13 +46,53 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - aceo",
+      "server": "leviko-se3307.shopingggg.ir",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - aceo",
+      "server": "13.51.184.77",
+      "server_port": 8084,
+      "uuid": "ba27cf53-6904-4f7e-924c-fb820aaf631a",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.51.184.77",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/xk6ro",
+        "host": "/?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 03 - aceo",
+        "🇸🇪 瑞典 (Sweden) 04 - aceo",
+        "🇸🇪 瑞典 (Sweden) 05 - aceo"
       ]
     },
     {
@@ -60,7 +101,9 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - aceo",
         "🇸🇪 瑞典 (Sweden) 02 - aceo",
-        "🇸🇪 瑞典 (Sweden) 03 - aceo"
+        "🇸🇪 瑞典 (Sweden) 03 - aceo",
+        "🇸🇪 瑞典 (Sweden) 04 - aceo",
+        "🇸🇪 瑞典 (Sweden) 05 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

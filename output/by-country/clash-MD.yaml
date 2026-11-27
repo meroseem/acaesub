@@ -4,13 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
   server: 172.67.199.12
   port: 443
   udp: true
   type: trojan
   password: 963A4918-A630-29DA-A873-093CDF8AD784
-  sni: bitter-math-4364.vpnetwork3567.workers.dev
+  sni: dry-snowflake-b29f.vpnetwork3567.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -20,12 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - aceo
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - aceo
 rules:
 - MATCH,PROXIES

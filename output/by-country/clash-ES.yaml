@@ -26,18 +26,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 04 - aceo
-  server: 83.147.18.3
+  server: 66.163.118.62
   port: 443
   udp: true
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 05 - aceo
   server: 66.163.118.115
   port: 443
@@ -47,23 +42,15 @@ proxies:
   sni: discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 06 - aceo
-  server: 66.163.118.40
+  server: 66.163.118.244
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.discovergreatjobsandadvanceyourcareer.com
+  sni: api.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 07 - aceo
-  server: 66.163.118.251
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 08 - aceo
-  server: 196.196.149.80
+  server: 196.199.122.2
   port: 443
   udp: true
   type: vless
@@ -75,14 +62,13 @@ proxies:
     short-id: 42426c882c5fcd41
   servername: 7aa271t.es1.h1clayd.click
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 09 - aceo
-  server: 66.163.118.62
-  port: 443
+- name: 🇪🇸 西班牙 (Spain) 08 - aceo
+  server: 85.155.226.213
+  port: 2089
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +82,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - aceo
   - 🇪🇸 西班牙 (Spain) 07 - aceo
   - 🇪🇸 西班牙 (Spain) 08 - aceo
-  - 🇪🇸 西班牙 (Spain) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +95,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - aceo
   - 🇪🇸 西班牙 (Spain) 07 - aceo
   - 🇪🇸 西班牙 (Spain) 08 - aceo
-  - 🇪🇸 西班牙 (Spain) 09 - aceo
 rules:
 - MATCH,PROXIES
