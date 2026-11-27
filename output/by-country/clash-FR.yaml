@@ -19,33 +19,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 03 - aceo
-  server: 57.129.83.85
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 04 - aceo
-  server: 167.17.64.175
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 05 - aceo
   server: 172.99.189.142
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 06 - aceo
-  server: 23.162.152.245
-  port: 443
+- name: 🇫🇷 法国 (France) 04 - aceo
+  server: 23.162.152.22
+  port: 19999
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ySGkGhr2sKHV
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 05 - aceo
+  server: 167.17.64.22
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 06 - aceo
+  server: 38.109.228.110
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 07 - aceo
   server: 167.17.64.27
   port: 19999
@@ -54,26 +54,26 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 08 - aceo
-  server: 167.17.64.22
+  server: 57.129.83.85
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 09 - aceo
-  server: 38.109.228.110
+  server: 167.17.64.175
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 10 - aceo
-  server: 23.162.152.22
-  port: 19999
+  server: 23.162.152.245
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: chacha20-ietf-poly1305
+  password: ySGkGhr2sKHV
 - name: 🇫🇷 法国 (France) 11 - aceo
   server: 138.124.70.41
   port: 14430
@@ -83,37 +83,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 12 - aceo
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - aceo
-  server: 46.105.222.157
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 14 - aceo
-  server: 46.105.222.155
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 15 - aceo
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -125,65 +97,8 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 16 - aceo
-  server: 46.105.222.153
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 17 - aceo
-  server: 46.105.222.156
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 18 - aceo
-  server: 62.210.91.2
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 19 - aceo
-  server: 23.162.152.127
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 20 - aceo
-  server: 172.99.189.239
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 21 - aceo
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 13 - aceo
   server: 162.19.82.57
   port: 1270
   udp: true
@@ -194,8 +109,16 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 22 - aceo
-  server: 91.134.35.72
+- name: 🇫🇷 法国 (France) 14 - aceo
+  server: 13.36.234.11
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.36.234.11
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 15 - aceo
+  server: 46.105.222.157
   port: 1270
   udp: true
   type: vmess
@@ -205,7 +128,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 23 - aceo
+- name: 🇫🇷 法国 (France) 16 - aceo
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -220,15 +143,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 24 - aceo
-  server: 13.36.234.11
-  port: 443
+- name: 🇫🇷 法国 (France) 17 - aceo
+  server: 172.99.189.239
+  port: 1270
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.36.234.11
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 25 - aceo
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 18 - aceo
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -243,7 +169,70 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 26 - aceo
+- name: 🇫🇷 法国 (France) 19 - aceo
+  server: 46.105.222.153
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 20 - aceo
+  server: 23.162.152.127
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 21 - aceo
+  server: 91.134.35.72
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 22 - aceo
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 23 - aceo
+  server: 46.105.222.156
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 24 - aceo
+  server: 46.105.222.155
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 25 - aceo
   server: 188.114.99.137
   port: 80
   udp: true
@@ -254,34 +243,17 @@ proxies:
     path: /
     headers:
       Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 27 - aceo
-  server: 178.104.77.229
-  port: 8443
+- name: 🇫🇷 法国 (France) 26 - aceo
+  server: ov-france1.09vpn.com
+  port: 80
   udp: true
   type: vless
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  tls: true
-  servername: senflarelink-node-m3bfbn.pages.dev
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
   network: ws
   ws-opts:
-    path: /flow=
+    path: /vless/
     headers:
-      Host: senflarelink-node-m3bfbn.pages.dev
-- name: 🇫🇷 法国 (France) 28 - aceo
-  server: 161.97.160.224
-  port: 443
-  udp: true
-  type: vless
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  servername: passport.yandex.ru
-  client-fingerprint: ''
+      Host: ov-france1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -313,8 +285,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 24 - aceo
   - 🇫🇷 法国 (France) 25 - aceo
   - 🇫🇷 法国 (France) 26 - aceo
-  - 🇫🇷 法国 (France) 27 - aceo
-  - 🇫🇷 法国 (France) 28 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -346,7 +316,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 24 - aceo
   - 🇫🇷 法国 (France) 25 - aceo
   - 🇫🇷 法国 (France) 26 - aceo
-  - 🇫🇷 法国 (France) 27 - aceo
-  - 🇫🇷 法国 (France) 28 - aceo
 rules:
 - MATCH,PROXIES

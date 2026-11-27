@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - aceo
-  server: 147.45.221.225
-  port: 443
+  server: 194.87.69.12
+  port: 18443
   udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - aceo
   server: 130.49.189.158
   port: 43558
@@ -24,12 +19,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - aceo
-  server: 185.22.152.168
-  port: 18443
+  server: 136.148.83.69
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - aceo
   server: 200.169.179.233
   port: 443
@@ -44,24 +42,27 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 05 - aceo
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
-  server: 194.87.69.12
+  server: 185.22.152.168
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 06 - aceo
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 07 - aceo
-  server: 196.196.148.85
+  server: 79.182.70.232
   port: 443
   udp: true
   type: vless
@@ -71,9 +72,9 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 08 - aceo
-  server: 147.45.175.81
+  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
@@ -81,10 +82,25 @@ proxies:
   tls: true
   servername: xssite.webredirect.org
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 09 - aceo
+  server: 185.22.234.129
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  tls: true
+  servername: smartcdn.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /useraction/collect/8a64b355ef0c/
+    headers:
+      Host: smartcdn.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +114,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,5 +128,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - aceo
   - 🇷🇺 俄罗斯 (Russia) 07 - aceo
   - 🇷🇺 俄罗斯 (Russia) 08 - aceo
+  - 🇷🇺 俄罗斯 (Russia) 09 - aceo
 rules:
 - MATCH,PROXIES

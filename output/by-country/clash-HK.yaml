@@ -5,59 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - aceo
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
-  server: waic.pro.main.sys-metric-report.com
-  port: 28014
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
-  server: 8.210.92.38
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4fc9dc3d-0d57-49e7-9bc0-e323165241bf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA
-    short-id: d78318845237d9a9
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - aceo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   server: leviko-hk5202.shopingggg.ir
   port: 31001
   udp: true
@@ -70,14 +33,21 @@ proxies:
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - aceo
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2��
+  sni: https://t.me/wangcai2üá®üá≥
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - aceo
+  server: waic.pro.main.sys-metric-report.com
+  port: 28014
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +58,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,8 +68,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 04 - aceo
   - 🇭🇰 中国香港 (Hong Kong) 05 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 06 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 07 - aceo
-  - 🇭🇰 中国香港 (Hong Kong) 08 - aceo
 rules:
 - MATCH,PROXIES

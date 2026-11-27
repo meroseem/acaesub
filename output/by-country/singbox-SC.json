@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo",
-      "server": "one.alpheratzz.org",
-      "server_port": 8443,
-      "uuid": "0173d52e-8e1b-4681-831e-11529677b72f",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - aceo",
+      "server": "46.29.255.123",
+      "server_port": 59539,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api-6b04608f.adhil.uk",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "cloudflare-dns.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
+          "short_id": ""
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - aceo"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
