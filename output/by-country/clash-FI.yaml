@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - aceo
-  server: 65.109.171.194
+  server: mail1.besttotaldns.com
   port: 443
   udp: true
   type: vless
@@ -15,17 +15,30 @@ proxies:
   servername: mail1.besttotaldns.com
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - aceo
+  server: 85.8.201.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7aa77858-f235-000c-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.mornismp.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - aceo
+  - 🇫🇮 芬兰 (Finland) 02 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - aceo
+  - 🇫🇮 芬兰 (Finland) 02 - aceo
 rules:
 - MATCH,PROXIES

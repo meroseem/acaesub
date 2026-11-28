@@ -13,28 +13,38 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - aceo
-  server: 211.178.105.134
-  port: 6123
+  server: 129.154.61.196
+  port: 800
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vmess
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 03 - aceo
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 04 - aceo
   server: 152.70.237.123
   port: 2053
   udp: true
   type: hysteria2
   password: maintell
-  sni: bing.com
+  sni: 152.70.237.123
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - aceo
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 132.226.226.189
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - aceo
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152.69.231.175
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - aceo
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -43,57 +53,16 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 06 - aceo
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - aceo
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - aceo
-  server: 130.94.30.242
-  port: 443
-  udp: true
-  type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 09 - aceo
-  server: 104.25.128.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: db906786-8c49-4b17-9182-cea680ef954d
-  tls: true
-  servername: krc.80782636.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /kw7x2mq9
     headers:
-      Host: krc.80782636.xyz
-- name: 🇰🇷 韩国 (South Korea) 10 - aceo
-  server: 129.154.61.196
-  port: 800
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 07 - aceo
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: vmess
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,9 +75,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - aceo
   - 🇰🇷 韩国 (South Korea) 06 - aceo
   - 🇰🇷 韩国 (South Korea) 07 - aceo
-  - 🇰🇷 韩国 (South Korea) 08 - aceo
-  - 🇰🇷 韩国 (South Korea) 09 - aceo
-  - 🇰🇷 韩国 (South Korea) 10 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,8 +87,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - aceo
   - 🇰🇷 韩国 (South Korea) 06 - aceo
   - 🇰🇷 韩国 (South Korea) 07 - aceo
-  - 🇰🇷 韩国 (South Korea) 08 - aceo
-  - 🇰🇷 韩国 (South Korea) 09 - aceo
-  - 🇰🇷 韩国 (South Korea) 10 - aceo
 rules:
 - MATCH,PROXIES

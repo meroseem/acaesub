@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - aceo",
-      "server": "65.109.171.194",
+      "server": "mail1.besttotaldns.com",
       "server_port": 443,
       "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
       "flow": "xtls-rprx-vision",
@@ -25,18 +25,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - aceo",
+      "server": "85.8.201.186",
+      "server_port": 443,
+      "uuid": "7aa77858-f235-000c-9434-7ab060848b17",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.mornismp.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo",
+        "🇫🇮 芬兰 (Finland) 02 - aceo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - aceo"
+        "🇫🇮 芬兰 (Finland) 01 - aceo",
+        "🇫🇮 芬兰 (Finland) 02 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
