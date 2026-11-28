@@ -12,20 +12,27 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 02 - aceo
-  server: 142.202.51.22
+  server: 38.114.120.221
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 03 - aceo
-  server: 185.176.206.9
+  server: 142.202.51.22
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 04 - aceo
+  server: 185.176.206.9
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
   server: 142.202.51.42
   port: 1270
   udp: true
@@ -36,18 +43,29 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 05 - aceo
-  server: 149.7.16.228
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
 - name: 🇬🇧 英国 (United Kingdom) 06 - aceo
+  server: 128.254.186.82
+  port: 13337
+  udp: true
+  type: hysteria2
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -60,7 +78,14 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 07 - aceo
+- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
   server: 51.38.71.147
   port: 8443
   udp: true
@@ -70,49 +95,7 @@ proxies:
   servername: node-uk.connectsuite.org
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 08 - aceo
-  server: uk-tube-01.stre4m.net
-  port: 13337
-  udp: true
-  type: hysteria2
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  sni: mother-earth.fyi
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - aceo
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 10 - aceo
-  server: 98.98.142.161
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 11 - aceo
-  server: 51.38.71.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
 - name: 🇬🇧 英国 (United Kingdom) 12 - aceo
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 13 - aceo
   server: 193.188.21.253
   port: 14430
   udp: true
@@ -123,35 +106,6 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇬🇧 英国 (United Kingdom) 14 - aceo
-  server: 172.64.155.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
-  tls: true
-  servername: sinavm2.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm2.soft10.ir
-- name: 🇬🇧 英国 (United Kingdom) 15 - aceo
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 16 - aceo
-  server: 38.114.120.221
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -169,10 +123,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
-  - 🇬🇧 英国 (United Kingdom) 13 - aceo
-  - 🇬🇧 英国 (United Kingdom) 14 - aceo
-  - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -190,9 +140,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 10 - aceo
   - 🇬🇧 英国 (United Kingdom) 11 - aceo
   - 🇬🇧 英国 (United Kingdom) 12 - aceo
-  - 🇬🇧 英国 (United Kingdom) 13 - aceo
-  - 🇬🇧 英国 (United Kingdom) 14 - aceo
-  - 🇬🇧 英国 (United Kingdom) 15 - aceo
-  - 🇬🇧 英国 (United Kingdom) 16 - aceo
 rules:
 - MATCH,PROXIES

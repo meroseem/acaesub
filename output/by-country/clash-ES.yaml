@@ -12,31 +12,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 02 - aceo
-  server: 46.28.71.247
+  server: 83.147.18.3
   port: 443
   udp: true
   type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 03 - aceo
-  server: 196.196.149.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - aceo
   - 🇪🇸 西班牙 (Spain) 02 - aceo
-  - 🇪🇸 西班牙 (Spain) 03 - aceo
 rules:
 - MATCH,PROXIES

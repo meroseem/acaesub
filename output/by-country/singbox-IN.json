@@ -11,16 +11,13 @@
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
+        "path": "/vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - aceo",
-      "server": "178.212.35.198",
+      "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -28,7 +25,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -52,7 +49,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -64,13 +61,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04 - aceo",
+      "server": "13.140.74.242",
+      "server_port": 443,
+      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0175469f14317d82",
+        "headers": {
+          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - aceo",
         "🇮🇳 印度 (India) 02 - aceo",
-        "🇮🇳 印度 (India) 03 - aceo"
+        "🇮🇳 印度 (India) 03 - aceo",
+        "🇮🇳 印度 (India) 04 - aceo"
       ]
     },
     {
@@ -79,7 +100,8 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - aceo",
         "🇮🇳 印度 (India) 02 - aceo",
-        "🇮🇳 印度 (India) 03 - aceo"
+        "🇮🇳 印度 (India) 03 - aceo",
+        "🇮🇳 印度 (India) 04 - aceo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
